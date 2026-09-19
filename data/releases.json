@@ -1,7 +1,26 @@
 {
-  "generated": "2026-09-19T22:40:51.841Z",
+  "generated": "2026-09-19T23:45:02.485Z",
   "repos": {
     "kramsey458/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.0.8",
+        "name": "BeaverBuddies Stability Fork — 1.0.8",
+        "prerelease": false,
+        "published": "2026-09-19T23:10:05Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.8",
+        "assets": [
+          {
+            "name": "1.0.8-SHA256SUMS.txt",
+            "size": 105,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.8/1.0.8-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.8.zip",
+            "size": 2550232,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.8/BeaverBuddies-Stability-Fork-1.0.8.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.0.7",
         "name": "BeaverBuddies Stability Fork — 1.0.7 (pre-release)",
@@ -429,6 +448,25 @@
       }
     ],
     "kramsey458/OptimizedLocalHousing": [
+      {
+        "tag": "v1.0.0",
+        "name": "Optimized Local Housing v1.0.0",
+        "prerelease": false,
+        "published": "2026-09-19T23:41:04Z",
+        "url": "https://github.com/kramsey458/OptimizedLocalHousing/releases/tag/v1.0.0",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.0.0-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/kramsey458/OptimizedLocalHousing/releases/download/v1.0.0/OptimizedLocalHousing-v1.0.0-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v1.0.0.zip",
+            "size": 17644,
+            "url": "https://github.com/kramsey458/OptimizedLocalHousing/releases/download/v1.0.0/OptimizedLocalHousing-v1.0.0.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.1.0",
         "name": "Optimized Local Housing v0.1.0 (preview)",
