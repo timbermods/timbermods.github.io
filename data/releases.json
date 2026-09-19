@@ -1,7 +1,26 @@
 {
-  "generated": "2026-09-19T19:38:33.175Z",
+  "generated": "2026-09-19T22:40:51.841Z",
   "repos": {
     "kramsey458/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.0.7",
+        "name": "BeaverBuddies Stability Fork — 1.0.7 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-19T22:39:57Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.7",
+        "assets": [
+          {
+            "name": "1.0.7-SHA256SUMS.txt",
+            "size": 105,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.7/1.0.7-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.7.zip",
+            "size": 2545975,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.7/BeaverBuddies-Stability-Fork-1.0.7.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.0.6",
         "name": "BeaverBuddies Stability Fork — 1.0.6 (pre-release)",
