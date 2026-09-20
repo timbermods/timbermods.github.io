@@ -33,8 +33,6 @@ Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TO
 
 Copy an existing `<article class="card">` in `index.html`, then update its `--c` accent colour, `data-repo`, `data-asset`, links and text. Running `scripts/update-releases.mjs` picks up the new repo automatically.
 
-Late Game Performance has no Pages site yet, so its card links to the README on GitHub. Once it has one, change the three links that point at `github.com/timbermods/LateGamePerformance#readme` (and the "Docs" label to "Website").
-
 ## Files
 
 | Path | Purpose |
