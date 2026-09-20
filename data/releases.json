@@ -1,7 +1,121 @@
 {
-  "generated": "2026-09-19T23:45:02.485Z",
+  "generated": "2026-09-20T01:12:06.680Z",
   "repos": {
     "kramsey458/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.0.9",
+        "name": "BeaverBuddies Stability Fork — 1.0.9",
+        "prerelease": false,
+        "published": "2026-09-20T00:39:55Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9",
+        "assets": [
+          {
+            "name": "1.0.9-SHA256SUMS.txt",
+            "size": 105,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9/1.0.9-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.9.zip",
+            "size": 2570060,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9/BeaverBuddies-Stability-Fork-1.0.9.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.0.9-tickspeed-preview",
+        "name": "BeaverBuddies Stability Fork — 1.0.9-tickspeed-preview (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-20T00:03:57Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-tickspeed-preview",
+        "assets": [
+          {
+            "name": "1.0.9-tickspeed-preview-SHA256SUMS.txt",
+            "size": 123,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-tickspeed-preview/1.0.9-tickspeed-preview-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.9-tickspeed-preview.zip",
+            "size": 2554526,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-tickspeed-preview/BeaverBuddies-Stability-Fork-1.0.9-tickspeed-preview.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.0.9-framethrottler-preview2",
+        "name": "BeaverBuddies Stability Fork — 1.0.9-framethrottler-preview2 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-20T00:10:11Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-framethrottler-preview2",
+        "assets": [
+          {
+            "name": "1.0.9-framethrottler-preview2-SHA256SUMS.txt",
+            "size": 129,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview2/1.0.9-framethrottler-preview2-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview2.zip",
+            "size": 2556665,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview2/BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview2.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.0.9-control-fix-preview",
+        "name": "BeaverBuddies Stability Fork — 1.0.9-control-fix-preview (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-20T00:01:31Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-control-fix-preview",
+        "assets": [
+          {
+            "name": "1.0.9-control-fix-preview-SHA256SUMS.txt",
+            "size": 125,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-control-fix-preview/1.0.9-control-fix-preview-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.9-control-fix-preview.zip",
+            "size": 2553946,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-control-fix-preview/BeaverBuddies-Stability-Fork-1.0.9-control-fix-preview.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.0.9-chatbox-fix-preview",
+        "name": "BeaverBuddies Stability Fork — 1.0.9-chatbox-fix-preview (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-20T00:15:13Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-chatbox-fix-preview",
+        "assets": [
+          {
+            "name": "1.0.9-chatbox-fix-preview-SHA256SUMS.txt",
+            "size": 125,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-chatbox-fix-preview/1.0.9-chatbox-fix-preview-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.9-chatbox-fix-preview.zip",
+            "size": 2560255,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-chatbox-fix-preview/BeaverBuddies-Stability-Fork-1.0.9-chatbox-fix-preview.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.0.9-framethrottler-preview",
+        "name": "BeaverBuddies Stability Fork — 1.0.9-framethrottler-preview (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-19T23:50:19Z",
+        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-framethrottler-preview",
+        "assets": [
+          {
+            "name": "1.0.9-framethrottler-preview-SHA256SUMS.txt",
+            "size": 128,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview/1.0.9-framethrottler-preview-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview.zip",
+            "size": 2550431,
+            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview/BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.0.8",
         "name": "BeaverBuddies Stability Fork — 1.0.8",
@@ -113,63 +227,6 @@
             "name": "BeaverBuddies-Stability-Fork-1.0.3.zip",
             "size": 2521857,
             "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.3/BeaverBuddies-Stability-Fork-1.0.3.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.2",
-        "name": "BeaverBuddies Stability Fork — 1.0.2",
-        "prerelease": false,
-        "published": "2026-09-19T10:43:00Z",
-        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.2",
-        "assets": [
-          {
-            "name": "1.0.2-SHA256SUMS.txt",
-            "size": 105,
-            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.2/1.0.2-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-Stability-Fork-1.0.2.zip",
-            "size": 2507059,
-            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.2/BeaverBuddies-Stability-Fork-1.0.2.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.1",
-        "name": "BeaverBuddies Stability Fork — 1.0.1",
-        "prerelease": false,
-        "published": "2026-09-19T09:22:20Z",
-        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.1",
-        "assets": [
-          {
-            "name": "1.0.1-SHA256SUMS.txt",
-            "size": 105,
-            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.1/1.0.1-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-Stability-Fork-1.0.1.zip",
-            "size": 2510526,
-            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.1/BeaverBuddies-Stability-Fork-1.0.1.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.0",
-        "name": "BeaverBuddies Stability Fork — 1.0.0",
-        "prerelease": false,
-        "published": "2026-09-19T08:33:00Z",
-        "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/tag/v1.0.0",
-        "assets": [
-          {
-            "name": "1.0.0-SHA256SUMS.txt",
-            "size": 100,
-            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.0/1.0.0-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-stability-1.0.0.zip",
-            "size": 2509516,
-            "url": "https://github.com/kramsey458/BeaverBuddies-Stability-Fork/releases/download/v1.0.0/BeaverBuddies-stability-1.0.0.zip"
           }
         ]
       }
