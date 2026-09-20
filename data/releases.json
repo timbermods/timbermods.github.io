@@ -1,7 +1,45 @@
 {
-  "generated": "2026-09-20T16:49:46.871Z",
+  "generated": "2026-09-20T18:57:21.325Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.1.10",
+        "name": "BeaverBuddies Stability Fork — 1.1.10",
+        "prerelease": false,
+        "published": "2026-09-20T18:06:48Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.10",
+        "assets": [
+          {
+            "name": "1.1.10-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.10/1.1.10-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.1.10.zip",
+            "size": 2575579,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.10/BeaverBuddies-Stability-Fork-1.1.10.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.1.10-release-candidate-3",
+        "name": "BeaverBuddies Stability Fork — 1.1.10-release-candidate-3 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-20T17:08:29Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.10-release-candidate-3",
+        "assets": [
+          {
+            "name": "1.1.10-release-candidate-3-SHA256SUMS.txt",
+            "size": 126,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.10-release-candidate-3/1.1.10-release-candidate-3-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.1.10-release-candidate-3.zip",
+            "size": 2576100,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.10-release-candidate-3/BeaverBuddies-Stability-Fork-1.1.10-release-candidate-3.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.1.10-release-candidate-2",
         "name": "BeaverBuddies Stability Fork — 1.1.10-release-candidate-2 (pre-release)",
@@ -189,44 +227,6 @@
             "name": "BeaverBuddies-Stability-Fork-1.0.9-chatbox-fix-preview.zip",
             "size": 2560255,
             "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-chatbox-fix-preview/BeaverBuddies-Stability-Fork-1.0.9-chatbox-fix-preview.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.9-framethrottler-preview",
-        "name": "BeaverBuddies Stability Fork — 1.0.9-framethrottler-preview (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-19T23:50:19Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-framethrottler-preview",
-        "assets": [
-          {
-            "name": "1.0.9-framethrottler-preview-SHA256SUMS.txt",
-            "size": 128,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview/1.0.9-framethrottler-preview-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview.zip",
-            "size": 2550431,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview/BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.8",
-        "name": "BeaverBuddies Stability Fork — 1.0.8",
-        "prerelease": false,
-        "published": "2026-09-19T23:10:05Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.0.8",
-        "assets": [
-          {
-            "name": "1.0.8-SHA256SUMS.txt",
-            "size": 105,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.8/1.0.8-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-Stability-Fork-1.0.8.zip",
-            "size": 2550232,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.8/BeaverBuddies-Stability-Fork-1.0.8.zip"
           }
         ]
       }
@@ -546,9 +546,23 @@
     ],
     "timbermods/LateGamePerformance": [
       {
+        "tag": "v0.4.9",
+        "name": "0.4.9",
+        "prerelease": false,
+        "published": "2026-09-20T18:23:27Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.9",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.9.zip",
+            "size": 46619,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.9/LateGamePerformance-0.4.9.zip"
+          }
+        ]
+      },
+      {
         "tag": "v0.4.8",
-        "name": "0.4.8 preview",
-        "prerelease": true,
+        "name": "0.4.8",
+        "prerelease": false,
         "published": "2026-09-20T08:30:36Z",
         "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.8",
         "assets": [
@@ -696,20 +710,6 @@
             "name": "LateGamePerformance-0.2.0.zip",
             "size": 21826,
             "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.2.0/LateGamePerformance-0.2.0.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.1.0",
-        "name": "0.1.0 preview",
-        "prerelease": true,
-        "published": "2026-09-19T09:45:50Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.1.0",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.1.0.zip",
-            "size": 16604,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.1.0/LateGamePerformance-0.1.0.zip"
           }
         ]
       }
