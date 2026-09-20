@@ -12,7 +12,7 @@ Then open <http://127.0.0.1:8765/>.
 
 ## Deploy to GitHub Pages
 
-1. Create a repo (the name `kramsey458.github.io` gives you `https://kramsey458.github.io/`), and push this folder to it.
+1. Create a repo (the name `timbermods.github.io` gives you `https://timbermods.github.io/`), and push this folder to it.
 2. **Settings → Pages → Build and deployment**: deploy from branch `main`, folder `/ (root)`.
 
 All paths are relative, so it also works from a project repo (`.../some-repo/`).
@@ -33,7 +33,7 @@ Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TO
 
 Copy an existing `<article class="card">` in `index.html`, then update its `--c` accent colour, `data-repo`, `data-asset`, links and text. Running `scripts/update-releases.mjs` picks up the new repo automatically.
 
-Late Game Performance has no Pages site yet, so its card links to the README on GitHub. Once it has one, change the three links that point at `github.com/kramsey458/LateGamePerformance#readme` (and the "Docs" label to "Website").
+Late Game Performance has no Pages site yet, so its card links to the README on GitHub. Once it has one, change the three links that point at `github.com/timbermods/LateGamePerformance#readme` (and the "Docs" label to "Website").
 
 ## Files
 
