@@ -46,3 +46,7 @@ Late Game Performance has no Pages site yet, so its card links to the README on 
 | `data/releases.json` | Release snapshot (generated) |
 | `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview) |
 | `.github/workflows/` | Hourly snapshot refresh |
+
+## License
+
+MIT. See [LICENSE](LICENSE). Timberborn, its name and its artwork belong to Mechanistry and are not covered by this license; the screenshots in `assets/img/` show the game.
