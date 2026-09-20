@@ -1,7 +1,26 @@
 {
-  "generated": "2026-09-20T04:49:10.194Z",
+  "generated": "2026-09-20T06:20:25.225Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.0.10-perflog-preview",
+        "name": "BeaverBuddies Stability Fork — 1.0.10-perflog-preview (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-20T05:29:35Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.0.10-perflog-preview",
+        "assets": [
+          {
+            "name": "1.0.10-perflog-preview-SHA256SUMS.txt",
+            "size": 122,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.10-perflog-preview/1.0.10-perflog-preview-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.0.10-perflog-preview.zip",
+            "size": 2594902,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.10-perflog-preview/BeaverBuddies-Stability-Fork-1.0.10-perflog-preview.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.0.9",
         "name": "BeaverBuddies Stability Fork — 1.0.9",
@@ -208,25 +227,6 @@
             "name": "BeaverBuddies-Stability-Fork-1.0.4.zip",
             "size": 2522207,
             "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.4/BeaverBuddies-Stability-Fork-1.0.4.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.3",
-        "name": "BeaverBuddies Stability Fork — 1.0.3",
-        "prerelease": false,
-        "published": "2026-09-19T16:57:42Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.0.3",
-        "assets": [
-          {
-            "name": "1.0.3-SHA256SUMS.txt",
-            "size": 105,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.3/1.0.3-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-Stability-Fork-1.0.3.zip",
-            "size": 2521857,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.3/BeaverBuddies-Stability-Fork-1.0.3.zip"
           }
         ]
       }
