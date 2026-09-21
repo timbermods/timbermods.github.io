@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T18:57:21.325Z",
+  "generated": "2026-09-21T01:08:54.415Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -546,6 +546,20 @@
     ],
     "timbermods/LateGamePerformance": [
       {
+        "tag": "v0.4.10",
+        "name": "0.4.10 preview",
+        "prerelease": true,
+        "published": "2026-09-21T00:18:07Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.10",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.10.zip",
+            "size": 37519,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.10/LateGamePerformance-0.4.10.zip"
+          }
+        ]
+      },
+      {
         "tag": "v0.4.9",
         "name": "0.4.9",
         "prerelease": false,
@@ -696,20 +710,6 @@
             "name": "LateGamePerformance-0.3.0.zip",
             "size": 24956,
             "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.3.0/LateGamePerformance-0.3.0.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.2.0",
-        "name": "0.2.0 preview",
-        "prerelease": true,
-        "published": "2026-09-19T09:58:07Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.2.0",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.2.0.zip",
-            "size": 21826,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.2.0/LateGamePerformance-0.2.0.zip"
           }
         ]
       }
