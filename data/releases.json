@@ -1,7 +1,26 @@
 {
-  "generated": "2026-09-21T14:13:04.278Z",
+  "generated": "2026-09-21T19:31:31.826Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.1.11",
+        "name": "BeaverBuddies Stability Fork — 1.1.11",
+        "prerelease": false,
+        "published": "2026-09-21T19:01:06Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.11",
+        "assets": [
+          {
+            "name": "1.1.11-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.11/1.1.11-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.1.11.zip",
+            "size": 2577818,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.11/BeaverBuddies-Stability-Fork-1.1.11.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.1.10",
         "name": "BeaverBuddies Stability Fork — 1.1.10",
@@ -208,25 +227,6 @@
             "name": "BeaverBuddies-Stability-Fork-1.0.9-control-fix-preview.zip",
             "size": 2553946,
             "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-control-fix-preview/BeaverBuddies-Stability-Fork-1.0.9-control-fix-preview.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.9-chatbox-fix-preview",
-        "name": "BeaverBuddies Stability Fork — 1.0.9-chatbox-fix-preview (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-20T00:15:13Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-chatbox-fix-preview",
-        "assets": [
-          {
-            "name": "1.0.9-chatbox-fix-preview-SHA256SUMS.txt",
-            "size": 125,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-chatbox-fix-preview/1.0.9-chatbox-fix-preview-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-Stability-Fork-1.0.9-chatbox-fix-preview.zip",
-            "size": 2560255,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-chatbox-fix-preview/BeaverBuddies-Stability-Fork-1.0.9-chatbox-fix-preview.zip"
           }
         ]
       }
