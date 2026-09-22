@@ -73,15 +73,13 @@ function el(text = '') {
   };
 }
 
-// A .card with the parts site.js fills in. `shown` is what a visitor sees.
-function makeCard({ repo = 'o/r', asset = '^Mod-[\\w.-]+\\.zip$', title = 'Mod', maturity } = {}) {
+// A .card with the parts site.js fills in; `data` is its dataset. `shown` is what a visitor sees.
+function makeCard({ title = 'Mod', ...data } = {}) {
   const label = el('Download latest'), size = el(), btn = el(), notes = el(), pill = el(), note = el();
   btn.querySelector = (s) => ({ '.btn-label': label, '[data-size]': size })[s] || unsupported(s);
   const parts = { '[data-download]': btn, '[data-notes]': notes, '[data-status]': pill, '[data-note]': note, h3: el(title) };
-  const dataset = { repo, asset };
-  if (maturity) dataset.maturity = maturity;
   return {
-    dataset,
+    dataset: { repo: 'o/r', asset: '^Mod-[\\w.-]+\\.zip$', ...data },
     querySelector: (s) => parts[s] || unsupported(s),
     get shown() {
       return {
@@ -91,6 +89,28 @@ function makeCard({ repo = 'o/r', asset = '^Mod-[\\w.-]+\\.zip$', title = 'Mod',
       };
     },
   };
+}
+
+// The cards in index.html: their data-* attributes (as a dataset), title and cautions, as text.
+function pageCards() {
+  const html = readFileSync(path.join(root, 'index.html'), 'utf8');
+  const decode = (s) => s.replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+  const text = (s) => decode(s.replace(/<[^>]*>/g, '')).replace(/\s+/g, ' ').trim();
+  const caution = /<p\b[^>]*\bclass="(?:[^"]*\s)?caution(?:\s[^"]*)?"[^>]*>([\s\S]*?)<\/p>/g;
+  const cards = [...html.matchAll(/<article\b([^>]*)>([\s\S]*?)<\/article>/g)]
+    .filter(([, attrs]) => /\bdata-repo=/.test(attrs))
+    .map(([, attrs, body]) => ({
+      data: Object.fromEntries([...attrs.matchAll(/\bdata-([\w-]+)="([^"]*)"/g)]
+        .map(([, k, v]) => [k.replace(/-([a-z])/g, (_, c) => c.toUpperCase()), decode(v)])),
+      title: text((/<h3\b[^>]*>([\s\S]*?)<\/h3>/.exec(body) || [])[1] || ''),
+      cautions: [...body.matchAll(caution)].map(([, inner]) => text(inner)),
+    }));
+  // Guard the parsing itself: every data-repo and every caution on the page must be accounted for.
+  const repos = (html.match(/\bdata-repo="/g) || []).length;
+  const cautions = [...html.matchAll(caution)].length;
+  if (!cards.length || cards.length !== repos) throw new Error(`read ${cards.length} cards out of index.html, which has ${repos} data-repo attributes`);
+  if (cards.reduce((n, c) => n + c.cautions.length, 0) !== cautions) throw new Error(`index.html has ${cautions} cautions, but not all of them are inside a card`);
+  return cards;
 }
 
 // Runs assets/site.js once over `cards`; resolves once its async work has settled.
@@ -260,6 +280,30 @@ await check('update-releases.mjs records GitHub\'s Latest release per repo, null
     const again = runUpdate(dir, { github: { [R]: { list: behind13 }, 'o/none': { list: previews('o/none', 2) } } }, [R, 'o/none']);
     same(again.latest, data.latest, 'latest after rewriting an old-format snapshot');
   });
+});
+
+// CAT2: a card's caution ("Preview: …", "Beta: …") used to sit next to a green Stable pill whenever
+// the mod's offered release was not a pre-release. A card with a caution now carries data-maturity.
+await check('no card in index.html shows a Stable pill next to a caution', async () => {
+  const page = pageCards();
+  const problems = [];
+  for (const offered of ['a stable release', 'only pre-releases']) {
+    const cards = page.map(({ data, title }) => makeCard({ ...data, title }));
+    const github = Object.fromEntries(cards.map(({ dataset: { repo } }) =>
+      [repo, { list: offered === 'a stable release' ? [...previews(repo, 1), release(repo, 'v1.0.0')] : previews(repo, 2) }]));
+    await runSite(cards, { github });
+    cards.forEach((card, i) => {
+      const { data, cautions } = page[i];
+      const { pill, kind } = card.shown;
+      // The caution's own label ("Beta" in "Beta: try it on a copy…"), when it starts with one.
+      const label = cautions.length ? (/^([A-Z][\w ]{0,20}):/.exec(cautions[0]) || [])[1] : undefined;
+      const want = offered === 'only pre-releases' ? 'Preview' : cautions.length ? label : 'Stable';
+      if (!pill) problems.push(`${data.repo} with ${offered}: no pill`);
+      else if (cautions.length && (pill === 'Stable' || kind === 'stable')) problems.push(`${data.repo} with ${offered}: "${pill}" pill next to "${cautions[0]}"`);
+      else if (want && pill !== want) problems.push(`${data.repo} with ${offered}: pill "${pill}", expected "${want}"`);
+    });
+  }
+  if (problems.length) throw new Error(problems.join('\n       '));
 });
 
 console.log(`\n${passed}/${passed + failed} checks passed`);

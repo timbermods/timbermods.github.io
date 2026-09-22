@@ -109,8 +109,11 @@
 
     const pill = card.querySelector('[data-status]');
     if (pill) {
-      pill.textContent = primary.release.prerelease ? 'Preview' : 'Stable';
-      pill.dataset.kind = primary.release.prerelease ? 'preview' : 'stable';
+      // A pre-release is a Preview. A stable release of a mod whose card still has a
+      // caution says the card's data-maturity (the caution's label) instead of Stable.
+      const label = primary.release.prerelease ? 'Preview' : card.dataset.maturity || 'Stable';
+      pill.textContent = label;
+      pill.dataset.kind = label === 'Stable' ? 'stable' : 'preview';
       pill.hidden = false;
     }
 

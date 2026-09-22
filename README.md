@@ -27,6 +27,8 @@ The mods release often, so the buttons never hard-code a version. Each card has 
 
 Which release it offers: the one GitHub marks as **Latest** (the newest release that isn't a draft or a pre-release), however many pre-releases came after it. If a repo only has pre-releases it offers the newest of those and marks the card **Preview**. If a newer pre-release exists than the offered one, a small "Newer preview" link appears under the button. This is the same rule as the `release.js` on the mods' own sites.
 
+The pill says **Stable** for a stable release, unless the card has a caution: then it shows the card's `data-maturity` (**Beta**, **Preview**, **Prototype**), so it never contradicts the caution.
+
 Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TOKEN` to avoid rate limits). For each repo it stores the newest 12 releases and, under `latest`, GitHub's Latest release (`null` when there is none).
 
 ## Tests
@@ -40,6 +42,8 @@ Offline checks with no dependencies: `assets/site.js` runs against a stub page a
 ## Adding or changing a mod
 
 Copy an existing `<article class="card">` in `index.html`, then update its `--c` accent color, `data-repo`, `data-asset`, links and text. Running `scripts/update-releases.mjs` picks up the new repo automatically.
+
+A card with a caution (`<p class="caution">Beta: …</p>`) also needs `data-maturity` on its `<article>`, set to the caution's label (`data-maturity="Beta"`). When the mod is ready, remove both, and the pill says Stable. `scripts/test-site.mjs` checks that the two match.
 
 ## Files
 
