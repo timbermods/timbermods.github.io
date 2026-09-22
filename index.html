@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Timberborn Mods by Timbermods</title>
-  <meta name="description" content="Timberborn mods for co-op stability, two-colony trading, big-colony performance, mixed storage, smarter housing, work-area pins, meal planning for working beavers and a swim-up pool bar. Download the latest build or open each mod's own site.">
+  <meta name="description" content="Timberborn mods for co-op stability, a colony for each co-op player, big-colony performance, mixed storage, smarter housing, work-area pins, meal planning for working beavers and a swim-up pool bar. Download the latest build or open each mod's own site.">
   <meta name="theme-color" content="#0f1813">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Timberborn Mods by Timbermods">
@@ -41,11 +41,11 @@
       <div class="wrap">
         <p class="eyebrow">Mods for Timberborn</p>
         <h1>Timberborn mods</h1>
-        <p class="lead">Co-op stability, two-colony trading, big-colony performance, smarter storage and housing, beavers that eat before the shift, and a pool bar for tired beavers. Grab the latest build straight from here, or open a mod's own site for the full guide.</p>
+        <p class="lead">More stable co-op, a colony for each co-op player, less lag in big colonies, mixed storage, shorter commutes, pinned work areas, better-timed meals for working beavers, and a swim-up pool bar. Grab the latest release here, or open a mod's own site for the full guide.</p>
         <ul class="hero-facts" aria-label="At a glance">
           <li><strong>8</strong> mods</li>
           <li>Built for Timberborn <strong>1.1.2.4</strong></li>
-          <li>Download buttons follow the <strong>newest release</strong></li>
+          <li>Download buttons follow the <strong>latest release</strong></li>
         </ul>
       </div>
     </section>
@@ -108,7 +108,7 @@
             <div class="meta"><span class="pill tag">Multiplayer</span><span class="pill status" data-status hidden></span></div>
             <h3><a href="https://timbermods.github.io/BeaverBuddies-MultiColony/">BeaverBuddies MultiColony</a></h3>
             <p class="tagline">Two players, one map, a colony each.</p>
-            <p class="blurb">Built on the <a href="https://timbermods.github.io/BeaverBuddies-Stability-Fork/">BeaverBuddies Stability Fork</a>: each player runs their own colony — land, beavers, stock and science — on a shared map, and the colonies meet only at trading posts to barter goods. Co-op, not a race.</p>
+            <p class="blurb">Built on the <a href="https://timbermods.github.io/BeaverBuddies-Stability-Fork/">BeaverBuddies Stability Fork</a>. Each player runs their own colony, with its own land, beavers, stock and science, on a shared map. The colonies meet only at trading posts, where they barter goods. Co-op, not a race.</p>
             <ul class="facts">
               <li>Separate districts, stock and working hours per colony, one shared map</li>
               <li>Trading posts barter goods where the colonies' roads meet</li>
@@ -135,7 +135,7 @@
             <p class="tagline">Several goods in one warehouse.</p>
             <p class="blurb">Divide a warehouse or pile by percentage, say 50% carrots and 50% gears, with per-good limits and a compact panel that shows exactly what is stored.</p>
             <ul class="facts">
-              <li>Split any storage building by percentage per good</li>
+              <li>Split a warehouse or pile by percentage per good</li>
               <li>Copy and paste allocations between buildings</li>
               <li>One download for single-player and BeaverBuddies co-op</li>
             </ul>
@@ -168,7 +168,7 @@
             <div class="meta"><span class="pill tag">Quality of life</span><span class="pill status" data-status hidden></span></div>
             <h3><a href="https://timbermods.github.io/PersistentWorkAreas/">Persistent Work Areas</a></h3>
             <p class="tagline">Keep working-area outlines on screen.</p>
-            <p class="blurb">Pin a farm, forester or gatherer's range and keep its outline visible after you deselect it, so you can plant crops and trees without guessing where the edge is.</p>
+            <p class="blurb">Pin a farm, forester or gatherer's range and keep its outline visible after you deselect it. Planting tools also outline every building that plants the chosen crop or tree, so you can plant without guessing where the edge is.</p>
             <ul class="facts">
               <li>Overlapping pins merge into one combined outline</li>
               <li>One-click <em>Clear pinned areas</em>, plus an optional hotkey</li>
@@ -242,13 +242,12 @@
             <div class="meta"><span class="pill tag">Performance</span><span class="pill status" data-status hidden></span></div>
             <h3><a href="https://timbermods.github.io/LateGamePerformance/">Late Game Performance</a></h3>
             <p class="tagline">Less repeated CPU work in huge colonies.</p>
-            <p class="blurb">Caches hauling job lists between hauler decisions and rebuilds route maps on worker threads after road changes, so big colonies spend less main-thread time deciding where goods go.</p>
+            <p class="blurb">Keeps answers the game has already worked out, moves heavy work such as route map rebuilds and save snapshots to other CPU cores, and skips lookups that cannot change the result, so big colonies get fewer lag spikes.</p>
             <ul class="facts">
               <li>Same job lists the game would build, in the same order</li>
               <li>Switches itself off if anything unexpected happens</li>
               <li>Timing lines in <code>Player.log</code> so you can measure it</li>
             </ul>
-            <p class="caution"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3Zm0 6v6m0 3v.5"/></svg>Preview: try it on a copy of your save first.</p>
             <p class="req"><span>Requires</span> Harmony 2.4.1+, Mod Settings</p>
             <div class="dl">
               <a class="btn" data-download href="https://github.com/timbermods/LateGamePerformance/releases" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg><span class="btn-label">Download latest</span><span class="btn-size" data-size></span></a>
@@ -273,7 +272,6 @@
               <li>Runs on hauled water and stops when it runs dry</li>
               <li>Available to Folktails and Iron Teeth under Well-being</li>
             </ul>
-            <p class="caution"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3Zm0 6v6m0 3v.5"/></svg>Prototype: not yet verified in-game. Use a test save.</p>
             <p class="req"><span>Requires</span> Nothing extra</p>
             <div class="dl">
               <a class="btn" data-download href="https://github.com/timbermods/timberborn-tipsy-tail/releases" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg><span class="btn-label">Download latest</span><span class="btn-size" data-size></span></a>
@@ -371,7 +369,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>Unofficial, fan-made mods for <a href="https://timberborn.com" rel="noopener">Timberborn</a>. Not affiliated with or endorsed by Mechanistry. BeaverBuddies Stability Fork is a fork of <a href="https://github.com/thomaswp/BeaverBuddies" rel="noopener">thomaswp/BeaverBuddies</a>; the multiplayer design is theirs.</p>
+      <p>Unofficial, fan-made mods for <a href="https://timberborn.com" rel="noopener">Timberborn</a>. Not affiliated with or endorsed by Mechanistry. BeaverBuddies Stability Fork and BeaverBuddies MultiColony build on <a href="https://github.com/thomaswp/BeaverBuddies" rel="noopener">BeaverBuddies</a> by thomaswp and contributors. The multiplayer design is theirs.</p>
       <p class="fine"><a href="https://github.com/timbermods" rel="noopener">github.com/timbermods</a> · <span data-generated>Release data loads from GitHub.</span></p>
     </div>
   </footer>

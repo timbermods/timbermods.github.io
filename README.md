@@ -31,7 +31,7 @@ Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TO
 
 ## Adding or changing a mod
 
-Copy an existing `<article class="card">` in `index.html`, then update its `--c` accent colour, `data-repo`, `data-asset`, links and text. Running `scripts/update-releases.mjs` picks up the new repo automatically.
+Copy an existing `<article class="card">` in `index.html`, then update its `--c` accent color, `data-repo`, `data-asset`, links and text. Running `scripts/update-releases.mjs` picks up the new repo automatically.
 
 ## Files
 
