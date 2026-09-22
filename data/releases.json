@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T05:00:16.173Z",
+  "generated": "2026-09-22T06:12:38.568Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -1158,6 +1158,22 @@
             "name": "TipsyTail-v0.2.0-SHA256SUMS.txt",
             "size": 194,
             "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v0.2.0/TipsyTail-v0.2.0-SHA256SUMS.txt"
+          }
+        ]
+      }
+    ],
+    "timbermods/HungryPathing": [
+      {
+        "tag": "v0.1.0-alpha",
+        "name": "HungryPathing 0.1.0 alpha",
+        "prerelease": true,
+        "published": "2026-09-22T04:36:41Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.1.0-alpha",
+        "assets": [
+          {
+            "name": "HungryPathing-0.1.0.zip",
+            "size": 20967,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.1.0-alpha/HungryPathing-0.1.0.zip"
           }
         ]
       }
