@@ -21,7 +21,7 @@ All paths are relative, so it also works from a project repo (`.../some-repo/`).
 
 The mods release often, so the buttons never hard-code a version. Each card has `data-repo` and `data-asset` (a regex that picks the mod ZIP from the release's assets). In the browser, `assets/site.js`:
 
-1. paints immediately from `data/releases.json`, a snapshot kept fresh by `.github/workflows/refresh-releases.yml` (hourly, or run it from the Actions tab);
+1. paints immediately from `data/releases.json`, a snapshot kept fresh by `.github/workflows/refresh-releases.yml` (scheduled hourly, though GitHub often runs it only every few hours; or run it from the Actions tab);
 2. then checks the GitHub API live (two requests per mod, cached 30 minutes) and updates the button;
 3. if both fail, the button is still a plain link to the repo's Releases page.
 
@@ -29,7 +29,7 @@ Which release it offers: the one GitHub marks as **Latest** (the newest release 
 
 The pill says **Stable** for a stable release, unless the card has a caution: then it shows the card's `data-maturity` (**Beta**, **Preview**, **Prototype**), so it never contradicts the caution.
 
-Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TOKEN` to avoid rate limits). For each repo it stores the newest 12 releases and, under `latest`, GitHub's Latest release (`null` when there is none).
+Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TOKEN` to avoid rate limits). For each repo it stores the newest 12 releases and, under `latest`, GitHub's Latest release (`null` when there is none). It rewrites the file, and its `generated` time, only when that data changed, so the footer reads "Release data last changed <date>"; after a live check of every card it says so instead.
 
 ## Tests
 

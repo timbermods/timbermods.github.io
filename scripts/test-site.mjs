@@ -306,5 +306,25 @@ await check('no card in index.html shows a Stable pill next to a caution', async
   if (problems.length) throw new Error(problems.join('\n       '));
 });
 
+// CAT3: `generated` is when the release data last changed, not when it was last checked, so the footer
+// must not read "as of" that date. It must stay that way: a per-run field would commit every hour.
+await check('update-releases.mjs leaves data/releases.json untouched when nothing changed', async () => {
+  await inScratch((dir) => {
+    const answers = { github: { [R]: { list: behind13 } } };
+    runUpdate(dir, answers, [R]);
+    const first = readFileSync(path.join(dir, 'data', 'releases.json'), 'utf8');
+    runUpdate(dir, answers, [R]);
+    same(readFileSync(path.join(dir, 'data', 'releases.json'), 'utf8'), first, 'data/releases.json after a second run');
+  });
+});
+
+await check('the footer says when the release data last changed', async () => {
+  const snapshot = { generated: '2026-09-20T12:00:00.000Z', repos: { [R]: behind13.slice(0, 12).map(entry) }, latest: { [R]: entry(stable) } };
+  const { stamp } = await runSite([makeCard()], { snapshot, limited: true, github: { [R]: { list: [] } } });
+  if (!/^Release data last changed .*2026.*\.$/.test(stamp)) throw new Error(`footer: ${JSON.stringify(stamp)}`);
+  const live = await runSite([makeCard()], { snapshot, github: { [R]: { list: behind13 } } });
+  same(live.stamp, 'Latest releases checked live from GitHub.', 'footer after a live check of every card');
+});
+
 console.log(`\n${passed}/${passed + failed} checks passed`);
 process.exit(failed ? 1 : 0);

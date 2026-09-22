@@ -149,7 +149,8 @@
         // Snapshots written before `latest` was added have none: render picks from the list.
         if (releases) render(card, { releases, latest: snapshot.latest ? snapshot.latest[repo] : undefined });
       });
-      if (stamp && snapshotAt) stamp.textContent = 'Release data as of ' + formatDate(snapshot.generated) + '.';
+      // `generated` moves only when the release data changes, not on every scheduled check.
+      if (stamp && snapshotAt) stamp.textContent = 'Release data last changed ' + formatDate(snapshot.generated) + '.';
     }
 
     // 2. live API (cached), best effort
