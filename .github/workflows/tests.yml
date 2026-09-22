@@ -1,0 +1,22 @@
+name: Tests
+
+# Runs scripts/test-site.mjs: offline checks of the download buttons and the snapshot
+# script (no network, no dependencies). The refresh bot's own commits don't start it,
+# because pushes made with GITHUB_TOKEN don't trigger workflows.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: node scripts/test-site.mjs
