@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T06:12:38.568Z",
+  "generated": "2026-09-22T06:56:07.090Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -233,6 +233,44 @@
     ],
     "timbermods/BeaverBuddies-MultiColony": [
       {
+        "tag": "v1.4.0-beta4",
+        "name": "BeaverBuddies MultiColony — 1.4.0-beta4 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T06:37:18Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta4",
+        "assets": [
+          {
+            "name": "1.4.0-beta4-SHA256SUMS.txt",
+            "size": 108,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta4/1.4.0-beta4-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-beta4.zip",
+            "size": 2842375,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta4/BeaverBuddies-MultiColony-1.4.0-beta4.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-beta3",
+        "name": "BeaverBuddies MultiColony — 1.4.0-beta3 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T06:17:23Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta3",
+        "assets": [
+          {
+            "name": "1.4.0-beta3-SHA256SUMS.txt",
+            "size": 108,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta3/1.4.0-beta3-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-beta3.zip",
+            "size": 2839966,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta3/BeaverBuddies-MultiColony-1.4.0-beta3.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.4.0-beta2",
         "name": "BeaverBuddies MultiColony — 1.4.0-beta2 (pre-release)",
         "prerelease": true,
@@ -419,44 +457,6 @@
             "name": "BeaverBuddies-MultiColony-1.4.0-alpha15.zip",
             "size": 2790799,
             "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha15/BeaverBuddies-MultiColony-1.4.0-alpha15.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-alpha14",
-        "name": "BeaverBuddies MultiColony — 1.4.0-alpha14 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T01:42:36Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha14",
-        "assets": [
-          {
-            "name": "1.4.0-alpha14-SHA256SUMS.txt",
-            "size": 110,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha14/1.4.0-alpha14-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-alpha14.zip",
-            "size": 2789152,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha14/BeaverBuddies-MultiColony-1.4.0-alpha14.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-alpha13",
-        "name": "BeaverBuddies MultiColony — 1.4.0-alpha13 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T01:33:22Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha13",
-        "assets": [
-          {
-            "name": "1.4.0-alpha13-SHA256SUMS.txt",
-            "size": 110,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha13/1.4.0-alpha13-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-alpha13.zip",
-            "size": 2785699,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha13/BeaverBuddies-MultiColony-1.4.0-alpha13.zip"
           }
         ]
       }
@@ -785,9 +785,23 @@
     ],
     "timbermods/LateGamePerformance": [
       {
-        "tag": "v0.4.23",
-        "name": "0.4.23 preview",
+        "tag": "v0.4.24",
+        "name": "0.4.24 preview",
         "prerelease": true,
+        "published": "2026-09-22T06:41:26Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.24",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.24.zip",
+            "size": 91994,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.24/LateGamePerformance-0.4.24.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.23",
+        "name": "0.4.23",
+        "prerelease": false,
         "published": "2026-09-22T04:39:15Z",
         "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.23",
         "assets": [
@@ -935,20 +949,6 @@
             "name": "LateGamePerformance-0.4.13.zip",
             "size": 53061,
             "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.13/LateGamePerformance-0.4.13.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.12",
-        "name": "0.4.12 preview",
-        "prerelease": true,
-        "published": "2026-09-21T01:39:46Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.12",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.12.zip",
-            "size": 41472,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.12/LateGamePerformance-0.4.12.zip"
           }
         ]
       }
@@ -1163,6 +1163,20 @@
       }
     ],
     "timbermods/HungryPathing": [
+      {
+        "tag": "v0.2.0",
+        "name": "HungryPathing 0.2.0",
+        "prerelease": false,
+        "published": "2026-09-22T06:56:03Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.0",
+        "assets": [
+          {
+            "name": "HungryPathing-0.2.0.zip",
+            "size": 22035,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.0/HungryPathing-0.2.0.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.1.0-alpha",
         "name": "HungryPathing 0.1.0 alpha",
