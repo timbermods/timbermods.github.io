@@ -98,20 +98,23 @@ function pageCards() {
   const html = readFileSync(path.join(root, 'index.html'), 'utf8');
   const decode = (s) => s.replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
   const text = (s) => decode(s.replace(/<[^>]*>/g, '')).replace(/\s+/g, ' ').trim();
-  const caution = /<p\b[^>]*\bclass="(?:[^"]*\s)?caution(?:\s[^"]*)?"[^>]*>([\s\S]*?)<\/p>/g;
+  // A caution is any element with the class (assets/style.css styles .caution on any tag).
+  const cautionClass = /\bclass="(?:[^"]*\s)?caution(?:\s[^"]*)?"/;
+  const caution = new RegExp(String.raw`<(\w+)\b[^>]*` + cautionClass.source + String.raw`[^>]*>([\s\S]*?)<\/\1>`, 'g');
   const cards = [...html.matchAll(/<article\b([^>]*)>([\s\S]*?)<\/article>/g)]
     .filter(([, attrs]) => /\bdata-repo=/.test(attrs))
     .map(([, attrs, body]) => ({
       data: Object.fromEntries([...attrs.matchAll(/\bdata-([\w-]+)="([^"]*)"/g)]
         .map(([, k, v]) => [k.replace(/-([a-z])/g, (_, c) => c.toUpperCase()), decode(v)])),
       title: text((/<h3\b[^>]*>([\s\S]*?)<\/h3>/.exec(body) || [])[1] || ''),
-      cautions: [...body.matchAll(caution)].map(([, inner]) => text(inner)),
+      cautions: [...body.matchAll(caution)].map(([, , inner]) => text(inner)),
     }));
-  // Guard the parsing itself: every data-repo and every caution on the page must be accounted for.
+  // Guard the parsing itself: every data-repo and every caution class on the page must be accounted for.
   const repos = (html.match(/\bdata-repo="/g) || []).length;
-  const cautions = [...html.matchAll(caution)].length;
+  const cautions = (html.match(new RegExp(cautionClass.source, 'g')) || []).length;
   if (!cards.length || cards.length !== repos) throw new Error(`read ${cards.length} cards out of index.html, which has ${repos} data-repo attributes`);
-  if (cards.reduce((n, c) => n + c.cautions.length, 0) !== cautions) throw new Error(`index.html has ${cautions} cautions, but not all of them are inside a card`);
+  const read = cards.reduce((n, c) => n + c.cautions.length, 0);
+  if (read !== cautions) throw new Error(`index.html has ${cautions} elements with class caution, but ${read} were read inside cards`);
   return cards;
 }
 
