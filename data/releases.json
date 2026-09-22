@@ -1,7 +1,26 @@
 {
-  "generated": "2026-09-22T18:56:43.924Z",
+  "generated": "2026-09-22T19:47:29.035Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.1.13-preview1",
+        "name": "BeaverBuddies Stability Fork — 1.1.13-preview1 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T19:41:11Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.13-preview1",
+        "assets": [
+          {
+            "name": "1.1.13-preview1-SHA256SUMS.txt",
+            "size": 115,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13-preview1/1.1.13-preview1-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.1.13-preview1.zip",
+            "size": 2605274,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13-preview1/BeaverBuddies-Stability-Fork-1.1.13-preview1.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.1.12",
         "name": "BeaverBuddies Stability Fork — 1.1.12",
@@ -208,25 +227,6 @@
             "name": "BeaverBuddies-Stability-Fork-1.0.9-tickspeed-preview.zip",
             "size": 2554526,
             "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-tickspeed-preview/BeaverBuddies-Stability-Fork-1.0.9-tickspeed-preview.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.9-framethrottler-preview2",
-        "name": "BeaverBuddies Stability Fork — 1.0.9-framethrottler-preview2 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-20T00:10:11Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.0.9-framethrottler-preview2",
-        "assets": [
-          {
-            "name": "1.0.9-framethrottler-preview2-SHA256SUMS.txt",
-            "size": 129,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview2/1.0.9-framethrottler-preview2-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview2.zip",
-            "size": 2556665,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.9-framethrottler-preview2/BeaverBuddies-Stability-Fork-1.0.9-framethrottler-preview2.zip"
           }
         ]
       }
@@ -1377,5 +1377,136 @@
         ]
       }
     ]
+  },
+  "latest": {
+    "timbermods/BeaverBuddies-Stability-Fork": {
+      "tag": "v1.1.12",
+      "name": "BeaverBuddies Stability Fork — 1.1.12",
+      "prerelease": false,
+      "published": "2026-09-22T17:03:33Z",
+      "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.12",
+      "assets": [
+        {
+          "name": "1.1.12-SHA256SUMS.txt",
+          "size": 106,
+          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.12/1.1.12-SHA256SUMS.txt"
+        },
+        {
+          "name": "BeaverBuddies-Stability-Fork-1.1.12.zip",
+          "size": 2594051,
+          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.12/BeaverBuddies-Stability-Fork-1.1.12.zip"
+        }
+      ]
+    },
+    "timbermods/BeaverBuddies-MultiColony": null,
+    "timbermods/MixedStorage": {
+      "tag": "v1.1.1",
+      "name": "MixedStorage v1.1.1",
+      "prerelease": false,
+      "published": "2026-09-22T17:06:26Z",
+      "url": "https://github.com/timbermods/MixedStorage/releases/tag/v1.1.1",
+      "assets": [
+        {
+          "name": "MixedStorage-v1.1.1.zip",
+          "size": 41873,
+          "url": "https://github.com/timbermods/MixedStorage/releases/download/v1.1.1/MixedStorage-v1.1.1.zip"
+        }
+      ]
+    },
+    "timbermods/PersistentWorkAreas": {
+      "tag": "v1.1.0",
+      "name": "Persistent Work Areas 1.1.0",
+      "prerelease": false,
+      "published": "2026-09-22T16:49:09Z",
+      "url": "https://github.com/timbermods/PersistentWorkAreas/releases/tag/v1.1.0",
+      "assets": [
+        {
+          "name": "PersistentWorkAreas-v1.1.0-source.zip",
+          "size": 75061,
+          "url": "https://github.com/timbermods/PersistentWorkAreas/releases/download/v1.1.0/PersistentWorkAreas-v1.1.0-source.zip"
+        },
+        {
+          "name": "PersistentWorkAreas-v1.1.0.zip",
+          "size": 27170,
+          "url": "https://github.com/timbermods/PersistentWorkAreas/releases/download/v1.1.0/PersistentWorkAreas-v1.1.0.zip"
+        }
+      ]
+    },
+    "timbermods/OptimizedLocalHousing": {
+      "tag": "v1.1.0",
+      "name": "Optimized Local Housing v1.1.0",
+      "prerelease": false,
+      "published": "2026-09-22T16:42:21Z",
+      "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.0",
+      "assets": [
+        {
+          "name": "OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt",
+          "size": 100,
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt"
+        },
+        {
+          "name": "OptimizedLocalHousing-v1.1.0.zip",
+          "size": 21890,
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0.zip"
+        }
+      ]
+    },
+    "timbermods/LateGamePerformance": {
+      "tag": "v0.4.27",
+      "name": "0.4.27",
+      "prerelease": false,
+      "published": "2026-09-22T16:48:09Z",
+      "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.27",
+      "assets": [
+        {
+          "name": "LateGamePerformance-0.4.27.zip",
+          "size": 117644,
+          "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.27/LateGamePerformance-0.4.27.zip"
+        }
+      ]
+    },
+    "timbermods/timberborn-tipsy-tail": {
+      "tag": "v1.0.1",
+      "name": "The Tipsy Tail v1.0.1 — water.cfg follows the mod folder",
+      "prerelease": false,
+      "published": "2026-09-22T16:45:23Z",
+      "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/tag/v1.0.1",
+      "assets": [
+        {
+          "name": "TipsyTail-v1.0.1-mod.zip",
+          "size": 771230,
+          "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.1/TipsyTail-v1.0.1-mod.zip"
+        },
+        {
+          "name": "TipsyTail-v1.0.1-public-source.zip",
+          "size": 9869417,
+          "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.1/TipsyTail-v1.0.1-public-source.zip"
+        },
+        {
+          "name": "TipsyTail-v1.0.1-SHA256SUMS.txt",
+          "size": 293,
+          "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.1/TipsyTail-v1.0.1-SHA256SUMS.txt"
+        },
+        {
+          "name": "TipsyTail-v1.0.1-water-presets.zip",
+          "size": 1559,
+          "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.1/TipsyTail-v1.0.1-water-presets.zip"
+        }
+      ]
+    },
+    "timbermods/HungryPathing": {
+      "tag": "v0.3.1",
+      "name": "HungryPathing 0.3.1",
+      "prerelease": false,
+      "published": "2026-09-22T17:25:32Z",
+      "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.3.1",
+      "assets": [
+        {
+          "name": "HungryPathing-0.3.1.zip",
+          "size": 28354,
+          "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.3.1/HungryPathing-0.3.1.zip"
+        }
+      ]
+    }
   }
 }
