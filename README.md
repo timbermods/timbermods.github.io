@@ -37,7 +37,7 @@ Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TO
 node scripts/test-site.mjs
 ```
 
-Offline checks with no dependencies: `assets/site.js` runs against a stub page and a fake GitHub API, and `scripts/update-releases.mjs` runs in a scratch folder against the same fake API.
+Offline checks with no dependencies: `assets/site.js` runs against a stub page and a fake GitHub API, and `scripts/update-releases.mjs` runs in a scratch folder against the same fake API. `.github/workflows/tests.yml` runs them on every push to `main` and every pull request.
 
 ## Adding or changing a mod
 
@@ -55,7 +55,7 @@ A card with a caution (`<p class="caution">Beta: …</p>`) also needs `data-matu
 | `assets/img/` | Screenshots for MixedStorage and The Tipsy Tail |
 | `data/releases.json` | Release snapshot (generated) |
 | `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview), `test-site.mjs` (tests) |
-| `.github/workflows/` | Hourly snapshot refresh |
+| `.github/workflows/` | Hourly snapshot refresh (`refresh-releases.yml`) and the tests (`tests.yml`) |
 
 ## License
 
