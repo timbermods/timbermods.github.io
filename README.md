@@ -22,12 +22,20 @@ All paths are relative, so it also works from a project repo (`.../some-repo/`).
 The mods release often, so the buttons never hard-code a version. Each card has `data-repo` and `data-asset` (a regex that picks the mod ZIP from the release's assets). In the browser, `assets/site.js`:
 
 1. paints immediately from `data/releases.json`, a snapshot kept fresh by `.github/workflows/refresh-releases.yml` (hourly, or run it from the Actions tab);
-2. then checks the GitHub API live (cached 30 minutes) and updates the button;
+2. then checks the GitHub API live (two requests per mod, cached 30 minutes) and updates the button;
 3. if both fail, the button is still a plain link to the repo's Releases page.
 
-Which release it offers: the newest **stable** release. If a repo only has pre-releases it offers the newest of those and marks the card **Preview**. If a newer pre-release exists than the stable one, a small "Newer preview" link appears under the button.
+Which release it offers: the one GitHub marks as **Latest** (the newest release that isn't a draft or a pre-release), however many pre-releases came after it. If a repo only has pre-releases it offers the newest of those and marks the card **Preview**. If a newer pre-release exists than the offered one, a small "Newer preview" link appears under the button. This is the same rule as the `release.js` on the mods' own sites.
 
-Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TOKEN` to avoid rate limits).
+Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TOKEN` to avoid rate limits). For each repo it stores the newest 12 releases and, under `latest`, GitHub's Latest release (`null` when there is none).
+
+## Tests
+
+```bash
+node scripts/test-site.mjs
+```
+
+Offline checks with no dependencies: `assets/site.js` runs against a stub page and a fake GitHub API, and `scripts/update-releases.mjs` runs in a scratch folder against the same fake API.
 
 ## Adding or changing a mod
 
@@ -42,7 +50,7 @@ Copy an existing `<article class="card">` in `index.html`, then update its `--c`
 | `assets/site.js` | Download buttons and theme toggle |
 | `assets/img/` | Screenshots for MixedStorage and The Tipsy Tail |
 | `data/releases.json` | Release snapshot (generated) |
-| `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview) |
+| `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview), `test-site.mjs` (tests) |
 | `.github/workflows/` | Hourly snapshot refresh |
 
 ## License

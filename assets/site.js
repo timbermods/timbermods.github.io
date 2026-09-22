@@ -8,6 +8,14 @@
  *      (same-origin, no rate limit, paints immediately)
  *   2. the live GitHub API, cached for 30 minutes in localStorage
  *   3. the plain HTML link, which opens the repo's Releases page (no JS needed)
+ *
+ * The button offers the release GitHub marks as Latest (the newest one that is not
+ * a draft or a pre-release), however many pre-releases came after it, else the
+ * newest pre-release. The release list is for the "Newer preview" link, and for
+ * data that has no Latest answer (a snapshot or cache written before it was kept).
+ * The live check costs two requests per card (the list and /releases/latest), and
+ * unauthenticated visitors get 60 an hour, hence the cache; a refused request
+ * keeps the snapshot, which records the Latest release too.
  */
 (() => {
   'use strict';
@@ -68,17 +76,27 @@
   };
 
   // ---------- rendering ----------
-  function render(card, releases) {
+  // releases: newest first. latest: GitHub's Latest release, null when the repo has
+  // none (only pre-releases), undefined when the data predates it being kept.
+  function render(card, { releases, latest }) {
     const pattern = new RegExp(card.dataset.asset || '\\.zip$', 'i');
-    const usable = releases
+    const usable = (releases || [])
       .filter((r) => !r.draft)
       .map((release) => ({ release, asset: pickAsset(release, pattern) }))
       .filter((x) => x.asset);
-    if (!usable.length) return; // leave the plain "Releases page" link in place
+    const latestAsset = latest && !latest.draft ? pickAsset(latest, pattern) : null;
 
+    // GitHub's Latest; if it is unknown or has no mod ZIP, the newest stable release
+    // in the list; if there is none, the newest pre-release.
+    const primary = (latestAsset && { release: latest, asset: latestAsset })
+      || usable.find((x) => !x.release.prerelease)
+      || usable[0];
+    if (!primary) return; // leave the plain "Releases page" link in place
+
+    // A pre-release published after the offered release gets a small link.
     const newest = usable[0]; // GitHub returns newest first
-    const stable = usable.find((x) => !x.release.prerelease);
-    const primary = stable || newest; // default to stable; fall back to a preview if that's all there is
+    const newer = newest && newest.release.prerelease && newest.release.tag !== primary.release.tag
+      && Date.parse(newest.release.published) > Date.parse(primary.release.published) ? newest : null;
 
     const btn = card.querySelector('[data-download]');
     btn.href = primary.asset.url;
@@ -99,11 +117,11 @@
     const note = card.querySelector('[data-note]');
     if (note) {
       note.replaceChildren(document.createTextNode('Released ' + formatDate(primary.release.published)));
-      if (newest !== primary) {
+      if (newer) {
         const link = document.createElement('a');
-        link.href = newest.release.url;
+        link.href = newer.release.url;
         link.rel = 'noopener';
-        link.textContent = versionLabel(newest.release.tag);
+        link.textContent = versionLabel(newer.release.tag);
         note.append(document.createTextNode(' · Newer preview: '), link);
       }
     }
@@ -122,7 +140,12 @@
     } catch (e) { /* offline or file:// preview: fall through */ }
     const snapshotAt = snapshot ? Date.parse(snapshot.generated) || 0 : 0;
     if (snapshot) {
-      cards.forEach((card) => { const rs = snapshot.repos && snapshot.repos[card.dataset.repo]; if (rs) render(card, rs); });
+      cards.forEach((card) => {
+        const repo = card.dataset.repo;
+        const releases = snapshot.repos && snapshot.repos[repo];
+        // Snapshots written before `latest` was added have none: render picks from the list.
+        if (releases) render(card, { releases, latest: snapshot.latest ? snapshot.latest[repo] : undefined });
+      });
       if (stamp && snapshotAt) stamp.textContent = 'Release data as of ' + formatDate(snapshot.generated) + '.';
     }
 
@@ -132,13 +155,17 @@
     await Promise.all(cards.map(async (card) => {
       const repo = card.dataset.repo;
       const hit = cache.repos[repo];
-      if (hit && hit.at > snapshotAt && Date.now() - hit.at < CACHE_MS) { render(card, hit.releases); live++; return; }
+      // Entries cached before `latest` was kept (it is null or a release now) are fetched again.
+      if (hit && hit.latest !== undefined && hit.at > snapshotAt && Date.now() - hit.at < CACHE_MS) { render(card, hit); live++; return; }
       try {
-        const res = await fetch(API + repo + '/releases?per_page=12', { headers: { Accept: 'application/vnd.github+json' } });
-        if (!res.ok) return; // rate-limited (403/429) or unavailable: keep the snapshot
-        const releases = (await res.json()).map(normalize);
-        cache.repos[repo] = { at: Date.now(), releases };
-        render(card, releases);
+        const get = (path) => fetch(API + repo + path, { headers: { Accept: 'application/vnd.github+json' } });
+        const [list, latest] = await Promise.all([get('/releases?per_page=12'), get('/releases/latest')]);
+        // Rate-limited (403/429) or unavailable: keep the snapshot. /releases/latest
+        // answers 404 when every release is a pre-release.
+        if (!list.ok || !(latest.ok || latest.status === 404)) return;
+        const entry = { at: Date.now(), releases: (await list.json()).map(normalize), latest: latest.ok ? normalize(await latest.json()) : null };
+        cache.repos[repo] = entry;
+        render(card, entry);
         live++;
       } catch (e) { /* network error: keep snapshot */ }
     }));
