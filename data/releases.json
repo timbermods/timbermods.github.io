@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T07:18:47.630Z",
+  "generated": "2026-09-22T08:46:52.906Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -233,6 +233,25 @@
     ],
     "timbermods/BeaverBuddies-MultiColony": [
       {
+        "tag": "v1.4.0-beta6",
+        "name": "BeaverBuddies MultiColony — 1.4.0-beta6 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T07:37:46Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta6",
+        "assets": [
+          {
+            "name": "1.4.0-beta6-SHA256SUMS.txt",
+            "size": 108,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta6/1.4.0-beta6-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-beta6.zip",
+            "size": 2851986,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta6/BeaverBuddies-MultiColony-1.4.0-beta6.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.4.0-beta5",
         "name": "BeaverBuddies MultiColony — 1.4.0-beta5 (pre-release)",
         "prerelease": true,
@@ -440,28 +459,23 @@
             "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha17/BeaverBuddies-MultiColony-1.4.0-alpha17.zip"
           }
         ]
-      },
-      {
-        "tag": "v1.4.0-alpha16",
-        "name": "BeaverBuddies MultiColony — 1.4.0-alpha16 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T01:48:42Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha16",
-        "assets": [
-          {
-            "name": "1.4.0-alpha16-SHA256SUMS.txt",
-            "size": 110,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha16/1.4.0-alpha16-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-alpha16.zip",
-            "size": 2792201,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha16/BeaverBuddies-MultiColony-1.4.0-alpha16.zip"
-          }
-        ]
       }
     ],
     "timbermods/MixedStorage": [
+      {
+        "tag": "v1.0.0",
+        "name": "MixedStorage v1.0.0 — Official release",
+        "prerelease": false,
+        "published": "2026-09-22T07:51:43Z",
+        "url": "https://github.com/timbermods/MixedStorage/releases/tag/v1.0.0",
+        "assets": [
+          {
+            "name": "MixedStorage-v1.0.0.zip",
+            "size": 38884,
+            "url": "https://github.com/timbermods/MixedStorage/releases/download/v1.0.0/MixedStorage-v1.0.0.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.5.8",
         "name": "MixedStorage v0.5.8 — Dev-mode panel stays visible",
@@ -625,25 +639,6 @@
             "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.4.2/MixedStorage-v0.4.2.zip"
           }
         ]
-      },
-      {
-        "tag": "v0.4.1",
-        "name": "MixedStorage v0.4.1 — Fix single-good visual fallback",
-        "prerelease": true,
-        "published": "2026-09-18T02:58:27Z",
-        "url": "https://github.com/timbermods/MixedStorage/releases/tag/v0.4.1",
-        "assets": [
-          {
-            "name": "MixedStorage-BeaverBuddies-v0.4.1.zip",
-            "size": 3521,
-            "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.4.1/MixedStorage-BeaverBuddies-v0.4.1.zip"
-          },
-          {
-            "name": "MixedStorage-v0.4.1.zip",
-            "size": 27002,
-            "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.4.1/MixedStorage-v0.4.1.zip"
-          }
-        ]
       }
     ],
     "timbermods/PersistentWorkAreas": [
@@ -804,6 +799,34 @@
     ],
     "timbermods/LateGamePerformance": [
       {
+        "tag": "v0.4.26",
+        "name": "0.4.26 preview",
+        "prerelease": true,
+        "published": "2026-09-22T08:26:21Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.26",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.26.zip",
+            "size": 112554,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.26/LateGamePerformance-0.4.26.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.25",
+        "name": "0.4.25 preview",
+        "prerelease": true,
+        "published": "2026-09-22T07:55:32Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.25",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.25.zip",
+            "size": 108775,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.25/LateGamePerformance-0.4.25.zip"
+          }
+        ]
+      },
+      {
         "tag": "v0.4.24",
         "name": "0.4.24 preview",
         "prerelease": true,
@@ -942,37 +965,67 @@
             "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.15/LateGamePerformance-0.4.15.zip"
           }
         ]
-      },
-      {
-        "tag": "v0.4.14",
-        "name": "0.4.14",
-        "prerelease": false,
-        "published": "2026-09-21T07:02:12Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.14",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.14.zip",
-            "size": 63086,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.14/LateGamePerformance-0.4.14.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.13",
-        "name": "0.4.13 preview",
-        "prerelease": true,
-        "published": "2026-09-21T02:25:08Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.13",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.13.zip",
-            "size": 53061,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.13/LateGamePerformance-0.4.13.zip"
-          }
-        ]
       }
     ],
     "timbermods/timberborn-tipsy-tail": [
+      {
+        "tag": "v1.0.0",
+        "name": "The Tipsy Tail v1.0.0 — First full release",
+        "prerelease": false,
+        "published": "2026-09-22T07:52:07Z",
+        "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/tag/v1.0.0",
+        "assets": [
+          {
+            "name": "TipsyTail-v1.0.0-mod.zip",
+            "size": 770847,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.0/TipsyTail-v1.0.0-mod.zip"
+          },
+          {
+            "name": "TipsyTail-v1.0.0-public-source.zip",
+            "size": 9859047,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.0/TipsyTail-v1.0.0-public-source.zip"
+          },
+          {
+            "name": "TipsyTail-v1.0.0-SHA256SUMS.txt",
+            "size": 293,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.0/TipsyTail-v1.0.0-SHA256SUMS.txt"
+          },
+          {
+            "name": "TipsyTail-v1.0.0-water-presets.zip",
+            "size": 1482,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.0/TipsyTail-v1.0.0-water-presets.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.2.8",
+        "name": "The Tipsy Tail v0.2.8 — The game's own water in the pool",
+        "prerelease": true,
+        "published": "2026-09-22T07:36:44Z",
+        "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/tag/v0.2.8",
+        "assets": [
+          {
+            "name": "TipsyTail-v0.2.8-mod.zip",
+            "size": 770447,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v0.2.8/TipsyTail-v0.2.8-mod.zip"
+          },
+          {
+            "name": "TipsyTail-v0.2.8-public-source.zip",
+            "size": 9857101,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v0.2.8/TipsyTail-v0.2.8-public-source.zip"
+          },
+          {
+            "name": "TipsyTail-v0.2.8-SHA256SUMS.txt",
+            "size": 293,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v0.2.8/TipsyTail-v0.2.8-SHA256SUMS.txt"
+          },
+          {
+            "name": "TipsyTail-v0.2.8-water-presets.zip",
+            "size": 1480,
+            "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v0.2.8/TipsyTail-v0.2.8-water-presets.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.2.7",
         "name": "The Tipsy Tail v0.2.7 — Water that actually moves",
@@ -1182,6 +1235,20 @@
       }
     ],
     "timbermods/HungryPathing": [
+      {
+        "tag": "v0.2.2",
+        "name": "HungryPathing 0.2.2 (preview)",
+        "prerelease": true,
+        "published": "2026-09-22T08:46:48Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.2",
+        "assets": [
+          {
+            "name": "HungryPathing-0.2.2.zip",
+            "size": 23597,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.2/HungryPathing-0.2.2.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.2.1",
         "name": "HungryPathing 0.2.1",
