@@ -1,23 +1,23 @@
 {
-  "generated": "2026-09-22T19:47:29.035Z",
+  "generated": "2026-09-22T20:13:54.239Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
-        "tag": "v1.1.13-preview1",
-        "name": "BeaverBuddies Stability Fork — 1.1.13-preview1 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T19:41:11Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.13-preview1",
+        "tag": "v1.1.13",
+        "name": "BeaverBuddies Stability Fork — 1.1.13",
+        "prerelease": false,
+        "published": "2026-09-22T19:50:26Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.13",
         "assets": [
           {
-            "name": "1.1.13-preview1-SHA256SUMS.txt",
-            "size": 115,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13-preview1/1.1.13-preview1-SHA256SUMS.txt"
+            "name": "1.1.13-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13/1.1.13-SHA256SUMS.txt"
           },
           {
-            "name": "BeaverBuddies-Stability-Fork-1.1.13-preview1.zip",
-            "size": 2605274,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13-preview1/BeaverBuddies-Stability-Fork-1.1.13-preview1.zip"
+            "name": "BeaverBuddies-Stability-Fork-1.1.13.zip",
+            "size": 2605953,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13/BeaverBuddies-Stability-Fork-1.1.13.zip"
           }
         ]
       },
@@ -749,6 +749,25 @@
     ],
     "timbermods/OptimizedLocalHousing": [
       {
+        "tag": "v1.1.1",
+        "name": "Optimized Local Housing v1.1.1",
+        "prerelease": false,
+        "published": "2026-09-22T20:13:33Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.1",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v1.1.1.zip",
+            "size": 22153,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.1.0",
         "name": "Optimized Local Housing v1.1.0",
         "prerelease": false,
@@ -826,6 +845,20 @@
       }
     ],
     "timbermods/LateGamePerformance": [
+      {
+        "tag": "v0.4.29",
+        "name": "0.4.29",
+        "prerelease": false,
+        "published": "2026-09-22T19:59:54Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.29",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.29.zip",
+            "size": 139775,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.29/LateGamePerformance-0.4.29.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.4.28",
         "name": "0.4.28 preview",
@@ -977,20 +1010,6 @@
             "name": "LateGamePerformance-0.4.18.zip",
             "size": 75595,
             "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.18/LateGamePerformance-0.4.18.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.17",
-        "name": "0.4.17 preview",
-        "prerelease": true,
-        "published": "2026-09-22T01:59:52Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.17",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.17.zip",
-            "size": 70691,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.17/LateGamePerformance-0.4.17.zip"
           }
         ]
       }
@@ -1380,21 +1399,21 @@
   },
   "latest": {
     "timbermods/BeaverBuddies-Stability-Fork": {
-      "tag": "v1.1.12",
-      "name": "BeaverBuddies Stability Fork — 1.1.12",
+      "tag": "v1.1.13",
+      "name": "BeaverBuddies Stability Fork — 1.1.13",
       "prerelease": false,
-      "published": "2026-09-22T17:03:33Z",
-      "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.12",
+      "published": "2026-09-22T19:50:26Z",
+      "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.13",
       "assets": [
         {
-          "name": "1.1.12-SHA256SUMS.txt",
+          "name": "1.1.13-SHA256SUMS.txt",
           "size": 106,
-          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.12/1.1.12-SHA256SUMS.txt"
+          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13/1.1.13-SHA256SUMS.txt"
         },
         {
-          "name": "BeaverBuddies-Stability-Fork-1.1.12.zip",
-          "size": 2594051,
-          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.12/BeaverBuddies-Stability-Fork-1.1.12.zip"
+          "name": "BeaverBuddies-Stability-Fork-1.1.13.zip",
+          "size": 2605953,
+          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.13/BeaverBuddies-Stability-Fork-1.1.13.zip"
         }
       ]
     },
@@ -1433,35 +1452,35 @@
       ]
     },
     "timbermods/OptimizedLocalHousing": {
-      "tag": "v1.1.0",
-      "name": "Optimized Local Housing v1.1.0",
+      "tag": "v1.1.1",
+      "name": "Optimized Local Housing v1.1.1",
       "prerelease": false,
-      "published": "2026-09-22T16:42:21Z",
-      "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.0",
+      "published": "2026-09-22T20:13:33Z",
+      "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.1",
       "assets": [
         {
-          "name": "OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt",
+          "name": "OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt",
           "size": 100,
-          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt"
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt"
         },
         {
-          "name": "OptimizedLocalHousing-v1.1.0.zip",
-          "size": 21890,
-          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0.zip"
+          "name": "OptimizedLocalHousing-v1.1.1.zip",
+          "size": 22153,
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1.zip"
         }
       ]
     },
     "timbermods/LateGamePerformance": {
-      "tag": "v0.4.27",
-      "name": "0.4.27",
+      "tag": "v0.4.29",
+      "name": "0.4.29",
       "prerelease": false,
-      "published": "2026-09-22T16:48:09Z",
-      "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.27",
+      "published": "2026-09-22T19:59:54Z",
+      "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.29",
       "assets": [
         {
-          "name": "LateGamePerformance-0.4.27.zip",
-          "size": 117644,
-          "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.27/LateGamePerformance-0.4.27.zip"
+          "name": "LateGamePerformance-0.4.29.zip",
+          "size": 139775,
+          "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.29/LateGamePerformance-0.4.29.zip"
         }
       ]
     },
