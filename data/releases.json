@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T19:31:31.826Z",
+  "generated": "2026-09-22T03:03:48.897Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -233,6 +233,20 @@
     ],
     "timbermods/MixedStorage": [
       {
+        "tag": "v0.5.8",
+        "name": "MixedStorage v0.5.8 — Dev-mode panel stays visible",
+        "prerelease": false,
+        "published": "2026-09-22T00:12:30Z",
+        "url": "https://github.com/timbermods/MixedStorage/releases/tag/v0.5.8",
+        "assets": [
+          {
+            "name": "MixedStorage-v0.5.8.zip",
+            "size": 36824,
+            "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.5.8/MixedStorage-v0.5.8.zip"
+          }
+        ]
+      },
+      {
         "tag": "v0.5.7",
         "name": "MixedStorage v0.5.7 — Lighter storage visuals",
         "prerelease": false,
@@ -400,25 +414,6 @@
             "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.4.1/MixedStorage-v0.4.1.zip"
           }
         ]
-      },
-      {
-        "tag": "v0.4.0",
-        "name": "MixedStorage v0.4.0 — Mixed contents visual prototype",
-        "prerelease": true,
-        "published": "2026-09-18T02:44:03Z",
-        "url": "https://github.com/timbermods/MixedStorage/releases/tag/v0.4.0",
-        "assets": [
-          {
-            "name": "MixedStorage-BeaverBuddies-v0.4.0.zip",
-            "size": 3515,
-            "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.4.0/MixedStorage-BeaverBuddies-v0.4.0.zip"
-          },
-          {
-            "name": "MixedStorage-v0.4.0.zip",
-            "size": 26843,
-            "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.4.0/MixedStorage-v0.4.0.zip"
-          }
-        ]
       }
     ],
     "timbermods/PersistentWorkAreas": [
@@ -501,6 +496,25 @@
     ],
     "timbermods/OptimizedLocalHousing": [
       {
+        "tag": "v1.0.1",
+        "name": "Optimized Local Housing v1.0.1",
+        "prerelease": false,
+        "published": "2026-09-22T02:42:36Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.0.1",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.0.1-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.1/OptimizedLocalHousing-v1.0.1-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v1.0.1.zip",
+            "size": 17970,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.1/OptimizedLocalHousing-v1.0.1.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.0.0",
         "name": "Optimized Local Housing v1.0.0",
         "prerelease": false,
@@ -540,6 +554,76 @@
       }
     ],
     "timbermods/LateGamePerformance": [
+      {
+        "tag": "v0.4.20",
+        "name": "0.4.20",
+        "prerelease": false,
+        "published": "2026-09-22T02:56:11Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.20",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.20.zip",
+            "size": 76954,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.20/LateGamePerformance-0.4.20.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.19",
+        "name": "0.4.19 preview",
+        "prerelease": true,
+        "published": "2026-09-22T02:30:35Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.19",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.19.zip",
+            "size": 76358,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.19/LateGamePerformance-0.4.19.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.18",
+        "name": "0.4.18 preview",
+        "prerelease": true,
+        "published": "2026-09-22T02:22:37Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.18",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.18.zip",
+            "size": 75595,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.18/LateGamePerformance-0.4.18.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.17",
+        "name": "0.4.17 preview",
+        "prerelease": true,
+        "published": "2026-09-22T01:59:52Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.17",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.17.zip",
+            "size": 70691,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.17/LateGamePerformance-0.4.17.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.16",
+        "name": "0.4.16 preview",
+        "prerelease": true,
+        "published": "2026-09-22T01:27:48Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.16",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.16.zip",
+            "size": 66372,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.16/LateGamePerformance-0.4.16.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.4.15",
         "name": "0.4.15 preview",
@@ -635,76 +719,6 @@
             "name": "LateGamePerformance-0.4.9.zip",
             "size": 46619,
             "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.9/LateGamePerformance-0.4.9.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.8",
-        "name": "0.4.8",
-        "prerelease": false,
-        "published": "2026-09-20T08:30:36Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.8",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.8.zip",
-            "size": 46202,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.8/LateGamePerformance-0.4.8.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.7",
-        "name": "0.4.7 preview",
-        "prerelease": true,
-        "published": "2026-09-20T07:43:04Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.7",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.7.zip",
-            "size": 41976,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.7/LateGamePerformance-0.4.7.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.6",
-        "name": "0.4.6",
-        "prerelease": false,
-        "published": "2026-09-20T07:19:50Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.6",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.6.zip",
-            "size": 38189,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.6/LateGamePerformance-0.4.6.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.5",
-        "name": "0.4.5 preview",
-        "prerelease": true,
-        "published": "2026-09-19T18:50:28Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.5",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.5.zip",
-            "size": 34180,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.5/LateGamePerformance-0.4.5.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.4",
-        "name": "0.4.4 preview",
-        "prerelease": true,
-        "published": "2026-09-19T18:42:01Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.4",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.4.zip",
-            "size": 34223,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.4/LateGamePerformance-0.4.4.zip"
           }
         ]
       }
@@ -914,6 +928,236 @@
             "name": "TipsyTail-v0.2.0-SHA256SUMS.txt",
             "size": 194,
             "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v0.2.0/TipsyTail-v0.2.0-SHA256SUMS.txt"
+          }
+        ]
+      }
+    ],
+    "timbermods/BeaverBuddies-MultiColony": [
+      {
+        "tag": "v1.4.0-alpha22",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha22 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T02:43:58Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha22",
+        "assets": [
+          {
+            "name": "1.4.0-alpha22-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha22/1.4.0-alpha22-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha22.zip",
+            "size": 2798764,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha22/BeaverBuddies-MultiColony-1.4.0-alpha22.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha21",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha21 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T02:07:03Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha21",
+        "assets": [
+          {
+            "name": "1.4.0-alpha21-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha21/1.4.0-alpha21-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha21.zip",
+            "size": 2798304,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha21/BeaverBuddies-MultiColony-1.4.0-alpha21.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha20",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha20 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T02:02:44Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha20",
+        "assets": [
+          {
+            "name": "1.4.0-alpha20-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha20/1.4.0-alpha20-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha20.zip",
+            "size": 2796331,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha20/BeaverBuddies-MultiColony-1.4.0-alpha20.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha19",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha19 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T01:55:17Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha19",
+        "assets": [
+          {
+            "name": "1.4.0-alpha19-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha19/1.4.0-alpha19-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha19.zip",
+            "size": 2795191,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha19/BeaverBuddies-MultiColony-1.4.0-alpha19.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha18",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha18 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T01:53:09Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha18",
+        "assets": [
+          {
+            "name": "1.4.0-alpha18-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha18/1.4.0-alpha18-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha18.zip",
+            "size": 2794313,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha18/BeaverBuddies-MultiColony-1.4.0-alpha18.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha17",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha17 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T01:50:50Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha17",
+        "assets": [
+          {
+            "name": "1.4.0-alpha17-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha17/1.4.0-alpha17-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha17.zip",
+            "size": 2793370,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha17/BeaverBuddies-MultiColony-1.4.0-alpha17.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha16",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha16 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T01:48:42Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha16",
+        "assets": [
+          {
+            "name": "1.4.0-alpha16-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha16/1.4.0-alpha16-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha16.zip",
+            "size": 2792201,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha16/BeaverBuddies-MultiColony-1.4.0-alpha16.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha15",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha15 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T01:46:22Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha15",
+        "assets": [
+          {
+            "name": "1.4.0-alpha15-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha15/1.4.0-alpha15-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha15.zip",
+            "size": 2790799,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha15/BeaverBuddies-MultiColony-1.4.0-alpha15.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha14",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha14 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T01:42:36Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha14",
+        "assets": [
+          {
+            "name": "1.4.0-alpha14-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha14/1.4.0-alpha14-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha14.zip",
+            "size": 2789152,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha14/BeaverBuddies-MultiColony-1.4.0-alpha14.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha13",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha13 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T01:33:22Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha13",
+        "assets": [
+          {
+            "name": "1.4.0-alpha13-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha13/1.4.0-alpha13-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha13.zip",
+            "size": 2785699,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha13/BeaverBuddies-MultiColony-1.4.0-alpha13.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha12",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha12 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T00:36:41Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha12",
+        "assets": [
+          {
+            "name": "1.4.0-alpha12-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha12/1.4.0-alpha12-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha12.zip",
+            "size": 2781461,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha12/BeaverBuddies-MultiColony-1.4.0-alpha12.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-alpha11",
+        "name": "BeaverBuddies MultiColony — 1.4.0-alpha11 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T00:21:03Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-alpha11",
+        "assets": [
+          {
+            "name": "1.4.0-alpha11-SHA256SUMS.txt",
+            "size": 110,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha11/1.4.0-alpha11-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-alpha11.zip",
+            "size": 2776344,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-alpha11/BeaverBuddies-MultiColony-1.4.0-alpha11.zip"
           }
         ]
       }
