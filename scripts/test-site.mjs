@@ -43,9 +43,10 @@ const entry = (r) => ({
 // A fetch that answers like api.github.com for the repos in `github`: { 'owner/name': { list, latest } },
 // `list` newest first. /releases?per_page=N returns the first N; /releases/latest returns `latest` when it
 // is given (null means 404), else what GitHub picks: the newest release that is not a draft or pre-release.
-// `snapshot` is served as data/releases.json, and `limited` answers 403 to every API call.
+// `snapshot` is served as data/releases.json, `limited` answers 403 to every API call, and `latestStatus`
+// answers that status to /releases/latest alone (the list still answers).
 // Keep it self-contained: runUpdate passes it by source to the process that runs update-releases.mjs.
-function fakeGitHub({ github = {}, snapshot = null, limited = false }, log = []) {
+function fakeGitHub({ github = {}, snapshot = null, limited = false, latestStatus = 0 }, log = []) {
   return async (url) => {
     log.push(String(url));
     const reply = (status, body) => ({ ok: status === 200, status, json: async () => JSON.parse(JSON.stringify(body)), text: async () => JSON.stringify(body) });
@@ -55,6 +56,7 @@ function fakeGitHub({ github = {}, snapshot = null, limited = false }, log = [])
     if (!repo) return reply(404, { message: 'Not Found' });
     if (limited) return reply(403, { message: 'API rate limit exceeded' });
     if (!m[2]) return reply(200, repo.list.slice(0, Number(m[3] || 30)));
+    if (latestStatus) return reply(latestStatus, { message: 'Refused' });
     const latest = 'latest' in repo ? repo.latest : repo.list.find((r) => !r.draft && !r.prerelease) || null;
     return latest ? reply(200, latest) : reply(404, { message: 'Not Found' });
   };
@@ -245,6 +247,32 @@ await check('rate-limited: a snapshot without a latest field (the old format) st
   has(card.shown.note, 'Newer preview: v2.0.0-beta3', 'note under the button');
 });
 
+// Half an answer is no answer: with /releases/latest refused, the live list alone would offer a preview.
+await check('keeps the snapshot, and caches nothing, when GitHub answers the list but refuses /releases/latest', async () => {
+  const card = makeCard();
+  const storage = new Map();
+  const snapshot = { generated: '2026-09-22T07:00:00.000Z', repos: { [R]: behind13.slice(0, 12).map(entry) }, latest: { [R]: entry(stable) } };
+  const { stamp } = await runSite([card], { snapshot, latestStatus: 403, github: { [R]: { list: behind13 } } }, { storage });
+  same([card.shown.button, card.shown.pill], ['Download v1.0.0', 'Stable'], 'button and pill');
+  const cached = JSON.parse(storage.get('tbmods.live.v1') || '{}');
+  if (cached.repos && cached.repos[R]) throw new Error(`it cached ${R} without an answer from /releases/latest: ${JSON.stringify(cached.repos[R].latest)}`);
+  lacks(stamp, 'checked live', 'footer');
+});
+
+// "Newer preview" means published after the offered release, not merely listed above it. That also covers a
+// release published between the two live requests, which /releases/latest returns but the list lacks.
+await check('links a Newer preview only when it was published after the offered release', async () => {
+  const early = release(R, 'v1.1.0-beta1', { prerelease: true, published: '2026-09-02T00:00:00Z' });
+  const card = makeCard();
+  await runSite([card], { github: { [R]: { list: [early, release(R, 'v1.0.0', { published: '2026-09-03T00:00:00Z' })] } } });
+  same(card.shown.button, 'Download v1.0.0', 'button (preview drafted later, released earlier)');
+  lacks(card.shown.note, 'Newer preview', 'note under the button (preview drafted later, released earlier)');
+  const race = makeCard();
+  await runSite([race], { github: { [R]: { list: [early, stable], latest: release(R, 'v1.2.0', { published: '2026-09-05T00:00:00Z' }) } } });
+  same(race.shown.button, 'Download v1.2.0', 'button (Latest published after the list was read)');
+  lacks(race.shown.note, 'Newer preview', 'note under the button (Latest published after the list was read)');
+});
+
 await check('makes at most two GitHub requests per card, and none again within 30 minutes', async () => {
   const cards = ['o/a', 'o/b', 'o/c'].map((repo) => makeCard({ repo }));
   const github = Object.fromEntries(cards.map((c) => [c.dataset.repo, { list: [...previews(c.dataset.repo, 2), release(c.dataset.repo, 'v1.0.0')] }]));
@@ -279,6 +307,18 @@ await check('update-releases.mjs records GitHub\'s Latest release per repo, null
     writeFileSync(path.join(dir, 'data', 'releases.json'), JSON.stringify({ generated: '2026-09-01T00:00:00.000Z', repos: data.repos }));
     const again = runUpdate(dir, { github: { [R]: { list: behind13 }, 'o/none': { list: previews('o/none', 2) } } }, [R, 'o/none']);
     same(again.latest, data.latest, 'latest after rewriting an old-format snapshot');
+  });
+});
+
+await check('update-releases.mjs fails, leaving data/releases.json as it was, when /releases/latest errors', async () => {
+  await inScratch((dir) => {
+    runUpdate(dir, { github: { [R]: { list: behind13 } } }, [R]);
+    const before = readFileSync(path.join(dir, 'data', 'releases.json'), 'utf8');
+    // The list has changed, so a run that treated the error as "no Latest release" would rewrite the file.
+    let error = null;
+    try { runUpdate(dir, { github: { [R]: { list: [...previews(R, 14), stable] } }, latestStatus: 500 }, [R]); } catch (e) { error = e; }
+    if (!error) throw new Error('update-releases.mjs succeeded although /releases/latest answered 500');
+    same(readFileSync(path.join(dir, 'data', 'releases.json'), 'utf8'), before, 'data/releases.json after the failed run');
   });
 });
 

@@ -25,7 +25,7 @@ The mods release often, so the buttons never hard-code a version. Each card has 
 2. then checks the GitHub API live (two requests per mod, cached 30 minutes) and updates the button;
 3. if both fail, the button is still a plain link to the repo's Releases page.
 
-Which release it offers: the one GitHub marks as **Latest** (the newest release that isn't a draft or a pre-release), however many pre-releases came after it. If a repo only has pre-releases it offers the newest of those and marks the card **Preview**. If a newer pre-release exists than the offered one, a small "Newer preview" link appears under the button. This is the same rule as the `release.js` on the mods' own sites.
+Which release it offers: the one GitHub marks as **Latest** (the newest release that isn't a draft or a pre-release), however many pre-releases came after it. If a repo only has pre-releases it offers the newest of those and marks the card **Preview**. If the newest listed release is a pre-release published after the offered one, a small "Newer preview" link to it appears under the button. The main rule (GitHub's Latest, else the newest pre-release) is the one the shared `release.js` on most of the mods' own sites follows; the two differ in edge cases, such as a Latest release without a mod ZIP.
 
 The pill says **Stable** for a stable release, unless the card has a caution: then it shows the card's `data-maturity` (**Beta**, **Preview**, **Prototype**), so it never contradicts the caution.
 
