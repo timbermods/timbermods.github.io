@@ -27,7 +27,7 @@ The mods release often, so the buttons never hard-code a version. Each card has 
 
 Which release it offers: the one GitHub marks as **Latest** (the newest release that isn't a draft or a pre-release), however many pre-releases came after it. If a repo only has pre-releases it offers the newest of those and marks the card **Preview**. If the newest listed release is a pre-release published after the offered one, a small "Newer preview" link to it appears under the button. The main rule (GitHub's Latest, else the newest pre-release) is the one the shared `release.js` on most of the mods' own sites follows; the two differ in edge cases, such as a Latest release without a mod ZIP.
 
-The pill says **Stable** for a stable release, unless the card has a caution: then it shows the card's `data-maturity` (**Beta**, **Preview**, **Prototype**), so it never contradicts the caution.
+The pill says **Stable** for a stable release, unless the card has a caution: then it shows the card's `data-maturity` (such as **Beta** or **Preview**), so it never contradicts the caution.
 
 Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TOKEN` to avoid rate limits). For each repo it stores the newest 12 releases and, under `latest`, GitHub's Latest release (`null` when there is none). It rewrites the file, and its `generated` time, only when that data changed, so the footer reads "Release data last changed <date>"; after a live check of every card it says so instead.
 
