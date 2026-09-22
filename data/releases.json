@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T06:56:07.090Z",
+  "generated": "2026-09-22T07:08:33.693Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -648,6 +648,25 @@
     ],
     "timbermods/PersistentWorkAreas": [
       {
+        "tag": "v1.0.0",
+        "name": "Persistent Work Areas 1.0.0",
+        "prerelease": false,
+        "published": "2026-09-22T07:06:16Z",
+        "url": "https://github.com/timbermods/PersistentWorkAreas/releases/tag/v1.0.0",
+        "assets": [
+          {
+            "name": "PersistentWorkAreas-v1.0.0-source.zip",
+            "size": 48190,
+            "url": "https://github.com/timbermods/PersistentWorkAreas/releases/download/v1.0.0/PersistentWorkAreas-v1.0.0-source.zip"
+          },
+          {
+            "name": "PersistentWorkAreas-v1.0.0.zip",
+            "size": 16261,
+            "url": "https://github.com/timbermods/PersistentWorkAreas/releases/download/v1.0.0/PersistentWorkAreas-v1.0.0.zip"
+          }
+        ]
+      },
+      {
         "tag": "v0.1.3",
         "name": "Persistent Work Areas 0.1.3",
         "prerelease": false,
@@ -1163,6 +1182,20 @@
       }
     ],
     "timbermods/HungryPathing": [
+      {
+        "tag": "v0.2.1",
+        "name": "HungryPathing 0.2.1 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-22T07:08:29Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.1",
+        "assets": [
+          {
+            "name": "HungryPathing-0.2.1.zip",
+            "size": 22292,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.1/HungryPathing-0.2.1.zip"
+          }
+        ]
+      },
       {
         "tag": "v0.2.0",
         "name": "HungryPathing 0.2.0",
