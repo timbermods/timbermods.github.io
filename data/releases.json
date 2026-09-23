@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T20:25:07.874Z",
+  "generated": "2026-09-23T23:44:03.259Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -214,6 +214,63 @@
     ],
     "timbermods/BeaverBuddies-MultiColony": [
       {
+        "tag": "v1.4.0-rc6",
+        "name": "BeaverBuddies MultiColony 1.4.0-rc6",
+        "prerelease": true,
+        "published": "2026-09-23T22:58:56Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-rc6",
+        "assets": [
+          {
+            "name": "1.4.0-rc6-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc6/1.4.0-rc6-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-rc6.zip",
+            "size": 3101516,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc6/BeaverBuddies-MultiColony-1.4.0-rc6.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-rc5",
+        "name": "BeaverBuddies MultiColony 1.4.0-rc5",
+        "prerelease": true,
+        "published": "2026-09-23T22:37:24Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-rc5",
+        "assets": [
+          {
+            "name": "1.4.0-rc5-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc5/1.4.0-rc5-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-rc5.zip",
+            "size": 3098394,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc5/BeaverBuddies-MultiColony-1.4.0-rc5.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-rc4",
+        "name": "BeaverBuddies MultiColony — 1.4.0-rc4 (release candidate)",
+        "prerelease": true,
+        "published": "2026-09-23T21:04:40Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-rc4",
+        "assets": [
+          {
+            "name": "1.4.0-rc4-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc4/1.4.0-rc4-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-rc4.zip",
+            "size": 3092387,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc4/BeaverBuddies-MultiColony-1.4.0-rc4.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.4.0-rc3",
         "name": "BeaverBuddies MultiColony — 1.4.0-rc3 (release candidate)",
         "prerelease": true,
@@ -383,61 +440,357 @@
             "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta9/BeaverBuddies-MultiColony-1.4.0-beta9.zip"
           }
         ]
-      },
+      }
+    ],
+    "timbermods/LateGamePerformance": [
       {
-        "tag": "v1.4.0-beta8",
-        "name": "BeaverBuddies MultiColony — 1.4.0-beta8 (pre-release)",
+        "tag": "v0.4.30",
+        "name": "0.4.30 preview",
         "prerelease": true,
-        "published": "2026-09-22T16:52:54Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta8",
+        "published": "2026-09-22T21:07:35Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.30",
         "assets": [
           {
-            "name": "1.4.0-beta8-SHA256SUMS.txt",
-            "size": 108,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta8/1.4.0-beta8-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta8.zip",
-            "size": 2876932,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta8/BeaverBuddies-MultiColony-1.4.0-beta8.zip"
+            "name": "LateGamePerformance-0.4.30.zip",
+            "size": 144641,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.30/LateGamePerformance-0.4.30.zip"
           }
         ]
       },
       {
-        "tag": "v1.4.0-beta7",
-        "name": "BeaverBuddies MultiColony — 1.4.0-beta7 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T08:49:48Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta7",
+        "tag": "v0.4.29",
+        "name": "0.4.29",
+        "prerelease": false,
+        "published": "2026-09-22T19:59:54Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.29",
         "assets": [
           {
-            "name": "1.4.0-beta7-SHA256SUMS.txt",
-            "size": 108,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta7/1.4.0-beta7-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta7.zip",
-            "size": 2858028,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta7/BeaverBuddies-MultiColony-1.4.0-beta7.zip"
+            "name": "LateGamePerformance-0.4.29.zip",
+            "size": 139775,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.29/LateGamePerformance-0.4.29.zip"
           }
         ]
       },
       {
-        "tag": "v1.4.0-beta6",
-        "name": "BeaverBuddies MultiColony — 1.4.0-beta6 (pre-release)",
+        "tag": "v0.4.28",
+        "name": "0.4.28 preview",
         "prerelease": true,
-        "published": "2026-09-22T07:37:46Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta6",
+        "published": "2026-09-22T18:43:07Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.28",
         "assets": [
           {
-            "name": "1.4.0-beta6-SHA256SUMS.txt",
-            "size": 108,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta6/1.4.0-beta6-SHA256SUMS.txt"
+            "name": "LateGamePerformance-0.4.28.zip",
+            "size": 143447,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.28/LateGamePerformance-0.4.28.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.27",
+        "name": "0.4.27",
+        "prerelease": false,
+        "published": "2026-09-22T16:48:09Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.27",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.27.zip",
+            "size": 117644,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.27/LateGamePerformance-0.4.27.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.26",
+        "name": "0.4.26",
+        "prerelease": false,
+        "published": "2026-09-22T08:26:21Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.26",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.26.zip",
+            "size": 114208,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.26/LateGamePerformance-0.4.26.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.25",
+        "name": "0.4.25 preview",
+        "prerelease": true,
+        "published": "2026-09-22T07:55:32Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.25",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.25.zip",
+            "size": 108775,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.25/LateGamePerformance-0.4.25.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.24",
+        "name": "0.4.24 preview",
+        "prerelease": true,
+        "published": "2026-09-22T06:41:26Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.24",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.24.zip",
+            "size": 91994,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.24/LateGamePerformance-0.4.24.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.23",
+        "name": "0.4.23",
+        "prerelease": false,
+        "published": "2026-09-22T04:39:15Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.23",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.23.zip",
+            "size": 92492,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.23/LateGamePerformance-0.4.23.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.22",
+        "name": "0.4.22 preview",
+        "prerelease": true,
+        "published": "2026-09-22T04:00:49Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.22",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.22.zip",
+            "size": 85140,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.22/LateGamePerformance-0.4.22.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.21",
+        "name": "0.4.21 preview",
+        "prerelease": true,
+        "published": "2026-09-22T03:15:15Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.21",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.21.zip",
+            "size": 79812,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.21/LateGamePerformance-0.4.21.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.20",
+        "name": "0.4.20",
+        "prerelease": false,
+        "published": "2026-09-22T02:56:11Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.20",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.20.zip",
+            "size": 76954,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.20/LateGamePerformance-0.4.20.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.4.19",
+        "name": "0.4.19 preview",
+        "prerelease": true,
+        "published": "2026-09-22T02:30:35Z",
+        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.19",
+        "assets": [
+          {
+            "name": "LateGamePerformance-0.4.19.zip",
+            "size": 76358,
+            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.19/LateGamePerformance-0.4.19.zip"
+          }
+        ]
+      }
+    ],
+    "timbermods/OptimizedLocalHousing": [
+      {
+        "tag": "v1.1.1",
+        "name": "Optimized Local Housing v1.1.1",
+        "prerelease": false,
+        "published": "2026-09-22T20:13:33Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.1",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt"
           },
           {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta6.zip",
-            "size": 2851986,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta6/BeaverBuddies-MultiColony-1.4.0-beta6.zip"
+            "name": "OptimizedLocalHousing-v1.1.1.zip",
+            "size": 22153,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.1.0",
+        "name": "Optimized Local Housing v1.1.0",
+        "prerelease": false,
+        "published": "2026-09-22T16:42:21Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.0",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v1.1.0.zip",
+            "size": 21890,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.0.1",
+        "name": "Optimized Local Housing v1.0.1",
+        "prerelease": false,
+        "published": "2026-09-22T02:42:36Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.0.1",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.0.1-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.1/OptimizedLocalHousing-v1.0.1-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v1.0.1.zip",
+            "size": 17970,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.1/OptimizedLocalHousing-v1.0.1.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.0.0",
+        "name": "Optimized Local Housing v1.0.0",
+        "prerelease": false,
+        "published": "2026-09-19T23:41:04Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.0.0",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.0.0-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.0/OptimizedLocalHousing-v1.0.0-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v1.0.0.zip",
+            "size": 17644,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.0/OptimizedLocalHousing-v1.0.0.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.1.0",
+        "name": "Optimized Local Housing v0.1.0 (preview)",
+        "prerelease": true,
+        "published": "2026-09-19T06:36:06Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v0.1.0",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v0.1.0-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v0.1.0/OptimizedLocalHousing-v0.1.0-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v0.1.0.zip",
+            "size": 17130,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v0.1.0/OptimizedLocalHousing-v0.1.0.zip"
+          }
+        ]
+      }
+    ],
+    "timbermods/HungryPathing": [
+      {
+        "tag": "v0.3.1",
+        "name": "HungryPathing 0.3.1",
+        "prerelease": false,
+        "published": "2026-09-22T17:25:32Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.3.1",
+        "assets": [
+          {
+            "name": "HungryPathing-0.3.1.zip",
+            "size": 28354,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.3.1/HungryPathing-0.3.1.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.3.0",
+        "name": "HungryPathing 0.3.0 (preview)",
+        "prerelease": true,
+        "published": "2026-09-22T16:48:56Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.3.0",
+        "assets": [
+          {
+            "name": "HungryPathing-0.3.0.zip",
+            "size": 26893,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.3.0/HungryPathing-0.3.0.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.2.2",
+        "name": "HungryPathing 0.2.2 (preview)",
+        "prerelease": true,
+        "published": "2026-09-22T08:46:48Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.2",
+        "assets": [
+          {
+            "name": "HungryPathing-0.2.2.zip",
+            "size": 23597,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.2/HungryPathing-0.2.2.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.2.1",
+        "name": "HungryPathing 0.2.1",
+        "prerelease": false,
+        "published": "2026-09-22T07:08:29Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.1",
+        "assets": [
+          {
+            "name": "HungryPathing-0.2.1.zip",
+            "size": 22292,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.1/HungryPathing-0.2.1.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.2.0",
+        "name": "HungryPathing 0.2.0",
+        "prerelease": false,
+        "published": "2026-09-22T06:56:03Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.0",
+        "assets": [
+          {
+            "name": "HungryPathing-0.2.0.zip",
+            "size": 22035,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.0/HungryPathing-0.2.0.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v0.1.0-alpha",
+        "name": "HungryPathing 0.1.0 alpha",
+        "prerelease": true,
+        "published": "2026-09-22T04:36:41Z",
+        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.1.0-alpha",
+        "assets": [
+          {
+            "name": "HungryPathing-0.1.0.zip",
+            "size": 20967,
+            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.1.0-alpha/HungryPathing-0.1.0.zip"
           }
         ]
       }
@@ -724,273 +1077,6 @@
             "name": "PersistentWorkAreas-v0.1.0.zip",
             "size": 14229,
             "url": "https://github.com/timbermods/PersistentWorkAreas/releases/download/v0.1.0/PersistentWorkAreas-v0.1.0.zip"
-          }
-        ]
-      }
-    ],
-    "timbermods/OptimizedLocalHousing": [
-      {
-        "tag": "v1.1.1",
-        "name": "Optimized Local Housing v1.1.1",
-        "prerelease": false,
-        "published": "2026-09-22T20:13:33Z",
-        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.1",
-        "assets": [
-          {
-            "name": "OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt",
-            "size": 100,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt"
-          },
-          {
-            "name": "OptimizedLocalHousing-v1.1.1.zip",
-            "size": 22153,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.1.0",
-        "name": "Optimized Local Housing v1.1.0",
-        "prerelease": false,
-        "published": "2026-09-22T16:42:21Z",
-        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.0",
-        "assets": [
-          {
-            "name": "OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt",
-            "size": 100,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0-SHA256SUMS.txt"
-          },
-          {
-            "name": "OptimizedLocalHousing-v1.1.0.zip",
-            "size": 21890,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.0/OptimizedLocalHousing-v1.1.0.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.1",
-        "name": "Optimized Local Housing v1.0.1",
-        "prerelease": false,
-        "published": "2026-09-22T02:42:36Z",
-        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.0.1",
-        "assets": [
-          {
-            "name": "OptimizedLocalHousing-v1.0.1-SHA256SUMS.txt",
-            "size": 100,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.1/OptimizedLocalHousing-v1.0.1-SHA256SUMS.txt"
-          },
-          {
-            "name": "OptimizedLocalHousing-v1.0.1.zip",
-            "size": 17970,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.1/OptimizedLocalHousing-v1.0.1.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.0.0",
-        "name": "Optimized Local Housing v1.0.0",
-        "prerelease": false,
-        "published": "2026-09-19T23:41:04Z",
-        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.0.0",
-        "assets": [
-          {
-            "name": "OptimizedLocalHousing-v1.0.0-SHA256SUMS.txt",
-            "size": 100,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.0/OptimizedLocalHousing-v1.0.0-SHA256SUMS.txt"
-          },
-          {
-            "name": "OptimizedLocalHousing-v1.0.0.zip",
-            "size": 17644,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.0.0/OptimizedLocalHousing-v1.0.0.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.1.0",
-        "name": "Optimized Local Housing v0.1.0 (preview)",
-        "prerelease": true,
-        "published": "2026-09-19T06:36:06Z",
-        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v0.1.0",
-        "assets": [
-          {
-            "name": "OptimizedLocalHousing-v0.1.0-SHA256SUMS.txt",
-            "size": 100,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v0.1.0/OptimizedLocalHousing-v0.1.0-SHA256SUMS.txt"
-          },
-          {
-            "name": "OptimizedLocalHousing-v0.1.0.zip",
-            "size": 17130,
-            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v0.1.0/OptimizedLocalHousing-v0.1.0.zip"
-          }
-        ]
-      }
-    ],
-    "timbermods/LateGamePerformance": [
-      {
-        "tag": "v0.4.30",
-        "name": "0.4.30 preview",
-        "prerelease": true,
-        "published": "2026-09-22T21:07:35Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.30",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.30.zip",
-            "size": 144641,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.30/LateGamePerformance-0.4.30.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.29",
-        "name": "0.4.29",
-        "prerelease": false,
-        "published": "2026-09-22T19:59:54Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.29",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.29.zip",
-            "size": 139775,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.29/LateGamePerformance-0.4.29.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.28",
-        "name": "0.4.28 preview",
-        "prerelease": true,
-        "published": "2026-09-22T18:43:07Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.28",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.28.zip",
-            "size": 143447,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.28/LateGamePerformance-0.4.28.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.27",
-        "name": "0.4.27",
-        "prerelease": false,
-        "published": "2026-09-22T16:48:09Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.27",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.27.zip",
-            "size": 117644,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.27/LateGamePerformance-0.4.27.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.26",
-        "name": "0.4.26",
-        "prerelease": false,
-        "published": "2026-09-22T08:26:21Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.26",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.26.zip",
-            "size": 114208,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.26/LateGamePerformance-0.4.26.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.25",
-        "name": "0.4.25 preview",
-        "prerelease": true,
-        "published": "2026-09-22T07:55:32Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.25",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.25.zip",
-            "size": 108775,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.25/LateGamePerformance-0.4.25.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.24",
-        "name": "0.4.24 preview",
-        "prerelease": true,
-        "published": "2026-09-22T06:41:26Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.24",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.24.zip",
-            "size": 91994,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.24/LateGamePerformance-0.4.24.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.23",
-        "name": "0.4.23",
-        "prerelease": false,
-        "published": "2026-09-22T04:39:15Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.23",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.23.zip",
-            "size": 92492,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.23/LateGamePerformance-0.4.23.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.22",
-        "name": "0.4.22 preview",
-        "prerelease": true,
-        "published": "2026-09-22T04:00:49Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.22",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.22.zip",
-            "size": 85140,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.22/LateGamePerformance-0.4.22.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.21",
-        "name": "0.4.21 preview",
-        "prerelease": true,
-        "published": "2026-09-22T03:15:15Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.21",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.21.zip",
-            "size": 79812,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.21/LateGamePerformance-0.4.21.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.20",
-        "name": "0.4.20",
-        "prerelease": false,
-        "published": "2026-09-22T02:56:11Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.20",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.20.zip",
-            "size": 76954,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.20/LateGamePerformance-0.4.20.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.4.19",
-        "name": "0.4.19 preview",
-        "prerelease": true,
-        "published": "2026-09-22T02:30:35Z",
-        "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.19",
-        "assets": [
-          {
-            "name": "LateGamePerformance-0.4.19.zip",
-            "size": 76358,
-            "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.19/LateGamePerformance-0.4.19.zip"
           }
         ]
       }
@@ -1290,92 +1376,6 @@
           }
         ]
       }
-    ],
-    "timbermods/HungryPathing": [
-      {
-        "tag": "v0.3.1",
-        "name": "HungryPathing 0.3.1",
-        "prerelease": false,
-        "published": "2026-09-22T17:25:32Z",
-        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.3.1",
-        "assets": [
-          {
-            "name": "HungryPathing-0.3.1.zip",
-            "size": 28354,
-            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.3.1/HungryPathing-0.3.1.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.3.0",
-        "name": "HungryPathing 0.3.0 (preview)",
-        "prerelease": true,
-        "published": "2026-09-22T16:48:56Z",
-        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.3.0",
-        "assets": [
-          {
-            "name": "HungryPathing-0.3.0.zip",
-            "size": 26893,
-            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.3.0/HungryPathing-0.3.0.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.2.2",
-        "name": "HungryPathing 0.2.2 (preview)",
-        "prerelease": true,
-        "published": "2026-09-22T08:46:48Z",
-        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.2",
-        "assets": [
-          {
-            "name": "HungryPathing-0.2.2.zip",
-            "size": 23597,
-            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.2/HungryPathing-0.2.2.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.2.1",
-        "name": "HungryPathing 0.2.1",
-        "prerelease": false,
-        "published": "2026-09-22T07:08:29Z",
-        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.1",
-        "assets": [
-          {
-            "name": "HungryPathing-0.2.1.zip",
-            "size": 22292,
-            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.1/HungryPathing-0.2.1.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.2.0",
-        "name": "HungryPathing 0.2.0",
-        "prerelease": false,
-        "published": "2026-09-22T06:56:03Z",
-        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.2.0",
-        "assets": [
-          {
-            "name": "HungryPathing-0.2.0.zip",
-            "size": 22035,
-            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.2.0/HungryPathing-0.2.0.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.1.0-alpha",
-        "name": "HungryPathing 0.1.0 alpha",
-        "prerelease": true,
-        "published": "2026-09-22T04:36:41Z",
-        "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.1.0-alpha",
-        "assets": [
-          {
-            "name": "HungryPathing-0.1.0.zip",
-            "size": 20967,
-            "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.1.0-alpha/HungryPathing-0.1.0.zip"
-          }
-        ]
-      }
     ]
   },
   "latest": {
@@ -1399,6 +1399,53 @@
       ]
     },
     "timbermods/BeaverBuddies-MultiColony": null,
+    "timbermods/LateGamePerformance": {
+      "tag": "v0.4.29",
+      "name": "0.4.29",
+      "prerelease": false,
+      "published": "2026-09-22T19:59:54Z",
+      "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.29",
+      "assets": [
+        {
+          "name": "LateGamePerformance-0.4.29.zip",
+          "size": 139775,
+          "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.29/LateGamePerformance-0.4.29.zip"
+        }
+      ]
+    },
+    "timbermods/OptimizedLocalHousing": {
+      "tag": "v1.1.1",
+      "name": "Optimized Local Housing v1.1.1",
+      "prerelease": false,
+      "published": "2026-09-22T20:13:33Z",
+      "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.1",
+      "assets": [
+        {
+          "name": "OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt",
+          "size": 100,
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt"
+        },
+        {
+          "name": "OptimizedLocalHousing-v1.1.1.zip",
+          "size": 22153,
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1.zip"
+        }
+      ]
+    },
+    "timbermods/HungryPathing": {
+      "tag": "v0.3.1",
+      "name": "HungryPathing 0.3.1",
+      "prerelease": false,
+      "published": "2026-09-22T17:25:32Z",
+      "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.3.1",
+      "assets": [
+        {
+          "name": "HungryPathing-0.3.1.zip",
+          "size": 28354,
+          "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.3.1/HungryPathing-0.3.1.zip"
+        }
+      ]
+    },
     "timbermods/MixedStorage": {
       "tag": "v1.2.0",
       "name": "MixedStorage v1.2.0",
@@ -1432,39 +1479,6 @@
         }
       ]
     },
-    "timbermods/OptimizedLocalHousing": {
-      "tag": "v1.1.1",
-      "name": "Optimized Local Housing v1.1.1",
-      "prerelease": false,
-      "published": "2026-09-22T20:13:33Z",
-      "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.1",
-      "assets": [
-        {
-          "name": "OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt",
-          "size": 100,
-          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt"
-        },
-        {
-          "name": "OptimizedLocalHousing-v1.1.1.zip",
-          "size": 22153,
-          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1.zip"
-        }
-      ]
-    },
-    "timbermods/LateGamePerformance": {
-      "tag": "v0.4.29",
-      "name": "0.4.29",
-      "prerelease": false,
-      "published": "2026-09-22T19:59:54Z",
-      "url": "https://github.com/timbermods/LateGamePerformance/releases/tag/v0.4.29",
-      "assets": [
-        {
-          "name": "LateGamePerformance-0.4.29.zip",
-          "size": 139775,
-          "url": "https://github.com/timbermods/LateGamePerformance/releases/download/v0.4.29/LateGamePerformance-0.4.29.zip"
-        }
-      ]
-    },
     "timbermods/timberborn-tipsy-tail": {
       "tag": "v1.0.1",
       "name": "The Tipsy Tail v1.0.1 — water.cfg follows the mod folder",
@@ -1491,20 +1505,6 @@
           "name": "TipsyTail-v1.0.1-water-presets.zip",
           "size": 1559,
           "url": "https://github.com/timbermods/timberborn-tipsy-tail/releases/download/v1.0.1/TipsyTail-v1.0.1-water-presets.zip"
-        }
-      ]
-    },
-    "timbermods/HungryPathing": {
-      "tag": "v0.3.1",
-      "name": "HungryPathing 0.3.1",
-      "prerelease": false,
-      "published": "2026-09-22T17:25:32Z",
-      "url": "https://github.com/timbermods/HungryPathing/releases/tag/v0.3.1",
-      "assets": [
-        {
-          "name": "HungryPathing-0.3.1.zip",
-          "size": 28354,
-          "url": "https://github.com/timbermods/HungryPathing/releases/download/v0.3.1/HungryPathing-0.3.1.zip"
         }
       ]
     }
