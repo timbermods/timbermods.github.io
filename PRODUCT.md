@@ -44,35 +44,43 @@ BeaverBuddies for the multiplayer design.
 
 ## Operating Context
 
-**The mods listed** (card order in `index.html`, exact names, the card `id`, accent `--c`, category pill,
-requirements, and the release as `data/releases.json` held it on 2026-09-23; the live check on the page can be newer):
+**The mods listed**, in card order in `index.html`, grouped on three binder pages. Each entry gives the exact name,
+the card `id`, its accent `--c` (taken from that mod's own site), its category pill and its requirements:
 
-1. **BeaverBuddies Stability Fork** (`beaverbuddies-stability-fork`, `#e0812f`, Multiplayer; Harmony, Mod Settings).
-   Co-op with fewer crashes and desyncs: an independent fork of BeaverBuddies with Steam friend invites, a connection
-   panel, teammate cursors and desync fixes. **v1.1.14**, GitHub's Latest. **Feature-complete**: game-update and
-   bug-fix releases only, new features go into MultiColony (the org profile says so; the hub card doesn't yet).
-   Its README says 1.1.14 itself has not been played yet (1.1.13 was). GPL-3.0.
-2. **BeaverBuddies MultiColony** (`beaverbuddies-multicolony`, `#c9628a`, Multiplayer; Harmony, Mod Settings;
-   `data-maturity="Beta"` with a Beta caution). Two players, one map, a colony each; the colonies trade only at
-   Trading Posts. Pre-releases only (no Latest release, so the pill says **Preview**): the snapshot holds
-   **v1.4.0-rc1**; **v1.4.0-rc2** was published at 17:13 UTC, after that day's last refresh, and the live check
-   already offers it. Built on the Stability Fork. GPL-3.0.
-3. **MixedStorage** (`mixedstorage`, `#74b96b`, Storage + Multiplayer; Harmony 2.4.1+). Several goods in one
-   warehouse or pile, divided by percentage. **v1.2.0**, Latest. MIT.
-4. **Persistent Work Areas** (`persistent-work-areas`, `#ebb859`, Quality of life; nothing extra). Keeps a building's
-   working-area outline on screen after deselecting it; one-click clear. **v1.1.0**, Latest (its README: 1.1.0's new
-   features not playtested yet, 1.0.0's behavior was). The release also carries a `-source.zip` the asset regex skips.
-5. **Optimized Local Housing** (`optimized-local-housing`, `#4f95e8`, Colony management; nothing extra). Once a day,
-   re-houses adult beavers so total home-to-work travel is as short as possible. **v1.1.1**, Latest.
-6. **Late Game Performance** (`late-game-performance`, `#9a8be0`, Performance; Harmony 2.4.1+, Mod Settings). Fewer
-   lag spikes in big colonies by cutting repeated work. **v0.4.29** Latest, with **v0.4.30** as a newer pre-release
-   (so the card shows a "Newer preview" link). Its README calls it a young mod, played about an hour in one colony,
-   and asks for a copy of a save; the hub card has no caution and shows a Stable pill. MIT.
-7. **The Tipsy Tail** (`the-tipsy-tail`, `#4aa3a3`, Buildings; nothing extra). A swim-up pool bar that runs on
-   hauled water. **v1.0.1**, Latest. The release also has source, preset and checksum files; `-mod\.zip$` picks the mod.
-8. **Hungry Pathing** (`hungry-pathing`, `#e8735c`, Beaver behavior; Harmony 2.4.1+; `data-maturity="Beta"` with a
-   Beta caution). Working beavers plan food and water around their shift and eat at the closest stocked storage.
-   **v0.3.1**, Latest, so the pill says **Beta**.
+*Play together*
+1. **BeaverBuddies Stability Fork** (`beaverbuddies-stability-fork`, `#b8322a`, Multiplayer; Harmony, Mod Settings).
+   - Co-op with fewer crashes and desyncs: an independent fork of BeaverBuddies with Steam friend invites, a connection
+     panel, teammate cursors and desync fixes.
+   - **Feature-complete**: game-update and bug-fix releases only; new features go into MultiColony. GitHub's Latest.
+   - Its status line follows its README (the newest release is fixes only and hasn't been played yet). GPL-3.0.
+2. **BeaverBuddies MultiColony** (`beaverbuddies-multicolony`, `#1a6a77`, Multiplayer; Harmony, Mod Settings;
+   `data-maturity="Beta"` with a Beta caution).
+   - Two players, one map, a colony each; the colonies' roads never join, and they trade only at Trading Posts. Or
+     share one colony, as in the fork.
+   - Pre-releases only (no Latest release), so the pill says **Preview**. Built on the Stability Fork. GPL-3.0.
+   - The caution's played and not-played lists follow its README.
+
+*Big colonies*
+3. **Late Game Performance** (`late-game-performance`, `#5b3fd0`, Performance; Harmony 2.4.1+, Mod Settings;
+   `data-maturity="Young mod"` with a caution).
+   - Fewer lag spikes in big colonies by cutting repeated work.
+   - A Latest release, often with a newer pre-release, which gives the card a "Newer preview" link. MIT.
+4. **Optimized Local Housing** (`optimized-local-housing`, `#2d5f9a`, Housing; nothing extra).
+   - Once a day, re-houses adult beavers so total home-to-work travel is as short as possible. Latest.
+5. **Hungry Pathing** (`hungry-pathing`, `#1d4a86`, Beaver needs; Harmony 2.4.1+; `data-maturity="Beta"` with a Beta
+   caution).
+   - Working beavers plan food and water around their shift and eat at the closest stocked storage. Latest, so the
+     pill says **Beta**.
+
+*Build and plan*
+6. **MixedStorage** (`mixedstorage`, `#8a6a2c`, Storage; Harmony 2.4.1+).
+   - Several goods in one warehouse or pile, divided by percentage. Latest. MIT.
+7. **Persistent Work Areas** (`persistent-work-areas`, `#8a6512`, Planning; nothing extra).
+   - Keeps a building's working-area outline on screen after deselecting it; one-click clear. Latest.
+   - The release also carries a `-source.zip`, which the asset regex skips.
+8. **The Tipsy Tail** (`the-tipsy-tail`, `#1a6773`, Building; nothing extra).
+   - A swim-up pool bar that runs on hauled water. Latest.
+   - The release also has source, preset and checksum files; `-mod\.zip$` picks the mod.
 
 **Not listed:** `PerformanceLog` (a 0.x preview mod, v0.1.4 marked Latest, no website yet) and `.github` (the org
 profile). Whether PerformanceLog joins the hub is the maintainer's call.
@@ -107,7 +115,7 @@ stores `tbmods.theme` in localStorage and an inline head script applies it befor
   `{ tag, name, prerelease, published, url, assets: [{ name, size, url }] }`. `generated` changes only when the data
   does. Never hand-edit it, never rename or move it (site.js fetches the relative path `data/releases.json`).
 - Everything on the cards is **hand-written in `index.html`**: names, taglines, blurbs, facts, categories,
-  requirements, cautions, banners (inline SVG, or `assets/img/*.webp|jpg`), accent colors. The only data the page
+  requirements, cautions, card art (`assets/img/cards/<id>.webp`, captured by `scripts/card-art.py`), accent colors. The only data the page
   takes from releases is the button's version, size and link, the release-notes link, the status pill and the note
   under the button.
 - The repo list itself comes from `index.html`: `update-releases.mjs` scans it for every `data-repo="owner/name"`.
@@ -156,14 +164,9 @@ MixedStorage, Persistent Work Areas, Optimized Local Housing, Late Game Performa
 The org is **Timbermods**; the original mod is **BeaverBuddies** by thomaswp. MultiColony's in-game name is
 "BeaverBuddies MultiColony (beta)".
 
-**Copy that has drifted from the mods and must be corrected in any rewrite** (found 2026-09-23):
-- MultiColony's card says each colony has "its own land" and that trading posts sit "where the colonies' roads meet",
-  and its caution names "colony handover". The mod has no land or borders (the only rule is that the colonies' roads
-  never join, except through a **Trading Post**, capitalized); a hand-over is a last resort, off by default; the
-  waiting room and mixed factions aren't mentioned. Take the wording from MultiColony's own `PRODUCT.md`/README. The
-  org profile repeats the "own land" line.
-- Stability Fork's card doesn't say it's feature-complete.
-- Late Game Performance's card carries no caution although its README asks for a copy of a save.
+**Keeping copy true:** each card's tagline, facts, caution and status line restate that mod's README. When a mod's
+README changes (features, status, requirements), update its card, the needs index if the mod's purpose changed, and
+this file. Terms to use: Trading Post (capitalized); MultiColony has no land or borders.
 
 ## Brand Commitments
 
