@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T06:00:55.488Z",
+  "generated": "2026-09-23T11:41:32.071Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -214,6 +214,82 @@
     ],
     "timbermods/BeaverBuddies-MultiColony": [
       {
+        "tag": "v1.4.0-rc1",
+        "name": "BeaverBuddies MultiColony — 1.4.0-rc1 (release candidate)",
+        "prerelease": true,
+        "published": "2026-09-23T10:47:03Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-rc1",
+        "assets": [
+          {
+            "name": "1.4.0-rc1-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc1/1.4.0-rc1-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-rc1.zip",
+            "size": 3072605,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-rc1/BeaverBuddies-MultiColony-1.4.0-rc1.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-beta24",
+        "name": "BeaverBuddies MultiColony — 1.4.0-beta24 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-23T08:48:58Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta24",
+        "assets": [
+          {
+            "name": "1.4.0-beta24-SHA256SUMS.txt",
+            "size": 109,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta24/1.4.0-beta24-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-beta24.zip",
+            "size": 3043222,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta24/BeaverBuddies-MultiColony-1.4.0-beta24.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-beta23",
+        "name": "BeaverBuddies MultiColony — 1.4.0-beta23 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-23T08:15:39Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta23",
+        "assets": [
+          {
+            "name": "1.4.0-beta23-SHA256SUMS.txt",
+            "size": 109,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta23/1.4.0-beta23-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-beta23.zip",
+            "size": 3035547,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta23/BeaverBuddies-MultiColony-1.4.0-beta23.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-beta21",
+        "name": "BeaverBuddies MultiColony — 1.4.0-beta21 (pre-release)",
+        "prerelease": true,
+        "published": "2026-09-23T06:34:31Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta21",
+        "assets": [
+          {
+            "name": "1.4.0-beta21-SHA256SUMS.txt",
+            "size": 109,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta21/1.4.0-beta21-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-MultiColony-1.4.0-beta21.zip",
+            "size": 3034365,
+            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta21/BeaverBuddies-MultiColony-1.4.0-beta21.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.4.0-beta20",
         "name": "BeaverBuddies MultiColony — 1.4.0-beta20 (pre-release)",
         "prerelease": true,
@@ -362,82 +438,6 @@
             "name": "BeaverBuddies-MultiColony-1.4.0-beta4.zip",
             "size": 2842375,
             "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta4/BeaverBuddies-MultiColony-1.4.0-beta4.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-beta3",
-        "name": "BeaverBuddies MultiColony — 1.4.0-beta3 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T06:17:23Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta3",
-        "assets": [
-          {
-            "name": "1.4.0-beta3-SHA256SUMS.txt",
-            "size": 108,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta3/1.4.0-beta3-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta3.zip",
-            "size": 2839966,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta3/BeaverBuddies-MultiColony-1.4.0-beta3.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-beta2",
-        "name": "BeaverBuddies MultiColony — 1.4.0-beta2 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T04:17:24Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta2",
-        "assets": [
-          {
-            "name": "1.4.0-beta2-SHA256SUMS.txt",
-            "size": 108,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta2/1.4.0-beta2-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta2.zip",
-            "size": 2839753,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta2/BeaverBuddies-MultiColony-1.4.0-beta2.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-beta18",
-        "name": "BeaverBuddies MultiColony — 1.4.0-beta18 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T23:36:21Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta18",
-        "assets": [
-          {
-            "name": "1.4.0-beta18-SHA256SUMS.txt",
-            "size": 109,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta18/1.4.0-beta18-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta18.zip",
-            "size": 2954239,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta18/BeaverBuddies-MultiColony-1.4.0-beta18.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-beta17",
-        "name": "BeaverBuddies MultiColony — 1.4.0-beta17 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-22T23:09:20Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/tag/v1.4.0-beta17",
-        "assets": [
-          {
-            "name": "1.4.0-beta17-SHA256SUMS.txt",
-            "size": 109,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta17/1.4.0-beta17-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta17.zip",
-            "size": 2911393,
-            "url": "https://github.com/timbermods/BeaverBuddies-MultiColony/releases/download/v1.4.0-beta17/BeaverBuddies-MultiColony-1.4.0-beta17.zip"
           }
         ]
       }
