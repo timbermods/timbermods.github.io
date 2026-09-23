@@ -58,6 +58,7 @@ A card with a caution (`<p class="caution">Beta: …</p>`) also needs `data-matu
 | `assets/img/` | Felt, binder and sleeve textures (`make_textures.py` remakes them) and the social preview `og.png` |
 | `data/releases.json` | Release snapshot (generated) |
 | `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview), `test-site.mjs` (tests) |
+| `scripts/card-art.py` | Recaptures card art from each mod's live site: `python scripts/card-art.py [card-id ...]` (Playwright, Pillow, installed Edge) |
 | `.github/workflows/` | Hourly snapshot refresh (`refresh-releases.yml`) and the tests (`tests.yml`) |
 
 ## License
