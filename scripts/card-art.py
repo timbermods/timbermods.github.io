@@ -4,6 +4,7 @@ Each card's art is the signature element of that mod's own site, so when a mod's
 card: python scripts/card-art.py [card-id ...]   (no ids = all eight)
 Needs Python with playwright and Pillow, and Microsoft Edge installed (it drives the installed Edge).
 Afterwards record provenance for each changed file with Impeccable's embed-prompt (see CLAUDE.md).
+Once the new art is live, re-render the org profile's images too: in timbermods/.github, python profile/make_images.py.
 """
 import io, os, sys
 from playwright.sync_api import sync_playwright

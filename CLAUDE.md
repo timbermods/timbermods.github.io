@@ -123,7 +123,8 @@ changes its look.
    - the install `.notes` if requirements in general change; the footer credit if a new BeaverBuddies derivative lands;
    - `404.html`'s mod list (a copy of the cards' names, URLs and `--c`; **kept in sync by hand**);
    - PRODUCT.md's Operating Context and README's mod list; the org profile (`timbermods/.github`,
-     `profile/README.md`, `profile/cards/*.svg`) repeats taglines and accents: flag it to Kyler.
+     `profile/README.md`) repeats each card's text, accent, category and group: update it in a PR to that repo. Its
+     images come from this site: after card art changes here (and is live), run `python profile/make_images.py` there.
 3. Adding a mod: copy a whole `<div class="sleeve"><article class="card">…</article></div>` into the right binder page
    (Play together / Big colonies / Build and plan), set `--c` from the mod's own site, all hooks above, card art via
    `scripts/card-art.py` (add a `JOBS` entry) + provenance, a need-index row, the 404 row, and the counts in step 2.
