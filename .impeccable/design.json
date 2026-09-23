@@ -1,0 +1,754 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-23T21:07:33.591Z",
+  "title": "Design System: Timbermods",
+  "extensions": {
+    "colorMeta": {
+      "felt-mat": {
+        "role": "neutral",
+        "displayName": "Felt Mat",
+        "canonical": "#dcd8cf",
+        "oklch": "oklch(88.3% 0.013 86.8)",
+        "tonalRamp": [
+          "oklch(15% 0.013 86.8)",
+          "oklch(26% 0.013 86.8)",
+          "oklch(37% 0.013 86.8)",
+          "oklch(48% 0.013 86.8)",
+          "oklch(60% 0.013 86.8)",
+          "oklch(72% 0.013 86.8)",
+          "oklch(84% 0.013 86.8)",
+          "oklch(95% 0.013 86.8)"
+        ]
+      },
+      "felt-mat-dark": {
+        "role": "neutral",
+        "displayName": "Charcoal Felt",
+        "canonical": "#16171a",
+        "oklch": "oklch(20.5% 0.006 271.1)",
+        "tonalRamp": [
+          "oklch(15% 0.006 271.1)",
+          "oklch(26% 0.006 271.1)",
+          "oklch(37% 0.006 271.1)",
+          "oklch(48% 0.006 271.1)",
+          "oklch(60% 0.006 271.1)",
+          "oklch(72% 0.006 271.1)",
+          "oklch(84% 0.006 271.1)",
+          "oklch(95% 0.006 271.1)"
+        ]
+      },
+      "binder-ink": {
+        "role": "neutral",
+        "displayName": "Binder Ink",
+        "canonical": "#1f2124",
+        "oklch": "oklch(24.7% 0.006 258.4)",
+        "tonalRamp": [
+          "oklch(15% 0.006 258.4)",
+          "oklch(26% 0.006 258.4)",
+          "oklch(37% 0.006 258.4)",
+          "oklch(48% 0.006 258.4)",
+          "oklch(60% 0.006 258.4)",
+          "oklch(72% 0.006 258.4)",
+          "oklch(84% 0.006 258.4)",
+          "oklch(95% 0.006 258.4)"
+        ]
+      },
+      "binder-ink-dark": {
+        "role": "neutral",
+        "displayName": "Page Ink",
+        "canonical": "#eceae4",
+        "oklch": "oklch(93.7% 0.008 91.5)",
+        "tonalRamp": [
+          "oklch(15% 0.008 91.5)",
+          "oklch(26% 0.008 91.5)",
+          "oklch(37% 0.008 91.5)",
+          "oklch(48% 0.008 91.5)",
+          "oklch(60% 0.008 91.5)",
+          "oklch(72% 0.008 91.5)",
+          "oklch(84% 0.008 91.5)",
+          "oklch(95% 0.008 91.5)"
+        ]
+      },
+      "slate-muted": {
+        "role": "neutral",
+        "displayName": "Slate Muted",
+        "canonical": "#4c5056",
+        "oklch": "oklch(43% 0.011 258.4)",
+        "tonalRamp": [
+          "oklch(15% 0.011 258.4)",
+          "oklch(26% 0.011 258.4)",
+          "oklch(37% 0.011 258.4)",
+          "oklch(48% 0.011 258.4)",
+          "oklch(60% 0.011 258.4)",
+          "oklch(72% 0.011 258.4)",
+          "oklch(84% 0.011 258.4)",
+          "oklch(95% 0.011 258.4)"
+        ]
+      },
+      "slate-muted-dark": {
+        "role": "neutral",
+        "displayName": "Pale Slate",
+        "canonical": "#b3b5b8",
+        "oklch": "oklch(77.2% 0.005 258.3)",
+        "tonalRamp": [
+          "oklch(15% 0.005 258.3)",
+          "oklch(26% 0.005 258.3)",
+          "oklch(37% 0.005 258.3)",
+          "oklch(48% 0.005 258.3)",
+          "oklch(60% 0.005 258.3)",
+          "oklch(72% 0.005 258.3)",
+          "oklch(84% 0.005 258.3)",
+          "oklch(95% 0.005 258.3)"
+        ]
+      },
+      "mat-rule": {
+        "role": "neutral",
+        "displayName": "Mat Rule",
+        "canonical": "#b9b4a8",
+        "oklch": "oklch(77.1% 0.018 88)",
+        "tonalRamp": [
+          "oklch(15% 0.018 88)",
+          "oklch(26% 0.018 88)",
+          "oklch(37% 0.018 88)",
+          "oklch(48% 0.018 88)",
+          "oklch(60% 0.018 88)",
+          "oklch(72% 0.018 88)",
+          "oklch(84% 0.018 88)",
+          "oklch(95% 0.018 88)"
+        ]
+      },
+      "mat-rule-dark": {
+        "role": "neutral",
+        "displayName": "Dark Mat Rule",
+        "canonical": "#34363b",
+        "oklch": "oklch(33.3% 0.009 268.4)",
+        "tonalRamp": [
+          "oklch(15% 0.009 268.4)",
+          "oklch(26% 0.009 268.4)",
+          "oklch(37% 0.009 268.4)",
+          "oklch(48% 0.009 268.4)",
+          "oklch(60% 0.009 268.4)",
+          "oklch(72% 0.009 268.4)",
+          "oklch(84% 0.009 268.4)",
+          "oklch(95% 0.009 268.4)"
+        ]
+      },
+      "pvc-page": {
+        "role": "neutral",
+        "displayName": "PVC Page",
+        "canonical": "#1d1f23",
+        "oklch": "oklch(23.9% 0.008 264.4)",
+        "tonalRamp": [
+          "oklch(15% 0.008 264.4)",
+          "oklch(26% 0.008 264.4)",
+          "oklch(37% 0.008 264.4)",
+          "oklch(48% 0.008 264.4)",
+          "oklch(60% 0.008 264.4)",
+          "oklch(72% 0.008 264.4)",
+          "oklch(84% 0.008 264.4)",
+          "oklch(95% 0.008 264.4)"
+        ]
+      },
+      "pvc-page-dark": {
+        "role": "neutral",
+        "displayName": "Lifted PVC Page",
+        "canonical": "#2a2c31",
+        "oklch": "oklch(29.3% 0.01 268.3)",
+        "tonalRamp": [
+          "oklch(15% 0.01 268.3)",
+          "oklch(26% 0.01 268.3)",
+          "oklch(37% 0.01 268.3)",
+          "oklch(48% 0.01 268.3)",
+          "oklch(60% 0.01 268.3)",
+          "oklch(72% 0.01 268.3)",
+          "oklch(84% 0.01 268.3)",
+          "oklch(95% 0.01 268.3)"
+        ]
+      },
+      "card-stock": {
+        "role": "neutral",
+        "displayName": "Card Stock",
+        "canonical": "#fbfaf6",
+        "oklch": "oklch(98.5% 0.005 95.1)",
+        "tonalRamp": [
+          "oklch(15% 0.005 95.1)",
+          "oklch(26% 0.005 95.1)",
+          "oklch(37% 0.005 95.1)",
+          "oklch(48% 0.005 95.1)",
+          "oklch(60% 0.005 95.1)",
+          "oklch(72% 0.005 95.1)",
+          "oklch(84% 0.005 95.1)",
+          "oklch(95% 0.005 95.1)"
+        ]
+      },
+      "card-ink": {
+        "role": "neutral",
+        "displayName": "Card Ink",
+        "canonical": "#1f2124",
+        "oklch": "oklch(24.7% 0.006 258.4)",
+        "tonalRamp": [
+          "oklch(15% 0.006 258.4)",
+          "oklch(26% 0.006 258.4)",
+          "oklch(37% 0.006 258.4)",
+          "oklch(48% 0.006 258.4)",
+          "oklch(60% 0.006 258.4)",
+          "oklch(72% 0.006 258.4)",
+          "oklch(84% 0.006 258.4)",
+          "oklch(95% 0.006 258.4)"
+        ]
+      },
+      "card-muted": {
+        "role": "neutral",
+        "displayName": "Card Muted",
+        "canonical": "#4a4e54",
+        "oklch": "oklch(42.2% 0.011 258.4)",
+        "tonalRamp": [
+          "oklch(15% 0.011 258.4)",
+          "oklch(26% 0.011 258.4)",
+          "oklch(37% 0.011 258.4)",
+          "oklch(48% 0.011 258.4)",
+          "oklch(60% 0.011 258.4)",
+          "oklch(72% 0.011 258.4)",
+          "oklch(84% 0.011 258.4)",
+          "oklch(95% 0.011 258.4)"
+        ]
+      },
+      "card-rule": {
+        "role": "neutral",
+        "displayName": "Card Rule",
+        "canonical": "#dedbd2",
+        "oklch": "oklch(89.1% 0.013 91.5)",
+        "tonalRamp": [
+          "oklch(15% 0.013 91.5)",
+          "oklch(26% 0.013 91.5)",
+          "oklch(37% 0.013 91.5)",
+          "oklch(48% 0.013 91.5)",
+          "oklch(60% 0.013 91.5)",
+          "oklch(72% 0.013 91.5)",
+          "oklch(84% 0.013 91.5)",
+          "oklch(95% 0.013 91.5)"
+        ]
+      },
+      "ledger-blue": {
+        "role": "neutral",
+        "displayName": "Ledger Blue",
+        "canonical": "#1d4f8a",
+        "oklch": "oklch(42.6% 0.111 254.8)",
+        "tonalRamp": [
+          "oklch(15% 0.111 254.8)",
+          "oklch(26% 0.111 254.8)",
+          "oklch(37% 0.111 254.8)",
+          "oklch(48% 0.111 254.8)",
+          "oklch(60% 0.111 254.8)",
+          "oklch(72% 0.111 254.8)",
+          "oklch(84% 0.111 254.8)",
+          "oklch(95% 0.111 254.8)"
+        ]
+      },
+      "ledger-blue-dark": {
+        "role": "neutral",
+        "displayName": "Pale Ledger Blue",
+        "canonical": "#9cc2f0",
+        "oklch": "oklch(80.3% 0.077 253.5)",
+        "tonalRamp": [
+          "oklch(15% 0.077 253.5)",
+          "oklch(26% 0.077 253.5)",
+          "oklch(37% 0.077 253.5)",
+          "oklch(48% 0.077 253.5)",
+          "oklch(60% 0.077 253.5)",
+          "oklch(72% 0.077 253.5)",
+          "oklch(84% 0.077 253.5)",
+          "oklch(95% 0.077 253.5)"
+        ]
+      },
+      "focus-lamp-dark": {
+        "role": "neutral",
+        "displayName": "Focus Lamp",
+        "canonical": "#f0d27a",
+        "oklch": "oklch(87.1% 0.113 91.1)",
+        "tonalRamp": [
+          "oklch(15% 0.113 91.1)",
+          "oklch(26% 0.113 91.1)",
+          "oklch(37% 0.113 91.1)",
+          "oklch(48% 0.113 91.1)",
+          "oklch(60% 0.113 91.1)",
+          "oklch(72% 0.113 91.1)",
+          "oklch(84% 0.113 91.1)",
+          "oklch(95% 0.113 91.1)"
+        ]
+      },
+      "caution-cream": {
+        "role": "neutral",
+        "displayName": "Caution Cream",
+        "canonical": "#fff3dc",
+        "oklch": "oklch(96.8% 0.033 83.7)",
+        "tonalRamp": [
+          "oklch(15% 0.033 83.7)",
+          "oklch(26% 0.033 83.7)",
+          "oklch(37% 0.033 83.7)",
+          "oklch(48% 0.033 83.7)",
+          "oklch(60% 0.033 83.7)",
+          "oklch(72% 0.033 83.7)",
+          "oklch(84% 0.033 83.7)",
+          "oklch(95% 0.033 83.7)"
+        ]
+      },
+      "caution-umber": {
+        "role": "neutral",
+        "displayName": "Caution Umber",
+        "canonical": "#6e3d00",
+        "oklch": "oklch(41.2% 0.094 62.4)",
+        "tonalRamp": [
+          "oklch(15% 0.094 62.4)",
+          "oklch(26% 0.094 62.4)",
+          "oklch(37% 0.094 62.4)",
+          "oklch(48% 0.094 62.4)",
+          "oklch(60% 0.094 62.4)",
+          "oklch(72% 0.094 62.4)",
+          "oklch(84% 0.094 62.4)",
+          "oklch(95% 0.094 62.4)"
+        ]
+      },
+      "stable-green": {
+        "role": "neutral",
+        "displayName": "Stable Green",
+        "canonical": "#1d6b3a",
+        "oklch": "oklch(46.8% 0.108 151.7)",
+        "tonalRamp": [
+          "oklch(15% 0.108 151.7)",
+          "oklch(26% 0.108 151.7)",
+          "oklch(37% 0.108 151.7)",
+          "oklch(48% 0.108 151.7)",
+          "oklch(60% 0.108 151.7)",
+          "oklch(72% 0.108 151.7)",
+          "oklch(84% 0.108 151.7)",
+          "oklch(95% 0.108 151.7)"
+        ]
+      },
+      "accent-stability-fork": {
+        "role": "primary",
+        "displayName": "Stability Fork Red",
+        "canonical": "#b8322a",
+        "oklch": "oklch(52.2% 0.172 28.1)",
+        "tonalRamp": [
+          "oklch(15% 0.172 28.1)",
+          "oklch(26% 0.172 28.1)",
+          "oklch(37% 0.172 28.1)",
+          "oklch(48% 0.172 28.1)",
+          "oklch(60% 0.172 28.1)",
+          "oklch(72% 0.172 28.1)",
+          "oklch(84% 0.172 28.1)",
+          "oklch(95% 0.172 28.1)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      },
+      "accent-multicolony": {
+        "role": "primary",
+        "displayName": "MultiColony Teal",
+        "canonical": "#1a6a77",
+        "oklch": "oklch(48.4% 0.076 211)",
+        "tonalRamp": [
+          "oklch(15% 0.076 211)",
+          "oklch(26% 0.076 211)",
+          "oklch(37% 0.076 211)",
+          "oklch(48% 0.076 211)",
+          "oklch(60% 0.076 211)",
+          "oklch(72% 0.076 211)",
+          "oklch(84% 0.076 211)",
+          "oklch(95% 0.076 211)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      },
+      "accent-mixedstorage": {
+        "role": "primary",
+        "displayName": "MixedStorage Brass",
+        "canonical": "#8a6a2c",
+        "oklch": "oklch(54.4% 0.089 81.4)",
+        "tonalRamp": [
+          "oklch(15% 0.089 81.4)",
+          "oklch(26% 0.089 81.4)",
+          "oklch(37% 0.089 81.4)",
+          "oklch(48% 0.089 81.4)",
+          "oklch(60% 0.089 81.4)",
+          "oklch(72% 0.089 81.4)",
+          "oklch(84% 0.089 81.4)",
+          "oklch(95% 0.089 81.4)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      },
+      "accent-persistent-work-areas": {
+        "role": "primary",
+        "displayName": "Work Areas Gold",
+        "canonical": "#8a6512",
+        "oklch": "oklch(53.1% 0.103 81.6)",
+        "tonalRamp": [
+          "oklch(15% 0.103 81.6)",
+          "oklch(26% 0.103 81.6)",
+          "oklch(37% 0.103 81.6)",
+          "oklch(48% 0.103 81.6)",
+          "oklch(60% 0.103 81.6)",
+          "oklch(72% 0.103 81.6)",
+          "oklch(84% 0.103 81.6)",
+          "oklch(95% 0.103 81.6)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      },
+      "accent-optimized-local-housing": {
+        "role": "primary",
+        "displayName": "Housing Blue",
+        "canonical": "#2d5f9a",
+        "oklch": "oklch(48.1% 0.11 254.2)",
+        "tonalRamp": [
+          "oklch(15% 0.11 254.2)",
+          "oklch(26% 0.11 254.2)",
+          "oklch(37% 0.11 254.2)",
+          "oklch(48% 0.11 254.2)",
+          "oklch(60% 0.11 254.2)",
+          "oklch(72% 0.11 254.2)",
+          "oklch(84% 0.11 254.2)",
+          "oklch(95% 0.11 254.2)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      },
+      "accent-late-game-performance": {
+        "role": "primary",
+        "displayName": "Performance Violet",
+        "canonical": "#5b3fd0",
+        "oklch": "oklch(49.1% 0.21 284.4)",
+        "tonalRamp": [
+          "oklch(15% 0.2 284.4)",
+          "oklch(26% 0.2 284.4)",
+          "oklch(37% 0.2 284.4)",
+          "oklch(48% 0.2 284.4)",
+          "oklch(60% 0.2 284.4)",
+          "oklch(72% 0.2 284.4)",
+          "oklch(84% 0.2 284.4)",
+          "oklch(95% 0.2 284.4)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      },
+      "accent-tipsy-tail": {
+        "role": "primary",
+        "displayName": "Tipsy Tail Aqua",
+        "canonical": "#1a6773",
+        "oklch": "oklch(47.4% 0.074 210.3)",
+        "tonalRamp": [
+          "oklch(15% 0.074 210.3)",
+          "oklch(26% 0.074 210.3)",
+          "oklch(37% 0.074 210.3)",
+          "oklch(48% 0.074 210.3)",
+          "oklch(60% 0.074 210.3)",
+          "oklch(72% 0.074 210.3)",
+          "oklch(84% 0.074 210.3)",
+          "oklch(95% 0.074 210.3)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      },
+      "accent-hungry-pathing": {
+        "role": "primary",
+        "displayName": "Pathing Cobalt",
+        "canonical": "#1d4a86",
+        "oklch": "oklch(41.2% 0.112 256.8)",
+        "tonalRamp": [
+          "oklch(15% 0.112 256.8)",
+          "oklch(26% 0.112 256.8)",
+          "oklch(37% 0.112 256.8)",
+          "oklch(48% 0.112 256.8)",
+          "oklch(60% 0.112 256.8)",
+          "oklch(72% 0.112 256.8)",
+          "oklch(84% 0.112 256.8)",
+          "oklch(95% 0.112 256.8)"
+        ],
+        "usage": "Card input: set per card via --c. Not a hub colour."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Binder Cover",
+        "purpose": "The cover name \"Timbermods\" only; the 404 headline uses the face smaller."
+      },
+      "headline": {
+        "displayName": "Page Title",
+        "purpose": "Binder page titles and section titles."
+      },
+      "title": {
+        "displayName": "Card Name",
+        "purpose": "Mod names on cards, the insert heading, the brand wordmark."
+      },
+      "title-small": {
+        "displayName": "Legend Heading",
+        "purpose": "Need index heading and install notes headings."
+      },
+      "numeral": {
+        "displayName": "Step Numeral",
+        "purpose": "Install step numbers."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text on the mat; the cover lead is 1.15rem at 46ch."
+      },
+      "body-card": {
+        "displayName": "Card Body",
+        "purpose": "Blurbs on card stock in card-muted."
+      },
+      "label": {
+        "displayName": "Pill Label",
+        "purpose": "Tag and status pills; sentence case."
+      },
+      "mono": {
+        "displayName": "Code",
+        "purpose": "Inline paths such as Documents\\Timberborn\\Mods, on a faint ink tint."
+      }
+    },
+    "cardInputs": {
+      "property": "--c",
+      "setOn": "article.card (inline style), the matching need-index .to span, and the 404 site list",
+      "drives": [
+        "card frame (6px)",
+        "art-window backing band",
+        "tag pill fill",
+        "fact bullets",
+        "download button fill",
+        "card name hover underline",
+        "need-index swatch"
+      ],
+      "values": {
+        "stability-fork": "#b8322a",
+        "multicolony": "#1a6a77",
+        "mixedstorage": "#8a6a2c",
+        "persistent-work-areas": "#8a6512",
+        "optimized-local-housing": "#2d5f9a",
+        "late-game-performance": "#5b3fd0",
+        "tipsy-tail": "#1a6773",
+        "hungry-pathing": "#1d4a86"
+      },
+      "rule": "Taken from each mod's own site; must hold 4.5:1 against white."
+    },
+    "themes": {
+      "mechanism": "prefers-color-scheme, overridden by :root[data-theme] set from localStorage key tbmods.theme before first paint",
+      "darkOverrides": [
+        "felt-mat-dark",
+        "binder-ink-dark",
+        "slate-muted-dark",
+        "mat-rule-dark",
+        "ledger-blue-dark",
+        "focus-lamp-dark",
+        "pvc-page-dark"
+      ],
+      "unchangedInDark": [
+        "card-stock",
+        "card-ink",
+        "card-muted",
+        "card-rule",
+        "caution-cream",
+        "caution-umber",
+        "stable-green",
+        "mod accents"
+      ],
+      "cardLinkOverride": ".card sets --link back to ledger-blue in both themes"
+    },
+    "textures": [
+      {
+        "name": "felt-light / felt-dark",
+        "file": "assets/img/felt-light.webp, assets/img/felt-dark.webp",
+        "purpose": "The mat, tiled under body.",
+        "source": "assets/img/make_textures.py (procedural, fixed seeds)"
+      },
+      {
+        "name": "binder / binder-dark",
+        "file": "assets/img/binder.webp, assets/img/binder-dark.webp",
+        "purpose": "The PVC page grain, tiled.",
+        "source": "assets/img/make_textures.py"
+      },
+      {
+        "name": "sheen",
+        "file": "assets/img/sheen.webp",
+        "purpose": "The sleeve highlight, moved on hover or focus.",
+        "source": "assets/img/make_textures.py"
+      },
+      {
+        "name": "card art",
+        "file": "assets/img/cards/*.webp (960x600)",
+        "purpose": "Each mod's own site art, cropped.",
+        "source": "Screenshots of each mod's own site; provenance in the *.webp.json beside each file"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "page-on-felt",
+        "value": "0 18px 30px -22px rgba(0, 0, 0, .7)",
+        "purpose": "Binder pages only."
+      },
+      {
+        "name": "sleeve-on-page",
+        "value": "0 6px 14px -8px rgba(0, 0, 0, .6)",
+        "purpose": "Sleeves only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "sheen-slide",
+        "value": "background-position .7s cubic-bezier(.2, .8, .2, 1), opacity .7s",
+        "purpose": "The only motion: the sleeve sheen on hover or focus-within, opacity .4 to .6. Off under prefers-reduced-motion, along with smooth scrolling."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid var(--focus); outline-offset: 3px",
+        "purpose": "Every focusable element; ledger-blue in light, focus-lamp-dark in dark."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "two-pockets",
+        "value": "1000px",
+        "purpose": "Pockets 3 to 2 across; inserts hidden."
+      },
+      {
+        "name": "single-column",
+        "value": "860px",
+        "purpose": "Cover, install steps and notes stack."
+      },
+      {
+        "name": "phone",
+        "value": "620px",
+        "purpose": "One pocket; art 16:7; tighter sleeve and spine; one-line download button."
+      }
+    ],
+    "markupContract": {
+      "script": "assets/site.js",
+      "tests": "scripts/test-site.mjs",
+      "cardSelector": "article.card[data-repo][data-asset], plus [data-maturity] on every card with a caution (equal to the caution label); data-repo nowhere else",
+      "cardHooks": [
+        "[data-download] (a.btn, fallback href = repo Releases page, contains .btn-label and [data-size])",
+        "[data-size]",
+        "[data-note] (aria-live)",
+        "[data-status] (hidden pill)",
+        "[data-notes] (release-notes link, fallback Releases page)",
+        "h3 (mod name)"
+      ],
+      "pageHooks": [
+        "[data-generated] (footer stamp)",
+        "#top",
+        "#mods",
+        "#install",
+        "the eight card ids",
+        "localStorage tbmods.theme"
+      ],
+      "neverEdit": "data/releases.json (bot-generated)"
+    }
+  },
+  "components": [
+    {
+      "name": "Mod Card in its Sleeve",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Signature: light card stock framed 6px in the mod accent (--c), inside a clear sleeve on a PVC page; the sheen slides on hover or focus.",
+      "html": "<div class=\"ds-page\"><div class=\"ds-sleeve\"><article class=\"ds-card\" style=\"--c:#1a6a77\"><div class=\"ds-art\"></div><div class=\"ds-body\"><div class=\"ds-meta\"><span class=\"ds-pill-tag\">Multiplayer</span><span class=\"ds-pill-status\">Stable</span></div><h3 class=\"ds-name\"><a href=\"#\">BeaverBuddies MultiColony</a></h3><p class=\"ds-tagline\">Two players, one map, a colony each.</p><ul class=\"ds-facts\"><li>A waiting room before a new game</li><li>Trading Posts between colonies</li></ul><a class=\"ds-btn\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16\"/></svg><span>Download latest</span><span class=\"ds-size\">2.6 MB</span></a></div></article></div></div>",
+      "css": ".ds-page { background: #1d1f23; padding: 24px 24px 24px 56px; border-radius: 10px; border: 1px solid rgba(0,0,0,.35); box-shadow: 0 18px 30px -22px rgba(0,0,0,.7); position: relative; max-width: 340px; } .ds-page::before { content: \"\"; position: absolute; left: 18px; top: 40px; width: 18px; height: 18px; border-radius: 50%; background: radial-gradient(circle, #dcd8cf 0 6.5px, rgba(0,0,0,.55) 7px 8px, transparent 8.5px); } .ds-sleeve { position: relative; display: flex; padding: 7px; border-radius: 12px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); border-top-color: rgba(255,255,255,.3); box-shadow: 0 6px 14px -8px rgba(0,0,0,.6); } .ds-sleeve::after { content: \"\"; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: linear-gradient(125deg, transparent 30%, rgba(230,236,245,.35) 45%, transparent 55%) 95% 0 / 220% 220% no-repeat; opacity: .4; transition: background-position .7s cubic-bezier(.2,.8,.2,1), opacity .7s; } .ds-sleeve:hover::after, .ds-sleeve:focus-within::after { background-position: 10% 90%; opacity: .6; } .ds-card { flex: 1; background: #fbfaf6; color: #1f2124; border: 6px solid var(--c); border-radius: 8px; overflow: hidden; font: 400 1rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; } .ds-art { aspect-ratio: 16/10; background: linear-gradient(160deg, #dfe8e6, #b9cfcc); border-bottom: 6px solid var(--c); } .ds-body { padding: 14px 16px 16px; } .ds-meta { display: flex; justify-content: space-between; margin: 0 0 8px; } .ds-pill-tag, .ds-pill-status { display: inline-flex; align-items: center; min-height: 24px; padding: 2px 10px; border-radius: 999px; font: 700 .78rem/1 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: .02em; } .ds-pill-tag { background: var(--c); color: #fff; } .ds-pill-status { border: 1.5px solid currentColor; color: #1d6b3a; } .ds-name { font: 800 1.35rem/1.08 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: -.01em; margin: 0 0 .25em; } .ds-name a { color: #1f2124; text-decoration: none; } .ds-name a:hover { text-decoration: underline; text-decoration-color: var(--c); } .ds-tagline { font-weight: 750; margin: 0 0 .4em; } .ds-facts { list-style: none; padding: 0; margin: 0 0 .8em; font-size: .92rem; } .ds-facts li { position: relative; padding: 5px 0 5px 16px; border-top: 1px solid #dedbd2; } .ds-facts li::before { content: \"\"; position: absolute; left: 0; top: .9em; width: 7px; height: 7px; border-radius: 50%; background: var(--c); } .ds-btn { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 8px 16px; border-radius: 8px; background: var(--c); color: #fff; font-weight: 750; text-decoration: none; } .ds-btn:hover { filter: brightness(.9); } .ds-btn:focus-visible, .ds-name a:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; } .ds-size { font-weight: 600; font-size: .88rem; } @media (prefers-reduced-motion: reduce) { .ds-sleeve::after { transition: none; } }"
+    },
+    {
+      "name": "Download Button",
+      "kind": "button",
+      "refersTo": "button-download",
+      "description": "The card primary action: fills the mod accent (--c) with white text; version and size once release data resolves.",
+      "html": "<a class=\"ds-dl\" href=\"#\" style=\"--c:#b8322a\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16\"/></svg><span>Download latest</span><span class=\"ds-dl-size\">2.5 MB</span></a>",
+      "css": ".ds-dl { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 8px 16px; border-radius: 8px; background: var(--c); color: #fff; font: 750 1rem/1.3 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; text-decoration: none; } .ds-dl:hover { filter: brightness(.9); } .ds-dl:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-dl svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; } .ds-dl-size { font-weight: 600; font-size: .88rem; }"
+    },
+    {
+      "name": "Tag and Status Pills",
+      "kind": "chip",
+      "refersTo": "pill-tag",
+      "description": "Tag pill filled in the mod accent; status pill outlined in stable green, or caution umber for Preview and maturity labels.",
+      "html": "<div class=\"ds-pills\" style=\"--c:#5b3fd0\"><span class=\"ds-tag\">Performance</span><span class=\"ds-st\">Stable</span><span class=\"ds-st ds-st-pre\">Young mod</span></div>",
+      "css": ".ds-pills { display: flex; gap: 8px; background: #fbfaf6; padding: 12px; } .ds-tag, .ds-st { display: inline-flex; align-items: center; min-height: 24px; padding: 2px 10px; border-radius: 999px; font: 700 .78rem/1 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: .02em; } .ds-tag { background: var(--c); color: #fff; } .ds-st { border: 1.5px solid currentColor; color: #1d6b3a; } .ds-st-pre { color: #6e3d00; }"
+    },
+    {
+      "name": "Caution Note",
+      "kind": "custom",
+      "refersTo": "caution",
+      "description": "An honest maturity warning on a card; its label equals the card's data-maturity.",
+      "html": "<p class=\"ds-caution\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3 2 21h20L12 3Zm0 6v6m0 3v.5\"/></svg>Young mod: played in a few sessions in one large colony. Try it on a copy of a save.</p>",
+      "css": ".ds-caution { display: flex; gap: 8px; align-items: flex-start; margin: 0; padding: 8px 10px; background: #fff3dc; color: #6e3d00; border-radius: 6px; font: 400 .9rem/1.5 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; max-width: 300px; } .ds-caution svg { flex: none; width: 16px; height: 16px; margin-top: 2px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Need Index",
+      "kind": "nav",
+      "refersTo": "need-index-row",
+      "description": "The cover legend: one ruled row per need, ending in the mod name beside a tiny card swatch in its accent.",
+      "html": "<nav class=\"ds-needs\"><h2>Find one by what you need</h2><ul><li><a href=\"#\"><span class=\"ds-need\">Co-op in one shared colony</span><span class=\"ds-to\" style=\"--c:#b8322a\">BeaverBuddies Stability Fork</span></a></li><li><a href=\"#\"><span class=\"ds-need\">Lag spikes in a big colony</span><span class=\"ds-to\" style=\"--c:#5b3fd0\">Late Game Performance</span></a></li></ul></nav>",
+      "css": ".ds-needs { background: #dcd8cf; color: #1f2124; padding: 16px; font: 400 1.0625rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; max-width: 560px; } .ds-needs h2 { font: 700 1.05rem/1.2 \"Anybody\", \"Arial Narrow\", sans-serif; margin: 0 0 .5em; } .ds-needs ul { list-style: none; margin: 0; padding: 0; border-top: 1.5px solid #1f2124; } .ds-needs li { border-bottom: 1px solid #b9b4a8; } .ds-needs a { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 4px 16px; align-items: center; min-height: 46px; padding: 6px 2px; color: #1f2124; text-decoration: none; } .ds-needs a:hover .ds-need { text-decoration: underline; } .ds-needs a:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-need { font-weight: 600; } .ds-to { display: inline-flex; align-items: center; gap: 8px; font: 700 .95rem/1.2 \"Anybody\", \"Arial Narrow\", sans-serif; white-space: nowrap; } .ds-to::before { content: \"\"; width: 11px; height: 15px; border-radius: 2px; background: var(--c); box-shadow: inset 0 0 0 2px var(--c), inset 0 0 0 4px rgba(255,255,255,.55); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "theme-toggle",
+      "description": "Brand wordmark in Anybody, ink text links, a 44px round theme toggle.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-brand\" href=\"#\">Timbermods</a><nav><a href=\"#\">Mods</a><a href=\"#\">Install</a><a href=\"#\">GitHub</a><button class=\"ds-toggle\" type=\"button\" aria-label=\"Switch theme\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14-1.41-1.41M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z\"/></svg></button></nav></header>",
+      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; min-height: 68px; padding: 0 16px; background: #dcd8cf; border-bottom: 1px solid #b9b4a8; font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; } .ds-brand { font: 800 1.35rem/1 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: -.01em; color: #1f2124; text-decoration: none; } .ds-bar nav { display: flex; align-items: center; } .ds-bar nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #1f2124; font-weight: 650; text-decoration: none; } .ds-bar nav a:hover { text-decoration: underline; } .ds-bar a:focus-visible, .ds-toggle:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-left: 6px; border: 1px solid #4c5056; border-radius: 50%; background: transparent; color: #1f2124; cursor: pointer; } .ds-toggle:hover { background: rgba(31,33,36,.07); } .ds-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Printed Insert",
+      "kind": "card",
+      "refersTo": "insert",
+      "description": "A card-stock slip in a page's spare pocket: a double-ruled frame, each term with its mod's accent swatch.",
+      "html": "<div class=\"ds-insert\"><h3>Which one? One BeaverBuddies at a time</h3><dl><div style=\"--c:#b8322a\"><dt>Stability Fork</dt><dd>Everyone builds one colony together.</dd></div><div style=\"--c:#1a6a77\"><dt>MultiColony</dt><dd>Each player runs a colony of their own.</dd></div></dl><p>Install only one of the two.</p></div>",
+      "css": ".ds-insert { background: #fbfaf6; color: #1f2124; border-radius: 8px; padding: 22px 20px; border: 6px double #dedbd2; max-width: 300px; font: 400 1rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; } .ds-insert h3 { font: 800 1.35rem/1.08 \"Anybody\", \"Arial Narrow\", sans-serif; margin: 0 0 14px; } .ds-insert dl { margin: 0 0 14px; } .ds-insert dl > div { padding: 10px 0; border-top: 1px solid #dedbd2; } .ds-insert dt { font: 800 1rem/1.2 \"Anybody\", \"Arial Narrow\", sans-serif; } .ds-insert dt::before { content: \"\"; display: inline-block; width: 9px; height: 13px; margin-right: 8px; border-radius: 2px; vertical-align: -1px; background: var(--c); } .ds-insert dd { margin: 4px 0 0; color: #4a4e54; font-size: .95rem; } .ds-insert p { margin: 0; padding-top: 12px; border-top: 1.5px solid #1f2124; font-weight: 650; font-size: .95rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Collector's Binder",
+    "overview": "The hub is a card collector's desk. A felt mat is the page; dark PVC binder pages with three punched ring holes sit on it; each page holds clear sleeves, and each sleeve holds one trading card, one per mod. The binder only holds the cards. Every card is printed in its own mod's colours with art taken from that mod's own site, so a player who arrives from one mod's site recognises it at once. The hub has no brand accent of its own: its chrome is felt, PVC, ink and card stock, and all the colour on the page belongs to the mods.\n\nDensity is catalogue-like but calm: a cover with the name set huge in Anybody and a \"find by need\" index (one row per need, each ending in the mod's name beside a tiny card swatch in its colour), then three binder pages grouped by need, then a shared install sheet and a footer that stamps when the release data last changed. Every card carries the same fields in the same places, like the back of a sewing pattern, so cards compare at a glance. Surfaces are real, produced textures (procedural felt, pebbled PVC, a sleeve sheen made by `assets/img/make_textures.py`); card art is a crop of each mod's own site art. The one moving thing is the sleeve sheen.\n\nThe world deliberately refuses the catalogue template it replaced: parchment and forest green, identical dark banners on every card, soft-shadow rounded cards, a hero stat strip.",
+    "keyCharacteristics": [
+      "Neutral hub chrome (felt mat, PVC page, ink); all hue comes from the mods' own accents.",
+      "One card per mod: light stock framed 6px in the mod's accent, the mod's own art in a 16:10 window.",
+      "Fixed card fields in a fixed order on every card.",
+      "Anybody 700/800 for names, headings, pills and numerals; system-ui for reading.",
+      "A single motion: the sleeve sheen slides on hover or focus, and stops under reduced motion.",
+      "Light and dark themes (OS preference, overridable by the toggle); card stock stays light in both."
+    ],
+    "rules": [
+      {
+        "name": "The Own Colours Rule",
+        "body": "Each card keeps its own mod's accent, passed in as `--c` and taken from that mod's own site. The hub never recolours a card, never gives two mods one accent to tidy the palette, and never introduces a hub accent that competes with them. A new mod's card gets its accent from its own site.",
+        "section": "colors"
+      },
+      {
+        "name": "The Light Stock Rule",
+        "body": "Card stock stays light (card-stock) in dark mode, with its own ink, muted and rule colours, and its own link colour (the card sets `--link` back to ledger-blue) so dark-theme link blue never lands on light stock.",
+        "section": "colors"
+      },
+      {
+        "name": "The Binder Holds Rule",
+        "body": "Felt, PVC and ink are the hub's only colours. The logo is the one place hub chrome shows mod accents (a fanned hand of three cards), and it uses them as cards, not as a brand colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Weights Rule",
+        "body": "Only Anybody 700 and 800 ship; do not ask for another weight or face. Anybody sets names, headings, pills and numerals; running text is always the system stack.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Motion Rule",
+        "body": "The sleeve sheen is the only motion: on hover or focus-within it slides from the top right to the bottom left and brightens (opacity 0.4 to 0.6, 0.7s, cubic-bezier(.2, .8, .2, 1)). Under reduced motion every transition and animation stops, and smooth scrolling with them. Nothing else animates, enters or parallaxes.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set every mod colour through `--c` on the card and its need-index entry, with the value taken from the mod's own site (the Own Colours Rule).",
+      "**Do** keep card stock light in dark mode and keep the card's own link colour (the Light Stock Rule).",
+      "**Do** give every card the same fields in the same order, and the mod's own site art in the art window.",
+      "**Do** keep a new accent at 4.5:1 or better against white, since button and pill text is white on it.",
+      "**Do** keep produced textures and card crops reproducible and carrying their provenance JSON beside them.",
+      "**Do** keep the sheen the only motion and stop it under reduced motion (the One Motion Rule).",
+      "**Do** keep tap targets at 44px or more and the 3px focus ring visible in both themes."
+    ],
+    "donts": [
+      "**Don't** recolour cards to a hub palette, give cards one shared banner treatment, or add a hub brand accent.",
+      "**Don't** bring back the replaced catalogue look: parchment and forest green, identical dark banners, soft-shadow rounded cards, a hero stat strip.",
+      "**Don't** add Anybody weights or other display faces, or load fonts or assets from a CDN.",
+      "**Don't** add animation beyond the sleeve sheen.",
+      "**Don't** remove or rename the markup hooks, or edit `data/releases.json`."
+    ]
+  }
+}

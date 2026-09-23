@@ -49,14 +49,17 @@ A card with a caution (`<p class="caution">Beta: …</p>`) also needs `data-matu
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | The page and all eight cards (including inline SVG banners) |
-| `assets/style.css` | Styling, light and dark themes |
+| `index.html` | The page and all eight cards |
+| `404.html` | The not-found page, with a link to each mod's site |
+| `assets/style.css` | Styling (the binder of cards), light and dark themes |
+| `assets/fonts/` | Anybody, self-hosted (SIL Open Font License, `OFL-Anybody.txt`) |
 | `assets/site.js` | Download buttons and theme toggle |
-| `assets/img/` | Screenshots for MixedStorage and The Tipsy Tail |
+| `assets/img/cards/` | Each card's art, a capture from that mod's own site (960×600) |
+| `assets/img/` | Felt, binder and sleeve textures (`make_textures.py` remakes them) and the social preview `og.png` |
 | `data/releases.json` | Release snapshot (generated) |
 | `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview), `test-site.mjs` (tests) |
 | `.github/workflows/` | Hourly snapshot refresh (`refresh-releases.yml`) and the tests (`tests.yml`) |
 
 ## License
 
-MIT. See [LICENSE](LICENSE). Timberborn, its name and its artwork belong to Mechanistry and are not covered by this license; the screenshots in `assets/img/` show the game.
+MIT. See [LICENSE](LICENSE). Timberborn, its name and its artwork belong to Mechanistry and are not covered by this license; the card art in `assets/img/cards/` comes from each mod's own site, and some of it shows the game.

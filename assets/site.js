@@ -102,7 +102,8 @@
     btn.href = primary.asset.url;
     btn.querySelector('.btn-label').textContent = 'Download ' + versionLabel(primary.release.tag);
     btn.querySelector('[data-size]').textContent = formatSize(primary.asset.size);
-    btn.setAttribute('aria-label', 'Download ' + card.querySelector('h3').textContent + ' ' + versionLabel(primary.release.tag) + ', ' + formatSize(primary.asset.size) + ' ZIP');
+    // the name starts with the button's visible text, then says which mod (WCAG 2.5.3, label in name)
+    btn.setAttribute('aria-label', 'Download ' + versionLabel(primary.release.tag) + ', ' + formatSize(primary.asset.size) + ' ZIP, ' + card.querySelector('h3').textContent);
 
     const notes = card.querySelector('[data-notes]');
     if (notes) notes.href = primary.release.url;
