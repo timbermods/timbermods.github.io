@@ -1,66 +1,27 @@
-# Timberborn Mods catalog
+# Timbermods
 
-A static, no-build catalog site for the Timberborn mods: BeaverBuddies Stability Fork, Timber Together, MixedStorage, Persistent Work Areas, Optimized Local Housing, Late Game Performance, The Tipsy Tail and Hungry Pathing. Each card links to the mod's own site and has a **Download latest** button.
+Every Timbermods mod for Timberborn on one page: **<https://timbermods.github.io/>**. Each mod has a **Download
+latest** button for its current release and a link to its own site.
 
-## Preview locally
+## The mods
 
-```bash
-node scripts/serve.mjs
-```
+- [BeaverBuddies Stability Fork](https://timbermods.github.io/BeaverBuddies-Stability-Fork/): co-op in one shared colony
+- [Timber Together](https://timbermods.github.io/TimberTogether/): co-op with a colony for each player
+- [Late Game Performance](https://timbermods.github.io/LateGamePerformance/): fewer lag spikes in big colonies
+- [Optimized Local Housing](https://timbermods.github.io/OptimizedLocalHousing/): shorter walks to work
+- [Hungry Pathing](https://timbermods.github.io/HungryPathing/): working beavers eat before the hunger penalty
+- [MixedStorage](https://timbermods.github.io/MixedStorage/): several goods in one warehouse
+- [Persistent Work Areas](https://timbermods.github.io/PersistentWorkAreas/): working-area outlines that stay on screen
+- [The Tipsy Tail](https://timbermods.github.io/timberborn-tipsy-tail/): a swim-up pool bar
 
-Then open <http://127.0.0.1:8765/>.
+Every mod installs the same way: see [Installing any of these](https://timbermods.github.io/#install).
 
-## Deploy to GitHub Pages
-
-1. Create a repo (the name `timbermods.github.io` gives you `https://timbermods.github.io/`), and push this folder to it.
-2. **Settings → Pages → Build and deployment**: deploy from branch `main`, folder `/ (root)`.
-
-All paths are relative, so it also works from a project repo (`.../some-repo/`).
-
-## How "Download latest" works
-
-The mods release often, so the buttons never hard-code a version. Each card has `data-repo` and `data-asset` (a regex that picks the mod ZIP from the release's assets). In the browser, `assets/site.js`:
-
-1. paints immediately from `data/releases.json`, a snapshot kept fresh by `.github/workflows/refresh-releases.yml` (scheduled hourly, though GitHub often runs it only every few hours; or run it from the Actions tab);
-2. then checks the GitHub API live (two requests per mod, cached 30 minutes) and updates the button;
-3. if both fail, the button is still a plain link to the repo's Releases page.
-
-Which release it offers: the one GitHub marks as **Latest** (the newest release that isn't a draft or a pre-release), however many pre-releases came after it. If a repo only has pre-releases it offers the newest of those and marks the card **Preview**. If the newest listed release is a pre-release published after the offered one, a small "Newer preview" link to it appears under the button. The main rule (GitHub's Latest, else the newest pre-release) is the one the shared `release.js` on most of the mods' own sites follows; the two differ in edge cases, such as a Latest release without a mod ZIP.
-
-The pill says **Stable** for a stable release, unless the card has a caution: then it shows the card's `data-maturity` (such as **Beta** or **Preview**), so it never contradicts the caution.
-
-Refresh the snapshot by hand: `node scripts/update-releases.mjs` (set `GITHUB_TOKEN` to avoid rate limits). For each repo it stores the newest 12 releases and, under `latest`, GitHub's Latest release (`null` when there is none). It rewrites the file, and its `generated` time, only when that data changed, so the footer reads "Release data last changed <date>"; after a live check of every card it says so instead.
-
-## Tests
-
-```bash
-node scripts/test-site.mjs
-```
-
-Offline checks with no dependencies: `assets/site.js` runs against a stub page and a fake GitHub API, and `scripts/update-releases.mjs` runs in a scratch folder against the same fake API. `.github/workflows/tests.yml` runs them on every push to `main` and every pull request.
-
-## Adding or changing a mod
-
-Copy an existing `<article class="card">` in `index.html`, then update its `--c` accent color, `data-repo`, `data-asset`, links and text. Running `scripts/update-releases.mjs` picks up the new repo automatically.
-
-A card with a caution (`<p class="caution">Beta: …</p>`) also needs `data-maturity` on its `<article>`, set to the caution's label (`data-maturity="Beta"`). When the mod is ready, remove both, and the pill says Stable. `scripts/test-site.mjs` checks that the two match.
-
-## Files
-
-| Path | Purpose |
-| --- | --- |
-| `index.html` | The page and all eight cards |
-| `404.html` | The not-found page, with a link to each mod's site |
-| `assets/style.css` | Styling: walnut boards on birch by day, on a forest floor at night; light and dark themes |
-| `assets/fonts/` | Anybody, self-hosted (SIL Open Font License, `OFL-Anybody.txt`) |
-| `assets/site.js` | Download buttons and theme toggle |
-| `assets/img/cards/` | Each mod's picture, a capture from that mod's own site (960×600) |
-| `assets/img/` | The opening valley by day and at dusk (`make_valley.py` draws them), birch, forest-floor and walnut textures (`make_textures.py`), and the social preview `og.png` |
-| `data/releases.json` | Release snapshot (generated) |
-| `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview), `test-site.mjs` (tests) |
-| `scripts/card-art.py` | Recaptures card art from each mod's live site: `python scripts/card-art.py [card-id ...]` (Playwright, Pillow, installed Edge) |
-| `.github/workflows/` | Hourly snapshot refresh (`refresh-releases.yml`) and the tests (`tests.yml`) |
+Working on the site itself? See [DEVELOPING.md](DEVELOPING.md).
 
 ## License
 
-MIT. See [LICENSE](LICENSE). Timberborn, its name and its artwork belong to Mechanistry and are not covered by this license; the card art in `assets/img/cards/` comes from each mod's own site, and some of it shows the game.
+MIT. See [LICENSE](LICENSE). Timberborn, its name and its artwork belong to Mechanistry and are not covered. Each
+mod's picture comes from that mod's own site, and some show the game.
+
+Unofficial, fan-made mods for Timberborn. Not affiliated with or endorsed by Mechanistry. BeaverBuddies Stability Fork
+and Timber Together build on [BeaverBuddies](https://github.com/thomaswp/BeaverBuddies) by thomaswp and contributors.

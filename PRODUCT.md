@@ -52,7 +52,7 @@ the card `id`, its accent `--c` (taken from that mod's own site), its category p
    - Co-op with fewer crashes and desyncs: an independent fork of BeaverBuddies with Steam friend invites, a connection
      panel, teammate cursors and desync fixes.
    - **Feature-complete**: game-update and bug-fix releases only; new features go into Timber Together. GitHub's Latest.
-   - Its status line follows its README (the newest release is fixes only and hasn't been played yet). GPL-3.0.
+   - Its status line follows its README (the newest release has been played and works). GPL-3.0.
 2. **Timber Together** (`timber-together`, `#1a6a77`, Multiplayer; Harmony, Mod Settings;
    `data-maturity="Beta"` with a Beta caution).
    - Tagline *Build apart. Thrive together.* A colony each on one map; the colonies' roads never join, and they trade only at Trading Posts. Or
@@ -173,7 +173,8 @@ this file. Terms to use: Trading Post (capitalized); Timber Together has no land
 - **Words players use:** never "card", "binder", "pocket" or "sleeve" in anything a visitor reads; say "mod", or
   write the sentence without it. (The `.card` class name stays in the code: the tests and `site.js` need it.)
 - **Voice:** fellow players sharing mods they find useful. Plain, exact, friendly; say what each mod does and what it
-  needs. Never hype, never "the best", no superlatives the READMEs don't support.
+  needs. Never hype, never "the best", no superlatives the READMEs don't support. Short and plain: one idea per
+  sentence, each thing said once, no internals and no history (see CLAUDE.md, *Writing README and website text*).
 - **Unofficial:** community mods, not affiliated with or endorsed by Mechanistry. The footer says so and credits
   BeaverBuddies by thomaswp and contributors ("the multiplayer design is theirs") for the two BeaverBuddies mods. Keep
   both.

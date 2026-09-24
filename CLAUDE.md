@@ -19,6 +19,24 @@ main).
 - The hub has no shared `release.js`; `assets/site.js` is hub-only. If you change or add a selector in it, update the
   stub DOM in `scripts/test-site.mjs` too (the stub throws on any selector it doesn't know).
 
+## Writing README and website text
+
+Kyler, 2026-09-24: "simplicity and elegance is effective and desirable." Every change to the README, the website
+text and the player docs follows these rules.
+
+- **Write for a Timberborn player** who wants to download, install and use the mod. Developer detail goes in
+  `DEVELOPING.md`; link to it rather than repeating it.
+- **Short.** One idea per sentence, most under about 20 words. A paragraph or FAQ answer is one to three sentences,
+  a troubleshooting answer a few numbered steps.
+- **Lead with the action.** Menu paths as arrow chains; on-screen labels in bold, exactly as in game.
+- **Say each thing once**, where a player would look for it; link to it elsewhere.
+- **Plain words.** No internals (class names, ids, formats) unless the player needs them to act.
+- **Cut** filler, repeated caveats, edge cases a player won't meet, and history ("since …", "no longer", older
+  builds). Describe the mod as it is now.
+- **Check every fact against the code** before writing it; changelogs lag.
+- **Keep, briefly:** credits, the unofficial line, the status, and safety facts.
+- **Reread as a new player before publishing.** Every step works as written, and nothing is said twice.
+
 ## Website
 
 - **Where:** the repo root: `index.html` (opening with the need index, three walnut boards of mods, install, footer),
@@ -104,6 +122,7 @@ main).
 
 ### Content rules
 
+- Every word follows *Writing README and website text* above.
 - Describe each mod as it is now. No "New in <version>", "added in …" or version history; that belongs in each mod's
   own release notes.
 - Each card's status line and caution wording match that mod's README exactly in substance (read it with
@@ -120,7 +139,7 @@ main).
 
 A new release alone needs **no** edit: the button, size, date, pill and "Newer preview" link update themselves. Edit
 the hub when a mod's features, status, requirements or caution change, when a mod is added, or when a mod's site
-changes its look.
+changes its look. Write every change by *Writing README and website text* above.
 1. Read the mod: `gh release list -R timbermods/<Repo> -L 5`, `gh release view <tag> -R timbermods/<Repo>`, its README
    (command above) and its site. List what changed for players.
 2. Update every place the hub states that fact:
