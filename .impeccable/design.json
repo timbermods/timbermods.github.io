@@ -930,6 +930,14 @@
   },
   "components": [
     {
+      "name": "The Valley",
+      "kind": "custom",
+      "refersTo": "valley",
+      "description": "The page opens on a full-width river valley (the org profile banner's scene): day in the light theme, dusk in the dark one, a CSS background via --vista, masked to fade into the page at top and bottom, with the wordmark over its sky. Drawn by assets/img/make_valley.py; shows no mod.",
+      "html": "<div class=\"ds-vista\" role=\"img\" aria-label=\"A river valley with a beaver, its lodge and dam\"></div>",
+      "css": ".ds-vista{width:100%;aspect-ratio:1280/360;min-height:230px;max-height:500px;background:url(img/valley-day.svg) 66% 100%/cover no-repeat;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 88%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 88%,transparent 100%)}"
+    },
+    {
       "name": "Walnut Board",
       "kind": "custom",
       "refersTo": "walnut-board",

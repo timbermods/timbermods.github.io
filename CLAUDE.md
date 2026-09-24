@@ -29,7 +29,9 @@ main).
   a build takes about a minute.
 - **Look:** "The Lodge Wall". Pale birch boards by day and a dark forest floor at night; each group of mods is mounted
   on a walnut board with four brass nail heads; each mod is a panel (warm paper by day, moss green at night) framed in
-  that mod's own colour with a picture from its own site. Wood, brown and green: Kyler rejected a black/white look.
+  that mod's own colour with a picture from its own site. The page opens on a river valley (a beaver, its lodge and
+  dam, pines and birches) with the wordmark over its sky: by day in the light theme, at dusk in the dark one. Wood,
+  brown and green: Kyler rejected a black/white look.
   The look is fixed: updates extend it and never restyle it.
 - **Words:** never "card", "binder", "pocket" or "sleeve" in anything a visitor reads (page text, titles, meta, alt,
   aria labels). Say "mod", or write the sentence without it. The class name `.card` is read by `site.js` and the tests,
@@ -69,6 +71,10 @@ main).
   as in step 6 below) `"$IMP/scripts/impeccable" embed-prompt <file> --prompt "Origin: ..."` (reuse a neighbouring
   sidecar's wording) and check with `embed-prompt --scan .`.
 - The logo (header SVG in both pages and `assets/favicon.svg`) is a pine tree on a log end.
+- The valley: `assets/img/valley-day.svg` (light) and `valley-dusk.svg` (dark), a CSS background via `--vista` on
+  `.vista`, drawn by `assets/img/make_valley.py` (`cd assets/img && python make_valley.py`; vector, fixed seed, no
+  text). It is the same scene as the org profile's banner (`timbermods/.github` `profile/make_banner.py`): change the
+  two together. It shows no mod, so it never needs updating for a release.
 - Mod pictures: `assets/img/cards/<id>.webp`, 960×600, a capture of the element on that mod's own site that shows what
   the mod does. When a mod's site changes it, recapture: `python scripts/card-art.py <id>` (no id = all eight; needs
   Python with playwright + Pillow and installed Microsoft Edge; the selector per mod is in its `JOBS` table, update it
