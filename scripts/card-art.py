@@ -15,6 +15,15 @@ SITE = "https://timbermods.github.io/"
 # card id -> (page, CSS selector of the signature element, or None to use the clip rectangle)
 # cards taken from their site's dark mode (Kyler, 2026-09-24: Timber Together's darker map reads better)
 DARK = {"timber-together"}
+# extra CSS for a capture: Hungry Pathing's board without its slate texture (it read as smoke)
+CSS = {"hungry-pathing": ".board, .shift { background-image: none !important; }"}
+# steps run on the page before the capture: Persistent Work Areas pins the Farmhouse too, so two outlines show
+SETUP = {"persistent-work-areas": """
+    document.querySelector('svg.map g.bld[aria-label="Select Farmhouse"]').dispatchEvent(new MouseEvent('click', {bubbles: true}));
+    document.querySelector('.ui-toggle').click();
+    document.querySelector('[data-deselect]').click();
+    document.activeElement && document.activeElement.blur();
+"""}
 JOBS = {
     "beaverbuddies-stability-fork": (SITE + "BeaverBuddies-Stability-Fork/", ".coop-map", None),
     "timber-together": (SITE + "TimberTogether/", ".hero figure", None),
@@ -33,6 +42,10 @@ with sync_playwright() as p:
         url, sel, clip = JOBS[card]
         page = browser.new_page(viewport={"width": 1440, "height": 900}, color_scheme="dark" if card in DARK else "light", reduced_motion="reduce", device_scale_factor=1.5)
         page.goto(url, wait_until="networkidle")
+        if card in SETUP:
+            page.evaluate(SETUP[card])
+        if card in CSS:
+            page.add_style_tag(content=CSS[card])
         page.wait_for_timeout(600)
         png = page.locator(sel).first.screenshot() if sel else page.screenshot(clip=clip)
         page.close()
