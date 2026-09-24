@@ -48,7 +48,7 @@ main).
 
 - **Own Colours**: each mod's accent is passed as `--c` (inline `style="--c:#…"` on the `article.card` and on its
   need-index `.to` span), taken from that mod's own site. It frames the panel and colours its tag pill, bullets and
-  download button. Never recolour a mod or share an accent. Accents: Stability Fork #b8322a, MultiColony #1a6a77,
+  download button. Never recolour a mod or share an accent. Accents: Stability Fork #b8322a, Timber Together #1a6a77,
   MixedStorage #8a6a2c, Persistent Work Areas #8a6512, Optimized Local Housing #2d5f9a, Late Game Performance #5b3fd0,
   The Tipsy Tail #1a6773, Hungry Pathing #1d4a86. A new accent must hold ≥4.5:1 against white (`#fff` text on it).
 - **Wood and Green**: the hub's own colours are birch, walnut, brass, paper, moss and pine green, nothing black/white.
@@ -111,9 +111,9 @@ main).
   Never invent download counts, ratings, reviews or screenshots.
 - Keep the credits: BeaverBuddies by thomaswp and contributors ("The multiplayer design is theirs.") and "Not affiliated
   with or endorsed by Mechanistry" (footer of both pages).
-- Terminology: exact names BeaverBuddies Stability Fork, BeaverBuddies MultiColony, MixedStorage, Persistent Work
+- Terminology: exact names BeaverBuddies Stability Fork, Timber Together, MixedStorage, Persistent Work
   Areas, Optimized Local Housing, Late Game Performance, The Tipsy Tail, Hungry Pathing; the org is Timbermods;
-  "Trading Post" capitalised; MultiColony has no land or borders (roads never join except through a Trading Post).
+  "Trading Post" capitalised; Timber Together has no land or borders (roads never join except through a Trading Post).
 - When you change a card, update its entry in PRODUCT.md's Operating Context too, so the two stay in step.
 
 ### Update the website (a mod changed, a mod was added, or a mod's site changed its look)

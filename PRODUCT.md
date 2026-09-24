@@ -51,11 +51,11 @@ the card `id`, its accent `--c` (taken from that mod's own site), its category p
 1. **BeaverBuddies Stability Fork** (`beaverbuddies-stability-fork`, `#b8322a`, Multiplayer; Harmony, Mod Settings).
    - Co-op with fewer crashes and desyncs: an independent fork of BeaverBuddies with Steam friend invites, a connection
      panel, teammate cursors and desync fixes.
-   - **Feature-complete**: game-update and bug-fix releases only; new features go into MultiColony. GitHub's Latest.
+   - **Feature-complete**: game-update and bug-fix releases only; new features go into Timber Together. GitHub's Latest.
    - Its status line follows its README (the newest release is fixes only and hasn't been played yet). GPL-3.0.
-2. **BeaverBuddies MultiColony** (`beaverbuddies-multicolony`, `#1a6a77`, Multiplayer; Harmony, Mod Settings;
+2. **Timber Together** (`timber-together`, `#1a6a77`, Multiplayer; Harmony, Mod Settings;
    `data-maturity="Beta"` with a Beta caution).
-   - Two players, one map, a colony each; the colonies' roads never join, and they trade only at Trading Posts. Or
+   - Tagline *Build apart. Thrive together.* A colony each on one map; the colonies' roads never join, and they trade only at Trading Posts. Or
      share one colony, as in the fork.
    - Pre-releases only (no Latest release), so the pill says **Preview**. Built on the Stability Fork. GPL-3.0.
    - The caution's played and not-played lists follow its README.
@@ -86,7 +86,7 @@ the card `id`, its accent `--c` (taken from that mod's own site), its category p
 profile). Whether PerformanceLog joins the hub is the maintainer's call.
 
 **Game version:** every mod is built for Timberborn **1.1.2.4** (the hero says so; each README agrees). Only the
-Steam version on Windows is stated as tested (Stability Fork, MultiColony).
+Steam version on Windows is stated as tested (Stability Fork, Timber Together).
 
 **The refresh process:** `.github/workflows/refresh-releases.yml` runs `node scripts/update-releases.mjs` on a cron
 (`17 * * * *`, hourly on paper; GitHub often runs it only every few hours) and on manual dispatch. It commits
@@ -138,7 +138,7 @@ on every push to `main` and every pull request, Node 22; the bot's pushes don't 
    starts with a label and a colon (`Beta: …`), and the card's `data-maturity` equals that label. The pill must never
    read Stable next to a caution. Remove both together when a mod is ready.
 4. **No-JS fallback:** each download `href` in the HTML is the repo's `/releases` page (not `/releases/latest`, which
-   404s for MultiColony's pre-release-only repo), and the notes link likewise.
+   404s for Timber Together's pre-release-only repo), and the notes link likewise.
 5. **Footer stamp:** one `[data-generated]` element (default text "Release data loads from GitHub."); `site.js` sets
    "Release data last changed <date>." from the snapshot, or "Latest releases checked live from GitHub." after a live
    check of every card. Tests assert both strings.
@@ -159,14 +159,14 @@ on every push to `main` and every pull request, Node 22; the bot's pushes don't 
 and follows the same main rule, differing in edge cases). If a `release.js` is ever copied in, it is replaced
 byte-for-byte from the shared copy, never edited. `site.js` itself is hub-only and may be changed, with its tests.
 
-**Exact mod names** (as on the cards and the mods' sites): BeaverBuddies Stability Fork, BeaverBuddies MultiColony,
+**Exact mod names** (as on the cards and the mods' sites): BeaverBuddies Stability Fork, Timber Together,
 MixedStorage, Persistent Work Areas, Optimized Local Housing, Late Game Performance, The Tipsy Tail, Hungry Pathing.
-The org is **Timbermods**; the original mod is **BeaverBuddies** by thomaswp. MultiColony's in-game name is
-"BeaverBuddies MultiColony (beta)".
+The org is **Timbermods**; the original mod is **BeaverBuddies** by thomaswp. Timber Together's in-game name is
+"Timber Together".
 
 **Keeping copy true:** each card's tagline, facts, caution and status line restate that mod's README. When a mod's
 README changes (features, status, requirements), update its card, the needs index if the mod's purpose changed, and
-this file. Terms to use: Trading Post (capitalized); MultiColony has no land or borders.
+this file. Terms to use: Trading Post (capitalized); Timber Together has no land or borders.
 
 ## Brand Commitments
 
@@ -182,19 +182,19 @@ this file. Terms to use: Trading Post (capitalized); MultiColony has no land or 
 - **Each mod keeps its own identity.** Its card uses that mod's accent color and imagery, consistent with its own site;
   the hub's own look frames the collection without overriding theirs.
 - **License:** the hub is MIT (Copyright 2026 Timbermods). Timberborn, its name and artwork are not covered. Each mod
-  has its own license (Stability Fork and MultiColony GPL-3.0; MixedStorage and Late Game Performance MIT); the hub
+  has its own license (Stability Fork and Timber Together GPL-3.0; MixedStorage and Late Game Performance MIT); the hub
   doesn't restate the others.
 
 ## Evidence on Hand
 
 - **Card art:** `assets/img/cards/<card-id>.webp` (960×600), one per mod, each a capture of the signature element
-  of that mod's own site (the Stability Fork's log round, MultiColony's two-colony map, Late Game Performance's pit
+  of that mod's own site (the Stability Fork's log round, Timber Together's two-colony map, Late Game Performance's pit
   board, the seating plan, the hunger board, the MixedStorage panel, the pinned-area plan, the Tipsy Tail on its bar).
   When a mod's site changes its look, recapture its card. Provenance is in each image's `.json` sidecar.
 - **Org profile:** `timbermods/.github/profile/`: its hand-made `banner.svg` and one picture per mod in `cards/*.png`,
   rendered by `profile/make_images.py` from this site's pictures.
 - **Per-mod sites** each have their own screenshots, icons and demos (MixedStorage: `panel.webp`, `world.webp`;
-  MultiColony: mod icon, goods icons, connection-panel screenshot; others per their repos). The hub may link to or
+  Timber Together: mod icon, goods icons, connection-panel screenshot; others per their repos). The hub may link to or
   reuse them only as those sites hold them.
 - **Live facts:** release tag, publish date, zip size, prerelease flag and GitHub's Latest marker per mod, from the
   snapshot and the live API. Nothing else is data-driven.
