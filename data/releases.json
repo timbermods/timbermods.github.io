@@ -1,7 +1,26 @@
 {
-  "generated": "2026-09-24T07:08:09.703Z",
+  "generated": "2026-09-24T10:04:00.120Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
+      {
+        "tag": "v1.1.16",
+        "name": "BeaverBuddies Stability Fork — 1.1.16",
+        "prerelease": false,
+        "published": "2026-09-24T09:10:46Z",
+        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.16",
+        "assets": [
+          {
+            "name": "1.1.16-SHA256SUMS.txt",
+            "size": 106,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.16/1.1.16-SHA256SUMS.txt"
+          },
+          {
+            "name": "BeaverBuddies-Stability-Fork-1.1.16.zip",
+            "size": 2604383,
+            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.16/BeaverBuddies-Stability-Fork-1.1.16.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.1.15",
         "name": "BeaverBuddies Stability Fork — 1.1.15",
@@ -210,25 +229,6 @@
             "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.1/BeaverBuddies-Stability-Fork-1.0.1.zip"
           }
         ]
-      },
-      {
-        "tag": "v1.0.0",
-        "name": "BeaverBuddies Stability Fork — 1.0.0",
-        "prerelease": false,
-        "published": "2026-09-19T08:33:00Z",
-        "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.0.0",
-        "assets": [
-          {
-            "name": "1.0.0-SHA256SUMS.txt",
-            "size": 100,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.0/1.0.0-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-stability-1.0.0.zip",
-            "size": 2509516,
-            "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.0.0/BeaverBuddies-stability-1.0.0.zip"
-          }
-        ]
       }
     ],
     "timbermods/TimberTogether": [
@@ -286,6 +286,25 @@
             "name": "BeaverBuddies-MultiColony-1.4.0-rc7.zip",
             "size": 3114941,
             "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc7/BeaverBuddies-MultiColony-1.4.0-rc7.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-rc10",
+        "name": "Timber Together 1.4.0-rc10",
+        "prerelease": true,
+        "published": "2026-09-24T09:39:59Z",
+        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc10",
+        "assets": [
+          {
+            "name": "1.4.0-rc10-SHA256SUMS.txt",
+            "size": 96,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc10/1.4.0-rc10-SHA256SUMS.txt"
+          },
+          {
+            "name": "TimberTogether-1.4.0-rc10.zip",
+            "size": 2821855,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc10/TimberTogether-1.4.0-rc10.zip"
           }
         ]
       },
@@ -438,25 +457,6 @@
             "name": "BeaverBuddies-MultiColony-1.4.0-beta23.zip",
             "size": 3035547,
             "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-beta23/BeaverBuddies-MultiColony-1.4.0-beta23.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-beta21",
-        "name": "Timber Together — 1.4.0-beta21 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-23T06:34:31Z",
-        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-beta21",
-        "assets": [
-          {
-            "name": "1.4.0-beta21-SHA256SUMS.txt",
-            "size": 109,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-beta21/1.4.0-beta21-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta21.zip",
-            "size": 3034365,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-beta21/BeaverBuddies-MultiColony-1.4.0-beta21.zip"
           }
         ]
       }
@@ -1399,21 +1399,21 @@
   },
   "latest": {
     "timbermods/BeaverBuddies-Stability-Fork": {
-      "tag": "v1.1.15",
-      "name": "BeaverBuddies Stability Fork — 1.1.15",
+      "tag": "v1.1.16",
+      "name": "BeaverBuddies Stability Fork — 1.1.16",
       "prerelease": false,
-      "published": "2026-09-24T05:01:38Z",
-      "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.15",
+      "published": "2026-09-24T09:10:46Z",
+      "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/tag/v1.1.16",
       "assets": [
         {
-          "name": "1.1.15-SHA256SUMS.txt",
+          "name": "1.1.16-SHA256SUMS.txt",
           "size": 106,
-          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.15/1.1.15-SHA256SUMS.txt"
+          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.16/1.1.16-SHA256SUMS.txt"
         },
         {
-          "name": "BeaverBuddies-Stability-Fork-1.1.15.zip",
-          "size": 2627323,
-          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.15/BeaverBuddies-Stability-Fork-1.1.15.zip"
+          "name": "BeaverBuddies-Stability-Fork-1.1.16.zip",
+          "size": 2604383,
+          "url": "https://github.com/timbermods/BeaverBuddies-Stability-Fork/releases/download/v1.1.16/BeaverBuddies-Stability-Fork-1.1.16.zip"
         }
       ]
     },
