@@ -10,6 +10,20 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css">
   <script>
+    // A mod's site that moved with its repository: the same page at the new address.
+    (function () {
+      var moved = { '/beaverbuddies-multicolony': '/TimberTogether' };
+      var path = location.pathname;
+      for (var from in moved) {
+        var lower = path.toLowerCase();
+        if (lower === from || lower.indexOf(from + '/') === 0) {
+          location.replace(moved[from] + path.slice(from.length) + location.search + location.hash);
+          return;
+        }
+      }
+    })();
+  </script>
+  <script>
     try { var t = localStorage.getItem('tbmods.theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
 </head>
@@ -33,7 +47,7 @@
         <h2>Each mod's own site</h2>
         <ul>
           <li><a href="https://timbermods.github.io/BeaverBuddies-Stability-Fork/"><span class="to" style="--c: #b8322a">BeaverBuddies Stability Fork</span></a></li>
-          <li><a href="https://timbermods.github.io/BeaverBuddies-MultiColony/"><span class="to" style="--c: #1a6a77">BeaverBuddies MultiColony</span></a></li>
+          <li><a href="https://timbermods.github.io/TimberTogether/"><span class="to" style="--c: #1a6a77">Timber Together</span></a></li>
           <li><a href="https://timbermods.github.io/LateGamePerformance/"><span class="to" style="--c: #5b3fd0">Late Game Performance</span></a></li>
           <li><a href="https://timbermods.github.io/OptimizedLocalHousing/"><span class="to" style="--c: #2d5f9a">Optimized Local Housing</span></a></li>
           <li><a href="https://timbermods.github.io/HungryPathing/"><span class="to" style="--c: #1d4a86">Hungry Pathing</span></a></li>

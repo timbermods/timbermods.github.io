@@ -1,6 +1,6 @@
 # Timberborn Mods catalog
 
-A static, no-build catalog site for the Timberborn mods: BeaverBuddies Stability Fork, BeaverBuddies MultiColony, MixedStorage, Persistent Work Areas, Optimized Local Housing, Late Game Performance, The Tipsy Tail and Hungry Pathing. Each card links to the mod's own site and has a **Download latest** button.
+A static, no-build catalog site for the Timberborn mods: BeaverBuddies Stability Fork, Timber Together, MixedStorage, Persistent Work Areas, Optimized Local Housing, Late Game Performance, The Tipsy Tail and Hungry Pathing. Each card links to the mod's own site and has a **Download latest** button.
 
 ## Preview locally
 

@@ -41,7 +41,7 @@ colors:
   log-end: "#e0c79a"
   log-ring: "#c7a878"
   mod-stability-fork: "#b8322a"
-  mod-multicolony: "#1a6a77"
+  mod-timber-together: "#1a6a77"
   mod-late-game-performance: "#5b3fd0"
   mod-optimized-local-housing: "#2d5f9a"
   mod-hungry-pathing: "#1d4a86"
@@ -152,13 +152,13 @@ components:
   mod-panel-body:
     padding: "{spacing.panel-body}"
   button-download:
-    backgroundColor: "{colors.mod-multicolony}"
+    backgroundColor: "{colors.mod-timber-together}"
     textColor: "#ffffff"
     rounded: "{rounded.lg}"
     padding: "8px 16px"
     height: "{spacing.button}"
   pill-category:
-    backgroundColor: "{colors.mod-multicolony}"
+    backgroundColor: "{colors.mod-timber-together}"
     textColor: "#ffffff"
     typography: "{typography.label}"
     rounded: "{rounded.pill}"
