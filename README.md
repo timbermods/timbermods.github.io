@@ -55,7 +55,7 @@ A card with a caution (`<p class="caution">Beta: …</p>`) also needs `data-matu
 | `assets/fonts/` | Anybody, self-hosted (SIL Open Font License, `OFL-Anybody.txt`) |
 | `assets/site.js` | Download buttons and theme toggle |
 | `assets/img/cards/` | Each mod's picture, a capture from that mod's own site (960×600) |
-| `assets/img/` | Birch, forest-floor and walnut textures (`make_textures.py` remakes them) and the social preview `og.png` |
+| `assets/img/` | The opening valley by day and at dusk (`make_valley.py` draws them), birch, forest-floor and walnut textures (`make_textures.py`), and the social preview `og.png` |
 | `data/releases.json` | Release snapshot (generated) |
 | `scripts/` | `update-releases.mjs` (snapshot), `serve.mjs` (local preview), `test-site.mjs` (tests) |
 | `scripts/card-art.py` | Recaptures card art from each mod's live site: `python scripts/card-art.py [card-id ...]` (Playwright, Pillow, installed Edge) |

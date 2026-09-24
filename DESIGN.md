@@ -276,7 +276,7 @@ A woodland palette: pale birch and dark forest floor for the ground, walnut and 
 **Character:** A wide, sturdy grotesque with the weight of a carved sign for names and headings, over a plain reading sans that stays out of the way.
 
 ### Hierarchy
-- **Display** (800, clamp(3.2rem, 7.5vw, 6rem), 0.9): the "Timber / mods" wordmark on the cover, two stacked lines, the second in pine. The 404 uses display-lost (800, clamp(2.4rem, 6vw, 4rem), 1).
+- **Display** (800, clamp(3rem, 7.2vw, 6.4rem), 0.9; clamp(2.6rem, 13vw, 3.4rem) under 620px): the "Timbermods" wordmark over the valley's sky, one line, "mods" in pine. The 404 uses display-lost (800, clamp(2.4rem, 6vw, 4rem), 1).
 - **Headline** (800, clamp(1.7rem, 3.2vw, 2.4rem), 1.05): board titles and section titles.
 - **Numeral** (800, 2.6rem, 1): install step numbers, in pine.
 - **Title** (800, 1.35rem, 1.08): mod names on panels, the notice title, the header wordmark (at line-height 1). Title-sm (800, 1.15rem) for install step titles.
@@ -289,9 +289,9 @@ A woodland palette: pale birch and dark forest floor for the ground, walnut and 
 
 ## Layout
 
-A single centred column 1180px wide with a fluid gutter (clamp(16px, 4vw, 32px)). The order is fixed: header bar (min 68px, rule beneath), cover, three walnut boards, install, footer.
+A single centred column 1180px wide with a fluid gutter (clamp(16px, 4vw, 32px)). The order is fixed: header bar (min 68px, rule beneath), the valley with the wordmark, cover, three walnut boards, install, footer.
 
-The cover is two columns (0.9fr / 1.1fr): the wordmark, lead and facts on the left, the need index on the right (rows of need and mod name, each mod name led by its colour swatch). Each board holds a head (title and lead, 760px max) and a grid of panels, three across, gap clamp(14px, 2vw, 22px), panels stretched to equal height with the download block pushed to the bottom. Where a board has a spare slot, a notice fills it (the Play together board's "Which one?"). Boards stack with clamp(24px, 4vw, 40px) between them. Install is a three-column steps sheet over three columns of notes.
+The valley runs the full width under the header (aspect 1280:360, min 230px, max 500px), with the wordmark over its sky at the top of the content column. Below it, the cover is two columns (0.9fr / 1.1fr): the lead and facts on the left, the need index on the right (rows of need and mod name, each mod name led by its colour swatch). Each board holds a head (title and lead, 760px max) and a grid of panels, three across, gap clamp(14px, 2vw, 22px), panels stretched to equal height with the download block pushed to the bottom. Where a board has a spare slot, a notice fills it (the Play together board's "Which one?"). Boards stack with clamp(24px, 4vw, 40px) between them. Install is a three-column steps sheet over three columns of notes.
 
 Responsive: at 1000px the panels go two across and the notice spans the row; at 860px the cover, steps and notes collapse to one column and the wordmark runs on one line; at 620px the panels go one across, banners crop to 16:7, boards tighten (26px 12px 20px, 6px corners, nails inset 8px) and the download button stops wrapping. Interactive targets are at least 44px tall; download buttons 48px.
 
@@ -335,6 +335,9 @@ Gently rounded, hand-built shapes: boards, panels, the notice and buttons at 8px
 - **Shadow Strategy:** the Panel shadow.
 - **Internal Padding:** 14px 16px 16px (12px 14px 14px on phones).
 - **Order inside:** meta row (category and status pills), name, tagline, blurb, up to three facts with round bullets in the mod colour, then an optional caution or status line, requirements, the download block and a link row (Website first and bolder, GitHub, Release notes).
+
+### The valley
+The page opens on a river valley, the same scene as the org profile's banner: a beaver swimming home with a leafy branch past its stick lodge, above a dam of cut log ends, among pines and birches. It is a CSS background (`--vista`), so it follows the theme toggle: `img/valley-day.svg` in the light theme (pale sky, sun glow, clouds, sunlit water) and `img/valley-dusk.svg` in the dark one (dusk glow, moon, stars, fireflies). Both are drawn by `img/make_valley.py` (vector, fixed seed, no text). `background-position: 66% 100%` keeps the dam, the beaver and the lodge in view as narrow screens crop it. A mask fades it in from the page at the top (0 to 16%) and back out at the bottom (88% to 100%), so it sits in the ground rather than on it. It carries `role="img"` and a description. Nothing in it moves, and it shows no mod: it never needs updating when a mod changes.
 
 ### Walnut boards
 Walnut under its grain texture, 8px corners, a thin dark edge, the Board shadow and four brass nails. The title and lead are in walnut label colours in both themes.

@@ -13,6 +13,7 @@
   color-scheme: light;
   --ground: #e0d2b4;
   --ground-tex: url("img/birch.webp");
+  --vista: url("img/valley-day.svg");
   --ink: #2a2118;
   --muted: #5b4a37;
   --rule: #bca77f;
@@ -45,6 +46,7 @@
     color-scheme: dark;
     --ground: #1a211a;
     --ground-tex: url("img/forest-floor.webp");
+    --vista: url("img/valley-dusk.svg");
     --ink: #ece3cf;
     --muted: #bdb39c;
     --rule: #3b4636;
@@ -70,6 +72,7 @@
   color-scheme: dark;
   --ground: #1a211a;
   --ground-tex: url("img/forest-floor.webp");
+  --vista: url("img/valley-dusk.svg");
   --ink: #ece3cf;
   --muted: #bdb39c;
   --rule: #3b4636;
@@ -129,12 +132,18 @@ code { font-family: var(--mono); font-size: .9em; background: var(--code-bg); pa
   :root:not([data-theme="light"]) .theme-toggle .moon { display: block; }
 }
 
-/* ---------- the opening ---------- */
-.cover { padding: clamp(32px, 5vw, 64px) 0 clamp(28px, 4vw, 48px); }
-.cover-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(24px, 5vw, 64px); align-items: start; }
-.cover h1 { font: 800 clamp(3.2rem, 7.5vw, 6rem)/.9 var(--display); letter-spacing: -.03em; margin: 0 0 .25em; overflow-wrap: normal; }
-.cover h1 span { display: block; }
+/* ---------- the opening: the valley, with the title over its sky ---------- */
+.cover { padding: 0 0 clamp(28px, 4vw, 48px); }
+.vista-band { position: relative; }
+/* the same valley as the org profile's banner: by day in the light theme, at dusk in the dark one. It fades in from
+   the page at the top and back into it at the bottom, so it sits in the page rather than on it. */
+.vista { width: 100%; aspect-ratio: 1280 / 360; min-height: 230px; max-height: 500px; background: var(--vista) 66% 100% / cover no-repeat;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 16%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 16%, #000 88%, transparent 100%); }
+.vista-title { position: absolute; inset: 0; padding-top: clamp(28px, 5.4vw, 78px); pointer-events: none; }
+.cover h1 { font: 800 clamp(3rem, 7.2vw, 6.4rem)/.9 var(--display); letter-spacing: -.03em; margin: 0; overflow-wrap: normal; white-space: nowrap; }
 .cover h1 span + span { color: var(--link); }
+.cover-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(24px, 5vw, 64px); align-items: start; margin-top: clamp(8px, 2vw, 24px); }
 .lead { font-size: 1.15rem; max-width: 46ch; }
 .cover-facts { color: var(--muted); max-width: 46ch; margin: 0; }
 .needs h2 { font: 700 1.05rem/1.2 var(--display); letter-spacing: .01em; margin: 0 0 .5em; }
@@ -238,10 +247,10 @@ code { font-family: var(--mono); font-size: .9em; background: var(--code-bg); pa
 }
 @media (max-width: 860px) {
   .cover-grid, .steps, .notes { grid-template-columns: minmax(0, 1fr); }
-  .cover h1 span { display: inline; }
   .steps li + li { border-left: 0; border-top: 1px solid var(--tile-rule); }
 }
 @media (max-width: 620px) {
+  .cover h1 { font-size: clamp(2.6rem, 13vw, 3.4rem); }
   .pockets { grid-template-columns: minmax(0, 1fr); }
   .banner img { aspect-ratio: 16 / 7; }
   .page { padding: 26px 12px 20px; border-radius: 6px; }
