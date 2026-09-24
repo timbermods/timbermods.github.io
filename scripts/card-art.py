@@ -14,18 +14,23 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "
 SITE = "https://timbermods.github.io/"
 # card id -> (page, CSS selector of the signature element, or None to use the clip rectangle)
 # cards taken from their site's dark mode (Kyler, 2026-09-24: Timber Together's darker map reads better)
-DARK = {"timber-together"}
-# steps run on the page before the capture: Persistent Work Areas pins the Farmhouse too, so two outlines show
+DARK = {"timber-together", "mixedstorage"}
+# cards whose element is wider than 16:10: captured with this margin (px) of page around it, grown to 16:10, so the
+# cover-crop takes nothing off the element (MixedStorage's panel would lose its counts)
+FRAME = {"mixedstorage": 28}
+# steps run on the page before the capture: Persistent Work Areas pins the Farmhouse too, so two outlines show;
+# MixedStorage hides the site's split buttons and caption, so only the mod's panel shows
 SETUP = {"persistent-work-areas": """
     document.querySelector('svg.map g.bld[aria-label="Select Farmhouse"]').dispatchEvent(new MouseEvent('click', {bubbles: true}));
     document.querySelector('.ui-toggle').click();
     document.querySelector('[data-deselect]').click();
     document.activeElement && document.activeElement.blur();
-"""}
+""",
+         "mixedstorage": "document.querySelectorAll('.hero-panel .splits, .hero-panel figcaption').forEach(e => e.style.visibility = 'hidden');"}
 JOBS = {
     "beaverbuddies-stability-fork": (SITE + "BeaverBuddies-Stability-Fork/", ".coop-map", None),
     "timber-together": (SITE + "TimberTogether/", ".hero figure", None),
-    "mixedstorage": (SITE + "MixedStorage/", "[data-cabinet]", None),
+    "mixedstorage": (SITE + "MixedStorage/", "[data-hero-panel]", None),
     "persistent-work-areas": (SITE + "PersistentWorkAreas/", "svg.map", None),
     "optimized-local-housing": (SITE + "OptimizedLocalHousing/", "svg.hall", None),
     "late-game-performance": (SITE + "LateGamePerformance/", ".board", None),
@@ -43,6 +48,12 @@ with sync_playwright() as p:
         if card in SETUP:
             page.evaluate(SETUP[card])
         page.wait_for_timeout(600)
+        if card in FRAME:
+            box, m = page.locator(sel).first.bounding_box(), FRAME[card]
+            w, h = box["width"] + 2 * m, box["height"] + 2 * m
+            w, h = max(w, h * 1.6), max(h, w / 1.6)
+            clip = {"x": box["x"] + box["width"] / 2 - w / 2, "y": box["y"] + box["height"] / 2 - h / 2, "width": w, "height": h}
+            sel = None
         png = page.locator(sel).first.screenshot() if sel else page.screenshot(clip=clip)
         page.close()
         im = Image.open(io.BytesIO(png)).convert("RGB")
