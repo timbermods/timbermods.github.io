@@ -1,268 +1,46 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-23T21:07:33.591Z",
+  "generatedAt": "2026-09-24T03:10:55Z",
   "title": "Design System: Timbermods",
   "extensions": {
     "colorMeta": {
-      "felt-mat": {
-        "role": "neutral",
-        "displayName": "Felt Mat",
-        "canonical": "#dcd8cf",
-        "oklch": "oklch(88.3% 0.013 86.8)",
+      "pine-green": {
+        "role": "primary",
+        "displayName": "Pine Green",
+        "canonical": "#2f5d3a",
+        "oklch": "oklch(43.5% 0.077 150.0)",
         "tonalRamp": [
-          "oklch(15% 0.013 86.8)",
-          "oklch(26% 0.013 86.8)",
-          "oklch(37% 0.013 86.8)",
-          "oklch(48% 0.013 86.8)",
-          "oklch(60% 0.013 86.8)",
-          "oklch(72% 0.013 86.8)",
-          "oklch(84% 0.013 86.8)",
-          "oklch(95% 0.013 86.8)"
-        ]
+          "oklch(15% 0.077 150.0)",
+          "oklch(26% 0.077 150.0)",
+          "oklch(37% 0.077 150.0)",
+          "oklch(48% 0.077 150.0)",
+          "oklch(60% 0.077 150.0)",
+          "oklch(72% 0.077 150.0)",
+          "oklch(84% 0.077 150.0)",
+          "oklch(95% 0.077 150.0)"
+        ],
+        "cssVar": "--link / --tile-link / --focus (day)"
       },
-      "felt-mat-dark": {
-        "role": "neutral",
-        "displayName": "Charcoal Felt",
-        "canonical": "#16171a",
-        "oklch": "oklch(20.5% 0.006 271.1)",
+      "fern-light": {
+        "role": "primary",
+        "displayName": "Fern Light",
+        "canonical": "#a9d8a3",
+        "oklch": "oklch(83.5% 0.088 141.8)",
         "tonalRamp": [
-          "oklch(15% 0.006 271.1)",
-          "oklch(26% 0.006 271.1)",
-          "oklch(37% 0.006 271.1)",
-          "oklch(48% 0.006 271.1)",
-          "oklch(60% 0.006 271.1)",
-          "oklch(72% 0.006 271.1)",
-          "oklch(84% 0.006 271.1)",
-          "oklch(95% 0.006 271.1)"
-        ]
+          "oklch(15% 0.088 141.8)",
+          "oklch(26% 0.088 141.8)",
+          "oklch(37% 0.088 141.8)",
+          "oklch(48% 0.088 141.8)",
+          "oklch(60% 0.088 141.8)",
+          "oklch(72% 0.088 141.8)",
+          "oklch(84% 0.088 141.8)",
+          "oklch(95% 0.088 141.8)"
+        ],
+        "cssVar": "--link / --tile-link (night)"
       },
-      "binder-ink": {
-        "role": "neutral",
-        "displayName": "Binder Ink",
-        "canonical": "#1f2124",
-        "oklch": "oklch(24.7% 0.006 258.4)",
-        "tonalRamp": [
-          "oklch(15% 0.006 258.4)",
-          "oklch(26% 0.006 258.4)",
-          "oklch(37% 0.006 258.4)",
-          "oklch(48% 0.006 258.4)",
-          "oklch(60% 0.006 258.4)",
-          "oklch(72% 0.006 258.4)",
-          "oklch(84% 0.006 258.4)",
-          "oklch(95% 0.006 258.4)"
-        ]
-      },
-      "binder-ink-dark": {
-        "role": "neutral",
-        "displayName": "Page Ink",
-        "canonical": "#eceae4",
-        "oklch": "oklch(93.7% 0.008 91.5)",
-        "tonalRamp": [
-          "oklch(15% 0.008 91.5)",
-          "oklch(26% 0.008 91.5)",
-          "oklch(37% 0.008 91.5)",
-          "oklch(48% 0.008 91.5)",
-          "oklch(60% 0.008 91.5)",
-          "oklch(72% 0.008 91.5)",
-          "oklch(84% 0.008 91.5)",
-          "oklch(95% 0.008 91.5)"
-        ]
-      },
-      "slate-muted": {
-        "role": "neutral",
-        "displayName": "Slate Muted",
-        "canonical": "#4c5056",
-        "oklch": "oklch(43% 0.011 258.4)",
-        "tonalRamp": [
-          "oklch(15% 0.011 258.4)",
-          "oklch(26% 0.011 258.4)",
-          "oklch(37% 0.011 258.4)",
-          "oklch(48% 0.011 258.4)",
-          "oklch(60% 0.011 258.4)",
-          "oklch(72% 0.011 258.4)",
-          "oklch(84% 0.011 258.4)",
-          "oklch(95% 0.011 258.4)"
-        ]
-      },
-      "slate-muted-dark": {
-        "role": "neutral",
-        "displayName": "Pale Slate",
-        "canonical": "#b3b5b8",
-        "oklch": "oklch(77.2% 0.005 258.3)",
-        "tonalRamp": [
-          "oklch(15% 0.005 258.3)",
-          "oklch(26% 0.005 258.3)",
-          "oklch(37% 0.005 258.3)",
-          "oklch(48% 0.005 258.3)",
-          "oklch(60% 0.005 258.3)",
-          "oklch(72% 0.005 258.3)",
-          "oklch(84% 0.005 258.3)",
-          "oklch(95% 0.005 258.3)"
-        ]
-      },
-      "mat-rule": {
-        "role": "neutral",
-        "displayName": "Mat Rule",
-        "canonical": "#b9b4a8",
-        "oklch": "oklch(77.1% 0.018 88)",
-        "tonalRamp": [
-          "oklch(15% 0.018 88)",
-          "oklch(26% 0.018 88)",
-          "oklch(37% 0.018 88)",
-          "oklch(48% 0.018 88)",
-          "oklch(60% 0.018 88)",
-          "oklch(72% 0.018 88)",
-          "oklch(84% 0.018 88)",
-          "oklch(95% 0.018 88)"
-        ]
-      },
-      "mat-rule-dark": {
-        "role": "neutral",
-        "displayName": "Dark Mat Rule",
-        "canonical": "#34363b",
-        "oklch": "oklch(33.3% 0.009 268.4)",
-        "tonalRamp": [
-          "oklch(15% 0.009 268.4)",
-          "oklch(26% 0.009 268.4)",
-          "oklch(37% 0.009 268.4)",
-          "oklch(48% 0.009 268.4)",
-          "oklch(60% 0.009 268.4)",
-          "oklch(72% 0.009 268.4)",
-          "oklch(84% 0.009 268.4)",
-          "oklch(95% 0.009 268.4)"
-        ]
-      },
-      "pvc-page": {
-        "role": "neutral",
-        "displayName": "PVC Page",
-        "canonical": "#1d1f23",
-        "oklch": "oklch(23.9% 0.008 264.4)",
-        "tonalRamp": [
-          "oklch(15% 0.008 264.4)",
-          "oklch(26% 0.008 264.4)",
-          "oklch(37% 0.008 264.4)",
-          "oklch(48% 0.008 264.4)",
-          "oklch(60% 0.008 264.4)",
-          "oklch(72% 0.008 264.4)",
-          "oklch(84% 0.008 264.4)",
-          "oklch(95% 0.008 264.4)"
-        ]
-      },
-      "pvc-page-dark": {
-        "role": "neutral",
-        "displayName": "Lifted PVC Page",
-        "canonical": "#2a2c31",
-        "oklch": "oklch(29.3% 0.01 268.3)",
-        "tonalRamp": [
-          "oklch(15% 0.01 268.3)",
-          "oklch(26% 0.01 268.3)",
-          "oklch(37% 0.01 268.3)",
-          "oklch(48% 0.01 268.3)",
-          "oklch(60% 0.01 268.3)",
-          "oklch(72% 0.01 268.3)",
-          "oklch(84% 0.01 268.3)",
-          "oklch(95% 0.01 268.3)"
-        ]
-      },
-      "card-stock": {
-        "role": "neutral",
-        "displayName": "Card Stock",
-        "canonical": "#fbfaf6",
-        "oklch": "oklch(98.5% 0.005 95.1)",
-        "tonalRamp": [
-          "oklch(15% 0.005 95.1)",
-          "oklch(26% 0.005 95.1)",
-          "oklch(37% 0.005 95.1)",
-          "oklch(48% 0.005 95.1)",
-          "oklch(60% 0.005 95.1)",
-          "oklch(72% 0.005 95.1)",
-          "oklch(84% 0.005 95.1)",
-          "oklch(95% 0.005 95.1)"
-        ]
-      },
-      "card-ink": {
-        "role": "neutral",
-        "displayName": "Card Ink",
-        "canonical": "#1f2124",
-        "oklch": "oklch(24.7% 0.006 258.4)",
-        "tonalRamp": [
-          "oklch(15% 0.006 258.4)",
-          "oklch(26% 0.006 258.4)",
-          "oklch(37% 0.006 258.4)",
-          "oklch(48% 0.006 258.4)",
-          "oklch(60% 0.006 258.4)",
-          "oklch(72% 0.006 258.4)",
-          "oklch(84% 0.006 258.4)",
-          "oklch(95% 0.006 258.4)"
-        ]
-      },
-      "card-muted": {
-        "role": "neutral",
-        "displayName": "Card Muted",
-        "canonical": "#4a4e54",
-        "oklch": "oklch(42.2% 0.011 258.4)",
-        "tonalRamp": [
-          "oklch(15% 0.011 258.4)",
-          "oklch(26% 0.011 258.4)",
-          "oklch(37% 0.011 258.4)",
-          "oklch(48% 0.011 258.4)",
-          "oklch(60% 0.011 258.4)",
-          "oklch(72% 0.011 258.4)",
-          "oklch(84% 0.011 258.4)",
-          "oklch(95% 0.011 258.4)"
-        ]
-      },
-      "card-rule": {
-        "role": "neutral",
-        "displayName": "Card Rule",
-        "canonical": "#dedbd2",
-        "oklch": "oklch(89.1% 0.013 91.5)",
-        "tonalRamp": [
-          "oklch(15% 0.013 91.5)",
-          "oklch(26% 0.013 91.5)",
-          "oklch(37% 0.013 91.5)",
-          "oklch(48% 0.013 91.5)",
-          "oklch(60% 0.013 91.5)",
-          "oklch(72% 0.013 91.5)",
-          "oklch(84% 0.013 91.5)",
-          "oklch(95% 0.013 91.5)"
-        ]
-      },
-      "ledger-blue": {
-        "role": "neutral",
-        "displayName": "Ledger Blue",
-        "canonical": "#1d4f8a",
-        "oklch": "oklch(42.6% 0.111 254.8)",
-        "tonalRamp": [
-          "oklch(15% 0.111 254.8)",
-          "oklch(26% 0.111 254.8)",
-          "oklch(37% 0.111 254.8)",
-          "oklch(48% 0.111 254.8)",
-          "oklch(60% 0.111 254.8)",
-          "oklch(72% 0.111 254.8)",
-          "oklch(84% 0.111 254.8)",
-          "oklch(95% 0.111 254.8)"
-        ]
-      },
-      "ledger-blue-dark": {
-        "role": "neutral",
-        "displayName": "Pale Ledger Blue",
-        "canonical": "#9cc2f0",
-        "oklch": "oklch(80.3% 0.077 253.5)",
-        "tonalRamp": [
-          "oklch(15% 0.077 253.5)",
-          "oklch(26% 0.077 253.5)",
-          "oklch(37% 0.077 253.5)",
-          "oklch(48% 0.077 253.5)",
-          "oklch(60% 0.077 253.5)",
-          "oklch(72% 0.077 253.5)",
-          "oklch(84% 0.077 253.5)",
-          "oklch(95% 0.077 253.5)"
-        ]
-      },
-      "focus-lamp-dark": {
-        "role": "neutral",
-        "displayName": "Focus Lamp",
+      "lantern-gold": {
+        "role": "primary",
+        "displayName": "Lantern Gold",
         "canonical": "#f0d27a",
         "oklch": "oklch(87.1% 0.113 91.1)",
         "tonalRamp": [
@@ -274,178 +52,675 @@
           "oklch(72% 0.113 91.1)",
           "oklch(84% 0.113 91.1)",
           "oklch(95% 0.113 91.1)"
-        ]
+        ],
+        "cssVar": "--focus (night)"
       },
-      "caution-cream": {
-        "role": "neutral",
-        "displayName": "Caution Cream",
-        "canonical": "#fff3dc",
-        "oklch": "oklch(96.8% 0.033 83.7)",
+      "walnut": {
+        "role": "secondary",
+        "displayName": "Walnut",
+        "canonical": "#56402a",
+        "oklch": "oklch(39.0% 0.046 65.8)",
         "tonalRamp": [
-          "oklch(15% 0.033 83.7)",
-          "oklch(26% 0.033 83.7)",
-          "oklch(37% 0.033 83.7)",
-          "oklch(48% 0.033 83.7)",
-          "oklch(60% 0.033 83.7)",
-          "oklch(72% 0.033 83.7)",
-          "oklch(84% 0.033 83.7)",
-          "oklch(95% 0.033 83.7)"
-        ]
+          "oklch(15% 0.046 65.8)",
+          "oklch(26% 0.046 65.8)",
+          "oklch(37% 0.046 65.8)",
+          "oklch(48% 0.046 65.8)",
+          "oklch(60% 0.046 65.8)",
+          "oklch(72% 0.046 65.8)",
+          "oklch(84% 0.046 65.8)",
+          "oklch(95% 0.046 65.8)"
+        ],
+        "cssVar": "--board"
       },
-      "caution-umber": {
-        "role": "neutral",
-        "displayName": "Caution Umber",
-        "canonical": "#6e3d00",
-        "oklch": "oklch(41.2% 0.094 62.4)",
+      "walnut-night": {
+        "role": "secondary",
+        "displayName": "Night Walnut",
+        "canonical": "#3a291b",
+        "oklch": "oklch(29.7% 0.035 60.4)",
         "tonalRamp": [
-          "oklch(15% 0.094 62.4)",
-          "oklch(26% 0.094 62.4)",
-          "oklch(37% 0.094 62.4)",
-          "oklch(48% 0.094 62.4)",
-          "oklch(60% 0.094 62.4)",
-          "oklch(72% 0.094 62.4)",
-          "oklch(84% 0.094 62.4)",
-          "oklch(95% 0.094 62.4)"
-        ]
+          "oklch(15% 0.035 60.4)",
+          "oklch(26% 0.035 60.4)",
+          "oklch(37% 0.035 60.4)",
+          "oklch(48% 0.035 60.4)",
+          "oklch(60% 0.035 60.4)",
+          "oklch(72% 0.035 60.4)",
+          "oklch(84% 0.035 60.4)",
+          "oklch(95% 0.035 60.4)"
+        ],
+        "cssVar": "--board (night)"
+      },
+      "walnut-edge": {
+        "role": "secondary",
+        "displayName": "Walnut Edge",
+        "canonical": "rgba(40, 26, 14, .55)",
+        "oklch": "oklch(23.2% 0.031 61.0)",
+        "tonalRamp": [
+          "oklch(15% 0.031 61.0)",
+          "oklch(26% 0.031 61.0)",
+          "oklch(37% 0.031 61.0)",
+          "oklch(48% 0.031 61.0)",
+          "oklch(60% 0.031 61.0)",
+          "oklch(72% 0.031 61.0)",
+          "oklch(84% 0.031 61.0)",
+          "oklch(95% 0.031 61.0)"
+        ],
+        "cssVar": "--board-edge"
+      },
+      "walnut-edge-night": {
+        "role": "secondary",
+        "displayName": "Night Walnut Edge",
+        "canonical": "rgba(0, 0, 0, .5)",
+        "oklch": "oklch(0.0% 0.000 0.0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0.0)",
+          "oklch(26% 0.000 0.0)",
+          "oklch(37% 0.000 0.0)",
+          "oklch(48% 0.000 0.0)",
+          "oklch(60% 0.000 0.0)",
+          "oklch(72% 0.000 0.0)",
+          "oklch(84% 0.000 0.0)",
+          "oklch(95% 0.000 0.0)"
+        ],
+        "cssVar": "--board-edge (night)"
+      },
+      "walnut-label": {
+        "role": "secondary",
+        "displayName": "Walnut Label",
+        "canonical": "#f4ead6",
+        "oklch": "oklch(94.0% 0.029 84.6)",
+        "tonalRamp": [
+          "oklch(15% 0.029 84.6)",
+          "oklch(26% 0.029 84.6)",
+          "oklch(37% 0.029 84.6)",
+          "oklch(48% 0.029 84.6)",
+          "oklch(60% 0.029 84.6)",
+          "oklch(72% 0.029 84.6)",
+          "oklch(84% 0.029 84.6)",
+          "oklch(95% 0.029 84.6)"
+        ],
+        "cssVar": "--board-ink"
+      },
+      "walnut-label-muted": {
+        "role": "secondary",
+        "displayName": "Walnut Label Muted",
+        "canonical": "#decdab",
+        "oklch": "oklch(85.4% 0.049 84.5)",
+        "tonalRamp": [
+          "oklch(15% 0.049 84.5)",
+          "oklch(26% 0.049 84.5)",
+          "oklch(37% 0.049 84.5)",
+          "oklch(48% 0.049 84.5)",
+          "oklch(60% 0.049 84.5)",
+          "oklch(72% 0.049 84.5)",
+          "oklch(84% 0.049 84.5)",
+          "oklch(95% 0.049 84.5)"
+        ],
+        "cssVar": "--board-muted"
+      },
+      "brass-nail": {
+        "role": "secondary",
+        "displayName": "Brass Nail",
+        "canonical": "#c19a5b",
+        "oklch": "oklch(70.9% 0.093 78.4)",
+        "tonalRamp": [
+          "oklch(15% 0.093 78.4)",
+          "oklch(26% 0.093 78.4)",
+          "oklch(37% 0.093 78.4)",
+          "oklch(48% 0.093 78.4)",
+          "oklch(60% 0.093 78.4)",
+          "oklch(72% 0.093 78.4)",
+          "oklch(84% 0.093 78.4)",
+          "oklch(95% 0.093 78.4)"
+        ],
+        "cssVar": "--nail"
+      },
+      "brass-nail-night": {
+        "role": "secondary",
+        "displayName": "Tarnished Brass",
+        "canonical": "#a88650",
+        "oklch": "oklch(64.0% 0.083 78.0)",
+        "tonalRamp": [
+          "oklch(15% 0.083 78.0)",
+          "oklch(26% 0.083 78.0)",
+          "oklch(37% 0.083 78.0)",
+          "oklch(48% 0.083 78.0)",
+          "oklch(60% 0.083 78.0)",
+          "oklch(72% 0.083 78.0)",
+          "oklch(84% 0.083 78.0)",
+          "oklch(95% 0.083 78.0)"
+        ],
+        "cssVar": "--nail (night)"
+      },
+      "birch-ground": {
+        "role": "neutral",
+        "displayName": "Birch Ground",
+        "canonical": "#e0d2b4",
+        "oklch": "oklch(86.7% 0.043 86.0)",
+        "tonalRamp": [
+          "oklch(15% 0.043 86.0)",
+          "oklch(26% 0.043 86.0)",
+          "oklch(37% 0.043 86.0)",
+          "oklch(48% 0.043 86.0)",
+          "oklch(60% 0.043 86.0)",
+          "oklch(72% 0.043 86.0)",
+          "oklch(84% 0.043 86.0)",
+          "oklch(95% 0.043 86.0)"
+        ],
+        "cssVar": "--ground"
+      },
+      "forest-floor": {
+        "role": "neutral",
+        "displayName": "Forest Floor",
+        "canonical": "#1a211a",
+        "oklch": "oklch(23.8% 0.017 145.0)",
+        "tonalRamp": [
+          "oklch(15% 0.017 145.0)",
+          "oklch(26% 0.017 145.0)",
+          "oklch(37% 0.017 145.0)",
+          "oklch(48% 0.017 145.0)",
+          "oklch(60% 0.017 145.0)",
+          "oklch(72% 0.017 145.0)",
+          "oklch(84% 0.017 145.0)",
+          "oklch(95% 0.017 145.0)"
+        ],
+        "cssVar": "--ground (night)"
+      },
+      "lodge-ink": {
+        "role": "neutral",
+        "displayName": "Lodge Ink",
+        "canonical": "#2a2118",
+        "oklch": "oklch(25.5% 0.021 66.6)",
+        "tonalRamp": [
+          "oklch(15% 0.021 66.6)",
+          "oklch(26% 0.021 66.6)",
+          "oklch(37% 0.021 66.6)",
+          "oklch(48% 0.021 66.6)",
+          "oklch(60% 0.021 66.6)",
+          "oklch(72% 0.021 66.6)",
+          "oklch(84% 0.021 66.6)",
+          "oklch(95% 0.021 66.6)"
+        ],
+        "cssVar": "--ink"
+      },
+      "lodge-ink-night": {
+        "role": "neutral",
+        "displayName": "Lodge Ink (night)",
+        "canonical": "#ece3cf",
+        "oklch": "oklch(91.8% 0.028 86.6)",
+        "tonalRamp": [
+          "oklch(15% 0.028 86.6)",
+          "oklch(26% 0.028 86.6)",
+          "oklch(37% 0.028 86.6)",
+          "oklch(48% 0.028 86.6)",
+          "oklch(60% 0.028 86.6)",
+          "oklch(72% 0.028 86.6)",
+          "oklch(84% 0.028 86.6)",
+          "oklch(95% 0.028 86.6)"
+        ],
+        "cssVar": "--ink / --tile-ink (night)"
+      },
+      "tanned-leather": {
+        "role": "neutral",
+        "displayName": "Tanned Leather",
+        "canonical": "#5b4a37",
+        "oklch": "oklch(42.1% 0.038 69.6)",
+        "tonalRamp": [
+          "oklch(15% 0.038 69.6)",
+          "oklch(26% 0.038 69.6)",
+          "oklch(37% 0.038 69.6)",
+          "oklch(48% 0.038 69.6)",
+          "oklch(60% 0.038 69.6)",
+          "oklch(72% 0.038 69.6)",
+          "oklch(84% 0.038 69.6)",
+          "oklch(95% 0.038 69.6)"
+        ],
+        "cssVar": "--muted"
+      },
+      "lichen-grey": {
+        "role": "neutral",
+        "displayName": "Lichen Grey",
+        "canonical": "#bdb39c",
+        "oklch": "oklch(76.9% 0.034 87.3)",
+        "tonalRamp": [
+          "oklch(15% 0.034 87.3)",
+          "oklch(26% 0.034 87.3)",
+          "oklch(37% 0.034 87.3)",
+          "oklch(48% 0.034 87.3)",
+          "oklch(60% 0.034 87.3)",
+          "oklch(72% 0.034 87.3)",
+          "oklch(84% 0.034 87.3)",
+          "oklch(95% 0.034 87.3)"
+        ],
+        "cssVar": "--muted (night)"
+      },
+      "birch-seam": {
+        "role": "neutral",
+        "displayName": "Birch Seam",
+        "canonical": "#bca77f",
+        "oklch": "oklch(73.7% 0.060 83.3)",
+        "tonalRamp": [
+          "oklch(15% 0.060 83.3)",
+          "oklch(26% 0.060 83.3)",
+          "oklch(37% 0.060 83.3)",
+          "oklch(48% 0.060 83.3)",
+          "oklch(60% 0.060 83.3)",
+          "oklch(72% 0.060 83.3)",
+          "oklch(84% 0.060 83.3)",
+          "oklch(95% 0.060 83.3)"
+        ],
+        "cssVar": "--rule"
+      },
+      "moss-seam": {
+        "role": "neutral",
+        "displayName": "Moss Seam",
+        "canonical": "#3b4636",
+        "oklch": "oklch(37.9% 0.030 135.9)",
+        "tonalRamp": [
+          "oklch(15% 0.030 135.9)",
+          "oklch(26% 0.030 135.9)",
+          "oklch(37% 0.030 135.9)",
+          "oklch(48% 0.030 135.9)",
+          "oklch(60% 0.030 135.9)",
+          "oklch(72% 0.030 135.9)",
+          "oklch(84% 0.030 135.9)",
+          "oklch(95% 0.030 135.9)"
+        ],
+        "cssVar": "--rule (night)"
+      },
+      "warm-paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f5ecd9",
+        "oklch": "oklch(94.5% 0.027 85.7)",
+        "tonalRamp": [
+          "oklch(15% 0.027 85.7)",
+          "oklch(26% 0.027 85.7)",
+          "oklch(37% 0.027 85.7)",
+          "oklch(48% 0.027 85.7)",
+          "oklch(60% 0.027 85.7)",
+          "oklch(72% 0.027 85.7)",
+          "oklch(84% 0.027 85.7)",
+          "oklch(95% 0.027 85.7)"
+        ],
+        "cssVar": "--tile"
+      },
+      "moss-panel": {
+        "role": "neutral",
+        "displayName": "Moss Panel",
+        "canonical": "#243126",
+        "oklch": "oklch(29.7% 0.026 149.1)",
+        "tonalRamp": [
+          "oklch(15% 0.026 149.1)",
+          "oklch(26% 0.026 149.1)",
+          "oklch(37% 0.026 149.1)",
+          "oklch(48% 0.026 149.1)",
+          "oklch(60% 0.026 149.1)",
+          "oklch(72% 0.026 149.1)",
+          "oklch(84% 0.026 149.1)",
+          "oklch(95% 0.026 149.1)"
+        ],
+        "cssVar": "--tile (night)"
+      },
+      "paper-ink": {
+        "role": "neutral",
+        "displayName": "Paper Ink",
+        "canonical": "#2a2118",
+        "oklch": "oklch(25.5% 0.021 66.6)",
+        "tonalRamp": [
+          "oklch(15% 0.021 66.6)",
+          "oklch(26% 0.021 66.6)",
+          "oklch(37% 0.021 66.6)",
+          "oklch(48% 0.021 66.6)",
+          "oklch(60% 0.021 66.6)",
+          "oklch(72% 0.021 66.6)",
+          "oklch(84% 0.021 66.6)",
+          "oklch(95% 0.021 66.6)"
+        ],
+        "cssVar": "--tile-ink"
+      },
+      "paper-muted": {
+        "role": "neutral",
+        "displayName": "Paper Muted",
+        "canonical": "#5d4c39",
+        "oklch": "oklch(42.9% 0.037 69.7)",
+        "tonalRamp": [
+          "oklch(15% 0.037 69.7)",
+          "oklch(26% 0.037 69.7)",
+          "oklch(37% 0.037 69.7)",
+          "oklch(48% 0.037 69.7)",
+          "oklch(60% 0.037 69.7)",
+          "oklch(72% 0.037 69.7)",
+          "oklch(84% 0.037 69.7)",
+          "oklch(95% 0.037 69.7)"
+        ],
+        "cssVar": "--tile-muted"
+      },
+      "moss-panel-muted": {
+        "role": "neutral",
+        "displayName": "Moss Panel Muted",
+        "canonical": "#b8b19b",
+        "oklch": "oklch(76.0% 0.032 92.4)",
+        "tonalRamp": [
+          "oklch(15% 0.032 92.4)",
+          "oklch(26% 0.032 92.4)",
+          "oklch(37% 0.032 92.4)",
+          "oklch(48% 0.032 92.4)",
+          "oklch(60% 0.032 92.4)",
+          "oklch(72% 0.032 92.4)",
+          "oklch(84% 0.032 92.4)",
+          "oklch(95% 0.032 92.4)"
+        ],
+        "cssVar": "--tile-muted (night)"
+      },
+      "paper-rule": {
+        "role": "neutral",
+        "displayName": "Paper Rule",
+        "canonical": "#dccdab",
+        "oklch": "oklch(85.2% 0.048 87.0)",
+        "tonalRamp": [
+          "oklch(15% 0.048 87.0)",
+          "oklch(26% 0.048 87.0)",
+          "oklch(37% 0.048 87.0)",
+          "oklch(48% 0.048 87.0)",
+          "oklch(60% 0.048 87.0)",
+          "oklch(72% 0.048 87.0)",
+          "oklch(84% 0.048 87.0)",
+          "oklch(95% 0.048 87.0)"
+        ],
+        "cssVar": "--tile-rule"
+      },
+      "moss-panel-rule": {
+        "role": "neutral",
+        "displayName": "Moss Panel Rule",
+        "canonical": "#38493b",
+        "oklch": "oklch(38.6% 0.032 149.9)",
+        "tonalRamp": [
+          "oklch(15% 0.032 149.9)",
+          "oklch(26% 0.032 149.9)",
+          "oklch(37% 0.032 149.9)",
+          "oklch(48% 0.032 149.9)",
+          "oklch(60% 0.032 149.9)",
+          "oklch(72% 0.032 149.9)",
+          "oklch(84% 0.032 149.9)",
+          "oklch(95% 0.032 149.9)"
+        ],
+        "cssVar": "--tile-rule (night)"
+      },
+      "code-wash": {
+        "role": "neutral",
+        "displayName": "Code Wash",
+        "canonical": "rgba(42, 33, 24, .08)",
+        "oklch": "oklch(25.5% 0.021 66.6)",
+        "tonalRamp": [
+          "oklch(15% 0.021 66.6)",
+          "oklch(26% 0.021 66.6)",
+          "oklch(37% 0.021 66.6)",
+          "oklch(48% 0.021 66.6)",
+          "oklch(60% 0.021 66.6)",
+          "oklch(72% 0.021 66.6)",
+          "oklch(84% 0.021 66.6)",
+          "oklch(95% 0.021 66.6)"
+        ],
+        "cssVar": "--code-bg"
+      },
+      "code-wash-night": {
+        "role": "neutral",
+        "displayName": "Code Wash (night)",
+        "canonical": "rgba(236, 227, 207, .09)",
+        "oklch": "oklch(91.8% 0.028 86.6)",
+        "tonalRamp": [
+          "oklch(15% 0.028 86.6)",
+          "oklch(26% 0.028 86.6)",
+          "oklch(37% 0.028 86.6)",
+          "oklch(48% 0.028 86.6)",
+          "oklch(60% 0.028 86.6)",
+          "oklch(72% 0.028 86.6)",
+          "oklch(84% 0.028 86.6)",
+          "oklch(95% 0.028 86.6)"
+        ],
+        "cssVar": "--code-bg (night)"
       },
       "stable-green": {
         "role": "neutral",
         "displayName": "Stable Green",
-        "canonical": "#1d6b3a",
-        "oklch": "oklch(46.8% 0.108 151.7)",
+        "canonical": "#2c6536",
+        "oklch": "oklch(45.6% 0.096 147.5)",
         "tonalRamp": [
-          "oklch(15% 0.108 151.7)",
-          "oklch(26% 0.108 151.7)",
-          "oklch(37% 0.108 151.7)",
-          "oklch(48% 0.108 151.7)",
-          "oklch(60% 0.108 151.7)",
-          "oklch(72% 0.108 151.7)",
-          "oklch(84% 0.108 151.7)",
-          "oklch(95% 0.108 151.7)"
-        ]
+          "oklch(15% 0.096 147.5)",
+          "oklch(26% 0.096 147.5)",
+          "oklch(37% 0.096 147.5)",
+          "oklch(48% 0.096 147.5)",
+          "oklch(60% 0.096 147.5)",
+          "oklch(72% 0.096 147.5)",
+          "oklch(84% 0.096 147.5)",
+          "oklch(95% 0.096 147.5)"
+        ],
+        "cssVar": "--ok"
       },
-      "accent-stability-fork": {
-        "role": "primary",
+      "stable-green-night": {
+        "role": "neutral",
+        "displayName": "Stable Green (night)",
+        "canonical": "#9fd49a",
+        "oklch": "oklch(81.8% 0.097 142.5)",
+        "tonalRamp": [
+          "oklch(15% 0.097 142.5)",
+          "oklch(26% 0.097 142.5)",
+          "oklch(37% 0.097 142.5)",
+          "oklch(48% 0.097 142.5)",
+          "oklch(60% 0.097 142.5)",
+          "oklch(72% 0.097 142.5)",
+          "oklch(84% 0.097 142.5)",
+          "oklch(95% 0.097 142.5)"
+        ],
+        "cssVar": "--ok (night)"
+      },
+      "preview-amber": {
+        "role": "neutral",
+        "displayName": "Preview Amber",
+        "canonical": "#7a4a06",
+        "oklch": "oklch(45.5% 0.098 67.0)",
+        "tonalRamp": [
+          "oklch(15% 0.098 67.0)",
+          "oklch(26% 0.098 67.0)",
+          "oklch(37% 0.098 67.0)",
+          "oklch(48% 0.098 67.0)",
+          "oklch(60% 0.098 67.0)",
+          "oklch(72% 0.098 67.0)",
+          "oklch(84% 0.098 67.0)",
+          "oklch(95% 0.098 67.0)"
+        ],
+        "cssVar": "--preview"
+      },
+      "preview-amber-night": {
+        "role": "neutral",
+        "displayName": "Preview Amber (night)",
+        "canonical": "#f0c070",
+        "oklch": "oklch(83.4% 0.113 79.0)",
+        "tonalRamp": [
+          "oklch(15% 0.113 79.0)",
+          "oklch(26% 0.113 79.0)",
+          "oklch(37% 0.113 79.0)",
+          "oklch(48% 0.113 79.0)",
+          "oklch(60% 0.113 79.0)",
+          "oklch(72% 0.113 79.0)",
+          "oklch(84% 0.113 79.0)",
+          "oklch(95% 0.113 79.0)"
+        ],
+        "cssVar": "--preview (night)"
+      },
+      "caution-wash": {
+        "role": "neutral",
+        "displayName": "Caution Wash",
+        "canonical": "#f4dfb3",
+        "oklch": "oklch(91.0% 0.062 85.4)",
+        "tonalRamp": [
+          "oklch(15% 0.062 85.4)",
+          "oklch(26% 0.062 85.4)",
+          "oklch(37% 0.062 85.4)",
+          "oklch(48% 0.062 85.4)",
+          "oklch(60% 0.062 85.4)",
+          "oklch(72% 0.062 85.4)",
+          "oklch(84% 0.062 85.4)",
+          "oklch(95% 0.062 85.4)"
+        ],
+        "cssVar": "--warn-bg"
+      },
+      "caution-ink": {
+        "role": "neutral",
+        "displayName": "Caution Ink",
+        "canonical": "#663a04",
+        "oklch": "oklch(39.4% 0.087 63.4)",
+        "tonalRamp": [
+          "oklch(15% 0.087 63.4)",
+          "oklch(26% 0.087 63.4)",
+          "oklch(37% 0.087 63.4)",
+          "oklch(48% 0.087 63.4)",
+          "oklch(60% 0.087 63.4)",
+          "oklch(72% 0.087 63.4)",
+          "oklch(84% 0.087 63.4)",
+          "oklch(95% 0.087 63.4)"
+        ],
+        "cssVar": "--warn-ink"
+      },
+      "caution-wash-night": {
+        "role": "neutral",
+        "displayName": "Caution Wash (night)",
+        "canonical": "#3b301b",
+        "oklch": "oklch(31.6% 0.037 82.8)",
+        "tonalRamp": [
+          "oklch(15% 0.037 82.8)",
+          "oklch(26% 0.037 82.8)",
+          "oklch(37% 0.037 82.8)",
+          "oklch(48% 0.037 82.8)",
+          "oklch(60% 0.037 82.8)",
+          "oklch(72% 0.037 82.8)",
+          "oklch(84% 0.037 82.8)",
+          "oklch(95% 0.037 82.8)"
+        ],
+        "cssVar": "--warn-bg (night)"
+      },
+      "caution-ink-night": {
+        "role": "neutral",
+        "displayName": "Caution Ink (night)",
+        "canonical": "#f1cf8b",
+        "oklch": "oklch(86.8% 0.094 84.0)",
+        "tonalRamp": [
+          "oklch(15% 0.094 84.0)",
+          "oklch(26% 0.094 84.0)",
+          "oklch(37% 0.094 84.0)",
+          "oklch(48% 0.094 84.0)",
+          "oklch(60% 0.094 84.0)",
+          "oklch(72% 0.094 84.0)",
+          "oklch(84% 0.094 84.0)",
+          "oklch(95% 0.094 84.0)"
+        ],
+        "cssVar": "--warn-ink (night)"
+      },
+      "log-end": {
+        "role": "neutral",
+        "displayName": "Log End",
+        "canonical": "#e0c79a",
+        "oklch": "oklch(84.0% 0.066 82.1)",
+        "tonalRamp": [
+          "oklch(15% 0.066 82.1)",
+          "oklch(26% 0.066 82.1)",
+          "oklch(37% 0.066 82.1)",
+          "oklch(48% 0.066 82.1)",
+          "oklch(60% 0.066 82.1)",
+          "oklch(72% 0.066 82.1)",
+          "oklch(84% 0.066 82.1)",
+          "oklch(95% 0.066 82.1)"
+        ],
+        "cssVar": "logo SVG fill"
+      },
+      "log-ring": {
+        "role": "neutral",
+        "displayName": "Log Ring",
+        "canonical": "#c7a878",
+        "oklch": "oklch(74.8% 0.073 78.2)",
+        "tonalRamp": [
+          "oklch(15% 0.073 78.2)",
+          "oklch(26% 0.073 78.2)",
+          "oklch(37% 0.073 78.2)",
+          "oklch(48% 0.073 78.2)",
+          "oklch(60% 0.073 78.2)",
+          "oklch(72% 0.073 78.2)",
+          "oklch(84% 0.073 78.2)",
+          "oklch(95% 0.073 78.2)"
+        ],
+        "cssVar": "logo SVG stroke"
+      },
+      "mod-stability-fork": {
+        "role": "tertiary",
         "displayName": "Stability Fork Red",
         "canonical": "#b8322a",
         "oklch": "oklch(52.2% 0.172 28.1)",
         "tonalRamp": [
-          "oklch(15% 0.172 28.1)",
-          "oklch(26% 0.172 28.1)",
-          "oklch(37% 0.172 28.1)",
-          "oklch(48% 0.172 28.1)",
-          "oklch(60% 0.172 28.1)",
-          "oklch(72% 0.172 28.1)",
-          "oklch(84% 0.172 28.1)",
-          "oklch(95% 0.172 28.1)"
+          "oklch(15% 0.150 28.1)",
+          "oklch(26% 0.150 28.1)",
+          "oklch(37% 0.150 28.1)",
+          "oklch(48% 0.150 28.1)",
+          "oklch(60% 0.150 28.1)",
+          "oklch(72% 0.150 28.1)",
+          "oklch(84% 0.150 28.1)",
+          "oklch(95% 0.150 28.1)"
         ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
       },
-      "accent-multicolony": {
-        "role": "primary",
+      "mod-multicolony": {
+        "role": "tertiary",
         "displayName": "MultiColony Teal",
         "canonical": "#1a6a77",
-        "oklch": "oklch(48.4% 0.076 211)",
+        "oklch": "oklch(48.4% 0.076 211.0)",
         "tonalRamp": [
-          "oklch(15% 0.076 211)",
-          "oklch(26% 0.076 211)",
-          "oklch(37% 0.076 211)",
-          "oklch(48% 0.076 211)",
-          "oklch(60% 0.076 211)",
-          "oklch(72% 0.076 211)",
-          "oklch(84% 0.076 211)",
-          "oklch(95% 0.076 211)"
+          "oklch(15% 0.076 211.0)",
+          "oklch(26% 0.076 211.0)",
+          "oklch(37% 0.076 211.0)",
+          "oklch(48% 0.076 211.0)",
+          "oklch(60% 0.076 211.0)",
+          "oklch(72% 0.076 211.0)",
+          "oklch(84% 0.076 211.0)",
+          "oklch(95% 0.076 211.0)"
         ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
       },
-      "accent-mixedstorage": {
-        "role": "primary",
-        "displayName": "MixedStorage Brass",
-        "canonical": "#8a6a2c",
-        "oklch": "oklch(54.4% 0.089 81.4)",
-        "tonalRamp": [
-          "oklch(15% 0.089 81.4)",
-          "oklch(26% 0.089 81.4)",
-          "oklch(37% 0.089 81.4)",
-          "oklch(48% 0.089 81.4)",
-          "oklch(60% 0.089 81.4)",
-          "oklch(72% 0.089 81.4)",
-          "oklch(84% 0.089 81.4)",
-          "oklch(95% 0.089 81.4)"
-        ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
-      },
-      "accent-persistent-work-areas": {
-        "role": "primary",
-        "displayName": "Work Areas Gold",
-        "canonical": "#8a6512",
-        "oklch": "oklch(53.1% 0.103 81.6)",
-        "tonalRamp": [
-          "oklch(15% 0.103 81.6)",
-          "oklch(26% 0.103 81.6)",
-          "oklch(37% 0.103 81.6)",
-          "oklch(48% 0.103 81.6)",
-          "oklch(60% 0.103 81.6)",
-          "oklch(72% 0.103 81.6)",
-          "oklch(84% 0.103 81.6)",
-          "oklch(95% 0.103 81.6)"
-        ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
-      },
-      "accent-optimized-local-housing": {
-        "role": "primary",
-        "displayName": "Housing Blue",
-        "canonical": "#2d5f9a",
-        "oklch": "oklch(48.1% 0.11 254.2)",
-        "tonalRamp": [
-          "oklch(15% 0.11 254.2)",
-          "oklch(26% 0.11 254.2)",
-          "oklch(37% 0.11 254.2)",
-          "oklch(48% 0.11 254.2)",
-          "oklch(60% 0.11 254.2)",
-          "oklch(72% 0.11 254.2)",
-          "oklch(84% 0.11 254.2)",
-          "oklch(95% 0.11 254.2)"
-        ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
-      },
-      "accent-late-game-performance": {
-        "role": "primary",
-        "displayName": "Performance Violet",
+      "mod-late-game-performance": {
+        "role": "tertiary",
+        "displayName": "Late Game Performance Violet",
         "canonical": "#5b3fd0",
-        "oklch": "oklch(49.1% 0.21 284.4)",
+        "oklch": "oklch(49.1% 0.210 284.4)",
         "tonalRamp": [
-          "oklch(15% 0.2 284.4)",
-          "oklch(26% 0.2 284.4)",
-          "oklch(37% 0.2 284.4)",
-          "oklch(48% 0.2 284.4)",
-          "oklch(60% 0.2 284.4)",
-          "oklch(72% 0.2 284.4)",
-          "oklch(84% 0.2 284.4)",
-          "oklch(95% 0.2 284.4)"
+          "oklch(15% 0.150 284.4)",
+          "oklch(26% 0.150 284.4)",
+          "oklch(37% 0.150 284.4)",
+          "oklch(48% 0.150 284.4)",
+          "oklch(60% 0.150 284.4)",
+          "oklch(72% 0.150 284.4)",
+          "oklch(84% 0.150 284.4)",
+          "oklch(95% 0.150 284.4)"
         ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
       },
-      "accent-tipsy-tail": {
-        "role": "primary",
-        "displayName": "Tipsy Tail Aqua",
-        "canonical": "#1a6773",
-        "oklch": "oklch(47.4% 0.074 210.3)",
+      "mod-optimized-local-housing": {
+        "role": "tertiary",
+        "displayName": "Optimized Local Housing Blue",
+        "canonical": "#2d5f9a",
+        "oklch": "oklch(48.1% 0.110 254.2)",
         "tonalRamp": [
-          "oklch(15% 0.074 210.3)",
-          "oklch(26% 0.074 210.3)",
-          "oklch(37% 0.074 210.3)",
-          "oklch(48% 0.074 210.3)",
-          "oklch(60% 0.074 210.3)",
-          "oklch(72% 0.074 210.3)",
-          "oklch(84% 0.074 210.3)",
-          "oklch(95% 0.074 210.3)"
+          "oklch(15% 0.110 254.2)",
+          "oklch(26% 0.110 254.2)",
+          "oklch(37% 0.110 254.2)",
+          "oklch(48% 0.110 254.2)",
+          "oklch(60% 0.110 254.2)",
+          "oklch(72% 0.110 254.2)",
+          "oklch(84% 0.110 254.2)",
+          "oklch(95% 0.110 254.2)"
         ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
       },
-      "accent-hungry-pathing": {
-        "role": "primary",
-        "displayName": "Pathing Cobalt",
+      "mod-hungry-pathing": {
+        "role": "tertiary",
+        "displayName": "Hungry Pathing Navy",
         "canonical": "#1d4a86",
         "oklch": "oklch(41.2% 0.112 256.8)",
         "tonalRamp": [
@@ -458,297 +733,338 @@
           "oklch(84% 0.112 256.8)",
           "oklch(95% 0.112 256.8)"
         ],
-        "usage": "Card input: set per card via --c. Not a hub colour."
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
+      },
+      "mod-mixedstorage": {
+        "role": "tertiary",
+        "displayName": "MixedStorage Ochre",
+        "canonical": "#8a6a2c",
+        "oklch": "oklch(54.4% 0.089 81.4)",
+        "tonalRamp": [
+          "oklch(15% 0.089 81.4)",
+          "oklch(26% 0.089 81.4)",
+          "oklch(37% 0.089 81.4)",
+          "oklch(48% 0.089 81.4)",
+          "oklch(60% 0.089 81.4)",
+          "oklch(72% 0.089 81.4)",
+          "oklch(84% 0.089 81.4)",
+          "oklch(95% 0.089 81.4)"
+        ],
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
+      },
+      "mod-persistent-work-areas": {
+        "role": "tertiary",
+        "displayName": "Persistent Work Areas Gold",
+        "canonical": "#8a6512",
+        "oklch": "oklch(53.1% 0.103 81.6)",
+        "tonalRamp": [
+          "oklch(15% 0.103 81.6)",
+          "oklch(26% 0.103 81.6)",
+          "oklch(37% 0.103 81.6)",
+          "oklch(48% 0.103 81.6)",
+          "oklch(60% 0.103 81.6)",
+          "oklch(72% 0.103 81.6)",
+          "oklch(84% 0.103 81.6)",
+          "oklch(95% 0.103 81.6)"
+        ],
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
+      },
+      "mod-tipsy-tail": {
+        "role": "tertiary",
+        "displayName": "Tipsy Tail Teal",
+        "canonical": "#1a6773",
+        "oklch": "oklch(47.4% 0.074 210.3)",
+        "tonalRamp": [
+          "oklch(15% 0.074 210.3)",
+          "oklch(26% 0.074 210.3)",
+          "oklch(37% 0.074 210.3)",
+          "oklch(48% 0.074 210.3)",
+          "oklch(60% 0.074 210.3)",
+          "oklch(72% 0.074 210.3)",
+          "oklch(84% 0.074 210.3)",
+          "oklch(95% 0.074 210.3)"
+        ],
+        "cssVar": "--c (set inline on the mod's panel, need-index swatch and notice entry)"
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Binder Cover",
-        "purpose": "The cover name \"Timbermods\" only; the 404 headline uses the face smaller."
+        "displayName": "Display",
+        "purpose": "The cover wordmark, Timber / mods, the second line in pine."
+      },
+      "display-lost": {
+        "displayName": "Display (404)",
+        "purpose": "The 404 headline."
       },
       "headline": {
-        "displayName": "Page Title",
-        "purpose": "Binder page titles and section titles."
-      },
-      "title": {
-        "displayName": "Card Name",
-        "purpose": "Mod names on cards, the insert heading, the brand wordmark."
-      },
-      "title-small": {
-        "displayName": "Legend Heading",
-        "purpose": "Need index heading and install notes headings."
+        "displayName": "Headline",
+        "purpose": "Board titles and section titles."
       },
       "numeral": {
-        "displayName": "Step Numeral",
-        "purpose": "Install step numbers."
+        "displayName": "Numeral",
+        "purpose": "Install step numbers, in pine."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Mod names on panels, the notice title; the header wordmark at line-height 1."
+      },
+      "title-sm": {
+        "displayName": "Title small",
+        "purpose": "Install step titles."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "The need index heading and install notes headings."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Category and status pills."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The cover lead, 46ch max."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Reading text on the mat; the cover lead is 1.15rem at 46ch."
+        "purpose": "Reading text."
       },
-      "body-card": {
-        "displayName": "Card Body",
-        "purpose": "Blurbs on card stock in card-muted."
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Panel facts; blurbs at 0.95rem, notes and requirements at 0.85 to 0.9rem."
       },
-      "label": {
-        "displayName": "Pill Label",
-        "purpose": "Tag and status pills; sentence case."
+      "tagline": {
+        "displayName": "Tagline",
+        "purpose": "The one-line promise under a mod's name."
       },
       "mono": {
-        "displayName": "Code",
-        "purpose": "Inline paths such as Documents\\Timberborn\\Mods, on a faint ink tint."
+        "displayName": "Mono",
+        "purpose": "File paths only."
       }
     },
-    "cardInputs": {
-      "property": "--c",
-      "setOn": "article.card (inline style), the matching need-index .to span, and the 404 site list",
-      "drives": [
-        "card frame (6px)",
-        "art-window backing band",
-        "tag pill fill",
-        "fact bullets",
-        "download button fill",
-        "card name hover underline",
-        "need-index swatch"
-      ],
-      "values": {
-        "stability-fork": "#b8322a",
-        "multicolony": "#1a6a77",
-        "mixedstorage": "#8a6a2c",
-        "persistent-work-areas": "#8a6512",
-        "optimized-local-housing": "#2d5f9a",
-        "late-game-performance": "#5b3fd0",
-        "tipsy-tail": "#1a6773",
-        "hungry-pathing": "#1d4a86"
-      },
-      "rule": "Taken from each mod's own site; must hold 4.5:1 against white."
-    },
-    "themes": {
-      "mechanism": "prefers-color-scheme, overridden by :root[data-theme] set from localStorage key tbmods.theme before first paint",
-      "darkOverrides": [
-        "felt-mat-dark",
-        "binder-ink-dark",
-        "slate-muted-dark",
-        "mat-rule-dark",
-        "ledger-blue-dark",
-        "focus-lamp-dark",
-        "pvc-page-dark"
-      ],
-      "unchangedInDark": [
-        "card-stock",
-        "card-ink",
-        "card-muted",
-        "card-rule",
-        "caution-cream",
-        "caution-umber",
-        "stable-green",
-        "mod accents"
-      ],
-      "cardLinkOverride": ".card sets --link back to ledger-blue in both themes"
-    },
-    "textures": [
-      {
-        "name": "felt-light / felt-dark",
-        "file": "assets/img/felt-light.webp, assets/img/felt-dark.webp",
-        "purpose": "The mat, tiled under body.",
-        "source": "assets/img/make_textures.py (procedural, fixed seeds)"
-      },
-      {
-        "name": "binder / binder-dark",
-        "file": "assets/img/binder.webp, assets/img/binder-dark.webp",
-        "purpose": "The PVC page grain, tiled.",
-        "source": "assets/img/make_textures.py"
-      },
-      {
-        "name": "sheen",
-        "file": "assets/img/sheen.webp",
-        "purpose": "The sleeve highlight, moved on hover or focus.",
-        "source": "assets/img/make_textures.py"
-      },
-      {
-        "name": "card art",
-        "file": "assets/img/cards/*.webp (960x600)",
-        "purpose": "Each mod's own site art, cropped.",
-        "source": "Screenshots of each mod's own site; provenance in the *.webp.json beside each file"
-      }
-    ],
     "shadows": [
       {
-        "name": "page-on-felt",
-        "value": "0 18px 30px -22px rgba(0, 0, 0, .7)",
-        "purpose": "Binder pages only."
+        "name": "board",
+        "value": "inset 0 1px 0 rgba(255, 236, 200, .12), 0 18px 30px -22px rgba(0, 0, 0, .7)",
+        "purpose": "A lit top edge and a long shadow under each walnut board."
       },
       {
-        "name": "sleeve-on-page",
-        "value": "0 6px 14px -8px rgba(0, 0, 0, .6)",
-        "purpose": "Sleeves only."
+        "name": "panel",
+        "value": "0 2px 0 rgba(0, 0, 0, .22), 0 12px 20px -12px rgba(0, 0, 0, .65)",
+        "purpose": "Each mod panel and the notice; the 2px ledge is the paper's thickness."
+      },
+      {
+        "name": "steps-sheet",
+        "value": "0 2px 0 rgba(0, 0, 0, .12), 0 12px 24px -14px rgba(0, 0, 0, .45)",
+        "purpose": "The install sheet, lighter because it sits on the ground."
+      },
+      {
+        "name": "button-inset",
+        "value": "inset 0 -2px 0 rgba(0, 0, 0, .2)",
+        "purpose": "The pressed-in bottom edge of the download button."
+      },
+      {
+        "name": "swatch-ring",
+        "value": "0 0 0 2px var(--ground), 0 0 0 3px var(--c)",
+        "purpose": "Rings a need-index swatch off the ground."
+      },
+      {
+        "name": "nail-head",
+        "value": "radial-gradient(circle at 40% 35%, rgba(255, 240, 210, .55) 0 1.5px, var(--nail) 2px 4.5px, rgba(0, 0, 0, .45) 5px 6px, transparent 6.5px), 14px, one per corner at 12px inset (8px under 620px)",
+        "purpose": "The four brass nails on every board (a background, not a shadow)."
       }
     ],
     "motion": [
       {
-        "name": "sheen-slide",
-        "value": "background-position .7s cubic-bezier(.2, .8, .2, 1), opacity .7s",
-        "purpose": "The only motion: the sleeve sheen on hover or focus-within, opacity .4 to .6. Off under prefers-reduced-motion, along with smooth scrolling."
-      }
-    ],
-    "focus": [
+        "name": "anchor-scroll",
+        "value": "scroll-behavior: smooth",
+        "purpose": "The only motion: in-page anchor links. Off under prefers-reduced-motion, which also stops every transition and animation."
+      },
       {
-        "name": "focus-ring",
-        "value": "outline: 3px solid var(--focus); outline-offset: 3px",
-        "purpose": "Every focusable element; ledger-blue in light, focus-lamp-dark in dark."
+        "name": "hover-states",
+        "value": "no transition",
+        "purpose": "Hover changes underline thickness (1px to 2px), the download button's brightness (0.9) and the toggle's wash, instantly."
       }
     ],
     "breakpoints": [
       {
-        "name": "two-pockets",
+        "name": "wide",
         "value": "1000px",
-        "purpose": "Pockets 3 to 2 across; inserts hidden."
+        "purpose": "Below: panels two across, the notice hidden."
       },
       {
-        "name": "single-column",
+        "name": "tablet",
         "value": "860px",
-        "purpose": "Cover, install steps and notes stack."
+        "purpose": "Below: cover, install steps and notes in one column; wordmark on one line."
       },
       {
         "name": "phone",
         "value": "620px",
-        "purpose": "One pocket; art 16:7; tighter sleeve and spine; one-line download button."
+        "purpose": "Below: panels one across, banners 16:7, boards tightened, download button unwrapped."
       }
     ],
-    "markupContract": {
-      "script": "assets/site.js",
-      "tests": "scripts/test-site.mjs",
-      "cardSelector": "article.card[data-repo][data-asset], plus [data-maturity] on every card with a caution (equal to the caution label); data-repo nowhere else",
-      "cardHooks": [
-        "[data-download] (a.btn, fallback href = repo Releases page, contains .btn-label and [data-size])",
-        "[data-size]",
-        "[data-note] (aria-live)",
-        "[data-status] (hidden pill)",
-        "[data-notes] (release-notes link, fallback Releases page)",
-        "h3 (mod name)"
+    "themes": {
+      "light": ":root",
+      "dark": "@media (prefers-color-scheme: dark) { :root:not([data-theme=\"light\"]) { ... } } and :root[data-theme=\"dark\"] { ... }",
+      "toggle": "The header toggle stores 'light' or 'dark' under localStorage key tbmods.theme; an inline head script applies it before first paint.",
+      "textures": {
+        "ground-day": "assets/img/birch.webp",
+        "ground-night": "assets/img/forest-floor.webp",
+        "board-day": "assets/img/walnut.webp",
+        "board-night": "assets/img/walnut-dark.webp",
+        "source": "assets/img/make_textures.py (procedural, numpy and Pillow, fixed seeds)"
+      }
+    },
+    "legacyClassNames": {
+      "loadBearing": [
+        ".card (assets/site.js selects .card[data-repo]; scripts/test-site.mjs reads <article class=\"card\">)",
+        ".caution (scripts/test-site.mjs counts it inside each panel)"
       ],
-      "pageHooks": [
-        "[data-generated] (footer stamp)",
-        "#top",
-        "#mods",
-        "#install",
-        "the eight card ids",
-        "localStorage tbmods.theme"
-      ],
-      "neverEdit": "data/releases.json (bot-generated)"
+      "leftoverOnly": [
+        ".binder",
+        ".page",
+        ".pockets",
+        ".sleeve",
+        ".insert-sleeve"
+      ]
     }
   },
   "components": [
     {
-      "name": "Mod Card in its Sleeve",
+      "name": "Walnut Board",
+      "kind": "custom",
+      "refersTo": "walnut-board",
+      "description": "One per group of mods: walnut with four brass nails, title and lead in walnut label colours.",
+      "html": "<section class=\"ds-board\"><h2>Play together</h2><p>Co-op through BeaverBuddies. Install one BeaverBuddies at a time.</p></section>",
+      "css": ".ds-board { position: relative; background: var(--board, #56402a); color: var(--board-ink, #f4ead6); border: 1px solid var(--board-edge, rgba(40,26,14,.55)); border-radius: 8px; padding: 32px 32px 34px; box-shadow: inset 0 1px 0 rgba(255,236,200,.12), 0 18px 30px -22px rgba(0,0,0,.7); } .ds-board::before { content: ''; position: absolute; inset: 12px; pointer-events: none; --n: radial-gradient(circle at 40% 35%, rgba(255,240,210,.55) 0 1.5px, var(--nail, #c19a5b) 2px 4.5px, rgba(0,0,0,.45) 5px 6px, transparent 6.5px); background: var(--n) 0 0 / 14px 14px no-repeat, var(--n) 100% 0 / 14px 14px no-repeat, var(--n) 0 100% / 14px 14px no-repeat, var(--n) 100% 100% / 14px 14px no-repeat; } .ds-board h2 { font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 800; font-size: 2.2rem; line-height: 1.05; letter-spacing: -.01em; margin: 0 0 .4em; } .ds-board p { color: var(--board-muted, #decdab); margin: 0; font-family: var(--sans, system-ui, sans-serif); }"
+    },
+    {
+      "name": "Mod Panel",
       "kind": "card",
-      "refersTo": "card",
-      "description": "Signature: light card stock framed 6px in the mod accent (--c), inside a clear sleeve on a PVC page; the sheen slides on hover or focus.",
-      "html": "<div class=\"ds-page\"><div class=\"ds-sleeve\"><article class=\"ds-card\" style=\"--c:#1a6a77\"><div class=\"ds-art\"></div><div class=\"ds-body\"><div class=\"ds-meta\"><span class=\"ds-pill-tag\">Multiplayer</span><span class=\"ds-pill-status\">Stable</span></div><h3 class=\"ds-name\"><a href=\"#\">BeaverBuddies MultiColony</a></h3><p class=\"ds-tagline\">Two players, one map, a colony each.</p><ul class=\"ds-facts\"><li>A waiting room before a new game</li><li>Trading Posts between colonies</li></ul><a class=\"ds-btn\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16\"/></svg><span>Download latest</span><span class=\"ds-size\">2.6 MB</span></a></div></article></div></div>",
-      "css": ".ds-page { background: #1d1f23; padding: 24px 24px 24px 56px; border-radius: 10px; border: 1px solid rgba(0,0,0,.35); box-shadow: 0 18px 30px -22px rgba(0,0,0,.7); position: relative; max-width: 340px; } .ds-page::before { content: \"\"; position: absolute; left: 18px; top: 40px; width: 18px; height: 18px; border-radius: 50%; background: radial-gradient(circle, #dcd8cf 0 6.5px, rgba(0,0,0,.55) 7px 8px, transparent 8.5px); } .ds-sleeve { position: relative; display: flex; padding: 7px; border-radius: 12px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); border-top-color: rgba(255,255,255,.3); box-shadow: 0 6px 14px -8px rgba(0,0,0,.6); } .ds-sleeve::after { content: \"\"; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: linear-gradient(125deg, transparent 30%, rgba(230,236,245,.35) 45%, transparent 55%) 95% 0 / 220% 220% no-repeat; opacity: .4; transition: background-position .7s cubic-bezier(.2,.8,.2,1), opacity .7s; } .ds-sleeve:hover::after, .ds-sleeve:focus-within::after { background-position: 10% 90%; opacity: .6; } .ds-card { flex: 1; background: #fbfaf6; color: #1f2124; border: 6px solid var(--c); border-radius: 8px; overflow: hidden; font: 400 1rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; } .ds-art { aspect-ratio: 16/10; background: linear-gradient(160deg, #dfe8e6, #b9cfcc); border-bottom: 6px solid var(--c); } .ds-body { padding: 14px 16px 16px; } .ds-meta { display: flex; justify-content: space-between; margin: 0 0 8px; } .ds-pill-tag, .ds-pill-status { display: inline-flex; align-items: center; min-height: 24px; padding: 2px 10px; border-radius: 999px; font: 700 .78rem/1 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: .02em; } .ds-pill-tag { background: var(--c); color: #fff; } .ds-pill-status { border: 1.5px solid currentColor; color: #1d6b3a; } .ds-name { font: 800 1.35rem/1.08 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: -.01em; margin: 0 0 .25em; } .ds-name a { color: #1f2124; text-decoration: none; } .ds-name a:hover { text-decoration: underline; text-decoration-color: var(--c); } .ds-tagline { font-weight: 750; margin: 0 0 .4em; } .ds-facts { list-style: none; padding: 0; margin: 0 0 .8em; font-size: .92rem; } .ds-facts li { position: relative; padding: 5px 0 5px 16px; border-top: 1px solid #dedbd2; } .ds-facts li::before { content: \"\"; position: absolute; left: 0; top: .9em; width: 7px; height: 7px; border-radius: 50%; background: var(--c); } .ds-btn { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 8px 16px; border-radius: 8px; background: var(--c); color: #fff; font-weight: 750; text-decoration: none; } .ds-btn:hover { filter: brightness(.9); } .ds-btn:focus-visible, .ds-name a:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; } .ds-size { font-weight: 600; font-size: .88rem; } @media (prefers-reduced-motion: reduce) { .ds-sleeve::after { transition: none; } }"
+      "refersTo": "mod-panel",
+      "description": "One per mod: warm paper (moss at night) framed 5px in the mod's own colour, its own picture as the banner.",
+      "html": "<article class=\"ds-panel\" style=\"--c:#1a6a77\"><div class=\"ds-banner\"></div><div class=\"ds-body\"><div class=\"ds-meta\"><span class=\"ds-pill-tag\">Multiplayer</span><span class=\"ds-pill-status\">Stable</span></div><h3><a href=\"#\">BeaverBuddies MultiColony</a></h3><p class=\"ds-tagline\">Two players, one map, a colony each.</p><p class=\"ds-blurb\">Each player runs a colony of their own on one shared map.</p><ul class=\"ds-facts\"><li>Trading Posts exchange goods and beavers</li><li>Folktails and Iron Teeth in one game</li></ul><a class=\"ds-btn\" href=\"#\">Download v1.4.0 <small>3.0 MB</small></a><p class=\"ds-links\"><a href=\"#\"><b>Website</b></a><a href=\"#\">GitHub</a><a href=\"#\">Release notes</a></p></div></article>",
+      "css": ".ds-panel { display: flex; flex-direction: column; max-width: 340px; background: var(--tile, #f5ecd9); color: var(--tile-ink, #2a2118); border: 5px solid var(--c); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 0 rgba(0,0,0,.22), 0 12px 20px -12px rgba(0,0,0,.65); font-family: var(--sans, system-ui, sans-serif); } .ds-banner { aspect-ratio: 16 / 10; background: linear-gradient(135deg, #e7dcc4, #b9c9a8); border-bottom: 5px solid var(--c); } .ds-body { padding: 14px 16px 16px; } .ds-meta { display: flex; justify-content: space-between; margin: 0 0 8px; } .ds-pill-tag, .ds-pill-status { display: inline-flex; align-items: center; min-height: 24px; padding: 2px 10px; border-radius: 999px; font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 700; font-size: .78rem; letter-spacing: .02em; } .ds-pill-tag { background: var(--c); color: #fff; } .ds-pill-status { border: 1.5px solid currentColor; color: var(--ok, #2c6536); } .ds-panel h3 { font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 800; font-size: 1.35rem; line-height: 1.08; margin: 0 0 .25em; } .ds-panel h3 a { color: inherit; text-decoration: none; } .ds-panel h3 a:hover { text-decoration: underline; text-decoration-color: var(--c); } .ds-tagline { font-weight: 750; margin: 0 0 .4em; } .ds-blurb { color: var(--tile-muted, #5d4c39); font-size: .95rem; margin: 0 0 .7em; } .ds-facts { list-style: none; padding: 0; margin: 0 0 .8em; font-size: .92rem; } .ds-facts li { position: relative; padding: 5px 0 5px 16px; border-top: 1px solid var(--tile-rule, #dccdab); } .ds-facts li::before { content: ''; position: absolute; left: 0; top: .9em; width: 7px; height: 7px; border-radius: 50%; background: var(--c); } .ds-btn { display: flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; border-radius: 8px; background: var(--c); color: #fff; font-weight: 750; text-decoration: none; box-shadow: inset 0 -2px 0 rgba(0,0,0,.2); } .ds-btn:hover { filter: brightness(.9); } .ds-panel a:focus-visible { outline: 3px solid var(--focus, #2f5d3a); outline-offset: 3px; } .ds-links { display: flex; justify-content: space-between; border-top: 1px solid var(--tile-rule, #dccdab); margin: 12px 0 0; padding-top: 4px; } .ds-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--tile-link, #2f5d3a); font-weight: 650; font-size: .92rem; text-underline-offset: 3px; }"
     },
     {
       "name": "Download Button",
       "kind": "button",
       "refersTo": "button-download",
-      "description": "The card primary action: fills the mod accent (--c) with white text; version and size once release data resolves.",
-      "html": "<a class=\"ds-dl\" href=\"#\" style=\"--c:#b8322a\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16\"/></svg><span>Download latest</span><span class=\"ds-dl-size\">2.5 MB</span></a>",
-      "css": ".ds-dl { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 8px 16px; border-radius: 8px; background: var(--c); color: #fff; font: 750 1rem/1.3 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; text-decoration: none; } .ds-dl:hover { filter: brightness(.9); } .ds-dl:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-dl svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; } .ds-dl-size { font-weight: 600; font-size: .88rem; }"
+      "description": "The mod's colour, white text, a download arrow, the version and the size; no transition.",
+      "html": "<a class=\"ds-dl\" href=\"#\" style=\"--c:#b8322a\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16\"/></svg><span>Download v1.1.14</span><small>2.5 MB</small></a>",
+      "css": ".ds-dl { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 8px 16px; border-radius: 8px; background: var(--c); color: #fff; font-family: var(--sans, system-ui, sans-serif); font-weight: 750; text-decoration: none; box-shadow: inset 0 -2px 0 rgba(0,0,0,.2); } .ds-dl svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; } .ds-dl small { font-weight: 600; font-size: .88rem; } .ds-dl:hover { filter: brightness(.9); } .ds-dl:focus-visible { outline: 3px solid var(--focus, #2f5d3a); outline-offset: 3px; }"
     },
     {
-      "name": "Tag and Status Pills",
+      "name": "Home Button (404)",
+      "kind": "button",
+      "refersTo": "button-home",
+      "description": "Pine green with ground-coloured text; fern light with forest floor at night.",
+      "html": "<a class=\"ds-home\" href=\"#\">Back to the mods</a>",
+      "css": ".ds-home { display: inline-flex; align-items: center; min-height: 48px; padding: 8px 16px; border-radius: 8px; background: var(--link, #2f5d3a); color: var(--ground, #e0d2b4); font-family: var(--sans, system-ui, sans-serif); font-weight: 750; text-decoration: none; box-shadow: inset 0 -2px 0 rgba(0,0,0,.2); } .ds-home:hover { filter: brightness(.9); } .ds-home:focus-visible { outline: 3px solid var(--focus, #2f5d3a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Status and Category Pills",
       "kind": "chip",
-      "refersTo": "pill-tag",
-      "description": "Tag pill filled in the mod accent; status pill outlined in stable green, or caution umber for Preview and maturity labels.",
-      "html": "<div class=\"ds-pills\" style=\"--c:#5b3fd0\"><span class=\"ds-tag\">Performance</span><span class=\"ds-st\">Stable</span><span class=\"ds-st ds-st-pre\">Young mod</span></div>",
-      "css": ".ds-pills { display: flex; gap: 8px; background: #fbfaf6; padding: 12px; } .ds-tag, .ds-st { display: inline-flex; align-items: center; min-height: 24px; padding: 2px 10px; border-radius: 999px; font: 700 .78rem/1 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: .02em; } .ds-tag { background: var(--c); color: #fff; } .ds-st { border: 1.5px solid currentColor; color: #1d6b3a; } .ds-st-pre { color: #6e3d00; }"
+      "refersTo": "pill-category",
+      "description": "Category in the mod's colour; status outlined in stable green or preview amber.",
+      "html": "<span class=\"ds-tag\" style=\"--c:#5b3fd0\">Performance</span> <span class=\"ds-status\">Stable</span> <span class=\"ds-status ds-preview\">Preview</span>",
+      "css": ".ds-tag, .ds-status { display: inline-flex; align-items: center; min-height: 24px; padding: 2px 10px; border-radius: 999px; font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 700; font-size: .78rem; line-height: 1; letter-spacing: .02em; } .ds-tag { background: var(--c); color: #fff; } .ds-status { border: 1.5px solid currentColor; color: var(--ok, #2c6536); } .ds-preview { color: var(--preview, #7a4a06); }"
     },
     {
-      "name": "Caution Note",
+      "name": "Caution",
       "kind": "custom",
       "refersTo": "caution",
-      "description": "An honest maturity warning on a card; its label equals the card's data-maturity.",
-      "html": "<p class=\"ds-caution\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3 2 21h20L12 3Zm0 6v6m0 3v.5\"/></svg>Young mod: played in a few sessions in one large colony. Try it on a copy of a save.</p>",
-      "css": ".ds-caution { display: flex; gap: 8px; align-items: flex-start; margin: 0; padding: 8px 10px; background: #fff3dc; color: #6e3d00; border-radius: 6px; font: 400 .9rem/1.5 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; max-width: 300px; } .ds-caution svg { flex: none; width: 16px; height: 16px; margin-top: 2px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }"
+      "description": "The strip on beta and young mods: caution wash and ink with a stroked warning triangle.",
+      "html": "<p class=\"ds-caution\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3 2 21h20L12 3Zm0 6v6m0 3v.5\"/></svg>Beta: try it on a copy of your save first.</p>",
+      "css": ".ds-caution { display: flex; gap: 8px; align-items: flex-start; padding: 8px 10px; background: var(--warn-bg, #f4dfb3); color: var(--warn-ink, #663a04); border-radius: 6px; font-size: .9rem; font-family: var(--sans, system-ui, sans-serif); } .ds-caution svg { flex: none; width: 16px; height: 16px; margin-top: 2px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }"
     },
     {
       "name": "Need Index",
       "kind": "nav",
-      "refersTo": "need-index-row",
-      "description": "The cover legend: one ruled row per need, ending in the mod name beside a tiny card swatch in its accent.",
-      "html": "<nav class=\"ds-needs\"><h2>Find one by what you need</h2><ul><li><a href=\"#\"><span class=\"ds-need\">Co-op in one shared colony</span><span class=\"ds-to\" style=\"--c:#b8322a\">BeaverBuddies Stability Fork</span></a></li><li><a href=\"#\"><span class=\"ds-need\">Lag spikes in a big colony</span><span class=\"ds-to\" style=\"--c:#5b3fd0\">Late Game Performance</span></a></li></ul></nav>",
-      "css": ".ds-needs { background: #dcd8cf; color: #1f2124; padding: 16px; font: 400 1.0625rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; max-width: 560px; } .ds-needs h2 { font: 700 1.05rem/1.2 \"Anybody\", \"Arial Narrow\", sans-serif; margin: 0 0 .5em; } .ds-needs ul { list-style: none; margin: 0; padding: 0; border-top: 1.5px solid #1f2124; } .ds-needs li { border-bottom: 1px solid #b9b4a8; } .ds-needs a { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 4px 16px; align-items: center; min-height: 46px; padding: 6px 2px; color: #1f2124; text-decoration: none; } .ds-needs a:hover .ds-need { text-decoration: underline; } .ds-needs a:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-need { font-weight: 600; } .ds-to { display: inline-flex; align-items: center; gap: 8px; font: 700 .95rem/1.2 \"Anybody\", \"Arial Narrow\", sans-serif; white-space: nowrap; } .ds-to::before { content: \"\"; width: 11px; height: 15px; border-radius: 2px; background: var(--c); box-shadow: inset 0 0 0 2px var(--c), inset 0 0 0 4px rgba(255,255,255,.55); }"
+      "refersTo": "need-row",
+      "description": "Rows pairing a need with the mod that meets it, each mod name led by its colour swatch.",
+      "html": "<ul class=\"ds-needs\"><li><a href=\"#\"><span>Co-op in one shared colony</span><b style=\"--c:#b8322a\">BeaverBuddies Stability Fork</b></a></li><li><a href=\"#\"><span>Long walks to work</span><b style=\"--c:#2d5f9a\">Optimized Local Housing</b></a></li></ul>",
+      "css": ".ds-needs { list-style: none; margin: 0; padding: 0; border-top: 1.5px solid var(--ink, #2a2118); max-width: 560px; font-family: var(--sans, system-ui, sans-serif); } .ds-needs li { border-bottom: 1px solid var(--rule, #bca77f); } .ds-needs a { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: center; min-height: 46px; padding: 6px 2px; color: var(--ink, #2a2118); text-decoration: none; } .ds-needs span { font-weight: 600; } .ds-needs a:hover span { text-decoration: underline; } .ds-needs a:focus-visible { outline: 3px solid var(--focus, #2f5d3a); outline-offset: 3px; } .ds-needs b { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 700; font-size: .95rem; } .ds-needs b::before { content: ''; width: 12px; height: 12px; border-radius: 3px; background: var(--c); box-shadow: 0 0 0 2px var(--ground, #e0d2b4), 0 0 0 3px var(--c); }"
     },
     {
-      "name": "Header Navigation",
+      "name": "Header",
       "kind": "nav",
-      "refersTo": "theme-toggle",
-      "description": "Brand wordmark in Anybody, ink text links, a 44px round theme toggle.",
-      "html": "<header class=\"ds-bar\"><a class=\"ds-brand\" href=\"#\">Timbermods</a><nav><a href=\"#\">Mods</a><a href=\"#\">Install</a><a href=\"#\">GitHub</a><button class=\"ds-toggle\" type=\"button\" aria-label=\"Switch theme\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14-1.41-1.41M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z\"/></svg></button></nav></header>",
-      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; min-height: 68px; padding: 0 16px; background: #dcd8cf; border-bottom: 1px solid #b9b4a8; font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; } .ds-brand { font: 800 1.35rem/1 \"Anybody\", \"Arial Narrow\", sans-serif; letter-spacing: -.01em; color: #1f2124; text-decoration: none; } .ds-bar nav { display: flex; align-items: center; } .ds-bar nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: #1f2124; font-weight: 650; text-decoration: none; } .ds-bar nav a:hover { text-decoration: underline; } .ds-bar a:focus-visible, .ds-toggle:focus-visible { outline: 3px solid #1d4f8a; outline-offset: 3px; } .ds-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-left: 6px; border: 1px solid #4c5056; border-radius: 50%; background: transparent; color: #1f2124; cursor: pointer; } .ds-toggle:hover { background: rgba(31,33,36,.07); } .ds-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }"
+      "refersTo": "nav-link",
+      "description": "Pine-on-log-end logo and wordmark; 44px ink links and the round theme toggle.",
+      "html": "<div class=\"ds-bar\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><circle cx=\"16\" cy=\"16\" r=\"14.5\" fill=\"#56402a\"/><circle cx=\"16\" cy=\"16\" r=\"11.5\" fill=\"#e0c79a\"/><circle cx=\"16\" cy=\"16\" r=\"8\" fill=\"none\" stroke=\"#c7a878\" stroke-width=\"1.2\"/><circle cx=\"16\" cy=\"16\" r=\"4.5\" fill=\"none\" stroke=\"#c7a878\" stroke-width=\"1.2\"/><path d=\"M16 5.5 L22.5 15 H19 L24 22.5 H8 L13 15 H9.5 Z\" fill=\"#2f5d3a\"/><rect x=\"14.6\" y=\"22.5\" width=\"2.8\" height=\"4\" fill=\"#56402a\"/></svg>Timbermods</a><nav><a href=\"#\">Mods</a><a href=\"#\">Install</a><a href=\"#\">GitHub</a><button class=\"ds-toggle\" type=\"button\" aria-label=\"Switch between light and dark theme\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14-1.41-1.41M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z\"/></svg></button></nav></div>",
+      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; min-height: 68px; border-bottom: 1px solid var(--rule, #bca77f); font-family: var(--sans, system-ui, sans-serif); } .ds-brand { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--ink, #2a2118); text-decoration: none; font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 800; font-size: 1.35rem; letter-spacing: -.01em; } .ds-brand svg { width: 32px; height: 32px; } .ds-bar nav { display: flex; align-items: center; } .ds-bar nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: var(--ink, #2a2118); font-weight: 650; text-decoration: none; } .ds-bar nav a:hover { text-decoration: underline; } .ds-bar a:focus-visible, .ds-toggle:focus-visible { outline: 3px solid var(--focus, #2f5d3a); outline-offset: 3px; } .ds-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-left: 6px; border: 1px solid var(--muted, #5b4a37); border-radius: 50%; background: transparent; color: var(--ink, #2a2118); cursor: pointer; } .ds-toggle:hover { background: var(--code-bg, rgba(42,33,24,.08)); } .ds-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }"
     },
     {
-      "name": "Printed Insert",
-      "kind": "card",
-      "refersTo": "insert",
-      "description": "A card-stock slip in a page's spare pocket: a double-ruled frame, each term with its mod's accent swatch.",
-      "html": "<div class=\"ds-insert\"><h3>Which one? One BeaverBuddies at a time</h3><dl><div style=\"--c:#b8322a\"><dt>Stability Fork</dt><dd>Everyone builds one colony together.</dd></div><div style=\"--c:#1a6a77\"><dt>MultiColony</dt><dd>Each player runs a colony of their own.</dd></div></dl><p>Install only one of the two.</p></div>",
-      "css": ".ds-insert { background: #fbfaf6; color: #1f2124; border-radius: 8px; padding: 22px 20px; border: 6px double #dedbd2; max-width: 300px; font: 400 1rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif; } .ds-insert h3 { font: 800 1.35rem/1.08 \"Anybody\", \"Arial Narrow\", sans-serif; margin: 0 0 14px; } .ds-insert dl { margin: 0 0 14px; } .ds-insert dl > div { padding: 10px 0; border-top: 1px solid #dedbd2; } .ds-insert dt { font: 800 1rem/1.2 \"Anybody\", \"Arial Narrow\", sans-serif; } .ds-insert dt::before { content: \"\"; display: inline-block; width: 9px; height: 13px; margin-right: 8px; border-radius: 2px; vertical-align: -1px; background: var(--c); } .ds-insert dd { margin: 4px 0 0; color: #4a4e54; font-size: .95rem; } .ds-insert p { margin: 0; padding-top: 12px; border-top: 1.5px solid #1f2124; font-weight: 650; font-size: .95rem; }"
+      "name": "Notice",
+      "kind": "custom",
+      "refersTo": "notice",
+      "description": "A paper panel without a mod colour, in a 5px double rule; fills a board's spare slot.",
+      "html": "<div class=\"ds-notice\"><h3>Which one? One BeaverBuddies at a time</h3><dl><div style=\"--c:#b8322a\"><dt>Stability Fork</dt><dd>Everyone builds one colony together.</dd></div><div style=\"--c:#1a6a77\"><dt>MultiColony</dt><dd>Each player runs a colony of their own.</dd></div></dl><p>Install only one of the two.</p></div>",
+      "css": ".ds-notice { max-width: 320px; background: var(--tile, #f5ecd9); color: var(--tile-ink, #2a2118); border: 5px double var(--tile-rule, #dccdab); border-radius: 8px; padding: 22px 20px; box-shadow: 0 2px 0 rgba(0,0,0,.22), 0 12px 20px -12px rgba(0,0,0,.65); font-family: var(--sans, system-ui, sans-serif); } .ds-notice h3 { font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 800; font-size: 1.35rem; line-height: 1.08; margin: 0 0 14px; } .ds-notice dl { margin: 0 0 14px; } .ds-notice dl > div { padding: 10px 0; border-top: 1px solid var(--tile-rule, #dccdab); } .ds-notice dt { font-family: var(--display, 'Anybody', 'Arial Narrow', sans-serif); font-weight: 800; } .ds-notice dt::before { content: ''; display: inline-block; width: 10px; height: 10px; margin-right: 8px; border-radius: 2px; background: var(--c); } .ds-notice dd { margin: 4px 0 0; color: var(--tile-muted, #5d4c39); font-size: .95rem; } .ds-notice > p { margin: 0; padding-top: 12px; border-top: 1.5px solid var(--tile-ink, #2a2118); font-weight: 650; font-size: .95rem; }"
     }
   ],
   "narrative": {
-    "northStar": "The Collector's Binder",
-    "overview": "The hub is a card collector's desk. A felt mat is the page; dark PVC binder pages with three punched ring holes sit on it; each page holds clear sleeves, and each sleeve holds one trading card, one per mod. The binder only holds the cards. Every card is printed in its own mod's colours with art taken from that mod's own site, so a player who arrives from one mod's site recognises it at once. The hub has no brand accent of its own: its chrome is felt, PVC, ink and card stock, and all the colour on the page belongs to the mods.\n\nDensity is catalogue-like but calm: a cover with the name set huge in Anybody and a \"find by need\" index (one row per need, each ending in the mod's name beside a tiny card swatch in its colour), then three binder pages grouped by need, then a shared install sheet and a footer that stamps when the release data last changed. Every card carries the same fields in the same places, like the back of a sewing pattern, so cards compare at a glance. Surfaces are real, produced textures (procedural felt, pebbled PVC, a sleeve sheen made by `assets/img/make_textures.py`); card art is a crop of each mod's own site art. The one moving thing is the sleeve sheen.\n\nThe world deliberately refuses the catalogue template it replaced: parchment and forest green, identical dark banners on every card, soft-shadow rounded cards, a hero stat strip.",
+    "northStar": "The Lodge Wall",
+    "overview": "The hub is the wall of a beaver lodge where the mods hang. By day the wall is pale birch boards; at night it is a dark forest floor. Each group of mods (Play together, Big colonies, Build and plan) is mounted on its own walnut board, held at the corners by four brass nail heads, and each mod is a panel nailed to that board: warm paper by day, moss green at night, framed in the mod's own colour and headed by the picture taken from that mod's own site. A player who arrived from one mod's site finds its colour and picture again at once.\n\nThe palette is brown, green and wood: birch, walnut, brass, pine and moss. Pine green is the hub's own voice (links, the second line of the wordmark, the step numerals, the logo's tree); the eight mod colours belong to the mods and appear only on their own panels and swatches. Type is a wide, heavy grotesque (Anybody 800) for names and headings over the system sans for reading. The wall is still: no hover lifts, no entrances, no transitions.\n\nThe maintainer rejected the previous \"Collector's Binder\" look (felt, dark PVC binder pages, clear sleeves, sheen, white card stock, a card-fan logo) as too black and white. None of it returns.",
     "keyCharacteristics": [
-      "Neutral hub chrome (felt mat, PVC page, ink); all hue comes from the mods' own accents.",
-      "One card per mod: light stock framed 6px in the mod's accent, the mod's own art in a 16:10 window.",
-      "Fixed card fields in a fixed order on every card.",
-      "Anybody 700/800 for names, headings, pills and numerals; system-ui for reading.",
-      "A single motion: the sleeve sheen slides on hover or focus, and stops under reduced motion.",
-      "Light and dark themes (OS preference, overridable by the toggle); card stock stays light in both."
+      "Textured ground: birch boards by day (`birch.webp`), forest floor at night (`forest-floor.webp`), both procedural from `assets/img/make_textures.py`.",
+      "One walnut board per group, with four brass nail heads drawn in CSS.",
+      "One panel per mod, framed 5px in the mod's own colour, its own picture as the banner.",
+      "Pine green for the hub's links and wordmark; mod colours only on their own mod.",
+      "Light and dark themes from the OS preference, overridable by the header toggle and remembered in `localStorage` (`tbmods.theme`).",
+      "No motion beyond smooth anchor scrolling, which reduced-motion turns off."
     ],
     "rules": [
       {
-        "name": "The Own Colours Rule",
-        "body": "Each card keeps its own mod's accent, passed in as `--c` and taken from that mod's own site. The hub never recolours a card, never gives two mods one accent to tidy the palette, and never introduces a hub accent that competes with them. A new mod's card gets its accent from its own site.",
+        "name": "The Own Colour Rule",
+        "body": "A mod's colour comes from its own site and appears only on that mod's panel, swatch and notice entry. The hub never invents a mod's colour and never uses one mod's colour for another or for itself.",
         "section": "colors"
       },
       {
-        "name": "The Light Stock Rule",
-        "body": "Card stock stays light (card-stock) in dark mode, with its own ink, muted and rule colours, and its own link colour (the card sets `--link` back to ledger-blue) so dark-theme link blue never lands on light stock.",
+        "name": "The Pine Voice Rule",
+        "body": "Pine green (fern light at night) is the only colour the hub speaks in: links, the wordmark's second line, numerals, the logo's tree. It is never a mod's frame.",
         "section": "colors"
       },
       {
-        "name": "The Binder Holds Rule",
-        "body": "Felt, PVC and ink are the hub's only colours. The logo is the one place hub chrome shows mod accents (a fanned hand of three cards), and it uses them as cards, not as a brand colour.",
+        "name": "The Brown and Green Rule",
+        "body": "Grounds, boards and panels stay in wood, brass, paper and moss. No black or white surfaces; pure white appears only as text on a mod colour.",
         "section": "colors"
       },
       {
-        "name": "The Two Weights Rule",
-        "body": "Only Anybody 700 and 800 ship; do not ask for another weight or face. Anybody sets names, headings, pills and numerals; running text is always the system stack.",
+        "name": "The Two Faces Rule",
+        "body": "Anybody for anything that names or heads; the system sans for anything that is read. No third face; monospace only for file paths.",
         "section": "typography"
       },
       {
-        "name": "The One Motion Rule",
-        "body": "The sleeve sheen is the only motion: on hover or focus-within it slides from the top right to the bottom left and brightens (opacity 0.4 to 0.6, 0.7s, cubic-bezier(.2, .8, .2, 1)). Under reduced motion every transition and animation stops, and smooth scrolling with them. Nothing else animates, enters or parallaxes.",
+        "name": "The One Board Per Group Rule",
+        "body": "Every group of mods gets its own walnut board; a mod panel never sits directly on the ground, and nothing but panels and a notice sits on a board.",
+        "section": "layout"
+      },
+      {
+        "name": "The Still Wall Rule",
+        "body": "Nothing on the wall moves. There are no transitions or animations; hover changes only underline weight, a 10% darkening of the download button, or a faint wash on the toggle. Anchor links scroll smoothly, and reduced-motion turns that off.",
         "section": "elevation"
+      },
+      {
+        "name": "The Panel, Not Card Rule",
+        "body": "In user-facing text the mods are shown as panels, never \"cards\". The CSS classes `.card`, `.binder`, `.page`, `.pockets` and `.sleeve` are leftover names from the previous look. `.card` must stay: `assets/site.js` selects `.card[data-repo]` and `scripts/test-site.mjs` reads `<article class=\"card\">`. The others are not read by either and are kept only to avoid churn.",
+        "section": "components"
       }
     ],
     "dos": [
-      "**Do** set every mod colour through `--c` on the card and its need-index entry, with the value taken from the mod's own site (the Own Colours Rule).",
-      "**Do** keep card stock light in dark mode and keep the card's own link colour (the Light Stock Rule).",
-      "**Do** give every card the same fields in the same order, and the mod's own site art in the art window.",
-      "**Do** keep a new accent at 4.5:1 or better against white, since button and pill text is white on it.",
-      "**Do** keep produced textures and card crops reproducible and carrying their provenance JSON beside them.",
-      "**Do** keep the sheen the only motion and stop it under reduced motion (the One Motion Rule).",
-      "**Do** keep tap targets at 44px or more and the 3px focus ring visible in both themes."
+      "Do mount every group of mods on its own walnut board with four brass nails, and nail every mod to it as a panel framed 5px in its own colour.",
+      "Do take each mod's colour and banner picture from that mod's own site (`assets/img/cards/<id>.webp`).",
+      "Do keep pine green (fern light at night) for links, the wordmark's second line and numerals.",
+      "Do define every themed token three times: in `:root`, under `prefers-color-scheme: dark` guarded by `:root:not([data-theme=\"light\"])`, and under `:root[data-theme=\"dark\"]`.",
+      "Do regenerate the ground and board textures with `assets/img/make_textures.py` rather than editing the images.",
+      "Do keep tap targets at 44px or more and the 3px focus ring visible in both themes."
     ],
     "donts": [
-      "**Don't** recolour cards to a hub palette, give cards one shared banner treatment, or add a hub brand accent.",
-      "**Don't** bring back the replaced catalogue look: parchment and forest green, identical dark banners, soft-shadow rounded cards, a hero stat strip.",
-      "**Don't** add Anybody weights or other display faces, or load fonts or assets from a CDN.",
-      "**Don't** add animation beyond the sleeve sheen.",
-      "**Don't** remove or rename the markup hooks, or edit `data/releases.json`."
+      "Don't bring back felt, dark PVC binder pages, clear sleeves, sheen, white card stock or the card-fan logo; the maintainer dropped that look.",
+      "Don't use the word \"card\" in user-facing text.",
+      "Don't use black or white surfaces; the wall is wood, brass, paper and moss.",
+      "Don't give a mod pine green, or give the hub a mod's colour.",
+      "Don't add hover lifts, transitions, entrances or parallax.",
+      "Don't rename `.card`, remove the markup hooks, or edit `data/releases.json`."
     ]
   }
 }
