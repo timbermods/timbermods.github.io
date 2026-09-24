@@ -15,7 +15,7 @@ SITE = "https://timbermods.github.io/"
 # card id -> (page, CSS selector of the signature element, or None to use the clip rectangle)
 JOBS = {
     "beaverbuddies-stability-fork": (SITE + "BeaverBuddies-Stability-Fork/", ".coop-map", None),
-    "timber-together": (SITE + "TimberTogether/", None, {"x": 700, "y": 80, "width": 700, "height": 520}),
+    "timber-together": (SITE + "TimberTogether/", ".hero figure", None),
     "mixedstorage": (SITE + "MixedStorage/", "[data-cabinet]", None),
     "persistent-work-areas": (SITE + "PersistentWorkAreas/", "svg.map", None),
     "optimized-local-housing": (SITE + "OptimizedLocalHousing/", "svg.hall", None),
