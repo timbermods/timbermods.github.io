@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T10:04:00.120Z",
+  "generated": "2026-09-24T22:27:03.917Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -290,6 +290,25 @@
         ]
       },
       {
+        "tag": "v1.4.0-rc11",
+        "name": "Timber Together 1.4.0-rc11",
+        "prerelease": true,
+        "published": "2026-09-24T22:08:00Z",
+        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc11",
+        "assets": [
+          {
+            "name": "1.4.0-rc11-SHA256SUMS.txt",
+            "size": 96,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc11/1.4.0-rc11-SHA256SUMS.txt"
+          },
+          {
+            "name": "TimberTogether-1.4.0-rc11.zip",
+            "size": 2822124,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc11/TimberTogether-1.4.0-rc11.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.4.0-rc10",
         "name": "Timber Together 1.4.0-rc10",
         "prerelease": true,
@@ -438,25 +457,6 @@
             "name": "BeaverBuddies-MultiColony-1.4.0-beta24.zip",
             "size": 3043222,
             "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-beta24/BeaverBuddies-MultiColony-1.4.0-beta24.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-beta23",
-        "name": "Timber Together — 1.4.0-beta23 (pre-release)",
-        "prerelease": true,
-        "published": "2026-09-23T08:15:39Z",
-        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-beta23",
-        "assets": [
-          {
-            "name": "1.4.0-beta23-SHA256SUMS.txt",
-            "size": 109,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-beta23/1.4.0-beta23-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-beta23.zip",
-            "size": 3035547,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-beta23/BeaverBuddies-MultiColony-1.4.0-beta23.zip"
           }
         ]
       }
