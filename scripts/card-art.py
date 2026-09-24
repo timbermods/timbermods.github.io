@@ -13,6 +13,8 @@ from PIL import Image
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "img", "cards")
 SITE = "https://timbermods.github.io/"
 # card id -> (page, CSS selector of the signature element, or None to use the clip rectangle)
+# cards taken from their site's dark mode (Kyler, 2026-09-24: Timber Together's darker map reads better)
+DARK = {"timber-together"}
 JOBS = {
     "beaverbuddies-stability-fork": (SITE + "BeaverBuddies-Stability-Fork/", ".coop-map", None),
     "timber-together": (SITE + "TimberTogether/", ".hero figure", None),
@@ -29,7 +31,7 @@ with sync_playwright() as p:
     browser = p.chromium.launch(channel="msedge")
     for card in ids:
         url, sel, clip = JOBS[card]
-        page = browser.new_page(viewport={"width": 1440, "height": 900}, color_scheme="light", reduced_motion="reduce", device_scale_factor=1.5)
+        page = browser.new_page(viewport={"width": 1440, "height": 900}, color_scheme="dark" if card in DARK else "light", reduced_motion="reduce", device_scale_factor=1.5)
         page.goto(url, wait_until="networkidle")
         page.wait_for_timeout(600)
         png = page.locator(sel).first.screenshot() if sel else page.screenshot(clip=clip)
