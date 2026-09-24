@@ -44,7 +44,7 @@ BeaverBuddies for the multiplayer design.
 
 ## Operating Context
 
-**The mods listed**, in card order in `index.html`, grouped on three binder pages. Each entry gives the exact name,
+**The mods listed**, in card order in `index.html`, grouped on three walnut boards. Each entry gives the exact name,
 the card `id`, its accent `--c` (taken from that mod's own site), its category pill and its requirements:
 
 *Play together*
@@ -170,12 +170,14 @@ this file. Terms to use: Trading Post (capitalized); MultiColony has no land or 
 
 ## Brand Commitments
 
+- **Words players use:** never "card", "binder", "pocket" or "sleeve" in anything a visitor reads; say "mod", or
+  write the sentence without it. (The `.card` class name stays in the code: the tests and `site.js` need it.)
 - **Voice:** fellow players sharing mods they find useful. Plain, exact, friendly; say what each mod does and what it
   needs. Never hype, never "the best", no superlatives the READMEs don't support.
 - **Unofficial:** community mods, not affiliated with or endorsed by Mechanistry. The footer says so and credits
   BeaverBuddies by thomaswp and contributors ("the multiplayer design is theirs") for the two BeaverBuddies mods. Keep
   both.
-- **No official Timberborn logos or key art.** The hub's mark is its own (a small fan of three cards,
+- **No official Timberborn logos or key art.** The hub's mark is its own (a pine tree on a log end,
   `assets/favicon.svg` and the header SVG). Game screenshots of the mods are allowed; they show the game and belong to Mechanistry.
 - **Each mod keeps its own identity.** Its card uses that mod's accent color and imagery, consistent with its own site;
   the hub's own look frames the collection without overriding theirs.
@@ -189,7 +191,8 @@ this file. Terms to use: Trading Post (capitalized); MultiColony has no land or 
   of that mod's own site (the Stability Fork's log round, MultiColony's two-colony map, Late Game Performance's pit
   board, the seating plan, the hunger board, the MixedStorage panel, the pinned-area plan, the Tipsy Tail on its bar).
   When a mod's site changes its look, recapture its card. Provenance is in each image's `.json` sidecar.
-- **Org profile:** matching card SVGs in `timbermods/.github/profile/cards/` and a `banner.svg`.
+- **Org profile:** `timbermods/.github/profile/`: its hand-made `banner.svg` and one picture per mod in `cards/*.png`,
+  rendered by `profile/make_images.py` from this site's pictures.
 - **Per-mod sites** each have their own screenshots, icons and demos (MixedStorage: `panel.webp`, `world.webp`;
   MultiColony: mod icon, goods icons, connection-panel screenshot; others per their repos). The hub may link to or
   reuse them only as those sites hold them.

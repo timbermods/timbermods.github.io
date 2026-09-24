@@ -1,35 +1,53 @@
 ---
 name: Timbermods
-description: The org hub for unofficial Timberborn mods, a collector's binder with a card for each mod.
+description: The org hub for Timbermods' Timberborn mods, a lodge wall of walnut boards with a panel for each mod.
 colors:
-  felt-mat: "#dcd8cf"
-  felt-mat-dark: "#16171a"
-  binder-ink: "#1f2124"
-  binder-ink-dark: "#eceae4"
-  slate-muted: "#4c5056"
-  slate-muted-dark: "#b3b5b8"
-  mat-rule: "#b9b4a8"
-  mat-rule-dark: "#34363b"
-  pvc-page: "#1d1f23"
-  pvc-page-dark: "#2a2c31"
-  card-stock: "#fbfaf6"
-  card-ink: "#1f2124"
-  card-muted: "#4a4e54"
-  card-rule: "#dedbd2"
-  ledger-blue: "#1d4f8a"
-  ledger-blue-dark: "#9cc2f0"
-  focus-lamp-dark: "#f0d27a"
-  caution-cream: "#fff3dc"
-  caution-umber: "#6e3d00"
-  stable-green: "#1d6b3a"
-  accent-stability-fork: "#b8322a"
-  accent-multicolony: "#1a6a77"
-  accent-mixedstorage: "#8a6a2c"
-  accent-persistent-work-areas: "#8a6512"
-  accent-optimized-local-housing: "#2d5f9a"
-  accent-late-game-performance: "#5b3fd0"
-  accent-tipsy-tail: "#1a6773"
-  accent-hungry-pathing: "#1d4a86"
+  pine-green: "#2f5d3a"
+  fern-light: "#a9d8a3"
+  lantern-gold: "#f0d27a"
+  walnut: "#56402a"
+  walnut-night: "#3a291b"
+  walnut-edge: "rgba(40, 26, 14, .55)"
+  walnut-edge-night: "rgba(0, 0, 0, .5)"
+  walnut-label: "#f4ead6"
+  walnut-label-muted: "#decdab"
+  brass-nail: "#c19a5b"
+  brass-nail-night: "#a88650"
+  birch-ground: "#e0d2b4"
+  forest-floor: "#1a211a"
+  lodge-ink: "#2a2118"
+  lodge-ink-night: "#ece3cf"
+  tanned-leather: "#5b4a37"
+  lichen-grey: "#bdb39c"
+  birch-seam: "#bca77f"
+  moss-seam: "#3b4636"
+  warm-paper: "#f5ecd9"
+  moss-panel: "#243126"
+  paper-ink: "#2a2118"
+  paper-muted: "#5d4c39"
+  moss-panel-muted: "#b8b19b"
+  paper-rule: "#dccdab"
+  moss-panel-rule: "#38493b"
+  code-wash: "rgba(42, 33, 24, .08)"
+  code-wash-night: "rgba(236, 227, 207, .09)"
+  stable-green: "#2c6536"
+  stable-green-night: "#9fd49a"
+  preview-amber: "#7a4a06"
+  preview-amber-night: "#f0c070"
+  caution-wash: "#f4dfb3"
+  caution-ink: "#663a04"
+  caution-wash-night: "#3b301b"
+  caution-ink-night: "#f1cf8b"
+  log-end: "#e0c79a"
+  log-ring: "#c7a878"
+  mod-stability-fork: "#b8322a"
+  mod-multicolony: "#1a6a77"
+  mod-late-game-performance: "#5b3fd0"
+  mod-optimized-local-housing: "#2d5f9a"
+  mod-hungry-pathing: "#1d4a86"
+  mod-mixedstorage: "#8a6a2c"
+  mod-persistent-work-areas: "#8a6512"
+  mod-tipsy-tail: "#1a6773"
 typography:
   display:
     fontFamily: "Anybody, Arial Narrow, sans-serif"
@@ -37,90 +55,111 @@ typography:
     fontWeight: 800
     lineHeight: 0.9
     letterSpacing: "-0.03em"
+  display-lost:
+    fontFamily: "Anybody, Arial Narrow, sans-serif"
+    fontSize: "clamp(2.4rem, 6vw, 4rem)"
+    fontWeight: 800
+    lineHeight: 1
   headline:
     fontFamily: "Anybody, Arial Narrow, sans-serif"
     fontSize: "clamp(1.7rem, 3.2vw, 2.4rem)"
     fontWeight: 800
     lineHeight: 1.05
     letterSpacing: "-0.01em"
+  numeral:
+    fontFamily: "Anybody, Arial Narrow, sans-serif"
+    fontSize: "2.6rem"
+    fontWeight: 800
+    lineHeight: 1
   title:
     fontFamily: "Anybody, Arial Narrow, sans-serif"
     fontSize: "1.35rem"
     fontWeight: 800
     lineHeight: 1.08
     letterSpacing: "-0.01em"
-  title-small:
+  title-sm:
+    fontFamily: "Anybody, Arial Narrow, sans-serif"
+    fontSize: "1.15rem"
+    fontWeight: 800
+    lineHeight: 1.2
+  subhead:
     fontFamily: "Anybody, Arial Narrow, sans-serif"
     fontSize: "1.05rem"
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: "0.01em"
-  numeral:
-    fontFamily: "Anybody, Arial Narrow, sans-serif"
-    fontSize: "2.6rem"
-    fontWeight: 800
-    lineHeight: 1
-  body:
-    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "1.0625rem"
-    fontWeight: 400
-    lineHeight: 1.6
-  body-card:
-    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "0.95rem"
-    fontWeight: 400
-    lineHeight: 1.6
   label:
     fontFamily: "Anybody, Arial Narrow, sans-serif"
     fontSize: "0.78rem"
     fontWeight: 700
     lineHeight: 1
     letterSpacing: "0.02em"
+  lead:
+    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.15rem"
+    fontWeight: 400
+    lineHeight: 1.6
+  body:
+    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.0625rem"
+    fontWeight: 400
+    lineHeight: 1.6
+  body-sm:
+    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "0.92rem"
+    fontWeight: 400
+    lineHeight: 1.6
+  tagline:
+    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.02rem"
+    fontWeight: 750
+    lineHeight: 1.6
   mono:
     fontFamily: "ui-monospace, Cascadia Code, SF Mono, Consolas, Liberation Mono, monospace"
     fontSize: "0.9em"
 rounded:
-  swatch: "2px"
-  code: "3px"
-  steps-sheet: "4px"
-  caution: "6px"
-  card: "8px"
-  page: "10px"
-  sleeve: "12px"
+  hairline: "3px"
+  md: "6px"
+  lg: "8px"
   pill: "999px"
-  toggle: "50%"
+  round: "50%"
 spacing:
   gutter: "clamp(16px, 4vw, 32px)"
   wrap: "1180px"
-  sleeve-inset: "7px"
-  card-frame: "6px"
-  card-body: "14px 16px 16px"
-  pocket-gap: "clamp(14px, 2vw, 22px)"
-  page-pad: "clamp(22px, 3vw, 34px) clamp(18px, 3vw, 34px) clamp(24px, 3vw, 36px) clamp(52px, 6vw, 72px)"
-  tap-min: "44px"
+  panel-gap: "clamp(14px, 2vw, 22px)"
+  panel-body: "14px 16px 16px"
+  board: "clamp(24px, 3vw, 36px) clamp(18px, 3vw, 36px) clamp(26px, 3vw, 38px)"
+  board-gap: "clamp(24px, 4vw, 40px)"
+  section: "clamp(40px, 6vw, 72px)"
+  tap: "44px"
+  button: "48px"
 components:
-  card:
-    backgroundColor: "{colors.card-stock}"
-    textColor: "{colors.card-ink}"
-    rounded: "{rounded.card}"
-    padding: "{spacing.card-body}"
-  sleeve:
-    rounded: "{rounded.sleeve}"
-    padding: "{spacing.sleeve-inset}"
-  binder-page:
-    backgroundColor: "{colors.pvc-page}"
-    textColor: "{colors.binder-ink-dark}"
-    rounded: "{rounded.page}"
-    padding: "{spacing.page-pad}"
+  walnut-board:
+    backgroundColor: "{colors.walnut}"
+    textColor: "{colors.walnut-label}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.board}"
+  walnut-board-night:
+    backgroundColor: "{colors.walnut-night}"
+    textColor: "{colors.walnut-label}"
+  mod-panel:
+    backgroundColor: "{colors.warm-paper}"
+    textColor: "{colors.paper-ink}"
+    rounded: "{rounded.lg}"
+  mod-panel-night:
+    backgroundColor: "{colors.moss-panel}"
+    textColor: "{colors.lodge-ink-night}"
+  mod-panel-body:
+    padding: "{spacing.panel-body}"
   button-download:
-    backgroundColor: "{colors.accent-multicolony}"
-    textColor: "{colors.card-stock}"
-    rounded: "{rounded.card}"
+    backgroundColor: "{colors.mod-multicolony}"
+    textColor: "#ffffff"
+    rounded: "{rounded.lg}"
     padding: "8px 16px"
-    height: "48px"
-  pill-tag:
-    backgroundColor: "{colors.accent-multicolony}"
-    textColor: "{colors.card-stock}"
+    height: "{spacing.button}"
+  pill-category:
+    backgroundColor: "{colors.mod-multicolony}"
+    textColor: "#ffffff"
     typography: "{typography.label}"
     rounded: "{rounded.pill}"
     padding: "2px 10px"
@@ -131,190 +170,211 @@ components:
     rounded: "{rounded.pill}"
     padding: "2px 10px"
   pill-status-preview:
-    textColor: "{colors.caution-umber}"
+    textColor: "{colors.preview-amber}"
     typography: "{typography.label}"
     rounded: "{rounded.pill}"
-    padding: "2px 10px"
   caution:
-    backgroundColor: "{colors.caution-cream}"
-    textColor: "{colors.caution-umber}"
-    rounded: "{rounded.caution}"
+    backgroundColor: "{colors.caution-wash}"
+    textColor: "{colors.caution-ink}"
+    rounded: "{rounded.md}"
     padding: "8px 10px"
-  insert:
-    backgroundColor: "{colors.card-stock}"
-    textColor: "{colors.card-ink}"
-    rounded: "{rounded.card}"
+  caution-night:
+    backgroundColor: "{colors.caution-wash-night}"
+    textColor: "{colors.caution-ink-night}"
+  notice:
+    backgroundColor: "{colors.warm-paper}"
+    textColor: "{colors.paper-ink}"
+    rounded: "{rounded.lg}"
     padding: "22px 20px"
-  need-index-row:
-    textColor: "{colors.binder-ink}"
-    padding: "6px 2px"
+  steps-sheet:
+    backgroundColor: "{colors.warm-paper}"
+    textColor: "{colors.paper-ink}"
+    rounded: "{rounded.md}"
+    padding: "22px 24px"
+  need-row:
+    textColor: "{colors.lodge-ink}"
     height: "46px"
+    padding: "6px 2px"
+  nav-link:
+    textColor: "{colors.lodge-ink}"
+    height: "{spacing.tap}"
+    padding: "0 12px"
   theme-toggle:
-    textColor: "{colors.binder-ink}"
-    rounded: "{rounded.toggle}"
-    size: "44px"
+    textColor: "{colors.lodge-ink}"
+    rounded: "{rounded.round}"
+    size: "{spacing.tap}"
+  button-home:
+    backgroundColor: "{colors.pine-green}"
+    textColor: "{colors.birch-ground}"
+    rounded: "{rounded.lg}"
+    padding: "8px 16px"
+    height: "{spacing.button}"
+  button-home-night:
+    backgroundColor: "{colors.fern-light}"
+    textColor: "{colors.forest-floor}"
 ---
 
 # Design System: Timbermods
 
 ## Overview
 
-**Creative North Star: "The Collector's Binder"**
+**Creative North Star: "The Lodge Wall"**
 
-The hub is a card collector's desk. A felt mat is the page; dark PVC binder pages with three punched ring holes sit on it; each page holds clear sleeves, and each sleeve holds one trading card, one per mod. The binder only holds the cards. Every card is printed in its own mod's colours with art taken from that mod's own site, so a player who arrives from one mod's site recognises it at once. The hub has no brand accent of its own: its chrome is felt, PVC, ink and card stock, and all the colour on the page belongs to the mods.
+The hub is the wall of a beaver lodge where the mods hang. By day the wall is pale birch boards; at night it is a dark forest floor. Each group of mods (Play together, Big colonies, Build and plan) is mounted on its own walnut board, held at the corners by four brass nail heads, and each mod is a panel nailed to that board: warm paper by day, moss green at night, framed in the mod's own colour and headed by the picture taken from that mod's own site. A player who arrived from one mod's site finds its colour and picture again at once.
 
-Density is catalogue-like but calm: a cover with the name set huge in Anybody and a "find by need" index (one row per need, each ending in the mod's name beside a tiny card swatch in its colour), then three binder pages grouped by need, then a shared install sheet and a footer that stamps when the release data last changed. Every card carries the same fields in the same places, like the back of a sewing pattern, so cards compare at a glance. Surfaces are real, produced textures (procedural felt, pebbled PVC, a sleeve sheen made by `assets/img/make_textures.py`); card art is a crop of each mod's own site art. The one moving thing is the sleeve sheen.
+The palette is brown, green and wood: birch, walnut, brass, pine and moss. Pine green is the hub's own voice (links, the second line of the wordmark, the step numerals, the logo's tree); the eight mod colours belong to the mods and appear only on their own panels and swatches. Type is a wide, heavy grotesque (Anybody 800) for names and headings over the system sans for reading. The wall is still: no hover lifts, no entrances, no transitions.
 
-The world deliberately refuses the catalogue template it replaced: parchment and forest green, identical dark banners on every card, soft-shadow rounded cards, a hero stat strip.
+The maintainer rejected the previous "Collector's Binder" look (felt, dark PVC binder pages, clear sleeves, sheen, white card stock, a card-fan logo) as too black and white. None of it returns.
 
 **Key Characteristics:**
-- Neutral hub chrome (felt mat, PVC page, ink); all hue comes from the mods' own accents.
-- One card per mod: light stock framed 6px in the mod's accent, the mod's own art in a 16:10 window.
-- Fixed card fields in a fixed order on every card.
-- Anybody 700/800 for names, headings, pills and numerals; system-ui for reading.
-- A single motion: the sleeve sheen slides on hover or focus, and stops under reduced motion.
-- Light and dark themes (OS preference, overridable by the toggle); card stock stays light in both.
+- Textured ground: birch boards by day (`birch.webp`), forest floor at night (`forest-floor.webp`), both procedural from `assets/img/make_textures.py`.
+- One walnut board per group, with four brass nail heads drawn in CSS.
+- One panel per mod, framed 5px in the mod's own colour, its own picture as the banner.
+- Pine green for the hub's links and wordmark; mod colours only on their own mod.
+- Light and dark themes from the OS preference, overridable by the header toggle and remembered in `localStorage` (`tbmods.theme`).
+- No motion beyond smooth anchor scrolling, which reduced-motion turns off.
 
 ## Colors
 
-A neutral desk of felt, PVC and ink, lit only by eight borrowed mod accents.
+A woodland palette: pale birch and dark forest floor for the ground, walnut and brass for the boards, warm paper or moss for the panels, and pine green for everything the hub itself says.
 
 ### Primary
-There is no hub primary. The eight **mod accents** are card inputs, not hub colours: each is set per card through the `--c` custom property (inline `style="--c:#…"` on the card article and on its need-index entry) and drives that card's frame, art-window backing, tag pill, fact bullets, download button, title underline on hover and the need-index swatch. Each value is taken from the mod's own site:
-- **Stability Fork Red** (accent-stability-fork): BeaverBuddies Stability Fork.
-- **MultiColony Teal** (accent-multicolony): BeaverBuddies MultiColony.
-- **MixedStorage Brass** (accent-mixedstorage): MixedStorage.
-- **Work Areas Gold** (accent-persistent-work-areas): Persistent Work Areas.
-- **Housing Blue** (accent-optimized-local-housing): Optimized Local Housing.
-- **Performance Violet** (accent-late-game-performance): Late Game Performance.
-- **Tipsy Tail Aqua** (accent-tipsy-tail): The Tipsy Tail.
-- **Pathing Cobalt** (accent-hungry-pathing): Hungry Pathing.
+- **Pine Green** (pine-green, by day; **Fern Light**, fern-light, at night): every link on the ground and in panels, the green second line of the "Timber / mods" wordmark, the install step numerals, the 404's home button, the logo's pine and the focus ring by day. It is the hub's colour, never a mod's.
+- **Lantern Gold** (lantern-gold): the focus ring at night only, where pine would vanish into moss.
 
-White card-stock text sits on every accent (download button, tag pill), so an accent must hold at least 4.5:1 against white; all eight do at rest.
+### Secondary
+- **Walnut** (walnut by day, walnut-night at night, under `walnut.webp` / `walnut-dark.webp`): the board behind each group. Its heading and lead are in **Walnut Label** (walnut-label) and **Walnut Label Muted** (walnut-label-muted) in both themes; its edge is walnut-edge / walnut-edge-night.
+- **Brass Nail** (brass-nail, brass-nail-night): the four nail heads on every board, with a pale highlight and a dark rim.
+
+### Tertiary
+- **The mod colours** (mod-stability-fork through mod-tipsy-tail): each is taken from that mod's own site and set as `--c` on its panel, its need-index swatch and its notice entry. On the panel it colours the 5px frame, the banner backing, the category pill, the download button and the fact bullets. White text on each passes AA (5.0:1 or more).
 
 ### Neutral
-- **Felt Mat** (felt-mat / felt-mat-dark): the page background under a tiled felt texture; also the colour punched through the ring holes and the 404 button's text.
-- **Binder Ink** (binder-ink / binder-ink-dark): text on the mat, header and footer; the heavy 1.5px top rules of the need index and install notes.
-- **Slate Muted** (slate-muted / slate-muted-dark): secondary text on the mat (facts line, section leads, footer); the toggle's ring. The dark value doubles as muted text on the PVC page.
-- **Mat Rule** (mat-rule / mat-rule-dark): 1px dividers on the mat (header, footer, install, index rows).
-- **PVC Page** (pvc-page / pvc-page-dark): the binder page under a pebbled-grain texture. In dark mode the page lifts to the lighter value so it still reads off the darker felt. Page text is binder-ink-dark, secondary page text slate-muted-dark, in both themes.
-- **Card Stock** (card-stock): the card, the insert and the install-steps sheet, in both themes.
-- **Card Ink / Card Muted / Card Rule** (card-ink, card-muted, card-rule): text, secondary text and 1px dividers on card stock.
-- **Ledger Blue** (ledger-blue / ledger-blue-dark): links on the mat; ledger-blue is also the light-theme focus ring and the fixed link colour on card stock.
-- **Focus Lamp** (focus-lamp-dark): the 3px focus ring in dark mode.
-- **Caution Cream / Caution Umber** (caution-cream, caution-umber): the caution note on a card; umber is also the Preview/Beta status pill.
-- **Stable Green** (stable-green): the Stable status pill.
+- **Birch Ground** (birch-ground) / **Forest Floor** (forest-floor): the page ground under its texture, and the `theme-color` for each scheme.
+- **Lodge Ink** (lodge-ink / lodge-ink-night): text on the ground.
+- **Tanned Leather** (tanned-leather) / **Lichen Grey** (lichen-grey): secondary text on the ground, the toggle's ring.
+- **Birch Seam** (birch-seam) / **Moss Seam** (moss-seam): rules on the ground (header, footer, install, need rows).
+- **Warm Paper** (warm-paper) / **Moss Panel** (moss-panel): the mod panels, the notice and the install steps sheet. Panel text is paper-ink by day, lodge-ink-night at night; secondary panel text paper-muted / moss-panel-muted; rules inside panels paper-rule / moss-panel-rule.
+- **Stable Green** and **Preview Amber** (with night values): the status pill's outline and text.
+- **Caution Wash / Caution Ink** (with night values): the caution strip on beta and young mods.
+- **Code Wash** (code-wash / code-wash-night): inline code and the toggle's hover fill.
+- **Log End** and **Log Ring** (log-end, log-ring): only in the logo, a log end with two growth rings inside a walnut rim, the pine standing on it.
 
 ### Named Rules
-**The Own Colours Rule.** Each card keeps its own mod's accent, passed in as `--c` and taken from that mod's own site. The hub never recolours a card, never gives two mods one accent to tidy the palette, and never introduces a hub accent that competes with them. A new mod's card gets its accent from its own site.
+**The Own Colour Rule.** A mod's colour comes from its own site and appears only on that mod's panel, swatch and notice entry. The hub never invents a mod's colour and never uses one mod's colour for another or for itself.
 
-**The Light Stock Rule.** Card stock stays light (card-stock) in dark mode, with its own ink, muted and rule colours, and its own link colour (the card sets `--link` back to ledger-blue) so dark-theme link blue never lands on light stock.
+**The Pine Voice Rule.** Pine green (fern light at night) is the only colour the hub speaks in: links, the wordmark's second line, numerals, the logo's tree. It is never a mod's frame.
 
-**The Binder Holds Rule.** Felt, PVC and ink are the hub's only colours. The logo is the one place hub chrome shows mod accents (a fanned hand of three cards), and it uses them as cards, not as a brand colour.
+**The Brown and Green Rule.** Grounds, boards and panels stay in wood, brass, paper and moss. No black or white surfaces; pure white appears only as text on a mod colour.
 
 ## Typography
 
-**Display Font:** Anybody 800 and 700, self-hosted woff2 (OFL), with Arial Narrow and sans-serif as fallbacks
-**Body Font:** system-ui stack
-**Label/Mono Font:** Anybody 700 for pills; ui-monospace stack for code
+**Display Font:** Anybody 700 and 800, self-hosted woff2 under OFL (with Arial Narrow, sans-serif)
+**Body Font:** the system sans stack (system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial)
+**Label/Mono Font:** Anybody 700 for pills and need targets; the system monospace stack for paths only
 
-**Character:** Anybody's wide, heavy grotesque reads like the printed name on a trading card and the stamped title on a binder; the system body keeps long card copy plain and quick to read.
+**Character:** A wide, sturdy grotesque with the weight of a carved sign for names and headings, over a plain reading sans that stays out of the way.
 
 ### Hierarchy
-- **Display** (800, clamp(3.2rem, 7.5vw, 6rem), 0.9, -0.03em): the binder cover's "Timbermods" only, split over two lines on wide screens and one on narrow. The 404 headline uses the same face at clamp(2.4rem, 6vw, 4rem), line-height 1.
-- **Headline** (800, clamp(1.7rem, 3.2vw, 2.4rem), 1.05): binder page titles and section titles.
-- **Title** (800, 1.35rem, 1.08): mod names on cards and the insert heading; also the brand wordmark. Install step titles use 800 at 1.15rem.
-- **Title small** (700, 1.05rem, 1.2): the need index heading and install notes headings; the need index's mod names use 700 at 0.95rem.
-- **Numeral** (800, 2.6rem, 1): install step numbers.
-- **Body** (400, 1.0625rem, 1.6): mat copy; the cover lead is 1.15rem at 46ch, section leads 64ch.
-- **Body card** (0.88 to 1.02rem): the tagline is 750 at 1.02rem, the blurb 0.95rem in card-muted, facts 0.92rem, the status line 0.88rem italic.
-- **Label** (700, 0.78rem, 0.02em): tag and status pills. Sentence case, never uppercase-tracked.
+- **Display** (800, clamp(3.2rem, 7.5vw, 6rem), 0.9): the "Timber / mods" wordmark on the cover, two stacked lines, the second in pine. The 404 uses display-lost (800, clamp(2.4rem, 6vw, 4rem), 1).
+- **Headline** (800, clamp(1.7rem, 3.2vw, 2.4rem), 1.05): board titles and section titles.
+- **Numeral** (800, 2.6rem, 1): install step numbers, in pine.
+- **Title** (800, 1.35rem, 1.08): mod names on panels, the notice title, the header wordmark (at line-height 1). Title-sm (800, 1.15rem) for install step titles.
+- **Subhead** (700, 1.05rem, 1.2): the need index heading and the install notes headings.
+- **Label** (700, 0.78rem, 1, +0.02em): category and status pills. Need-index targets use Anybody 700 at 0.95rem.
+- **Body** (400, 1.0625rem, 1.6): reading text; the cover lead is 1.15rem at 46ch max, section leads 64ch max. Panel text runs smaller: tagline (750, 1.02rem), blurb 0.95rem, facts 0.92rem, notes and requirements 0.85 to 0.9rem.
 
 ### Named Rules
-**The Two Weights Rule.** Only Anybody 700 and 800 ship; do not ask for another weight or face. Anybody sets names, headings, pills and numerals; running text is always the system stack.
+**The Two Faces Rule.** Anybody for anything that names or heads; the system sans for anything that is read. No third face; monospace only for file paths.
 
 ## Layout
 
-A centred column (wrap, max 1180px, gutter clamp(16px, 4vw, 32px)). The cover is a two-column grid (0.9fr / 1.1fr): name, lead and facts line on the left, the need index on the right. The binder follows: one page per need group, each page padded wide on its spine side (clamp(52px, 6vw, 72px)) to leave room for the ring holes, holding a grid of pockets: three across, two at 1000px and below, one at 620px and below. Cards in a row stretch to equal height; the requirements line takes the free space (margin-top auto) so download buttons line up along a row.
+A single centred column 1180px wide with a fluid gutter (clamp(16px, 4vw, 32px)). The order is fixed: header bar (min 68px, rule beneath), cover, three walnut boards, install, footer.
 
-A page with an empty pocket fills it with a printed **insert** (the co-op choice explained); inserts hide below 1000px, where their content would only repeat. At 860px and below the cover, install steps and install notes collapse to one column. At 620px and below the art window narrows to 16:7, sleeves tighten to 4px, the page spine padding drops to 32px with the holes at 7px, and the download button keeps its label, version and size on one line.
+The cover is two columns (0.9fr / 1.1fr): the wordmark, lead and facts on the left, the need index on the right (rows of need and mod name, each mod name led by its colour swatch). Each board holds a head (title and lead, 760px max) and a grid of panels, three across, gap clamp(14px, 2vw, 22px), panels stretched to equal height with the download block pushed to the bottom. Where a board has a spare slot, a notice fills it (the Play together board's "Which one?"). Boards stack with clamp(24px, 4vw, 40px) between them. Install is a three-column steps sheet over three columns of notes.
 
-Tap targets are at least 44px (nav links, toggle, card links, need rows at 46px, download at 48px).
+Responsive: at 1000px the panels go two across and the notice spans the row; at 860px the cover, steps and notes collapse to one column and the wordmark runs on one line; at 620px the panels go one across, banners crop to 16:7, boards tighten (26px 12px 20px, 6px corners, nails inset 8px) and the download button stops wrapping. Interactive targets are at least 44px tall; download buttons 48px.
+
+### Named Rules
+**The One Board Per Group Rule.** Every group of mods gets its own walnut board; a mod panel never sits directly on the ground, and nothing but panels and a notice sits on a board.
 
 ## Elevation & Depth
 
-Depth is physical, not decorative: a stack of real objects on a desk. The PVC page casts one soft shadow on the felt; each sleeve casts a smaller one on the page; card stock sits flat inside its sleeve. The sleeve's own transparency (a 7% white fill, a 16% white edge brighter along the top at 30%) and the sheen texture make it read as clear plastic. Ring holes are punched through to the mat colour with a dark inner lip.
+Depth is physical and quiet: the board and the panels cast soft drop shadows as if hung on the wall, and the panel's short 2px ledge reads as the paper's thickness. Nothing lifts on hover.
 
 ### Shadow Vocabulary
-- **Page on felt** (`box-shadow: 0 18px 30px -22px rgba(0, 0, 0, .7)`): binder pages only.
-- **Sleeve on page** (`box-shadow: 0 6px 14px -8px rgba(0, 0, 0, .6)`): sleeves only.
+- **Board** (`box-shadow: inset 0 1px 0 rgba(255, 236, 200, .12), 0 18px 30px -22px rgba(0, 0, 0, .7)`): a lit top edge and a long shadow under each walnut board.
+- **Panel** (`box-shadow: 0 2px 0 rgba(0, 0, 0, .22), 0 12px 20px -12px rgba(0, 0, 0, .65)`): each mod panel and the notice.
+- **Steps sheet** (`box-shadow: 0 2px 0 rgba(0, 0, 0, .12), 0 12px 24px -14px rgba(0, 0, 0, .45)`): the install sheet, lighter because it sits on the ground.
+- **Button** (`box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .2)`): a pressed-in bottom edge on the download button.
+- **Nail head** (radial gradient, 14px, in each corner at 12px inset): pale highlight, brass head, dark rim.
 
 ### Named Rules
-**The One Motion Rule.** The sleeve sheen is the only motion: on hover or focus-within it slides from the top right to the bottom left and brightens (opacity 0.4 to 0.6, 0.7s, cubic-bezier(.2, .8, .2, 1)). Under reduced motion every transition and animation stops, and smooth scrolling with them. Nothing else animates, enters or parallaxes.
+**The Still Wall Rule.** Nothing on the wall moves. There are no transitions or animations; hover changes only underline weight, a 10% darkening of the download button, or a faint wash on the toggle. Anchor links scroll smoothly, and reduced-motion turns that off.
 
 ## Shapes
 
-Card-like corners throughout, rounding outward as objects get larger and softer: swatch 2px, code 3px, caution 6px, card and buttons 8px, page 10px, sleeve 12px, pills fully round, the theme toggle a circle. Frames are thick and flat (the card's 6px accent border, continued as a 6px band under the art window; the insert's 6px double rule in card-rule). Lists are ruled, not boxed: 1px rules between rows, a heavier 1.5px ink rule on top. The need index swatch is a tiny card (11 by 15px, 2px corners) in the mod's accent with a pale inner border, echoing the sleeved card.
+Gently rounded, hand-built shapes: boards, panels, the notice and buttons at 8px (boards 6px on phones); the caution strip, steps sheet and skip link at 6px; code and swatches at 3px; pills fully round; the theme toggle a circle. Frames are thick and coloured: 5px in the mod's colour around each panel and under its banner, a 5px double rule in paper-rule around the notice. The logo is a round log end.
 
 ## Components
 
-### Card (signature)
-Trading card stock framed in its mod's accent.
-- **Corner Style:** 8px, overflow clipped.
-- **Background:** card-stock, card-ink text, in both themes.
-- **Border:** 6px solid `--c`.
-- **Fixed fields, in order:** art window (the mod's own site art, 16:10, links to the mod's site, hidden from assistive tech and tab order) / meta row (tag pill in `--c`, status pill filled by script) / name (links to the mod's site; underline in `--c` on hover) / tagline / blurb / three facts with `--c` dots / optional caution / optional status line / Requires line / download button with its note / Website, GitHub, Release notes links.
-- **Internal Padding:** 14px 16px 16px (12px 14px 14px on phones).
-
-### Sleeve
-A clear plastic sleeve around each card, 7px beyond the stock (4px on phones), 12px corners, translucent white fill and edge, the sleeve shadow, and the sheen overlay (the One Motion Rule).
-
-### Binder page
-Dark PVC with the pebbled texture, 10px corners, a faint edge (35% black light, 9% white dark), the page shadow, and three ring holes down the spine side: 72px from the top, the middle, and 72px from the bottom, whatever the page's height. Title and lead in page ink and page muted.
-
 ### Buttons
-- **Download (primary):** fills `--c`, white text 750 weight, 8px corners, min 48px tall, 8px 16px padding, a stroked download arrow, then the version label and a lighter size figure. Hover darkens the fill (brightness .9), which keeps white text above 4.5:1 on every accent. Focus is the global 3px focus ring offset 3px.
-- **404 return:** the same button filled with binder ink, text in the mat colour.
-- **Theme toggle:** a 44px circle with a 1px muted ring, transparent; sun or moon stroke icon per theme; hover fills with the code tint.
+- **Shape:** gently rounded (8px), at least 48px tall.
+- **Download:** the mod's colour with white text in the system sans at 750, a download-arrow icon, the version label and the size in a lighter weight. Its fallback link is the repo's Releases page until `site.js` fills in the release.
+- **Hover / Focus:** `filter: brightness(.9)`, no transition; the 3px focus ring at 3px offset.
+- **Home (404):** pine green with the ground colour as text (fern light with forest floor at night), inline.
 
-### Chips (pills)
-- **Tag:** filled `--c`, white text, label type, fully round, min 24px.
-- **Status:** outlined 1.5px in current colour on stock: stable-green for Stable, caution-umber for Preview or a maturity label such as Beta or Young mod. Hidden until release data resolves.
+### Chips
+- **Category pill:** the mod's colour with white label text, 24px tall, left of the meta row.
+- **Status pill:** a 1.5px outline in stable green or preview amber (`data-kind="preview"`), hidden until `site.js` knows the release. On a panel with a caution it shows the panel's `data-maturity` instead of Stable.
+
+### Mod panels
+- **Corner Style:** 8px, clipped.
+- **Background:** warm paper by day, moss panel at night; text in panel ink.
+- **Border:** 5px in the mod's own colour; the banner is the mod's own picture (16:10, 16:7 on phones) over a 5px bar of the same colour.
+- **Shadow Strategy:** the Panel shadow.
+- **Internal Padding:** 14px 16px 16px (12px 14px 14px on phones).
+- **Order inside:** meta row (category and status pills), name, tagline, blurb, up to three facts with round bullets in the mod colour, then an optional caution or status line, requirements, the download block and a link row (Website first and bolder, GitHub, Release notes).
+
+### Walnut boards
+Walnut under its grain texture, 8px corners, a thin dark edge, the Board shadow and four brass nails. The title and lead are in walnut label colours in both themes.
+
+### Notice
+A paper panel without a mod colour, framed by a 5px double rule: a title, a definition list whose entries carry a small square in each mod's colour, and a closing line over a 1.5px ink rule. Below 1000px it spans the whole row.
 
 ### Caution
-Caution-cream panel, umber text at 0.9rem, 6px corners, 8px 10px padding, a stroked warning-triangle SVG. Its label begins with the card's maturity word.
-
-### Insert
-A printed card-stock slip in a sleeve's spare pocket: 6px double card-rule border, 8px corners, a title, a ruled definition list whose terms carry a small mod-accent swatch, and a closing line under a 1.5px ink rule.
+A 6px-cornered strip in caution wash and ink with a stroked warning-triangle icon, for beta and young mods.
 
 ### Navigation
-- **Header:** brand (logo plus Anybody wordmark) left; Mods, Install, GitHub as 650-weight ink text links (underline on hover), then the theme toggle. Wraps on phones.
-- **Need index:** a legend: one ruled row per need, the need in 600 weight on the left and the mod name in Anybody 700 with its accent swatch on the right (stacked on phones). The 404 page reuses it to list each mod's own site.
+- **Header:** the logo and wordmark on the left; Mods, Install, GitHub as 44px-tall ink links (underline on hover) and the 44px round theme toggle (sun by day, moon at night) on the right.
+- **Need index:** a list under a 1.5px ink rule; each 46px row pairs a need with a mod name led by a 12px swatch in the mod's colour ringed off the ground. The 404 reuses it with mod names only.
 
-### Install sheet
-A single card-stock sheet split into three numbered steps (dividers between, stacking on narrow screens), followed by three install notes under ink top rules on the mat.
+### Install steps
+A paper sheet split into three steps by paper rules, each a pine numeral, title and short text; below it three notes, each under a 1.5px ink rule.
+
+### Named Rules
+**The Panel, Not Card Rule.** In user-facing text the mods are shown as panels, never "cards". The CSS classes `.card`, `.binder`, `.page`, `.pockets` and `.sleeve` are leftover names from the previous look. `.card` must stay: `assets/site.js` selects `.card[data-repo]` and `scripts/test-site.mjs` reads `<article class="card">`. The others are not read by either and are kept only to avoid churn.
 
 ### Markup contract (JS and test hooks)
-The markup must keep these hooks; `assets/site.js` reads them and `scripts/test-site.mjs` checks them. `data/releases.json` is written by the scheduled bot and is never edited by hand.
-- `article.card[data-repo][data-asset]` on every mod card and nowhere else; `data-maturity` on every card that carries a caution, equal to the caution's label (it replaces Stable in the status pill).
-- Inside each card: `[data-download]` (an `a.btn` whose fallback href is the repo's Releases page, containing `.btn-label` and `[data-size]`), `[data-note]` (aria-live), `[data-status]` (a hidden pill), `[data-notes]` (release-notes link, fallback to Releases), and an `h3` with the mod name.
+`assets/site.js` reads these hooks and `scripts/test-site.mjs` (15 checks) tests them. `data/releases.json` is written by the scheduled bot and is never edited by hand.
+- `article.card[data-repo][data-asset]` on every mod panel and nowhere else. `data-maturity` goes on every panel that carries a `.caution`, and equals the caution's label.
+- Inside each panel: `[data-download]` (an `a.btn` whose fallback href is the repo's Releases page, containing `.btn-label` and `[data-size]`), `[data-note]` (aria-live), `[data-status]` (a hidden pill), `[data-notes]` (the release-notes link, falling back to Releases), and an `h3` with the mod name.
 - `[data-generated]` in the footer for the release-data stamp.
-- Fragment ids `#top`, `#mods`, `#install` and the eight card ids; the theme key `tbmods.theme` applied before first paint.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** set every mod colour through `--c` on the card and its need-index entry, with the value taken from the mod's own site (the Own Colours Rule).
-- **Do** keep card stock light in dark mode and keep the card's own link colour (the Light Stock Rule).
-- **Do** give every card the same fields in the same order, and the mod's own site art in the art window.
-- **Do** keep a new accent at 4.5:1 or better against white, since button and pill text is white on it.
-- **Do** keep produced textures and card crops reproducible and carrying their provenance JSON beside them.
-- **Do** keep the sheen the only motion and stop it under reduced motion (the One Motion Rule).
+- **Do** mount every group of mods on its own walnut board with four brass nails, and nail every mod to it as a panel framed 5px in its own colour.
+- **Do** take each mod's colour and banner picture from that mod's own site (`assets/img/cards/<id>.webp`).
+- **Do** keep pine green (fern light at night) for links, the wordmark's second line and numerals.
+- **Do** define every themed token three times: in `:root`, under `prefers-color-scheme: dark` guarded by `:root:not([data-theme="light"])`, and under `:root[data-theme="dark"]`.
+- **Do** regenerate the ground and board textures with `assets/img/make_textures.py` rather than editing the images.
 - **Do** keep tap targets at 44px or more and the 3px focus ring visible in both themes.
 
 ### Don't:
-- **Don't** recolour cards to a hub palette, give cards one shared banner treatment, or add a hub brand accent.
-- **Don't** bring back the replaced catalogue look: parchment and forest green, identical dark banners, soft-shadow rounded cards, a hero stat strip.
-- **Don't** add Anybody weights or other display faces, or load fonts or assets from a CDN.
-- **Don't** add animation beyond the sleeve sheen.
-- **Don't** remove or rename the markup hooks, or edit `data/releases.json`.
+- **Don't** bring back felt, dark PVC binder pages, clear sleeves, sheen, white card stock or the card-fan logo; the maintainer dropped that look.
+- **Don't** use the word "card" in user-facing text.
+- **Don't** use black or white surfaces; the wall is wood, brass, paper and moss.
+- **Don't** give a mod pine green, or give the hub a mod's colour.
+- **Don't** add hover lifts, transitions, entrances or parallax.
+- **Don't** rename `.card`, remove the markup hooks, or edit `data/releases.json`.

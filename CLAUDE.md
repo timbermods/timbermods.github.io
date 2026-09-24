@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 This repo is the Timbermods org hub (timbermods/timbermods.github.io): one static page listing every Timbermods
-Timberborn mod as a card, with a download button for its current release and a link to its own site. No build step,
+Timberborn mod, each with a download button for its current release and a link to its own site. No build step,
 no dependencies. The mods themselves live in their own repos; the hub carries no mod code. Changes land on `main`
 through a PR (CI: `.github/workflows/tests.yml` runs `node scripts/test-site.mjs` on Node 22 for every PR and push to
 main).
@@ -9,7 +9,7 @@ main).
 ## Standing rules
 
 - Never launch or drive Timberborn, and never touch installed mods or saves. The maintainer (Kyler) playtests himself.
-- Commit on a branch and open a PR. Merge only when Kyler says so in the chat.
+- Commit on a branch and open a PR. Kyler has said to merge PRs automatically: merge, then check the page live.
 - **Never edit `data/releases.json`.** `.github/workflows/refresh-releases.yml` regenerates it hourly
   (`node scripts/update-releases.mjs`) and commits straight to `main` as github-actions[bot]. So `main` moves several
   times a day: before a PR run `git fetch origin && git merge origin/main`, and on a conflict in that file take
@@ -21,17 +21,21 @@ main).
 
 ## Website
 
-- **Where:** the repo root: `index.html` (cover, need index, three binder pages of cards, install, footer),
+- **Where:** the repo root: `index.html` (opening with the need index, three walnut boards of mods, install, footer),
   `404.html` (uses root paths `/assets/...`; every other path is relative), `assets/style.css`, `assets/site.js`
   (download buttons, theme toggle), `assets/fonts/`, `assets/img/`, `assets/favicon.svg`. Live at
   https://timbermods.github.io/.
 - **Published:** GitHub Pages "legacy" build from `main`, folder `/` (`.nojekyll` stays). Merging to main publishes;
   a build takes about a minute.
-- **Look:** "The Collector's Binder". A felt mat holds dark PVC binder pages with punched ring holes; each page holds
-  clear sleeves, each sleeve one trading card per mod, printed in that mod's own colours with art from its own site.
+- **Look:** "The Lodge Wall". Pale birch boards by day and a dark forest floor at night; each group of mods is mounted
+  on a walnut board with four brass nail heads; each mod is a panel (warm paper by day, moss green at night) framed in
+  that mod's own colour with a picture from its own site. Wood, brown and green: Kyler rejected a black/white look.
   The look is fixed: updates extend it and never restyle it.
+- **Words:** never "card", "binder", "pocket" or "sleeve" in anything a visitor reads (page text, titles, meta, alt,
+  aria labels). Say "mod", or write the sentence without it. The class name `.card` is read by `site.js` and the tests,
+  so it stays; `.binder`, `.page`, `.pockets` and `.sleeve` are kept only to avoid churn.
 - **Design records (read these before any site change):**
-  - `PRODUCT.md`: the facts, voice, and every site contract; its Operating Context lists every card (id, accent, pill,
+  - `PRODUCT.md`: the facts, voice, and every site contract; its Operating Context lists every mod (id, accent, pill,
     requirements).
   - `DESIGN.md`: the visual system and its named rules, the source of truth for the look.
   - `.impeccable/surfaces/index-html.md`: the direction contract.
@@ -40,44 +44,44 @@ main).
 
 ### Design rules (from DESIGN.md; keep them)
 
-- **Own Colours Rule**: each card's accent is passed as `--c` (inline `style="--c:#…"` on the `article.card` and on its
-  need-index `.to` span), taken from that mod's own site. Never recolour a card, never share an accent, no hub accent.
-  Accents: Stability Fork #b8322a, MultiColony #1a6a77, MixedStorage #8a6a2c, Persistent Work Areas #8a6512,
-  Optimized Local Housing #2d5f9a, Late Game Performance #5b3fd0, The Tipsy Tail #1a6773, Hungry Pathing #1d4a86.
-  A new accent must hold ≥4.5:1 against white (button and pill text is `#fff` on it).
-- **Light Stock Rule**: card stock stays light (#fbfaf6, ink #1f2124, muted #4a4e54, rule #dedbd2) in dark mode, and
-  `.card` resets `--link` to #1d4f8a so dark-theme link blue never lands on stock.
-- **Binder Holds Rule**: felt, PVC and ink are the hub's only colours; the logo's fanned cards are the one place hub
-  chrome shows mod accents.
-- **Two Weights Rule**: only Anybody 700 and 800 ship; Anybody sets names, headings, pills, numerals; running text is
-  the system-ui stack; code is the ui-monospace stack.
-- **One Motion Rule**: the sleeve sheen (`.sleeve::after`, `assets/img/sheen.webp`) slides top-right to bottom-left on
-  hover/focus-within, opacity .4 → .6, 0.7s cubic-bezier(.2,.8,.2,1). Nothing else animates. Reduced motion stops it.
+- **Own Colours**: each mod's accent is passed as `--c` (inline `style="--c:#…"` on the `article.card` and on its
+  need-index `.to` span), taken from that mod's own site. It frames the panel and colours its tag pill, bullets and
+  download button. Never recolour a mod or share an accent. Accents: Stability Fork #b8322a, MultiColony #1a6a77,
+  MixedStorage #8a6a2c, Persistent Work Areas #8a6512, Optimized Local Housing #2d5f9a, Late Game Performance #5b3fd0,
+  The Tipsy Tail #1a6773, Hungry Pathing #1d4a86. A new accent must hold ≥4.5:1 against white (`#fff` text on it).
+- **Wood and Green**: the hub's own colours are birch, walnut, brass, paper, moss and pine green, nothing black/white.
+  Panels follow the theme (paper by day, moss at night) and set their own `--link`.
+- **Two Weights**: only Anybody 700 and 800 ship; Anybody sets names, headings, pills, numerals; running text is the
+  system-ui stack; code is ui-monospace.
+- **No Motion**: nothing animates (hover only darkens a button); reduced motion also turns off smooth scrolling.
 - Tokens (`:root` in `assets/style.css`; dark under `@media (prefers-color-scheme: dark) :root:not([data-theme="light"])`
-  and `:root[data-theme="dark"]`), light / dark: mat #dcd8cf / #16171a, ink #1f2124 / #eceae4, muted #4c5056 /
-  #b3b5b8, rule #b9b4a8 / #34363b, PVC page #1d1f23 / #2a2c31 (page text #eceae4, #b3b5b8 in both), link #1d4f8a /
-  #9cc2f0, focus #1d4f8a / #f0d27a. Caution cream #fff3dc with umber #6e3d00 (also the Preview/Beta pill); Stable pill
-  #1d6b3a.
+  and `:root[data-theme="dark"]`), light / dark: ground #e0d2b4 (birch.webp) / #1a211a (forest-floor.webp), ink
+  #2a2118 / #ece3cf, muted #5b4a37 / #bdb39c, rule #bca77f / #3b4636, board #56402a (walnut.webp) / #3a291b
+  (walnut-dark.webp) with text #f4ead6 and #decdab, nails #c19a5b / #a88650, panel #f5ecd9 / #243126 (ink #2a2118 /
+  #ece3cf, muted #5d4c39 / #b8b19b, rule #dccdab / #38493b), link and pine green #2f5d3a / #a9d8a3, focus #2f5d3a /
+  #f0d27a, caution #f4dfb3 on #663a04 / #3b301b on #f1cf8b, Stable pill #2c6536 / #9fd49a, Preview pill #7a4a06 /
+  #f0c070.
 - Fonts: Anybody 700/800, self-hosted in `assets/fonts/` (`anybody-latin-{700,800}-normal.woff2`, `OFL-Anybody.txt`).
   No other webfonts, nothing from a CDN; the only external requests are GitHub's API.
-- Textures: `felt-light.webp`, `felt-dark.webp`, `binder.webp`, `binder-dark.webp`, `sheen.webp`, made by
-  `assets/img/make_textures.py` (numpy + Pillow, fixed seeds; run it from `assets/img/`). Change the script, don't
-  edit images. Every shipping raster carries provenance (`.webp.json` sidecar, or a tEXt chunk in `og.png`): after
-  adding or changing one, run (with `$IMP` as in step 6 below) `"$IMP/scripts/impeccable" embed-prompt <file> --prompt "Origin: ..."` (reuse the
-  wording of a neighbouring sidecar) and check with `embed-prompt --scan .` (currently 14 rasters, 0 missing).
-- Card art: `assets/img/cards/<card-id>.webp`, 960×600, a capture of the signature element of that mod's own site.
-  When a mod's site changes its look, recapture it: `python scripts/card-art.py <card-id>` (no id = all eight; needs
+- Textures: `birch.webp`, `forest-floor.webp`, `walnut.webp`, `walnut-dark.webp`, made by `assets/img/make_textures.py`
+  (numpy + Pillow, fixed seeds; run it from `assets/img/`). Change the script, don't edit images. Every shipping raster
+  carries provenance (`.webp.json` sidecar, or a tEXt chunk in `og.png`): after adding or changing one, run (with `$IMP`
+  as in step 6 below) `"$IMP/scripts/impeccable" embed-prompt <file> --prompt "Origin: ..."` (reuse a neighbouring
+  sidecar's wording) and check with `embed-prompt --scan .`.
+- The logo (header SVG in both pages and `assets/favicon.svg`) is a pine tree on a log end.
+- Mod pictures: `assets/img/cards/<id>.webp`, 960×600, a capture of the element on that mod's own site that shows what
+  the mod does. When a mod's site changes it, recapture: `python scripts/card-art.py <id>` (no id = all eight; needs
   Python with playwright + Pillow and installed Microsoft Edge; the selector per mod is in its `JOBS` table, update it
-  if the mod's site renamed the element). Then embed provenance with the card-art wording.
+  if the mod's site renamed the element). Then embed provenance. A picture must show what the mod actually does.
 - Themes: light and dark; the toggle stores `tbmods.theme` in localStorage and an inline head script (in both pages)
   applies it before first paint. Check both.
 - Phones: no horizontal scroll at 390px, tap targets ≥ 44px (download 48px, need rows 46px). Breakpoints 1000px (two
-  pockets, inserts hidden), 860px (one-column cover/install), 620px (one pocket, 16:7 art).
-- Don't: recolour cards or give them a shared banner; add a hub accent; bring back parchment/forest green, identical
-  dark banners, soft-shadow cards or a hero stat strip; add Anybody weights or other faces; add motion; use official
-  Timberborn logos/key art or stock/generated imagery; rename or remove markup hooks.
-- New components: build them from the tokens and components above (card, sleeve, insert, need index, install sheet),
-  match the neighbours, and add them to DESIGN.md.
+  panels per row, the Which-one notice spans the row), 860px (one-column opening/install), 620px (one panel per row, 16:7 art).
+- Don't: recolour a mod or give mods a shared picture; go back to black/white, felt, binder or sleeve looks; add
+  Anybody weights or other faces; add motion; make composite images of the mods' pictures; use official Timberborn
+  logos/key art or stock/generated imagery; rename or remove markup hooks.
+- New components: build them from the tokens and components above (mod panel, board, notice, need index, install
+  sheet), match the neighbours, and add them to DESIGN.md.
 
 ### Markup hooks (tested; every card keeps all of them)
 
@@ -125,10 +129,10 @@ changes its look.
    - PRODUCT.md's Operating Context and README's mod list; the org profile (`timbermods/.github`,
      `profile/README.md`) repeats each card's text, accent, category and group: update it in a PR to that repo. Its
      images come from this site: after card art changes here (and is live), run `python profile/make_images.py` there.
-3. Adding a mod: copy a whole `<div class="sleeve"><article class="card">…</article></div>` into the right binder page
+3. Adding a mod: copy a whole `<div class="sleeve"><article class="card">…</article></div>` into the right board
    (Play together / Big colonies / Build and plan), set `--c` from the mod's own site, all hooks above, card art via
    `scripts/card-art.py` (add a `JOBS` entry) + provenance, a need-index row, the 404 row, and the counts in step 2.
-   A page with an empty pocket fills it with an `.insert` in an `.insert-sleeve`. The tests read cards from
+   A board with an empty spot fills it with an `.insert` notice in an `.insert-sleeve`. The tests read cards from
    `index.html`, so no test edit is needed unless you change `site.js`.
 4. Test: `node scripts/test-site.mjs` must print `15/15 checks passed`.
 5. Preview: `node scripts/serve.mjs` (serves the repo root at http://127.0.0.1:8765/; missing paths get a plain 404,
@@ -138,10 +142,10 @@ changes its look.
    row, and no horizontal scroll. Stop the server afterwards.
 6. Optional: `IMP=$(ls -d ~/.claude/plugins/cache/impeccable/impeccable/*/skills/impeccable | tail -1)`, then
    `"$IMP/scripts/impeccable" detect --json .` (parse from the first `[`). Known false positives (by design; there is
-   no `.impeccable/config.json`): `nested-cards` (card in its sleeve, insert in its sleeve), `border-accent-on-rounded`
+   no `.impeccable/config.json`): `nested-cards` (panels on a board, the notice on a board), `border-accent-on-rounded`
    on `.banner` (the 6px frame continued under the art), `cramped-padding` on `.page`, `.install` and the ruled
    `.needs ul` (clamp()/ruled lists), `flat-type-hierarchy` on 404.html (root-path CSS not loaded), and the
-   `design-system-*` advisories for sleeve rgba()s, `#fff` on accents and small card font sizes.
+   `design-system-*` advisories for rgba() shadows, `#fff` on accents and small panel font sizes.
 7. If the look changed, update DESIGN.md and `.impeccable/design.json`. Update README.md if it repeats the facts.
 8. Ship: `git fetch origin && git merge origin/main` → branch → commit → push → `gh pr create`. After Kyler says merge:
    `gh pr merge <n> --merge`, then verify:
