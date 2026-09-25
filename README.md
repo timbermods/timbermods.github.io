@@ -14,7 +14,8 @@ latest** button for its current release and a link to its own site.
 - [Persistent Work Areas](https://timbermods.github.io/PersistentWorkAreas/): working-area outlines that stay on screen
 - [The Tipsy Tail](https://timbermods.github.io/timberborn-tipsy-tail/): a swim-up pool bar
 
-Every mod installs the same way: see [Installing any of these](https://timbermods.github.io/#install).
+Want several? [Download several at once](https://timbermods.github.io/#bundle) as one ZIP. Every mod installs the same
+way: see [Installing any of these](https://timbermods.github.io/#install).
 
 Working on the site itself? See [DEVELOPING.md](DEVELOPING.md).
 

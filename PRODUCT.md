@@ -103,7 +103,7 @@ name, tagline, blurb, accent color and requirements and links back to the hub an
 ## Capabilities and Constraints
 
 **Stack and hosting:** one static page (`index.html`), `assets/style.css`, `assets/site.js`, no build step, no
-dependencies, no external requests besides GitHub's API (Anybody is self-hosted in `assets/fonts/` and text uses the system font stack; nothing from a CDN). GitHub Pages
+dependencies, no external requests besides GitHub's API and, for the download picker, GitHub's raw file host (Anybody is self-hosted in `assets/fonts/` and text uses the system font stack; nothing from a CDN). GitHub Pages
 "legacy" build from `main`, folder `/ (root)`; `.nojekyll` stays. All paths are relative (so it also works from a
 project repo), except in `404.html`, which GitHub Pages serves at any missing address and so uses root paths. Preview with `node scripts/serve.mjs` (http://127.0.0.1:8765/). Light and dark themes: tokens on
 `:root`, `prefers-color-scheme` guarded by `:root:not([data-theme="light"])`, `:root[data-theme="dark"]`; the toggle
@@ -152,8 +152,19 @@ on every push to `main` and every pull request, Node 22; the bot's pushes don't 
    as it was) on any API error other than a 404 from `/releases/latest`, and leaves the file untouched when nothing
    changed. The workflow depends on the paths `scripts/update-releases.mjs` and `data/releases.json`, and needs
    `contents: write`.
-9. **Anchors other sites link to:** `#install` (the org profile links `https://timbermods.github.io/#install`) and
-   `#mods`; the card ids above are the natural deep links. Keep them.
+9. **Anchors other sites link to:** `#install` (the org profile links `https://timbermods.github.io/#install`),
+   `#bundle` (the download picker) and `#mods`; the card ids above are the natural deep links. Keep them.
+
+10. **The download picker** (`#bundle`, `assets/bundle.js` + `assets/zipmerge.js`): the visitor ticks mods and gets one
+   `timbermods-mods.zip` with a folder for each and a `Timbermods.txt` guide. GitHub doesn't let a page fetch release
+   downloads, so `.github/workflows/refresh-downloads.yml` (hourly at :37, and when the page or its scripts change) runs
+   `scripts/update-downloads.mjs`: for each panel it picks the release its Download button offers (same rule as
+   `site.js`, tested), rewrites that ZIP into a plain form (`scripts/downloads-lib.mjs`: files only, no data
+   descriptors or ZIP64, exactly one top folder, no two mods sharing one) and publishes the copies with a
+   `manifest.json` as the `downloads` branch, one fresh commit each time. The page reads them from
+   `raw.githubusercontent.com` (which allows it), checks each copy's SHA-256 and joins them without unpacking.
+   Only one of the two BeaverBuddies mods can be picked. Harmony and Mod Settings are never bundled. Never edit the
+   `downloads` branch by hand.
 
 **Shared files:** the hub does **not** use the shared `release.js` that most mod sites carry (its `site.js` is its own
 and follows the same main rule, differing in edge cases). If a `release.js` is ever copied in, it is replaced
