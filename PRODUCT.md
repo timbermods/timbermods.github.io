@@ -52,13 +52,15 @@ the card `id`, its accent `--c` (taken from that mod's own site), its category p
    - Co-op with fewer crashes and desyncs: an independent fork of BeaverBuddies with Steam friend invites, a connection
      panel, teammate cursors and desync fixes.
    - **Feature-complete**: game-update and bug-fix releases only; new features go into Timber Together. GitHub's Latest.
-   - Its status line follows its README (the newest release has been played and works). GPL-3.0.
-2. **Timber Together** (`timber-together`, `#1a6a77`, Multiplayer; Harmony, Mod Settings;
-   `data-maturity="Beta"` with a Beta caution).
+   - Its status line says it is built on BeaverBuddies, then follows its README (the newest release has been played
+     and works). GPL-3.0.
+2. **Timber Together** (`timber-together`, `#1a6a77`, Multiplayer; Harmony, Mod Settings; no caution, Kyler
+   2026-09-25).
    - Tagline *Build apart. Thrive together.* A colony each on one map; the colonies' roads never join, and they trade only at Trading Posts. Or
      share one colony, as in the fork.
-   - Pre-releases only (no Latest release), so the pill says **Preview**. Built on the Stability Fork. GPL-3.0.
-   - The caution's played and not-played lists follow its README.
+   - Its button offers GitHub's Latest release, so the pill says **Stable** (Preview if it goes back to pre-releases
+     only). GPL-3.0.
+   - Its status line: "Built on BeaverBuddies and the BeaverBuddies Stability Fork."
 
 *Big colonies*
 3. **Late Game Performance** (`late-game-performance`, `#5b3fd0`, Performance; Harmony 2.4.1+, Mod Settings;
