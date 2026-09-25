@@ -227,6 +227,37 @@ code { font-family: var(--mono); font-size: .9em; background: var(--code-bg); pa
 .notes h3 { font: 700 1.05rem/1.25 var(--display); margin: 0 0 .3em; }
 .notes p { margin: 0; color: var(--muted); }
 
+/* ---------- download several at once: a paper sheet of ticks, one row per mod in its own colour ---------- */
+.bundle { padding: clamp(40px, 6vw, 72px) 0; border-top: 1px solid var(--rule); }
+.picker { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); margin: 24px 0 0; background: var(--tile); color: var(--tile-ink); border-radius: 6px; border: 1px solid var(--tile-rule); box-shadow: 0 2px 0 rgba(0, 0, 0, .12), 0 12px 24px -14px rgba(0, 0, 0, .45); }
+.pick-group { min-width: 0; margin: 0; padding: 20px 24px 18px; border: 0; }
+.pick-group + .pick-group { border-left: 1px solid var(--tile-rule); }
+.pick-group legend { float: left; width: 100%; padding: 0; margin: 0 0 4px; font: 800 1.15rem/1.2 var(--display); }
+.pick-hint { clear: both; margin: 0 0 10px; min-height: 44px; display: flex; align-items: center; color: var(--tile-muted); font-size: .92rem; }
+.pick-list { border-top: 1.5px solid var(--tile-ink); }
+.pick-list-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; }
+.pick { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; align-items: center; min-height: 54px; padding: 6px 2px; border-bottom: 1px solid var(--tile-rule); cursor: pointer; }
+.pick input { width: 20px; height: 20px; margin: 0; accent-color: var(--tile-link); cursor: pointer; }
+.pick-text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.pick-name { display: inline-flex; align-items: center; gap: 8px; font: 700 .98rem/1.2 var(--display); }
+/* the mod's own colour, as in the need index */
+.pick-name::before { content: ""; flex: none; width: 12px; height: 12px; border-radius: 3px; background: var(--c); box-shadow: 0 0 0 2px var(--tile), 0 0 0 3px var(--c); }
+.pick-none .pick-name::before { display: none; }
+.pick-ver { padding-left: 20px; color: var(--tile-muted); font-size: .85rem; font-variant-numeric: tabular-nums; }
+.pick-ver:empty { display: none; }
+.pick:has(input:disabled) { cursor: default; }
+.pick:has(input:disabled) .pick-name { opacity: .6; }
+.pick-all { min-height: 44px; padding: 0 14px; border-radius: 6px; border: 1.5px solid var(--tile-rule); background: transparent; color: var(--tile-ink); font: 700 .9rem/1 var(--display); cursor: pointer; }
+.pick-all:hover:not(:disabled) { border-color: var(--tile-ink); }
+.pick-all:disabled { opacity: .55; cursor: default; }
+.pick-foot { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding: 16px 24px 20px; border-top: 1px solid var(--tile-rule); }
+.pick-go, .pick-go:hover { background: var(--link); color: var(--tile); min-width: 250px; }
+.pick-go:disabled { opacity: .55; filter: none; cursor: default; }
+.pick-status { flex: 1 1 280px; }
+.pick-note { margin: 0; min-height: 1.4em; font-weight: 650; }
+.pick-fine { margin: 2px 0 0; color: var(--tile-muted); font-size: .9rem; }
+.pick-fine a { color: var(--tile-link); }
+
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--rule); padding: 32px 0 40px; font-size: .95rem; color: var(--muted); }
 .site-footer p { max-width: 90ch; }
@@ -246,7 +277,8 @@ code { font-family: var(--mono); font-size: .9em; background: var(--code-bg); pa
   .insert { align-self: stretch; }
 }
 @media (max-width: 860px) {
-  .cover-grid, .steps, .notes { grid-template-columns: minmax(0, 1fr); }
+  .cover-grid, .steps, .notes, .picker, .pick-list-two { grid-template-columns: minmax(0, 1fr); }
+  .pick-group + .pick-group { border-left: 0; border-top: 1px solid var(--tile-rule); }
   .steps li + li { border-left: 0; border-top: 1px solid var(--tile-rule); }
 }
 @media (max-width: 620px) {
@@ -260,6 +292,8 @@ code { font-family: var(--mono); font-size: .9em; background: var(--code-bg); pa
   .site-header nav a { padding: 0 8px; }
   .needs a { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .needs .to { justify-self: start; }
+  .pick-group, .pick-foot { padding-left: 16px; padding-right: 16px; }
+  .pick-go { min-width: 0; width: 100%; }
   .blurb { font-size: .93rem; }
 }
 @media (prefers-reduced-motion: reduce) {

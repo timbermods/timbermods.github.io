@@ -10,11 +10,16 @@
  * Prints one line per check and exits 1 if any check fails.
  */
 import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import vm from 'node:vm';
+import { createRequire } from 'node:module';
+import { canonicalZip, pickRelease, readZip } from './downloads-lib.mjs';
+
+const zipmerge = createRequire(import.meta.url)(path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'assets', 'zipmerge.js'));
 
 const root = path.resolve(process.argv[2] || path.join(path.dirname(fileURLToPath(import.meta.url)), '..'));
 const siteJs = readFileSync(path.join(root, 'assets', 'site.js'), 'utf8');
@@ -367,6 +372,117 @@ await check('the footer says when the release data last changed', async () => {
   if (!/^Release data last changed .*2026.*\.$/.test(stamp)) throw new Error(`footer: ${JSON.stringify(stamp)}`);
   const live = await runSite([makeCard()], { snapshot, github: { [R]: { list: behind13 } } });
   same(live.stamp, 'Latest releases checked live from GitHub.', 'footer after a live check of every card');
+});
+
+// ---------- the "Download several at once" picker ----------
+
+// A ZIP of stored text files, written by zipmerge itself: { 'Folder/file': 'text' }.
+const makeZip = (files) => Buffer.from(zipmerge.merge([], Object.entries(files).map(([name, text]) => ({ name, text })), new Date('2026-09-01T12:00:00')));
+const unzip = (bytes) => Object.fromEntries(readZip(bytes).map((f) => [f.name, f.data.toString('utf8')]));
+
+await check('zipmerge joins two mods\' plain copies into one ZIP that unpacks to both folders and the guide', async () => {
+  const a = canonicalZip(makeZip({ 'Alpha/version-1.1/manifest.json': '{"Id":"alpha"}', 'Alpha/README.md': 'a'.repeat(4000) }));
+  const b = canonicalZip(makeZip({ 'Beta/Beta.dll': 'beta' }));
+  same([a.folder, b.folder], ['Alpha', 'Beta'], 'top folders');
+  const joined = zipmerge.merge([a.bytes, b.bytes], [{ name: 'Timbermods.txt', text: 'guide' }]);
+  same(unzip(joined), {
+    'Alpha/version-1.1/manifest.json': '{"Id":"alpha"}', 'Alpha/README.md': 'a'.repeat(4000), 'Beta/Beta.dll': 'beta', 'Timbermods.txt': 'guide',
+  }, 'files in the joined ZIP');
+});
+
+await check('zipmerge refuses two mods that contain the same file', async () => {
+  const a = canonicalZip(makeZip({ 'Same/a.txt': '1' })).bytes;
+  let error = null;
+  try { zipmerge.merge([a, a]); } catch (e) { error = e; }
+  if (!error || !/Same\/a\.txt/.test(error.message)) throw new Error('joined two ZIPs holding Same/a.txt: ' + (error && error.message));
+});
+
+await check('the plain copy refuses a ZIP without exactly one top folder', async () => {
+  for (const files of [{ 'A/x': '1', 'B/y': '2' }, { 'loose.txt': '1' }]) {
+    let error = null;
+    try { canonicalZip(makeZip(files)); } catch (e) { error = e; }
+    if (!error) throw new Error('accepted ' + Object.keys(files).join(', '));
+  }
+});
+
+await check('the picker offers, for every mod on the page, the release its Download button offers', async () => {
+  const page = pageCards();
+  const scenarios = {
+    'Latest behind 13 pre-releases': (repo) => ({ list: [...previews(repo, 13), release(repo, 'v1.0.0')] }),
+    'only pre-releases': (repo) => ({ list: previews(repo, 3) }),
+    'an older release marked Latest': (repo) => { const old = release(repo, 'v0.9.0'); return { list: [release(repo, 'v1.0.0'), old], latest: old }; },
+  };
+  for (const [what, make] of Object.entries(scenarios)) {
+    const cards = page.map(({ data, title }) => makeCard({ ...data, title }));
+    const github = Object.fromEntries(cards.map(({ dataset: { repo } }) => [repo, make(repo)]));
+    await runSite(cards, { github });
+    for (const card of cards) {
+      const answer = github[card.dataset.repo];
+      const latest = 'latest' in answer ? answer.latest : answer.list.find((r) => !r.prerelease) || null;
+      const picked = pickRelease({ releases: answer.list.slice(0, 12).map(entry), latest: latest && entry(latest) }, new RegExp(card.dataset.asset || '\\.zip$', 'i'));
+      same(picked && picked.asset.url, card.shown.href, `${card.dataset.repo} with ${what}`);
+    }
+  }
+});
+
+// Runs a copy of update-downloads.mjs in `dir` with two mods whose release ZIPs are `zips` ({ url: Buffer }),
+// served by a fake fetch. `releases` is data/releases.json. Returns the manifest (null when there is none).
+function runDownloads(dir, releases, zips) {
+  mkdirSync(path.join(dir, 'scripts'), { recursive: true });
+  mkdirSync(path.join(dir, 'data'), { recursive: true });
+  for (const f of ['update-downloads.mjs', 'downloads-lib.mjs']) copyFileSync(path.join(root, 'scripts', f), path.join(dir, 'scripts', f));
+  writeFileSync(path.join(dir, 'index.html'), ['alpha', 'beta'].map((id) =>
+    `<article class="card" id="${id}" style="--c:#123456" data-repo="o/${id}" data-asset="^${id}-[\\w.-]+\\.zip$"><h3><a href="#">${id} mod</a></h3>` +
+    `<p class="req"><span>Requires</span> Harmony</p></article>\n`).join(''));
+  writeFileSync(path.join(dir, 'data', 'releases.json'), JSON.stringify(releases));
+  const served = path.join(dir, 'served');
+  mkdirSync(served, { recursive: true });
+  const index = {};
+  Object.entries(zips).forEach(([url, bytes], i) => { writeFileSync(path.join(served, i + '.zip'), bytes); index[url] = path.join(served, i + '.zip'); });
+  writeFileSync(path.join(dir, 'served.json'), JSON.stringify(index));
+  writeFileSync(path.join(dir, 'fake-fetch.mjs'),
+    `import { readFileSync } from 'node:fs';\n` +
+    `const index = JSON.parse(readFileSync(${JSON.stringify(path.join(dir, 'served.json'))}, 'utf8'));\n` +
+    `globalThis.fetch = async (url) => index[url]\n` +
+    `  ? { ok: true, status: 200, arrayBuffer: async () => { const b = readFileSync(index[url]); return b.buffer.slice(b.byteOffset, b.byteOffset + b.length); } }\n` +
+    `  : { ok: false, status: 404, arrayBuffer: async () => new ArrayBuffer(0) };\n`);
+  const out = path.join(dir, 'mirror');
+  const env = { ...process.env };
+  delete env.GITHUB_TOKEN; delete env.GH_TOKEN; delete env.GITHUB_OUTPUT;
+  try {
+    execFileSync(process.execPath, ['--import', pathToFileURL(path.join(dir, 'fake-fetch.mjs')).href, path.join(dir, 'scripts', 'update-downloads.mjs'), out], { env, stdio: 'pipe' });
+  } catch (e) {
+    throw new Error('update-downloads.mjs failed: ' + String(e.stderr || e.message).trim());
+  }
+  try { return JSON.parse(readFileSync(path.join(out, 'manifest.json'), 'utf8')); } catch { return null; }
+}
+
+await check('update-downloads.mjs keeps a plain copy of each mod\'s offered ZIP and a manifest, and rewrites nothing when nothing changed', async () => {
+  await inScratch((dir) => {
+    const rel = (id, tag) => entry({ ...release(`o/${id}`, tag), assets: [{ name: `${id}-${tag}.zip`, size: 100, browser_download_url: `https://example.test/${id}-${tag}.zip` }] });
+    const zips = {
+      'https://example.test/alpha-v1.0.0.zip': makeZip({ 'Alpha/a.txt': 'one' }),
+      'https://example.test/beta-v2.0.0.zip': makeZip({ 'Beta/b.txt': 'two' }),
+      'https://example.test/alpha-v1.1.0.zip': makeZip({ 'Alpha/a.txt': 'newer' }),
+    };
+    const first = { repos: { 'o/alpha': [rel('alpha', 'v1.0.0')], 'o/beta': [rel('beta', 'v2.0.0')] }, latest: { 'o/alpha': rel('alpha', 'v1.0.0'), 'o/beta': rel('beta', 'v2.0.0') } };
+    const m1 = runDownloads(dir, first, zips);
+    same(m1.mods.map((m) => [m.id, m.version, m.folder, m.file, m.requires]),
+      [['alpha', 'v1.0.0', 'Alpha', 'alpha-v1.0.0.zip', 'Harmony'], ['beta', 'v2.0.0', 'Beta', 'beta-v2.0.0.zip', 'Harmony']], 'first manifest');
+    const copy = readFileSync(path.join(dir, 'mirror', 'alpha-v1.0.0.zip'));
+    same(createHash('sha256').update(copy).digest('hex'), m1.mods[0].sha256, 'alpha copy checksum');
+    same(unzip(copy), { 'Alpha/a.txt': 'one' }, 'alpha copy contents');
+    const text = readFileSync(path.join(dir, 'mirror', 'manifest.json'), 'utf8');
+    runDownloads(dir, first, zips);
+    same(readFileSync(path.join(dir, 'mirror', 'manifest.json'), 'utf8'), text, 'manifest after a run with no new release');
+
+    const second = { ...first, repos: { ...first.repos, 'o/alpha': [rel('alpha', 'v1.1.0'), rel('alpha', 'v1.0.0')] }, latest: { ...first.latest, 'o/alpha': rel('alpha', 'v1.1.0') } };
+    const m2 = runDownloads(dir, second, zips);
+    same(m2.mods[0].file, 'alpha-v1.1.0.zip', 'alpha after its new release');
+    same(unzip(readFileSync(path.join(dir, 'mirror', 'alpha-v1.1.0.zip'))), { 'Alpha/a.txt': 'newer' }, 'new alpha copy');
+    // The previous copy stays one more round, for browsers still holding the cached older manifest.
+    readFileSync(path.join(dir, 'mirror', 'alpha-v1.0.0.zip'));
+  });
 });
 
 console.log(`\n${passed}/${passed + failed} checks passed`);

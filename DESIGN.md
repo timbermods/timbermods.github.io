@@ -289,11 +289,11 @@ A woodland palette: pale birch and dark forest floor for the ground, walnut and 
 
 ## Layout
 
-A single centred column 1180px wide with a fluid gutter (clamp(16px, 4vw, 32px)). The order is fixed: header bar (min 68px, rule beneath), the valley with the wordmark, cover, three walnut boards, install, footer.
+A single centred column 1180px wide with a fluid gutter (clamp(16px, 4vw, 32px)). The order is fixed: header bar (min 68px, rule beneath), the valley with the wordmark, cover, three walnut boards, the download picker, install, footer.
 
 The valley runs the full width under the header (aspect 1280:360, min 230px, max 500px), with the wordmark over its sky at the top of the content column. Below it, the cover is two columns (0.9fr / 1.1fr): the lead and facts on the left, the need index on the right (rows of need and mod name, each mod name led by its colour swatch). Each board holds a head (title and lead, 760px max) and a grid of panels, three across, gap clamp(14px, 2vw, 22px), panels stretched to equal height with the download block pushed to the bottom. Where a board has a spare slot, a notice fills it (the Play together board's "Which one?"). Boards stack with clamp(24px, 4vw, 40px) between them. Install is a three-column steps sheet over three columns of notes.
 
-Responsive: at 1000px the panels go two across and the notice spans the row; at 860px the cover, steps and notes collapse to one column and the wordmark runs on one line; at 620px the panels go one across, banners crop to 16:7, boards tighten (26px 12px 20px, 6px corners, nails inset 8px) and the download button stops wrapping. Interactive targets are at least 44px tall; download buttons 48px.
+Responsive: at 1000px the panels go two across and the notice spans the row; at 860px the cover, steps, notes and the picker collapse to one column and the wordmark runs on one line; at 620px the panels go one across, banners crop to 16:7, boards tighten (26px 12px 20px, 6px corners, nails inset 8px) and the download button stops wrapping. Interactive targets are at least 44px tall; download buttons 48px.
 
 ### Named Rules
 **The One Board Per Group Rule.** Every group of mods gets its own walnut board; a mod panel never sits directly on the ground, and nothing but panels and a notice sits on a board.
@@ -352,6 +352,9 @@ A 6px-cornered strip in caution wash and ink with a stroked warning-triangle ico
 - **Header:** the logo and wordmark on the left; Mods, Install, GitHub as 44px-tall ink links (underline on hover) and the 44px round theme toggle (sun by day, moon at night) on the right.
 - **Need index:** a list under a 1.5px ink rule; each 46px row pairs a need with a mod name led by a 12px swatch in the mod's colour ringed off the ground. The 404 reuses it with mod names only.
 
+### Download picker
+"Download several at once" (`#bundle`): a paper sheet like the install steps, split by a paper rule into two groups. **Multiplayer** (1fr) is a radio list, None, BeaverBuddies Stability Fork and Timber Together, under the hint "Only one can run at a time."; **More mods** (2fr) is a two-column list of the other six under a **Select all** / **Clear these** button. Every group has a subhead (800, 1.15rem) and a 44px hint line, then a 1.5px ink rule; each row (min 54px, paper rule beneath) is a pine-green checkbox or radio, the mod name led by its 12px colour swatch ringed off the paper (as in the need index), and its version and size beneath in muted tabular figures. The foot spans both groups: a 48px pine download button (pine field, paper lettering, min 250px; "Download 3 mods · 2.6 MB", or "Pick a mod first" while disabled at 55% opacity) beside an aria-live status line and one muted line pointing to Installing for Harmony and Mod Settings. At 860px the groups stack and the list runs one across; at 620px the button runs full width.
+
 ### Install steps
 A paper sheet split into three steps by paper rules, each a pine numeral, title and short text; below it three notes, each under a 1.5px ink rule.
 
@@ -359,10 +362,11 @@ A paper sheet split into three steps by paper rules, each a pine numeral, title 
 **The Panel, Not Card Rule.** In user-facing text the mods are shown as panels, never "cards". The CSS classes `.card`, `.binder`, `.page`, `.pockets` and `.sleeve` are leftover names from the previous look. `.card` must stay: `assets/site.js` selects `.card[data-repo]` and `scripts/test-site.mjs` reads `<article class="card">`. The others are not read by either and are kept only to avoid churn.
 
 ### Markup contract (JS and test hooks)
-`assets/site.js` reads these hooks and `scripts/test-site.mjs` (15 checks) tests them. `data/releases.json` is written by the scheduled bot and is never edited by hand.
+`assets/site.js` reads these hooks and `scripts/test-site.mjs` (20 checks) tests them. `data/releases.json` is written by the scheduled bot and is never edited by hand.
 - `article.card[data-repo][data-asset]` on every mod panel and nowhere else. `data-maturity` goes on every panel that carries a `.caution`, and equals the caution's label.
 - Inside each panel: `[data-download]` (an `a.btn` whose fallback href is the repo's Releases page, containing `.btn-label` and `[data-size]`), `[data-note]` (aria-live), `[data-status]` (a hidden pill), `[data-notes]` (the release-notes link, falling back to Releases), and an `h3` with the mod name.
 - `[data-generated]` in the footer for the release-data stamp.
+- The picker (`assets/bundle.js`): `form[data-bundle]` holding inputs named `multiplayer` (radios; `value=""` is None) and `mod` (checkboxes), whose values are the panel ids; each row's `[data-ver]`; `[data-bundle-all]`, `[data-bundle-go]` (with `.btn-label` and `[data-bundle-size]`) and `[data-bundle-note]` (aria-live). It reads the `downloads` branch's `manifest.json`, whose ids are the panel ids.
 
 ## Do's and Don'ts
 

@@ -10,7 +10,9 @@ main).
 
 - Never launch or drive Timberborn, and never touch installed mods or saves. The maintainer (Kyler) playtests himself.
 - Commit on a branch and open a PR. Kyler has said to merge PRs automatically: merge, then check the page live.
-- **Never edit `data/releases.json`.** `.github/workflows/refresh-releases.yml` regenerates it hourly
+- **Never edit `data/releases.json` or the `downloads` branch.** The branch holds the download picker's copies of
+  each mod's ZIP; `.github/workflows/refresh-downloads.yml` replaces it hourly (`node scripts/update-downloads.mjs`).
+- About `data/releases.json`: `.github/workflows/refresh-releases.yml` regenerates it hourly
   (`node scripts/update-releases.mjs`) and commits straight to `main` as github-actions[bot]. So `main` moves several
   times a day: before a PR run `git fetch origin && git merge origin/main`, and on a conflict in that file take
   main's copy (`git checkout --theirs data/releases.json`).
@@ -41,7 +43,8 @@ text and the player docs follows these rules.
 
 - **Where:** the repo root: `index.html` (opening with the need index, three walnut boards of mods, install, footer),
   `404.html` (uses root paths `/assets/...`; every other path is relative), `assets/style.css`, `assets/site.js`
-  (download buttons, theme toggle), `assets/fonts/`, `assets/img/`, `assets/favicon.svg`. Live at
+  (download buttons, theme toggle), `assets/bundle.js` + `assets/zipmerge.js` (the "Download several at once"
+  picker, `#bundle`: joins the picked mods' ZIPs in the browser), `assets/fonts/`, `assets/img/`, `assets/favicon.svg`. Live at
   https://timbermods.github.io/.
 - **Published:** GitHub Pages "legacy" build from `main`, folder `/` (`.nojekyll` stays). Merging to main publishes;
   a build takes about a minute.
@@ -82,7 +85,8 @@ text and the player docs follows these rules.
   #f0d27a, caution #f4dfb3 on #663a04 / #3b301b on #f1cf8b, Stable pill #2c6536 / #9fd49a, Preview pill #7a4a06 /
   #f0c070.
 - Fonts: Anybody 700/800, self-hosted in `assets/fonts/` (`anybody-latin-{700,800}-normal.woff2`, `OFL-Anybody.txt`).
-  No other webfonts, nothing from a CDN; the only external requests are GitHub's API.
+  No other webfonts, nothing from a CDN; the only external requests are GitHub's API and the picker's reads of the
+  `downloads` branch from raw.githubusercontent.com.
 - Textures: `birch.webp`, `forest-floor.webp`, `walnut.webp`, `walnut-dark.webp`, made by `assets/img/make_textures.py`
   (numpy + Pillow, fixed seeds; run it from `assets/img/`). Change the script, don't edit images. Every shipping raster
   carries provenance (`.webp.json` sidecar, or a tEXt chunk in `og.png`): after adding or changing one, run (with `$IMP`
@@ -118,7 +122,10 @@ text and the player docs follows these rules.
 - A caution is `<p class="caution">…<svg/>Label: …</p>` inside the card; `data-maturity` equals Label (e.g. `Beta`,
   `Young mod`). Remove both together when a mod is ready. Any `.caution` outside a card fails the test.
 - Footer: one `[data-generated]` with default text "Release data loads from GitHub.".
-- Anchors: `#top`, `#mods`, `#install` (the org profile links `/#install`) and the eight card ids.
+- The picker: `form[data-bundle]`, inputs named `multiplayer` (radios, `value=""` = None) and `mod` whose values are
+  the panel ids, `[data-ver]` per row, `[data-bundle-all]`, `[data-bundle-go]`, `[data-bundle-size]`,
+  `[data-bundle-note]`. A new mod gets a row there too (Multiplayer only for a BeaverBuddies mod).
+- Anchors: `#top`, `#mods`, `#bundle`, `#install` (the org profile links `/#install`) and the eight card ids.
 
 ### Content rules
 
@@ -151,6 +158,7 @@ changes its look. Write every change by *Writing README and website text* above.
      unofficial…") when the count, game version or a one-line summary changes (`grep -n "1.1.2.4\|[Ee]ight" *.html README.md PRODUCT.md`);
    - the install `.notes` if requirements in general change; the footer credit if a new BeaverBuddies derivative lands;
    - `404.html`'s mod list (a copy of the cards' names, URLs and `--c`; **kept in sync by hand**);
+   - the download picker's row (`#bundle`: name, `--c`, and the panel id as the input's value);
    - PRODUCT.md's Operating Context and README's mod list; the org profile (`timbermods/.github`,
      `profile/README.md`) repeats each card's text, accent, category and group: update it in a PR to that repo. Its
      images come from this site: after card art changes here (and is live), run `python profile/make_images.py` there.
@@ -159,7 +167,7 @@ changes its look. Write every change by *Writing README and website text* above.
    `scripts/card-art.py` (add a `JOBS` entry) + provenance, a need-index row, the 404 row, and the counts in step 2.
    A board with an empty spot fills it with an `.insert` notice in an `.insert-sleeve`. The tests read cards from
    `index.html`, so no test edit is needed unless you change `site.js`.
-4. Test: `node scripts/test-site.mjs` must print `15/15 checks passed`.
+4. Test: `node scripts/test-site.mjs` must print `20/20 checks passed`.
 5. Preview: `node scripts/serve.mjs` (serves the repo root at http://127.0.0.1:8765/; missing paths get a plain 404,
    so open `/404.html` directly). Capture light, dark and a 390px phone: with the personal skill,
    `python ~/.claude/skills/impeccable-site-flow/scripts/capsite.py http://127.0.0.1:8765/ <out> "" 404.html`;

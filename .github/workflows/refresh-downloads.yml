@@ -1,0 +1,60 @@
+name: Refresh mod downloads
+
+# Keeps the `downloads` branch: the hub's own copies of each mod's current ZIP (the release its Download button
+# offers) and their manifest.json, which the "Download several at once" picker joins in the browser. GitHub
+# doesn't let a page fetch release downloads; its raw file host does, so the picker reads this branch there.
+# Runs after the hourly release refresh has had time to commit (:17), and whenever the page or these scripts
+# change. The branch is replaced by one fresh commit each time, so it never grows.
+on:
+  schedule:
+    - cron: '37 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - scripts/update-downloads.mjs
+      - scripts/downloads-lib.mjs
+      - .github/workflows/refresh-downloads.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-downloads
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Fetch the current copies
+        run: |
+          mkdir -p mirror
+          if git fetch --depth=1 origin downloads; then
+            git archive FETCH_HEAD | tar -x -C mirror
+          else
+            echo "No downloads branch yet: starting empty."
+          fi
+      - id: update
+        run: node scripts/update-downloads.mjs mirror
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish the downloads branch
+        if: steps.update.outputs.changed == 'true'
+        run: |
+          cd mirror
+          git init -q -b downloads
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Mod downloads for the Download several picker"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" downloads
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -50,7 +50,7 @@
       </div>
       <div class="wrap cover-grid">
         <div>
-          <p class="lead">Unofficial mods for Timberborn, made by players. Each one has a download for its latest release and a link to its own site.</p>
+          <p class="lead">Unofficial mods for Timberborn, made by players. Each one has a download for its latest release and a link to its own site, or <a href="#bundle">download several at once</a>.</p>
           <p class="cover-facts">Eight mods for Timberborn 1.1.2.4. Most are made to work in BeaverBuddies co-op.</p>
         </div>
         <nav class="needs" aria-label="Find a mod by what you need">
@@ -240,6 +240,43 @@
       </div>
     </section>
 
+    <section id="bundle" class="bundle" aria-labelledby="bundle-title">
+      <div class="wrap">
+        <h2 id="bundle-title">Download several at once</h2>
+        <p class="section-lead">Pick the mods you want and get one ZIP with a folder for each. Extract it into <code>Documents\Timberborn\Mods</code>.</p>
+        <form class="picker" data-bundle>
+          <fieldset class="pick-group">
+            <legend>Multiplayer</legend>
+            <p class="pick-hint">Only one can run at a time.</p>
+            <div class="pick-list">
+            <label class="pick pick-none"><input type="radio" name="multiplayer" value="" checked><span class="pick-text"><span class="pick-name">None</span><span class="pick-ver"></span></span></label>
+            <label class="pick" style="--c:#b8322a"><input type="radio" name="multiplayer" value="beaverbuddies-stability-fork"><span class="pick-text"><span class="pick-name">BeaverBuddies Stability Fork</span><span class="pick-ver" data-ver></span></span></label>
+            <label class="pick" style="--c:#1a6a77"><input type="radio" name="multiplayer" value="timber-together"><span class="pick-text"><span class="pick-name">Timber Together</span><span class="pick-ver" data-ver></span></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="pick-group">
+            <legend>More mods</legend>
+            <p class="pick-hint"><button class="pick-all" type="button" data-bundle-all disabled>Select all</button></p>
+            <div class="pick-list pick-list-two">
+            <label class="pick" style="--c:#5b3fd0"><input type="checkbox" name="mod" value="late-game-performance"><span class="pick-text"><span class="pick-name">Late Game Performance</span><span class="pick-ver" data-ver></span></span></label>
+            <label class="pick" style="--c:#2d5f9a"><input type="checkbox" name="mod" value="optimized-local-housing"><span class="pick-text"><span class="pick-name">Optimized Local Housing</span><span class="pick-ver" data-ver></span></span></label>
+            <label class="pick" style="--c:#1d4a86"><input type="checkbox" name="mod" value="hungry-pathing"><span class="pick-text"><span class="pick-name">Hungry Pathing</span><span class="pick-ver" data-ver></span></span></label>
+            <label class="pick" style="--c:#8a6a2c"><input type="checkbox" name="mod" value="mixedstorage"><span class="pick-text"><span class="pick-name">MixedStorage</span><span class="pick-ver" data-ver></span></span></label>
+            <label class="pick" style="--c:#8a6512"><input type="checkbox" name="mod" value="persistent-work-areas"><span class="pick-text"><span class="pick-name">Persistent Work Areas</span><span class="pick-ver" data-ver></span></span></label>
+            <label class="pick" style="--c:#1a6773"><input type="checkbox" name="mod" value="the-tipsy-tail"><span class="pick-text"><span class="pick-name">The Tipsy Tail</span><span class="pick-ver" data-ver></span></span></label>
+            </div>
+          </fieldset>
+          <div class="pick-foot">
+            <button class="btn pick-go" type="submit" data-bundle-go disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg><span class="btn-label">Pick a mod first</span><span class="btn-size" data-bundle-size></span></button>
+            <div class="pick-status">
+              <p class="pick-note" data-bundle-note aria-live="polite">Loading the list…</p>
+              <p class="pick-fine">Harmony and Mod Settings aren't included: see <a href="#install">Installing any of these</a>.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <section id="install" class="install" aria-labelledby="install-title">
       <div class="wrap">
         <h2 id="install-title">Installing any of these</h2>
@@ -248,7 +285,7 @@
           <li>
             <span class="step-n" aria-hidden="true">1</span>
             <h3>Download the ZIP</h3>
-            <p>Use the mod's <em>Download latest</em> button. On GitHub, pick the ZIP under <em>Assets</em>, not <em>Source code</em>.</p>
+            <p>Use the mod's <em>Download latest</em> button, or <a href="#bundle">download several at once</a>. On GitHub, pick the ZIP under <em>Assets</em>, not <em>Source code</em>.</p>
           </li>
           <li>
             <span class="step-n" aria-hidden="true">2</span>
@@ -278,5 +315,7 @@
   </footer>
 
   <script src="assets/site.js" defer></script>
+  <script src="assets/zipmerge.js" defer></script>
+  <script src="assets/bundle.js" defer></script>
 </body>
 </html>
