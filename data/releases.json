@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26T07:45:19.632Z",
+  "generated": "2026-09-27T22:14:11.559Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -233,6 +233,25 @@
     ],
     "timbermods/TimberTogether": [
       {
+        "tag": "v1.4.0-rc17",
+        "name": "Timber Together 1.4.0-rc17",
+        "prerelease": false,
+        "published": "2026-09-27T20:09:05Z",
+        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc17",
+        "assets": [
+          {
+            "name": "1.4.0-rc17-SHA256SUMS.txt",
+            "size": 96,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc17/1.4.0-rc17-SHA256SUMS.txt"
+          },
+          {
+            "name": "TimberTogether-1.4.0-rc17.zip",
+            "size": 2747225,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc17/TimberTogether-1.4.0-rc17.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.4.0-rc16",
         "name": "Timber Together 1.4.0-rc16",
         "prerelease": true,
@@ -440,25 +459,6 @@
             "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc6/BeaverBuddies-MultiColony-1.4.0-rc6.zip"
           }
         ]
-      },
-      {
-        "tag": "v1.4.0-rc5",
-        "name": "Timber Together 1.4.0-rc5",
-        "prerelease": true,
-        "published": "2026-09-23T22:37:24Z",
-        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc5",
-        "assets": [
-          {
-            "name": "1.4.0-rc5-SHA256SUMS.txt",
-            "size": 106,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc5/1.4.0-rc5-SHA256SUMS.txt"
-          },
-          {
-            "name": "BeaverBuddies-MultiColony-1.4.0-rc5.zip",
-            "size": 3098394,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc5/BeaverBuddies-MultiColony-1.4.0-rc5.zip"
-          }
-        ]
       }
     ],
     "timbermods/LateGamePerformance": [
@@ -632,6 +632,25 @@
       }
     ],
     "timbermods/OptimizedLocalHousing": [
+      {
+        "tag": "v1.2.0",
+        "name": "Optimized Local Housing v1.2.0",
+        "prerelease": false,
+        "published": "2026-09-27T21:23:07Z",
+        "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.2.0",
+        "assets": [
+          {
+            "name": "OptimizedLocalHousing-v1.2.0-SHA256SUMS.txt",
+            "size": 100,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.2.0/OptimizedLocalHousing-v1.2.0-SHA256SUMS.txt"
+          },
+          {
+            "name": "OptimizedLocalHousing-v1.2.0.zip",
+            "size": 21391,
+            "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.2.0/OptimizedLocalHousing-v1.2.0.zip"
+          }
+        ]
+      },
       {
         "tag": "v1.1.1",
         "name": "Optimized Local Housing v1.1.1",
@@ -816,6 +835,20 @@
     ],
     "timbermods/MixedStorage": [
       {
+        "tag": "v1.2.1",
+        "name": "MixedStorage v1.2.1",
+        "prerelease": false,
+        "published": "2026-09-27T19:45:38Z",
+        "url": "https://github.com/timbermods/MixedStorage/releases/tag/v1.2.1",
+        "assets": [
+          {
+            "name": "MixedStorage-v1.2.1.zip",
+            "size": 42046,
+            "url": "https://github.com/timbermods/MixedStorage/releases/download/v1.2.1/MixedStorage-v1.2.1.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.2.0",
         "name": "MixedStorage v1.2.0",
         "prerelease": false,
@@ -966,20 +999,6 @@
             "name": "MixedStorage-v0.5.2.zip",
             "size": 32533,
             "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.5.2/MixedStorage-v0.5.2.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v0.5.1",
-        "name": "MixedStorage v0.5.1 — Keep Apply on screen",
-        "prerelease": true,
-        "published": "2026-09-18T19:03:36Z",
-        "url": "https://github.com/timbermods/MixedStorage/releases/tag/v0.5.1",
-        "assets": [
-          {
-            "name": "MixedStorage-v0.5.1.zip",
-            "size": 32365,
-            "url": "https://github.com/timbermods/MixedStorage/releases/download/v0.5.1/MixedStorage-v0.5.1.zip"
           }
         ]
       }
@@ -1418,21 +1437,21 @@
       ]
     },
     "timbermods/TimberTogether": {
-      "tag": "v1.4.0-rc12",
-      "name": "Timber Together 1.4.0-rc12",
+      "tag": "v1.4.0-rc17",
+      "name": "Timber Together 1.4.0-rc17",
       "prerelease": false,
-      "published": "2026-09-25T06:35:54Z",
-      "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc12",
+      "published": "2026-09-27T20:09:05Z",
+      "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc17",
       "assets": [
         {
-          "name": "1.4.0-rc12-SHA256SUMS.txt",
+          "name": "1.4.0-rc17-SHA256SUMS.txt",
           "size": 96,
-          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc12/1.4.0-rc12-SHA256SUMS.txt"
+          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc17/1.4.0-rc17-SHA256SUMS.txt"
         },
         {
-          "name": "TimberTogether-1.4.0-rc12.zip",
-          "size": 2739087,
-          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc12/TimberTogether-1.4.0-rc12.zip"
+          "name": "TimberTogether-1.4.0-rc17.zip",
+          "size": 2747225,
+          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc17/TimberTogether-1.4.0-rc17.zip"
         }
       ]
     },
@@ -1451,21 +1470,21 @@
       ]
     },
     "timbermods/OptimizedLocalHousing": {
-      "tag": "v1.1.1",
-      "name": "Optimized Local Housing v1.1.1",
+      "tag": "v1.2.0",
+      "name": "Optimized Local Housing v1.2.0",
       "prerelease": false,
-      "published": "2026-09-22T20:13:33Z",
-      "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.1.1",
+      "published": "2026-09-27T21:23:07Z",
+      "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/tag/v1.2.0",
       "assets": [
         {
-          "name": "OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt",
+          "name": "OptimizedLocalHousing-v1.2.0-SHA256SUMS.txt",
           "size": 100,
-          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1-SHA256SUMS.txt"
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.2.0/OptimizedLocalHousing-v1.2.0-SHA256SUMS.txt"
         },
         {
-          "name": "OptimizedLocalHousing-v1.1.1.zip",
-          "size": 22153,
-          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.1.1/OptimizedLocalHousing-v1.1.1.zip"
+          "name": "OptimizedLocalHousing-v1.2.0.zip",
+          "size": 21391,
+          "url": "https://github.com/timbermods/OptimizedLocalHousing/releases/download/v1.2.0/OptimizedLocalHousing-v1.2.0.zip"
         }
       ]
     },
@@ -1484,16 +1503,16 @@
       ]
     },
     "timbermods/MixedStorage": {
-      "tag": "v1.2.0",
-      "name": "MixedStorage v1.2.0",
+      "tag": "v1.2.1",
+      "name": "MixedStorage v1.2.1",
       "prerelease": false,
-      "published": "2026-09-23T00:10:30Z",
-      "url": "https://github.com/timbermods/MixedStorage/releases/tag/v1.2.0",
+      "published": "2026-09-27T19:45:38Z",
+      "url": "https://github.com/timbermods/MixedStorage/releases/tag/v1.2.1",
       "assets": [
         {
-          "name": "MixedStorage-v1.2.0.zip",
-          "size": 43221,
-          "url": "https://github.com/timbermods/MixedStorage/releases/download/v1.2.0/MixedStorage-v1.2.0.zip"
+          "name": "MixedStorage-v1.2.1.zip",
+          "size": 42046,
+          "url": "https://github.com/timbermods/MixedStorage/releases/download/v1.2.1/MixedStorage-v1.2.1.zip"
         }
       ]
     },
