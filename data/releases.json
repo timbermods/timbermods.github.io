@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T08:34:45.430Z",
+  "generated": "2026-09-29T20:53:40.285Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -233,6 +233,48 @@
     ],
     "timbermods/TimberTogether": [
       {
+        "tag": "v1.4.0-rc31",
+        "name": "Timber Together 1.4.0-rc31",
+        "prerelease": false,
+        "published": "2026-09-29T20:30:37Z",
+        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc31",
+        "assets": [
+          {
+            "name": "TimberTogether-1.4.0-rc31.zip",
+            "size": 2646372,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc31/TimberTogether-1.4.0-rc31.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-rc30",
+        "name": "Timber Together 1.4.0-rc30",
+        "prerelease": false,
+        "published": "2026-09-29T19:20:03Z",
+        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc30",
+        "assets": [
+          {
+            "name": "TimberTogether-1.4.0-rc30.zip",
+            "size": 2642473,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc30/TimberTogether-1.4.0-rc30.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-rc29",
+        "name": "Timber Together 1.4.0-rc29",
+        "prerelease": false,
+        "published": "2026-09-29T17:22:20Z",
+        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc29",
+        "assets": [
+          {
+            "name": "TimberTogether-1.4.0-rc29.zip",
+            "size": 2635362,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc29/TimberTogether-1.4.0-rc29.zip"
+          }
+        ]
+      },
+      {
         "tag": "v1.4.0-rc28",
         "name": "Timber Together 1.4.0-rc28",
         "prerelease": false,
@@ -390,63 +432,6 @@
             "name": "TimberTogether-1.4.0-rc20.zip",
             "size": 2740871,
             "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc20/TimberTogether-1.4.0-rc20.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-rc19",
-        "name": "Timber Together 1.4.0-rc19",
-        "prerelease": false,
-        "published": "2026-09-27T23:59:08Z",
-        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc19",
-        "assets": [
-          {
-            "name": "1.4.0-rc19-SHA256SUMS.txt",
-            "size": 96,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc19/1.4.0-rc19-SHA256SUMS.txt"
-          },
-          {
-            "name": "TimberTogether-1.4.0-rc19.zip",
-            "size": 2740464,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc19/TimberTogether-1.4.0-rc19.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-rc17",
-        "name": "Timber Together 1.4.0-rc17",
-        "prerelease": false,
-        "published": "2026-09-27T20:09:05Z",
-        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc17",
-        "assets": [
-          {
-            "name": "1.4.0-rc17-SHA256SUMS.txt",
-            "size": 96,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc17/1.4.0-rc17-SHA256SUMS.txt"
-          },
-          {
-            "name": "TimberTogether-1.4.0-rc17.zip",
-            "size": 2747225,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc17/TimberTogether-1.4.0-rc17.zip"
-          }
-        ]
-      },
-      {
-        "tag": "v1.4.0-rc18",
-        "name": "Timber Together 1.4.0-rc18",
-        "prerelease": true,
-        "published": "2026-09-27T22:16:20Z",
-        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc18",
-        "assets": [
-          {
-            "name": "1.4.0-rc18-SHA256SUMS.txt",
-            "size": 96,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc18/1.4.0-rc18-SHA256SUMS.txt"
-          },
-          {
-            "name": "TimberTogether-1.4.0-rc18.zip",
-            "size": 2737448,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc18/TimberTogether-1.4.0-rc18.zip"
           }
         ]
       }
@@ -1427,16 +1412,16 @@
       ]
     },
     "timbermods/TimberTogether": {
-      "tag": "v1.4.0-rc28",
-      "name": "Timber Together 1.4.0-rc28",
+      "tag": "v1.4.0-rc31",
+      "name": "Timber Together 1.4.0-rc31",
       "prerelease": false,
-      "published": "2026-09-29T05:55:04Z",
-      "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc28",
+      "published": "2026-09-29T20:30:37Z",
+      "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc31",
       "assets": [
         {
-          "name": "TimberTogether-1.4.0-rc28.zip",
-          "size": 2634711,
-          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc28/TimberTogether-1.4.0-rc28.zip"
+          "name": "TimberTogether-1.4.0-rc31.zip",
+          "size": 2646372,
+          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc31/TimberTogether-1.4.0-rc31.zip"
         }
       ]
     },
