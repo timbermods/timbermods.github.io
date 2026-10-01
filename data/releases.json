@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T00:29:46.113Z",
+  "generated": "2026-10-01T06:00:14.092Z",
   "repos": {
     "timbermods/BeaverBuddies-Stability-Fork": [
       {
@@ -233,20 +233,6 @@
     ],
     "timbermods/TimberTogether": [
       {
-        "tag": "v1.4.0-rc32",
-        "name": "Timber Together 1.4.0-rc32",
-        "prerelease": false,
-        "published": "2026-09-29T23:29:40Z",
-        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc32",
-        "assets": [
-          {
-            "name": "TimberTogether-1.4.0-rc32.zip",
-            "size": 2690772,
-            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc32/TimberTogether-1.4.0-rc32.zip"
-          }
-        ]
-      },
-      {
         "tag": "v1.4.0-rc31",
         "name": "Timber Together 1.4.0-rc31",
         "prerelease": false,
@@ -318,6 +304,20 @@
             "name": "TimberTogether-1.4.0-rc27.zip",
             "size": 2636401,
             "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc27/TimberTogether-1.4.0-rc27.zip"
+          }
+        ]
+      },
+      {
+        "tag": "v1.4.0-rc32",
+        "name": "Timber Together 1.4.0-rc32",
+        "prerelease": true,
+        "published": "2026-09-29T23:29:40Z",
+        "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc32",
+        "assets": [
+          {
+            "name": "TimberTogether-1.4.0-rc32.zip",
+            "size": 2690772,
+            "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc32/TimberTogether-1.4.0-rc32.zip"
           }
         ]
       },
@@ -1407,16 +1407,16 @@
       ]
     },
     "timbermods/TimberTogether": {
-      "tag": "v1.4.0-rc32",
-      "name": "Timber Together 1.4.0-rc32",
+      "tag": "v1.4.0-rc31",
+      "name": "Timber Together 1.4.0-rc31",
       "prerelease": false,
-      "published": "2026-09-29T23:29:40Z",
-      "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc32",
+      "published": "2026-09-29T20:30:37Z",
+      "url": "https://github.com/timbermods/TimberTogether/releases/tag/v1.4.0-rc31",
       "assets": [
         {
-          "name": "TimberTogether-1.4.0-rc32.zip",
-          "size": 2690772,
-          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc32/TimberTogether-1.4.0-rc32.zip"
+          "name": "TimberTogether-1.4.0-rc31.zip",
+          "size": 2646372,
+          "url": "https://github.com/timbermods/TimberTogether/releases/download/v1.4.0-rc31/TimberTogether-1.4.0-rc31.zip"
         }
       ]
     },
